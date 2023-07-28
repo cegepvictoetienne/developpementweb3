@@ -1,0 +1,22 @@
+site_name: Développement web 3
+site_author: Étienne Rivard
+theme:
+  name: mkdocs
+  nav_style: dark
+
+plugins:
+  - search
+
+extra_css:
+  - css/pdf.css
+  - css/all.css
+
+nav:
+  - 'Page principale': 'index.md'
+
+markdown_extensions:
+  - admonition
+
+docs_dir: 'wiki'
+site_dir: 'www'
+use_directory_urls: True
