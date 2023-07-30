@@ -1,4 +1,4 @@
-# Cours de technologies émergentes du Cégep de Victoriaville
+# Cours de développement web 3 du Cégep de Victoriaville
 
 ## Présentation du professeur
 
@@ -6,24 +6,33 @@ Nom : Étienne Rivard
 
 ## Présentation du cours
 
-Ce cours consiste à explorer les technologies émergentes.
+- 420\-5A5\-VI \- Développement Web 3
+- 5h de cours par semaine \(2h théorie – 3h travaux pratiques – 3h de travail à la maison\)
+
+**Cible de formation** :
+
+- À la fin de ce cours, l'élève sera capable d'effectuer le développement d’applications Web transactionnelles à l'aide de technologies Web modernes.
+
+**Les grandes lignes:**
+
+- Typescript
+- Node\.js
+- Mongoose
+- Express
+- Architectures MVC
+- React
+- Progressives Web Apps \(PWA\)
+- Netlify
+- Plan de cours disponible sur Teams
 
 ## Horaire pour l'automne 2023
 
-| Cours | Date              | Sujet                                                                                                                 | À faire                                                                                    |
-| ----- | ----------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| 1     | 25 août 2023      | [Tour de table, présentation du plan de cours et des ressources du cours](introduction.md)                            |
-| 2     | 1 septembre 2023  | Exploration des différents projets                                                                                    | Tour de table sur le retour du stage                                                       |
-| 3     | 8 septembre 2023  | Évaluation formative - Remise de votre choix de projet                                                                | Préparer l'ébauche de votre projet                                                         |
-| 4     | 15 septembre 2023 | Veille technologique, sites de référence, Recherche, cartographie, tableau de comparaison                             | Débuter votre projet                                                                       |
-| 5     | 22 septembre 2023 | Présentation du [rapport à faire (sommatif)](rapport-de-techno.md). Sujet de la semaine : _Intelligence artificielle_ | Discussion sur le sujet de la semaine <br/> Continuer votre projet                         |
-| 6     | 4 octobre 2023    | Sujet de la semaine : _Blockchains_                                                                                   | Discussion sur le sujet de la semaine <br/> Continuer votre projet                         |
-| 7     | 6 octobre 2023    | Sujet de la semaine : _Web 3.0_                                                                                       | Discussion sur le sujet de la semaine <br/> Continuer votre projet                         |
-| 8     | 20 octobre 2023   | Remise du rapport sur une technologie émergente                                                                       | Continuer votre projet                                                                     |
-| 9     | 27 octobre 2023   | Continuer votre projet                                                                                                | Continuer votre projet                                                                     |
-| 10    | 3 novembre 2023   | Continuer votre projet                                                                                                | Continuer votre projet                                                                     |
-| 11    | 10 novembre 2023  | Continuer votre projet                                                                                                | Présenter individuellement l'avancement de votre projet pour une rétroaction du professeur |
-| 12    | 17 novembre 2023  | Continuer votre projet                                                                                                | Continuer votre projet                                                                     |
-| 13    | 24 novembre 2023  | Continuer votre projet                                                                                                | Continuer votre projet                                                                     |
-| 14    | 1 décembre 2023   | Présentation du projet 1                                                                                              | Remettre le projet avant le début du cours                                                 |
-| 15    | 8 décembre 2023   | Présentation du projet 2                                                                                              |
+[Voir l'horaire ici](horaire.md)
+
+# Évaluations
+
+|           Évaluation           | Pondération |                    Échéancier                    |
+| :----------------------------: | :---------: | :----------------------------------------------: |
+| Examen 1 – Microservices (API) |     25%     |                   Semaine 5-6                    |
+|        Examen 2 - React        |     25%     |                  Semaine 11-12                   |
+|   Projet - Application React   |     50%     | Semaines 12 à 15 (Remise finale à la semaine 15) |

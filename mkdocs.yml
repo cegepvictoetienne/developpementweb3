@@ -1,8 +1,23 @@
 site_name: Développement web 3
 site_author: Étienne Rivard
 theme:
-  name: mkdocs
-  nav_style: dark
+  name: material
+  features:
+    - content.code.copy
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
 
 plugins:
   - search
@@ -13,9 +28,36 @@ extra_css:
 
 nav:
   - 'Page principale': 'index.md'
+  - 'Horaire': 'horaire.md'
+  - 'Leçons':
+      - 'Introduction à Node.js': 'introduction_nodejs.md'
+      - 'Introduction à TypeScript': 'introduction_typescript.md'
+      - 'Node.js - Serveur Web': 'nodejs_serveur_web.md'
+  - 'Exercices':
+      - 'Exercice 1 - Node': 'exercice1_node.md'
 
 markdown_extensions:
   - admonition
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 docs_dir: 'wiki'
 site_dir: 'www'
