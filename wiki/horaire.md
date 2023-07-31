@@ -5,7 +5,7 @@ Cours|Date|Sujet|Exercice
 2|2023-08-23|[npm](npm.md)|[Exercice 2 - lodash](exercice2_lodash.md)
 3|2023-08-28|[TypeScript 2](typescript_2.md)<br/>[Introduction Express](introduction_express.md)|[Exercice 3 - Express](exercice3_express.md)
 4|2023-08-30|[Express - Générateur](generateur_express.md)|[Exercice 4 - Express avec modèle](exercice4_express_avec_modele.md)
-5|2023-09-06|MongoDB|
+5|2023-09-06|[JavaScript asynchrone](javascript_async.md) <br/> [MongoDB](mongodb.md)|[Exercice 5 - MongoDB](exercice5_mongodb.md)
 6|2023-09-11|Mongoose|
 7|2023-09-13|Mongoose|
 8|2023-09-18|Évaluation formative|
