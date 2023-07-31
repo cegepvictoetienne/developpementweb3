@@ -1,0 +1,13 @@
+{
+  "reservations": [
+    {
+      "id": 1,
+      "nomClient": "Justin Trudeau",
+      "courrielClient": "justin@kerzo.ca",
+      "dateDebut": "2023-09-01",
+      "dateFin": "2023-09-03",
+      "typeChambre": "Deluxe",
+      "prixParNuit": 150
+    }
+  ]
+}

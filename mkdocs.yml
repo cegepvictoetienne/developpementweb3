@@ -36,6 +36,7 @@ nav:
       - 'NPM': 'npm.md'
       - 'TypeScript 2': 'typescript_2.md'
       - 'Introduction Express': 'introduction_express.md'
+      - 'Générateur Express': 'generateur_express.md'
   - 'Exercices':
       - 'Exercice 1 - Node': 'exercice1_node.md'
       - 'Exercice 2 - lodash': 'exercice2_lodash.md'
