@@ -39,6 +39,8 @@ Documentation officielle :
 
 L'exemple suivant code une mini API qui gère des réservations dans un hotel.  
 
+Voir le produit final sur [CodeSandbox](https://codesandbox.io/p/sandbox/cegepvicto-devweb3-hotel-5lkjd4)  
+
 ## Étape 1 - Créer l’interface model/  
 
 ``` ts title="model/Reservation.ts"

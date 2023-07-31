@@ -37,10 +37,14 @@ nav:
       - 'TypeScript 2': 'typescript_2.md'
       - 'Introduction Express': 'introduction_express.md'
       - 'Générateur Express': 'generateur_express.md'
+      - 'JavaScript asynchrone': 'javascript_async.md'
+      - 'MongoDB': 'mongodb.md'
   - 'Exercices':
       - 'Exercice 1 - Node': 'exercice1_node.md'
       - 'Exercice 2 - lodash': 'exercice2_lodash.md'
       - 'Exercice 3 - Express': 'exercice3_express.md'
+      - 'Exercice 4 - Express avec modèle': 'exercice4_express_avec_modele.md'
+      - 'Exercice 5 - Mongo DB': 'exercice5_mongodb.md'
 
 markdown_extensions:
   - admonition

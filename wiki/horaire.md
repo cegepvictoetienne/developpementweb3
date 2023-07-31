@@ -4,7 +4,7 @@ Cours|Date|Sujet|Exercice
 1|2023-08-21|[Introduction à Node.js](introduction_nodejs.md) <br/> [Introduction à TypeScript](introduction_typescript.md) <br/> [Node.js - Serveur Web](nodejs_serveur_web.md)|[Exercice 1 - Node](exercice1_node.md)
 2|2023-08-23|[npm](npm.md)|[Exercice 2 - lodash](exercice2_lodash.md)
 3|2023-08-28|[TypeScript 2](typescript_2.md)<br/>[Introduction Express](introduction_express.md)|[Exercice 3 - Express](exercice3_express.md)
-4|2023-08-30|Express|
+4|2023-08-30|[Express - Générateur](generateur_express.md)|[Exercice 4 - Express avec modèle](exercice4_express_avec_modele.md)
 5|2023-09-06|MongoDB|
 6|2023-09-11|Mongoose|
 7|2023-09-13|Mongoose|
