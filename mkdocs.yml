@@ -33,8 +33,13 @@ nav:
       - 'Introduction à Node.js': 'introduction_nodejs.md'
       - 'Introduction à TypeScript': 'introduction_typescript.md'
       - 'Node.js - Serveur Web': 'nodejs_serveur_web.md'
+      - 'NPM': 'npm.md'
+      - 'TypeScript 2': 'typescript_2.md'
+      - 'Introduction Express': 'introduction_express.md'
   - 'Exercices':
       - 'Exercice 1 - Node': 'exercice1_node.md'
+      - 'Exercice 2 - lodash': 'exercice2_lodash.md'
+      - 'Exercice 3 - Express': 'exercice3_express.md'
 
 markdown_extensions:
   - admonition
