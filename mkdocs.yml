@@ -46,6 +46,7 @@ nav:
           - 'Express et JWT': 'express_jwt.md'
       - 'React':
           - 'Introduction à React': 'introduction_react.md'
+          - 'React et les styles': 'react_styles.md'
   - 'Exercices':
       - 'Exercice 1 - Node': 'exercice1_node.md'
       - 'Exercice 2 - lodash': 'exercice2_lodash.md'

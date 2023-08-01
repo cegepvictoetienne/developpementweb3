@@ -16,12 +16,12 @@ Nom : Étienne Rivard
 **Les grandes lignes:**
 
 - Typescript
-- Node\.js
+- Node.js
 - Mongoose
 - Express
-- Architectures MVC
+- Architecture MVC
 - React
-- Progressives Web Apps \(PWA\)
+- Progressive Web Apps \(PWA\)
 - Netlify
 - Plan de cours disponible sur Teams
 
