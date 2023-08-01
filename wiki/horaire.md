@@ -6,8 +6,8 @@ Cours|Date|Sujet|Exercice
 3|2023-08-28|[TypeScript 2](typescript_2.md)<br/>[Introduction Express](introduction_express.md)|[Exercice 3 - Express](exercice3_express.md)
 4|2023-08-30|[Express - Générateur](generateur_express.md)|[Exercice 4 - Express avec modèle](exercice4_express_avec_modele.md)
 5|2023-09-06|[JavaScript asynchrone](javascript_async.md) <br/> [MongoDB](mongodb.md)|[Exercice 5 - MongoDB](exercice5_mongodb.md)
-6|2023-09-11|Mongoose|
-7|2023-09-13|Mongoose|
+6|2023-09-11|[Mongoose](introduction_mongoose.md)|[Exercice 6 - Mongoose](exercice6_mongoose.md)
+7|2023-09-13|[Mongoose - la suite](mongoose2.md)|[Exercice 7 - Mongoose](exercice7_mongoose.md)
 8|2023-09-18|Évaluation formative|
 9|2023-09-20|Express et retour sur formatif|
 10|2023-09-25|Projet API|
