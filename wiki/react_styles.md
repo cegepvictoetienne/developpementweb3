@@ -93,7 +93,62 @@ export default Personnage;
     <PersonnageAddress as="span">{props.nom}</PersonnageAddress>
     ```
 
+[CodeSandbox - Styled Components](https://codesandbox.io/p/sandbox/personnage-base-jmcyw9)  
+
 Pour plus d'information :  
 
 - [Styled Components - Basics](https://styled-components.com/docs/basics)  
 
+# Material UI  
+
+Librairie de composantes pré-stylisées.  
+
+Pour l’installer dans votre projet :  
+
+``` nodejsrepl title="console"
+npm i @mui/material @emotion/react @emotion/styled
+npm i @fontsource/roboto
+npm install @mui/icons-material
+```
+
+Pour plus d'information :  
+
+- [Material UI - Installation](https://mui.com/material-ui/getting-started/installation/)  
+
+## Utiliser Material UI  
+
+``` ts title="personnage.component.tsx"
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import { Grid } from '@mui/material';
+
+interface IPersonnageProps {
+  nom: string;
+  photo: string;
+  adresse: string;
+}
+
+const Personnage = (props: IPersonnageProps) => {
+  return (
+    <Card sx={{ width: 400 }}>
+      <Grid container spacing={0} direction="column" alignItems="center">
+        <CardMedia
+          image={props.photo}
+          sx={{ height: 150, width: 150, borderRadius: '50%' }}
+        />
+      </Grid>
+      <Box>
+        <Typography variant="subtitle1">{props.nom}</Typography>
+        <Typography variant="subtitle1">{props.adresse}</Typography>
+      </Box>
+    </Card>
+  );
+};
+
+export default Personnage;
+
+```
+
+[CodeSandbox - MaterialUI](https://codesandbox.io/p/sandbox/personnage-base-qqwqxw)  
