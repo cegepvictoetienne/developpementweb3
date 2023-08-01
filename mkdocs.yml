@@ -2,6 +2,7 @@ site_name: Développement web 3
 site_author: Étienne Rivard
 theme:
   name: material
+  language: fr
   features:
     - content.code.copy
   icon:
@@ -22,25 +23,27 @@ theme:
 plugins:
   - search
 
-extra_css:
-  - css/pdf.css
-  - css/all.css
+extra_javascript:
+  - javascript/linktarget.js
 
 nav:
   - 'Page principale': 'index.md'
   - 'Horaire': 'horaire.md'
   - 'Leçons':
-      - 'Introduction à Node.js': 'introduction_nodejs.md'
-      - 'Introduction à TypeScript': 'introduction_typescript.md'
-      - 'Node.js - Serveur Web': 'nodejs_serveur_web.md'
-      - 'NPM': 'npm.md'
-      - 'TypeScript 2': 'typescript_2.md'
-      - 'Introduction Express': 'introduction_express.md'
-      - 'Générateur Express': 'generateur_express.md'
-      - 'JavaScript asynchrone': 'javascript_async.md'
-      - 'MongoDB': 'mongodb.md'
-      - 'Introduction à Mongoose': 'introduction_mongoose.md'
-      - 'Mongoose - La suite': 'mongoose2.md'
+      - 'Node.js et TypeScript':
+          - 'Introduction à Node.js': 'introduction_nodejs.md'
+          - 'Introduction à TypeScript': 'introduction_typescript.md'
+          - 'Node.js - Serveur Web': 'nodejs_serveur_web.md'
+          - 'NPM': 'npm.md'
+          - 'TypeScript 2': 'typescript_2.md'
+      - 'Express et MongoDB':
+          - 'Introduction Express': 'introduction_express.md'
+          - 'Générateur Express': 'generateur_express.md'
+          - 'JavaScript asynchrone': 'javascript_async.md'
+          - 'MongoDB': 'mongodb.md'
+          - 'Introduction à Mongoose': 'introduction_mongoose.md'
+          - 'Mongoose - La suite': 'mongoose2.md'
+          - 'Express et JWT': 'express_jwt.md'
   - 'Exercices':
       - 'Exercice 1 - Node': 'exercice1_node.md'
       - 'Exercice 2 - lodash': 'exercice2_lodash.md'
@@ -49,6 +52,7 @@ nav:
       - 'Exercice 5 - Mongo DB': 'exercice5_mongodb.md'
       - 'Exercice 6 - Mongoose': 'exercice6_mongoose.md'
       - 'Exercice 7 - Mongoose': 'exercice7_mongoose.md'
+      - 'Exercice 8 - Express et JWT': 'exercice8_express_jwt.md'
   - 'Outils':
       - 'Masscode': 'masscode.md'
   - 'À propos': 'apropos.md'

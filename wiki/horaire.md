@@ -9,7 +9,7 @@ Cours|Date|Sujet|Exercice
 6|2023-09-11|[Mongoose](introduction_mongoose.md)|[Exercice 6 - Mongoose](exercice6_mongoose.md)
 7|2023-09-13|[Mongoose - la suite](mongoose2.md)|[Exercice 7 - Mongoose](exercice7_mongoose.md)
 8|2023-09-18|Évaluation formative|
-9|2023-09-20|Express et retour sur formatif|
+9|2023-09-20|Retour sur formatif <br/> [Express et JWT](express_jwt.md)|[Exercice 8 - Express et JWT](exercice8_express_jwt.md)
 10|2023-09-25|Projet API|
 11|2023-09-27|Examen API|
 12|2023-10-02|Projet API|
