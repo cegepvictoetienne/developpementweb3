@@ -43,3 +43,50 @@ Pour l'installer :  [React Developer Tools pour Chrome](https://chrome.google.co
   <figcaption>React Development Tools s'installe dans les outils de développement de Chrome</figcaption>
 </figure>
 
+# Démo  
+
+Le démo complet se trouve ici : [CodeSandbox - Personnage - Base](https://codesandbox.io/p/sandbox/personnage-base-j9xc7h)  
+
+# Programmer React avec des fonctions  
+
+Utiliser des fonctions au lieu des classes en React est la manière officielle de programmer dans cet environnement.  
+
+``` ts title="personnage.component.tsx"
+import './personnage.styles.css';
+
+const Personnage = () => {
+  const nomDuPersonnage = 'Fluffy McChat';
+  const photoDuPersonnage = 'https://placekitten.com/300/300';
+  const adresseDuPersonnage = '123 Ave Des Félins';
+
+  return (
+    <div className="container">
+      <div className="photo">
+        <img src={photoDuPersonnage} />
+      </div>
+      <div className="info">
+        <p>{nomDuPersonnage}</p>
+        <p className="address">{adresseDuPersonnage}</p>
+      </div>
+    </div>
+  );
+};
+
+export default Personnage;
+```
+
+``` ts title="app.tsx"
+import Personnage from './components/personnage.component';
+import './App.css';
+
+function App() {
+  return <Personnage />;
+}
+
+export default App;
+```
+
+<figure markdown>
+  ![react-personnage-base](images/react-personnage-base.png){ width="600" }
+  <figcaption>Affichage du projet personnage - base</figcaption>
+</figure>
