@@ -90,3 +90,72 @@ export default App;
   ![react-personnage-base](images/react-personnage-base.png){ width="600" }
   <figcaption>Affichage du projet personnage - base</figcaption>
 </figure>
+
+# Passage de paramètres avec les props  
+
+1. Définir la liste des paramètres dans une interface  
+2. L’ajouter comme props à la fonction de la composante  
+3. Utiliser les paramètres lors de l’instanciation de la composante  
+
+
+
+``` ts title="personnage.component.tsx"
+import './personnage.styles.css';
+
+interface IPersonnageProps {
+  nom: string;
+  photo: string;
+  adresse: string;
+}
+
+const Personnage = (props: IPersonnageProps) => {
+  return (
+    <div className="container">
+      <div className="photo">
+        <img src={props.photo} />
+      </div>
+      <div className="info">
+        <p>{props.nom}</p>
+        <p className="address">{props.adresse}</p>
+      </div>
+    </div>
+  );
+};
+
+export default Personnage;
+
+```
+
+``` ts title="app.tsx"
+import Personnage from './components/personnage.component';
+import './App.css';
+
+function App() {
+  const nomDuPersonnage = 'Fluffy McChat';
+  const photoDuPersonnage = 'https://placekitten.com/300/300';
+  const adresseDuPersonnage = '123 Ave Des Félins';
+
+  return (
+    <>
+      <Personnage
+        nom={nomDuPersonnage}
+        photo={photoDuPersonnage}
+        adresse={adresseDuPersonnage}
+      />
+      <Personnage
+        nom="Charmin Ledoux"
+        photo="https://placekitten.com/300/300"
+        adresse="444 de le Bête"
+      />
+    </>
+  );
+}
+
+export default App;
+
+```
+
+<figure markdown>
+  ![react-personnage-base-props](images/react-personnage-base-props.png){ width="600" }
+  <figcaption>Affichage du projet personnage - base avec props</figcaption>
+</figure>

@@ -1,0 +1,30 @@
+.container {
+  max-width: 600px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.address {
+  font-style: italic;
+}
