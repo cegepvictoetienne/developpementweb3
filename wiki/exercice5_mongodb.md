@@ -11,7 +11,7 @@ Modèle de données : [persons.json](donnees/persons.json)
     - isActive  
     - registered  
     - Balance  
-- Vous devez aussi valider les champs facultatifs et vous assurer que les attributs se limitent à la liste présentée dans la diapositive précédente.   
+- Vous devez aussi valider les champs facultatifs.   
 - Ajoutez d’autres routes :  
     - /persons/? : permet de récupérer les informations d’une seule personne à partir de son identifiant  
     - /persons/q/? : permet de rechercher l’information dans les attributs nom, prénom et courriel  
