@@ -43,9 +43,6 @@ Pour l'installer :  [React Developer Tools pour Chrome](https://chrome.google.co
   <figcaption>React Development Tools s'installe dans les outils de développement de Chrome</figcaption>
 </figure>
 
-# Démo  
-
-Le démo complet se trouve ici : [CodeSandbox - Personnage - Base](https://codesandbox.io/p/sandbox/personnage-base-j9xc7h)  
 
 # Programmer React avec des fonctions  
 
@@ -90,6 +87,8 @@ export default App;
   ![react-personnage-base](images/react-personnage-base.png){ width="600" }
   <figcaption>Affichage du projet personnage - base</figcaption>
 </figure>
+
+[CodeSandbox - Personnage - Base](https://codesandbox.io/p/sandbox/personnage-base-j9xc7h)  
 
 # Passage de paramètres avec les props  
 
@@ -159,3 +158,12 @@ export default App;
   ![react-personnage-base-props](images/react-personnage-base-props.png){ width="600" }
   <figcaption>Affichage du projet personnage - base avec props</figcaption>
 </figure>
+
+[CodeSandbox - Personnage - Props](https://codesandbox.io/p/sandbox/personnage-base-8z5j5g)  
+
+# Les hooks - useState  
+
+- Conserve l’état d’une variable  
+- Réagit lorsque la valeur change  
+
+
