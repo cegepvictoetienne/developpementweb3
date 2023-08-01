@@ -55,6 +55,7 @@ nav:
       - 'Exercice 6 - Mongoose': 'exercice6_mongoose.md'
       - 'Exercice 7 - Mongoose': 'exercice7_mongoose.md'
       - 'Exercice 8 - Express et JWT': 'exercice8_express_jwt.md'
+      - 'Exercice 9 - React': 'exercice9_react.md'
   - 'Outils':
       - 'Masscode': 'masscode.md'
   - 'À propos': 'apropos.md'

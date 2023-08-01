@@ -90,12 +90,15 @@ export default App;
 
 [CodeSandbox - Personnage - Base](https://codesandbox.io/p/sandbox/personnage-base-j9xc7h)  
 
+Pour en savoir plus :  
+
+- [Learn React](https://react.dev/learn)  
+
 # Passage de paramètres avec les props  
 
 1. Définir la liste des paramètres dans une interface  
 2. L’ajouter comme props à la fonction de la composante  
 3. Utiliser les paramètres lors de l’instanciation de la composante  
-
 
 
 ``` ts title="personnage.component.tsx"
@@ -161,6 +164,11 @@ export default App;
 
 [CodeSandbox - Personnage - Props](https://codesandbox.io/p/sandbox/personnage-base-8z5j5g)  
 
+Pour en savoir plus :  
+
+- [Props](https://react.dev/learn/passing-props-to-a-component)  
+
+
 # Les hooks - useState  
 
 - Conserve l’état d’une variable  
@@ -204,6 +212,10 @@ export default App;
 </figure>
 
 [CodeSandbox - Personnage - useState](https://codesandbox.io/p/sandbox/personnage-base-6kdzhk)  
+
+Pour en savoir plus :  
+
+- [useState](https://react.dev/reference/react/useState)  
 
 
 # Hooks : useEffect  
@@ -255,6 +267,10 @@ export default App;
   <figcaption>Affichage du projet personnage - base avec useEffect</figcaption>
 </figure>
 
-[CodeSandbox - Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-6kdzhk)  
+[CodeSandbox - Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-8hhz5t)  
+
+Pour en savoir plus :  
+
+- [useEffect](https://react.dev/reference/react/useEffect)  
 
 
