@@ -45,6 +45,9 @@ nav:
       - 'Exercice 3 - Express': 'exercice3_express.md'
       - 'Exercice 4 - Express avec modèle': 'exercice4_express_avec_modele.md'
       - 'Exercice 5 - Mongo DB': 'exercice5_mongodb.md'
+  - 'Outils':
+      - 'Masscode': 'masscode.md'
+  - 'À propos': 'apropos.md'
 
 markdown_extensions:
   - admonition
