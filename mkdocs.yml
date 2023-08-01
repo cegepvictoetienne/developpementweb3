@@ -1,4 +1,4 @@
-site_name: Développement web 3
+site_name: Développement Web 3
 site_author: Étienne Rivard
 theme:
   name: material
@@ -23,8 +23,8 @@ theme:
 plugins:
   - search
 
-extra_javascript:
-  - javascript/linktarget.js
+extra_css:
+  - css/extra.css
 
 nav:
   - 'Page principale': 'index.md'
