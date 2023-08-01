@@ -16,7 +16,7 @@ Cours|Date|Sujet|Exercice
 13|2023-10-16|Projet API|
 14|2023-10-18|Projet API|
 15|2023-10-23|[Introduction à React](introduction_react.md)|[Exercice 9 - React](exercice9_react.md)
-16|2023-10-25|Styles|
+16|2023-10-25|[React et les styles](react_styles.md)|[Exercice 10 - React et styles](exercice10_react_styles.md)
 17|2023-10-30|React - suite|
 18|2023-11-01|Internationalisation|
 19|2023-11-06|React|
