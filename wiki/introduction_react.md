@@ -166,4 +166,95 @@ export default App;
 - Conserve l’état d’une variable  
 - Réagit lorsque la valeur change  
 
+``` ts title="app.tsx"
+import Personnage from './components/personnage.component';
+import { useState } from 'react';
+import './App.css';
+
+function App() {
+  const [nom, setNom] = useState('');
+
+  const nomDuPersonnage = 'Fluffy McChat';
+  const photoDuPersonnage = 'https://placekitten.com/300/300';
+  const adresseDuPersonnage = '123 Ave Des Félins';
+
+  return (
+    <>
+      <input value={nom} onChange={(e) => setNom(e.target.value)} />
+      <Personnage
+        nom={nomDuPersonnage}
+        photo={photoDuPersonnage}
+        adresse={adresseDuPersonnage}
+      />
+      <Personnage
+        nom={nom}
+        photo="https://placekitten.com/300/300"
+        adresse="444 de le Bête"
+      />
+    </>
+  );
+}
+
+export default App;
+```
+
+<figure markdown>
+  ![react-personnage-base-usestate](images/react-personnage-base-usestate.png){ width="600" }
+  <figcaption>Affichage du projet personnage - base avec useState</figcaption>
+</figure>
+
+[CodeSandbox - Personnage - useState](https://codesandbox.io/p/sandbox/personnage-base-6kdzhk)  
+
+
+# Hooks : useEffect  
+
+Faire des traitements de données seulement lors d’événements précis, comme le premier render ou lors de changement d’une autre variable.  
+
+
+``` ts title="app.tsx"
+import Personnage from './components/personnage.component';
+import { useState, useEffect } from 'react';
+import './App.css';
+
+function App() {
+  const [nom, setNom] = useState('');
+  const [longueurNom, setLongueurNom] = useState(0);
+
+  useEffect(() => {
+    setLongueurNom(nom.length);
+  }, [nom]);
+
+  const nomDuPersonnage = 'Fluffy McChat';
+  const photoDuPersonnage = 'https://placekitten.com/300/300';
+  const adresseDuPersonnage = '123 Ave Des Félins';
+
+  return (
+    <>
+      <input value={nom} onChange={(e) => setNom(e.target.value)} />
+      <span>Le nom a {longueurNom} caractères</span>
+      <Personnage
+        nom={nomDuPersonnage}
+        photo={photoDuPersonnage}
+        adresse={adresseDuPersonnage}
+      />
+      <Personnage
+        nom={nom}
+        photo="https://placekitten.com/300/300"
+        adresse="444 de le Bête"
+      />
+    </>
+  );
+}
+
+export default App;
+
+```
+
+<figure markdown>
+  ![react-personnage-base-useeffect](images/react-personnage-base-useeffect.png){ width="600" }
+  <figcaption>Affichage du projet personnage - base avec useEffect</figcaption>
+</figure>
+
+[CodeSandbox - Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-6kdzhk)  
+
 
