@@ -153,6 +153,8 @@ const rabais = 15 / 100;
 
 ```
 
+[CodeSandbox - Intl](https://codesandbox.io/p/sandbox/intl-2wztzk)  
+
 # Sélecteur de langue  
 
 Maintenant que le texte est traduit, voici ce qu'il faut faire pour changer la langue dynamiquement :  
