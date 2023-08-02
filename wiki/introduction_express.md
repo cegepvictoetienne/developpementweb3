@@ -2,9 +2,14 @@
 
 __Express.js__ est un framework pour construire des applications web en Node.js. C'est de fait le framework standard pour le développement de serveur en Node.js.  
 
-Documentation officielle:https://expressjs.com/fr/
+Documentation officielle: 
 
-Sources : 
+!!! manuel 
+    [Express JS](https://expressjs.com/fr/)  
+
+
+Sources :  
+
 - [Wikipedia](https://fr.wikipedia.org/wiki/Express.js)  
 - [JetBrains](https://www.jetbrains.com/help/phpstorm/2016.3/running-and-debugging-node-js.html)  
 
@@ -48,7 +53,9 @@ app.listen(PORT, () => {
 - Les prochaines diapositives vous montrerons comment :  
 - Obtenir les paramètres dans une méthode {==GET==}  
 - Obtenir les informations du body dans une méthode {==POST==}  
-- Documentation : [Express API](https://expressjs.com/en/4x/api.html#req)  
+
+!!! manuel 
+    [Express API](https://expressjs.com/en/4x/api.html#req)
 
 # Express – Les routes dynamiques  
 
@@ -180,7 +187,7 @@ app.use('/utilisateur', routeur);
 
 Dans l’exemple précédent, la requête utilise la méthode GET, qui récupèrent les informations directement dans l’URL. 
 
-Comme vous l’avez appris dans vos cours précédents, d’autres méthodes sont aussi définies dans le protocole HTTP [MDN HTTP Methods](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods). Les plus communes sont : GET, POST, PUT, DELETE.   
+Comme vous l’avez appris dans vos cours précédents, d’autres méthodes sont aussi définies dans le protocole HTTP ([MDN HTTP Methods](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods)). Les plus communes sont : GET, POST, PUT, DELETE.   
 
 Avec Node.js, il est possible d’utiliser la même URL avec différentes méthodes. Cela se fait en modifiant la méthode auprès de la route :  
 Méthode GET: 	router.get(path, function(req, res, next) { … })  

@@ -2,9 +2,8 @@
 
 Permettre de passer d’une page à l’autre dans votre application React.  
 
-Pour plus d'information :  
-
-- [React Router](https://reactrouter.com/en/main)  
+!!! manuel 
+    [React Router](https://reactrouter.com/en/main)  
 
 
 Pour l'installer dans votre projet :  
@@ -98,9 +97,8 @@ function App() {
 }
 ```
 
-Pour plus d'information :  
-
-- [BrowserRouter](https://reactrouter.com/en/main/router-components/browser-router)
+!!! manuel 
+    [BrowserRouter](https://reactrouter.com/en/main/router-components/browser-router)
 
 ## Routes  
 

@@ -29,11 +29,9 @@ npm run dev
   <figcaption>Exécution du modèle Express</figcaption>
 </figure>
 
-
-Documentation officielle :   
-
-- [Express](https://expressjs.com/fr/starter/installing.html)  
-- [Express Generator](https://github.com/seanpmaxwell/express-generator-typescript)  
+!!! manuel 
+    [Express](https://expressjs.com/fr/starter/installing.html)  
+    [Express Generator](https://github.com/seanpmaxwell/express-generator-typescript)  
 
 # Coder un API Express  
 

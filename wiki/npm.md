@@ -5,9 +5,9 @@ Celui-ci permet d’ajouter des modules externes dans une application Node.js
 Depuis la version 0.6.3 de Node.js, npm fait partie de l'environnement et est donc automatiquement installé par défaut. 
 npm fonctionne avec un terminal et gère les dépendances pour une application. Il permet également d'installer des applications Node.js disponibles sur le dépôt npm.
 
-[Documentation officielle](https://docs.npmjs.com/)  
-
-Source : [Wikipedia](https://fr.wikipedia.org/wiki/Npm)  
+!!! manuel 
+    [NPM JS](https://docs.npmjs.com/)  
+    [Wikipedia](https://fr.wikipedia.org/wiki/Npm)  
 
 # npm init  
 
@@ -20,8 +20,8 @@ npm init
 Cette commande crée un fichier nommé package.json qui contiendra les configurations du projet ainsi que la liste des divers modules nécessaires pour son bon fonctionnement.  
 {==Cette commande devrait toujours être exécutée avant de procéder à l’installation de modules.==}  
 
-[Documentation officielle](https://docs.npmjs.com/cli/v6/commands/npm-init)  
-
+!!! manuel 
+    [npm init](https://docs.npmjs.com/cli/v6/commands/npm-init)  
 
 
 ``` json title="packages.json"  
@@ -59,7 +59,9 @@ La commande npm install (sans préciser le nom du module) permet d’installer a
 ## Les options  
 Lors de l’installation de modules, je recommande toujours d’utiliser la commande disponible dans la procédure d’installation du module. 
 Parfois, certaines options sont nécessaires.  
-Celle-ci sont détaillées dans la documentation officielle : [npm-install](https://docs.npmjs.com/cli/v6/commands/npm-install)  
+
+!!! manuel 
+    [npm-install](https://docs.npmjs.com/cli/v6/commands/npm-install)  
 
 Les plus courantes :  
 
@@ -294,7 +296,8 @@ Pour l’utiliser :
 import _ from 'lodash';  
 ```
 
-[Documentation officielle de lodash](https://lodash.com)  
+!!! manuel 
+    [Documentation officielle de lodash](https://lodash.com)  
 
 
 

@@ -69,9 +69,8 @@ Il est cependant possible d’ajouter une multitude de validations supplémentai
 - Validations de chaînes de caractères ([String-validators](https://mongoosejs.com/docs/schematypes.html#string-validators))   
 - Validations personnalisées  
 
-Pour plus d'information :  
-
-- [Mongoose - Validations](https://mongoosejs.com/docs/validation.html)  
+!!! manuel 
+    [Mongoose - Validations](https://mongoosejs.com/docs/validation.html)  
 
 ## Messages personnalisés  
 
@@ -79,9 +78,8 @@ Mongoose va produire des messages par défaut.
 
 Il est aussi possible de les redéfinir.  
 
-Pour plus d'information :  
-
-- [Mongoose - Messages d'erreur personnalisés](https://mongoosejs.com/docs/validation.html#custom-error-messages)  
+!!! manuel 
+    [Mongoose - Messages d'erreur personnalisés](https://mongoosejs.com/docs/validation.html#custom-error-messages)  
 
 ## Virtual  
 
@@ -112,10 +110,9 @@ personSchema.virtual('fullName').
 
 ```
 
-Pour plus d'information :  
-
-- [Guide - Virtuals](https://mongoosejs.com/docs/guide.html#virtuals)   
-- [Tutoriel - Virtuals](https://masteringjs.io/tutorials/mongoose/virtuals)  
+!!! manuel 
+    [Guide - Virtuals](https://mongoosejs.com/docs/guide.html#virtuals)   
+    [Tutoriel - Virtuals](https://masteringjs.io/tutorials/mongoose/virtuals)  
 
 ## Aggrégation  
 
@@ -144,9 +141,8 @@ La méthode HTTP PUT crée une nouvelle ressource ou remplace une représentatio
 
 La différence entre PUT et POST tient au fait que PUT est une méthode {==idempotente==}. Une requête PUT, envoyée une ou plusieurs fois avec succès, aura toujours le même effet (il n'y a pas d'effet de bord). À l'inverse, des requêtes POST successives et identiques peuvent avoir des effets additionnels, ce qui peut revenir par exemple à passer plusieurs fois une commande.  
 
-Pour plus d'informations :  
-
-- [MDN - PUT](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/PUT)  
+!!! manuel 
+    [MDN - PUT](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/PUT)  
 
 |Expression|Valeur  
 |--|--  
@@ -163,9 +159,8 @@ La méthode PATCH d'une requête HTTP applique des {==modifications partielles==
 
 La méthode HTTP PUT est déjà définie pour écraser une ressource avec un nouveau corps complet de message, et pour la méthode HTTP POST, il n'existe aucun moyen standard pour découvrir le support de format de patch. Tout comme POST, la méthode HTTP PATCH n'est pas listée comme étant idempotent, contrairement à PUT. Cela signifie que les requêtes patch identiques et successives auront des effets différents sur l'objet manipulé.  
 
-Pour plus d'informations :   
-
-- [MDN - PATCH](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/PATCH)  
+!!! manuel 
+    [MDN - PATCH](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/PATCH)  
 
 |Expression|Valeur  
 |--|--  

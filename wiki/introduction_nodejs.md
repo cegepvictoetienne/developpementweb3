@@ -6,7 +6,8 @@
 
 # Installation de node
 
-- Node.js : {==LTS Version 18.17.0==}
+- Node.js : {==LTS Version 18.17.0==}  
+
 # Code JavaScript sur un serveur
 
 - Étapes pour coder sur un serveur (le code est exécuté sur la machine où le fichier est stocké)

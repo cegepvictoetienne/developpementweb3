@@ -64,6 +64,7 @@ nav:
       - 'Exercice 12 - Internationalisation': 'exercice12_internationalisation.md'
   - 'Outils':
       - 'Masscode': 'masscode.md'
+  - 'Manuels': 'manuels.md'
   - 'À propos': 'apropos.md'
 
 markdown_extensions:

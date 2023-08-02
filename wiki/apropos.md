@@ -9,3 +9,5 @@ Site Web développé en MarkDown à l'aide des outils suivants :
 
 Version originale 2023 par Étienne Rivard.  
 Basé en partie sur le contenu développé par Carine Croteau en 2022.  
+
+Book by Ralf Schmitzer from [Book Icon by Noun Project](https://thenounproject.com/browse/icons/term/book/) (CC BY 3.0)  

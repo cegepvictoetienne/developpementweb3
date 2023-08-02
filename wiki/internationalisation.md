@@ -23,6 +23,9 @@ Pour installer React-Intl :
 npm install react-intl
 ```
 
+!!! manuel 
+    [React-intl](https://formatjs.io/docs/react-intl/)  
+
 # Installation minimale dans React  
 
 1. Créer un dossier __lang__ sous __src__
@@ -72,6 +75,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 <FormattedMessage id="app.titre" defaultMessage="Titre" />
 ```
 
+!!! manuel 
+    [FormattedMessage](https://formatjs.io/docs/react-intl/components#formattedmessage)  
+
+
 ## Message avec variable  
 
 ``` json title="lang/fr.json"  
@@ -104,6 +111,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 />
 ```
 
+!!! manuel 
+    [Format des messages](https://unicode-org.github.io/icu/userguide/format_parse/messages/)  
+
+
 ## Pour formater une date dans le format de la langue cible  
 
 ``` ts title="app.tsx"
@@ -117,6 +128,9 @@ const maintenant = new Date();
 />
 ```
 
+!!! manuel 
+    [FormattedDate](https://formatjs.io/docs/react-intl/components#formatteddate)  
+
 ## Pour formatter l’heure dans le format de la langue cible  
 
 ``` ts title="app.tsx"
@@ -128,6 +142,9 @@ const heure = maintenant.getTime();
 <FormattedTime value={heure} timeZone="America/Vancouver" />
 
 ```
+
+!!! manuel 
+    [FormattedTime](https://formatjs.io/docs/react-intl/components#formattedtime)  
 
 ## Pour formater une devise (monétaire)  
 
@@ -142,6 +159,9 @@ const prix = 12.35;
 />
 
 ```
+
+!!! manuel 
+    [FormattedNumber](https://formatjs.io/docs/react-intl/components#formattednumber)  
 
 ## Pour formater un pourcentage  
 

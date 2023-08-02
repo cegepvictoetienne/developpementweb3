@@ -95,9 +95,8 @@ export default Personnage;
 
 [CodeSandbox - Styled Components](https://codesandbox.io/p/sandbox/personnage-base-jmcyw9)  
 
-Pour plus d'information :  
-
-- [Styled Components - Basics](https://styled-components.com/docs/basics)  
+!!! manuel 
+    [Styled Components - Basics](https://styled-components.com/docs/basics)  
 
 # Material UI  
 
@@ -111,9 +110,8 @@ npm i @fontsource/roboto
 npm install @mui/icons-material
 ```
 
-Pour plus d'information :  
-
-- [Material UI - Installation](https://mui.com/material-ui/getting-started/installation/)  
+!!! manuel 
+    [Material UI - Installation](https://mui.com/material-ui/getting-started/installation/)  
 
 ## Utiliser Material UI  
 

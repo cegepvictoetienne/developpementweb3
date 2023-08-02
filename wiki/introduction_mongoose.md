@@ -8,10 +8,9 @@ Mongoose est un ODM (Object Document Mapper), ce qui permet de traduire la notio
 
 Depuis octobre 2020, Mongoose supporte également le langage TypeScript. ([Mongoose et TypeScript](https://mongoosejs.com/docs/typescript.html))  
 
-Pour plus d'information :  
-
-- [Site officiel de Mongoose](https://mongoosejs.com/)  
-- [Documentation de Mongoose](https://mongoosejs.com/docs/index.html)  
+!!! manuel 
+    [Site officiel de Mongoose](https://mongoosejs.com/)  
+    [Documentation de Mongoose](https://mongoosejs.com/docs/index.html)  
 
 Vous trouverez sur Internet plusieurs tutoriels pour créer une application qui utilise Node.js, MongoDB et Mongoose. Les exemples présentés dans ces notes de cours sont inspirés de la marche à suivre présentée par [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose)  ainsi que [celui-ci](https://medium.com/@alicantorun/build-a-rest-api-with-mongodb-mongoose-and-node-js-3a5afc4a0431).  
 
@@ -107,4 +106,6 @@ async function add(auteur: IAuteur): Promise<void> {
 
 ## Option strict  
 
-[Option strict par défaut](https://mongoosejs.com/docs/guide.html#strict)  
+!!! manuel 
+    [Option strict par défaut](https://mongoosejs.com/docs/guide.html#strict)  
+    

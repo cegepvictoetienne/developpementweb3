@@ -27,9 +27,8 @@ Voici comment générer l’application :
   <figcaption>Page par défaut d'une application Vite en React</figcaption>
 </figure>
 
-Pour plus d'information :  
-
-- [Documentation officielle Vite](https://vitejs.dev/guide/)  
+!!! manuel 
+    [Documentation officielle Vite](https://vitejs.dev/guide/)  
 
 
 # React Developer Tools  
@@ -90,9 +89,8 @@ export default App;
 
 [CodeSandbox - Personnage - Base](https://codesandbox.io/p/sandbox/personnage-base-j9xc7h)  
 
-Pour en savoir plus :  
-
-- [Learn React](https://react.dev/learn)  
+!!! manuel 
+    [Learn React](https://react.dev/learn)  
 
 # Passage de paramètres avec les props  
 
@@ -164,9 +162,8 @@ export default App;
 
 [CodeSandbox - Personnage - Props](https://codesandbox.io/p/sandbox/personnage-base-8z5j5g)  
 
-Pour en savoir plus :  
-
-- [Props](https://react.dev/learn/passing-props-to-a-component)  
+!!! manuel 
+    [Props](https://react.dev/learn/passing-props-to-a-component)  
 
 
 # Les hooks - useState  
@@ -213,9 +210,8 @@ export default App;
 
 [CodeSandbox - Personnage - useState](https://codesandbox.io/p/sandbox/personnage-base-6kdzhk)  
 
-Pour en savoir plus :  
-
-- [useState](https://react.dev/reference/react/useState)  
+!!! manuel 
+    [useState](https://react.dev/reference/react/useState)  
 
 
 # Hooks : useEffect  
@@ -269,8 +265,7 @@ export default App;
 
 [CodeSandbox - Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-8hhz5t)  
 
-Pour en savoir plus :  
-
-- [useEffect](https://react.dev/reference/react/useEffect)  
+!!! manuel 
+    [useEffect](https://react.dev/reference/react/useEffect)  
 
 

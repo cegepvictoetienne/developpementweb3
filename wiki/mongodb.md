@@ -2,12 +2,11 @@
 
 Le pilote officiel MongoDB Node.js permet aux applications Node.js de se connecter à MongoDB et de travailler avec des données. Le pilote dispose d'une API asynchrone qui vous permet d'accéder aux valeurs de retour de méthode via Promises ou de spécifier des rappels pour y accéder lors de la communication avec MongoDB. (Traduction du [site officiel](https://docs.mongodb.com/drivers/node/current/))  
 
-Pour plus d'informations :  
-
-- [MongoDB sur GitHub](https://mongodb.github.io/node-mongodb-native/4.0/)  
-- [Vidéo Youtube](https://www.youtube.com/watch?v=R4AEyKehpss)  
-- [MongoDB et Promises](https://www.mongodb.com/docs/drivers/node/current/fundamentals/promises/)  
-- [Driver Quickstart](https://www.mongodb.com/docs/drivers/node/current/quick-start/)  
+!!! manuel 
+    [MongoDB sur GitHub](https://mongodb.github.io/node-mongodb-native/4.0/)  
+    [Vidéo Youtube](https://www.youtube.com/watch?v=R4AEyKehpss)  
+    [MongoDB et Promises](https://www.mongodb.com/docs/drivers/node/current/fundamentals/promises/)  
+    [Driver Quickstart](https://www.mongodb.com/docs/drivers/node/current/quick-start/)  
 
 
 ## Étape 1 - Ajout du module mongodb  
@@ -148,7 +147,8 @@ router.get('/', async (req, res) => {
 
 ```
 
-Pour plus d'informations : [Node CRUD Tutorial](https://www.mongodb.com/developer/quickstart/node-crud-tutorial/)  
+!!! manuel 
+    [Node CRUD Tutorial](https://www.mongodb.com/developer/quickstart/node-crud-tutorial/)  
 
 
 ## Express et MongoDB Node Driver (json)  
