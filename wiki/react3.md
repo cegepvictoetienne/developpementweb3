@@ -391,3 +391,14 @@ export default function Fiche(props: IFiche) {
 ```
 
 [CodeSandbox - Chapeaux en folie](https://codesandbox.io/p/sandbox/chapeaux-q8fdtk)  
+
+## Se connecter à un API  
+
+Il est préférable d’utiliser la librairie Axios pour aller chercher vos données de l’API :
+
+``` ts title="fetch_bieres.ts"
+axios.get('https://bieres.professeur.tech/api/bieres').then((response) => {
+  setListeBieres(response.data.bieres);
+});
+```
+

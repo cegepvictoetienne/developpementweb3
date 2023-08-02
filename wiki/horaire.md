@@ -17,8 +17,8 @@ Cours|Date|Sujet|Exercice
 14|2023-10-18|Projet API|
 15|2023-10-23|[Introduction à React](introduction_react.md)|[Exercice 9 - React](exercice9_react.md)
 16|2023-10-25|[React et les styles](react_styles.md)|[Exercice 10 - React et styles](exercice10_react_styles.md)
-17|2023-10-30|React - suite|
-18|2023-11-01|Internationalisation|
+17|2023-10-30|[Routes, contexte et API](react3.md)|[Exercice 11 - Contexte et API](exercice11_context.md)
+18|2023-11-01|[Internationalisation](internationalisation.md)|[Exercice 12 - Internatialisation](exercice12_internationalisation.md)
 19|2023-11-06|React|
 20|2023-11-09|React vs PWA|
 21|2023-11-13|Netlify|

@@ -1,0 +1,5 @@
+{
+  "app.titre": "Titre de l'application",
+  "app.clics.label": "Il y a eu {nombreclics} clics",
+  "app.clics.pluriel.label": "{nombreclics, plural,=0 {Il n'y a pas eu de clic} one {Il y a eu un clic} other {Il y a eu {nombreclics} clics}}"
+}

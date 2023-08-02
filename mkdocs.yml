@@ -47,7 +47,8 @@ nav:
       - 'React':
           - 'Introduction à React': 'introduction_react.md'
           - 'React et les styles': 'react_styles.md'
-          - 'Router - useParams - useContext': 'react3.md'
+          - 'Router - useParams - useContext et API': 'react3.md'
+          - 'Internationalisation': 'internationalisation.md'
   - 'Exercices':
       - 'Exercice 1 - Node': 'exercice1_node.md'
       - 'Exercice 2 - lodash': 'exercice2_lodash.md'
@@ -59,6 +60,8 @@ nav:
       - 'Exercice 8 - Express et JWT': 'exercice8_express_jwt.md'
       - 'Exercice 9 - React': 'exercice9_react.md'
       - 'Exercice 10 - React et styles': 'exercice10_react_styles.md'
+      - 'Exercice 11 - Contexte et API': 'exercice11_context.md'
+      - 'Exercice 12 - Internationalisation': 'exercice12_internationalisation.md'
   - 'Outils':
       - 'Masscode': 'masscode.md'
   - 'À propos': 'apropos.md'
