@@ -47,6 +47,7 @@ nav:
       - 'React':
           - 'Introduction à React': 'introduction_react.md'
           - 'React et les styles': 'react_styles.md'
+          - 'Router - useParams - useContext': 'react3.md'
   - 'Exercices':
       - 'Exercice 1 - Node': 'exercice1_node.md'
       - 'Exercice 2 - lodash': 'exercice2_lodash.md'
