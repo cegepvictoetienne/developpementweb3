@@ -389,3 +389,5 @@ export default function Fiche(props: IFiche) {
   );
 }
 ```
+
+[CodeSandbox - Chapeaux en folie](https://codesandbox.io/p/sandbox/chapeaux-q8fdtk)  
