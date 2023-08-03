@@ -26,6 +26,9 @@ plugins:
 extra_css:
   - css/extra.css
 
+extra_javascript:
+  - javascript/alltarget.js
+
 nav:
   - 'Page principale': 'index.md'
   - 'Horaire': 'horaire.md'
@@ -62,6 +65,7 @@ nav:
       - 'Exercice 10 - React et styles': 'exercice10_react_styles.md'
       - 'Exercice 11 - Contexte et API': 'exercice11_context.md'
       - 'Exercice 12 - Internationalisation': 'exercice12_internationalisation.md'
+  - 'Projet intégrateur': 'projet_integrateur.md'
   - 'Outils':
       - 'Masscode': 'masscode.md'
   - 'Manuels': 'manuels.md'
