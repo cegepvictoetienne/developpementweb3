@@ -30,14 +30,15 @@ npm run dev
 </figure>
 
 !!! manuel 
-    [Express](https://expressjs.com/fr/starter/installing.html)  
-    [Express Generator](https://github.com/seanpmaxwell/express-generator-typescript)  
+    [Installation d'express](https://expressjs.com/fr/starter/installing.html)  
+    [Express Generator avec TypeScript](https://github.com/seanpmaxwell/express-generator-typescript)  
 
 # Coder un API Express  
 
 L'exemple suivant code une mini API qui gère des réservations dans un hotel.  
 
-Voir le produit final sur [CodeSandbox](https://codesandbox.io/p/sandbox/cegepvicto-devweb3-hotel-5lkjd4)  
+!!! codesandbox "CodeSandbox"  
+    [Démo - API Express](https://codesandbox.io/p/sandbox/cegepvicto-devweb3-hotel-5lkjd4)  
 
 ## Étape 1 - Créer l’interface model/  
 

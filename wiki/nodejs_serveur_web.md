@@ -8,6 +8,10 @@
     3. node nomdufichieraexecuter.ts
 3. Lancer le navigateur : http://localhost:####/ (#### : # du port sélectionné)
 
+!!! manuel  
+    [node.js - faire son premier serveur Web](https://nodejs.org/fr/docs/guides/getting-started-guide)  
+
+
 ## Créer un serveur  
 
 ``` ts title="simple_serveur.ts"  

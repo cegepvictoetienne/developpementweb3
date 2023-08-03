@@ -79,7 +79,8 @@ export default App;
 
 ```
 
-[CodeSandbox - monrouteur](https://codesandbox.io/p/sandbox/monrouteur-9w8fc4)  
+!!! codesandbox "CodeSandbox"  
+    [Démo - monrouteur](https://codesandbox.io/p/sandbox/monrouteur-9w8fc4)  
 
 # Différents éléments du projet monrouteur  
 
@@ -388,7 +389,8 @@ export default function Fiche(props: IFiche) {
 }
 ```
 
-[CodeSandbox - Chapeaux en folie](https://codesandbox.io/p/sandbox/chapeaux-q8fdtk)  
+!!! codesandbox "CodeSandbox"  
+    [Démo - Chapeaux en folie](https://codesandbox.io/p/sandbox/chapeaux-q8fdtk)  
 
 ## Se connecter à un API  
 

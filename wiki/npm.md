@@ -6,8 +6,8 @@ Depuis la version 0.6.3 de Node.js, npm fait partie de l'environnement et est do
 npm fonctionne avec un terminal et gère les dépendances pour une application. Il permet également d'installer des applications Node.js disponibles sur le dépôt npm.
 
 !!! manuel 
-    [NPM JS](https://docs.npmjs.com/)  
-    [Wikipedia](https://fr.wikipedia.org/wiki/Npm)  
+    [Documentation de npm js](https://docs.npmjs.com/)  
+    [Wikipedia - Article sur npm](https://fr.wikipedia.org/wiki/Npm)  
 
 # npm init  
 

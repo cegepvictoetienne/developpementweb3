@@ -6,6 +6,10 @@ Pourquoi des types?
 
 Aide à trouver les erreurs dans notre code.
 
+!!! manuel  
+    [Manuel TypeScript](https://www.typescriptlang.org/fr/docs/handbook/intro.html)  
+
+
 # Installation de TypeScript  
 
 Pour installer TypeScript, utiliser la commande suivante :

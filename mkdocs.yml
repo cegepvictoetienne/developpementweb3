@@ -65,6 +65,7 @@ nav:
   - 'Outils':
       - 'Masscode': 'masscode.md'
   - 'Manuels': 'manuels.md'
+  - 'CodeSandbox': 'codesandbox.md'
   - 'À propos': 'apropos.md'
 
 markdown_extensions:

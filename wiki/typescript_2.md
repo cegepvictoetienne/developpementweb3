@@ -14,6 +14,11 @@ devineMonAge('Trente huit');
 
 ```
 
+!!! manuel  
+    [Union dans TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#unions)  
+
+
+
 ## Rétrécir le type  
 
 Quand nous acceptons plus d’un type pour un argument, il est parfois nécessaire de bien déterminer le type dans le corps de la fonction :  
@@ -30,6 +35,10 @@ function doubler(item: number | string) {
 
 console.log(doubler('Allo'));
 console.log(doubler(12));
+
+!!! manuel  
+    [Rétrécir le type - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)  
+
 
 ```
 
@@ -50,6 +59,10 @@ type Administrateur = {
 type Employe = Utilisateur | Administrateur;
 
 ```
+
+!!! manuel  
+    [Alias de types - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#reusable-types-type-aliases)  
+
 
 ## Rétrécir le type – autre exemple  
 
@@ -133,6 +146,10 @@ const fanta: Chat = {
 
 ```
 
+!!! manuel  
+    [Enums - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/enums.html#handbook-content)  
+
+
 ## Interface  
 
 Une interface est une façon différente en TypeScript pour décrire la forme d’un objet :  
@@ -158,6 +175,10 @@ const fanta: Chat = {
 
 ```
 
+!!! manuel  
+    [Interfaces - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#reusable-types-interfaces)  
+
+
 ## Generics  
 
 Comme dans C#, TypeScript support les generics :  
@@ -165,4 +186,8 @@ Comme dans C#, TypeScript support les generics :
 ``` ts title="generics.ts"
 const listeDeChats : Array<Chat> = [];
 ```
+
+!!! manuel  
+    [Generics - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html#handbook-content)  
+
 

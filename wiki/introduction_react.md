@@ -87,7 +87,8 @@ export default App;
   <figcaption>Affichage du projet personnage - base</figcaption>
 </figure>
 
-[CodeSandbox - Personnage - Base](https://codesandbox.io/p/sandbox/personnage-base-j9xc7h)  
+!!! codesandbox "CodeSandbox"  
+    [Démo - Personnage - Base](https://codesandbox.io/p/sandbox/personnage-base-j9xc7h)  
 
 !!! manuel 
     [Learn React](https://react.dev/learn)  
@@ -160,7 +161,8 @@ export default App;
   <figcaption>Affichage du projet personnage - base avec props</figcaption>
 </figure>
 
-[CodeSandbox - Personnage - Props](https://codesandbox.io/p/sandbox/personnage-base-8z5j5g)  
+!!! codesandbox "CodeSandbox"  
+    [Démo - Personnage - Props](https://codesandbox.io/p/sandbox/personnage-base-8z5j5g)  
 
 !!! manuel 
     [Props](https://react.dev/learn/passing-props-to-a-component)  
@@ -208,7 +210,8 @@ export default App;
   <figcaption>Affichage du projet personnage - base avec useState</figcaption>
 </figure>
 
-[CodeSandbox - Personnage - useState](https://codesandbox.io/p/sandbox/personnage-base-6kdzhk)  
+!!! codesandbox "CodeSandbox"  
+    [Démo - Personnage - useState](https://codesandbox.io/p/sandbox/personnage-base-6kdzhk)  
 
 !!! manuel 
     [useState](https://react.dev/reference/react/useState)  
@@ -263,7 +266,8 @@ export default App;
   <figcaption>Affichage du projet personnage - base avec useEffect</figcaption>
 </figure>
 
-[CodeSandbox - Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-8hhz5t)  
+!!! codesandbox "CodeSandbox"    
+    [Démo Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-8hhz5t)  
 
 !!! manuel 
     [useEffect](https://react.dev/reference/react/useEffect)  

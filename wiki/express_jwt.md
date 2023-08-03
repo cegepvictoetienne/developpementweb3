@@ -7,9 +7,9 @@ JWT (JSON Web Token) permet d’authentifier un utilisateur lors de chaque appel
 - Un middleware sur le serveur valide chaque appel d’API en vérifiant le jeton.  
 - Si le jeton n’est pas valide, l’API ne retourne pas de données.  
 
-Pour plus d'information :  
+!!! Manuel  
+    [Wikipedia - Article sur JWT](https://en.wikipedia.org/wiki/JSON_Web_Token)  
 
-- [Wikipedia](https://en.wikipedia.org/wiki/JSON_Web_Token)  
 
 ## Installer le module pour créer et valider les jetons  
 

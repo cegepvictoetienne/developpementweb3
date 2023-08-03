@@ -6,15 +6,15 @@ Asynchrone : fait référence à un environnement de communication où chaque p
 De nombreuses fonctionnalités des API Web utilisent désormais du code asynchrone pour s'exécuter, en particulier celles qui accèdent à un type de ressource ou le récupèrent à partir d'un périphérique externe, par exemple en récupérant un fichier sur le réseau, en accédant à une base de données et en renvoyant des données, en accédant à un flux vidéo à partir d'une webcam ou en diffusant l'affichage vers un casque VR.  
 
 !!! manuel 
-    [Concepts](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Concepts)  
-    [Asynchrone](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous)   
+    [Concepts de l'asynchrone en JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Concepts)  
+    [Documentation MDN pour le JavaScript asynchrone](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous)   
 
 ## Fonctions de rappel asynchrones  
 
 Les _callbacks_ asynchrones ou fonctions de rappels asynchrones sont des fonctions qui sont passées comme arguments lors de l'appel d'une fonction qui commencera à exécuter du code en arrière-plan. Lorsque le code d'arrière-plan a fini de s'exécuter, il appelle la fonction de rappel pour vous faire savoir que le travail est terminé, ou pour vous faire savoir que quelque chose d'intéressant s'est produit. L'utilisation des callbacks est un peu démodée aujourd'hui, mais vous les verrez encore dans un certain nombre d'API plus anciennes encore couramment utilisées.  
 
 !!! manuel 
-    [Introduction](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Introducing)  
+    [Introduction à l'asynchrone en JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Introducing)  
 
 ## Promesses (Promises)  
 
@@ -94,7 +94,7 @@ choisirIngredients()
 ```
 
 !!! manuel 
-    [Arrow Functions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions)  
+    [Fonctions fléchées sur MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions)  
 
 ## async et await  
 
@@ -102,7 +102,7 @@ Plus récemment, les fonctions async et le mot-clé await ont été ajoutés au 
 
 
 !!! manuel 
-    [Async Await](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Async_await)   
+    [Async Await sur MDN](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Async_await)   
 
 
 ``` ts title="async.ts"
@@ -126,7 +126,7 @@ L'avantage d'une fonction asynchrone ne devient apparent que lorsque vous la com
 
 
 !!! manuel 
-    [Await Keyword](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Async_await#the_await_keyword)  
+    [Le mot clé await sur MDN](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Async_await#the_await_keyword)  
 
 Await peut être placé devant toute fonction asynchrone basée sur une promesse pour mettre en pause votre code sur cette ligne jusqu'à ce que la promesse se réalise, puis retourner la valeur résultante. Vous pouvez utiliser await lors de l'appel de toute fonction qui renvoie une promesse, y compris les fonctions de l'API web.  
 

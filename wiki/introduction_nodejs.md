@@ -39,3 +39,7 @@ J’écris directement dans la console! Je peux faire que du code qui s’exécu
 1:orange
 2:banane
 ```
+
+!!! manuel  
+    [Documentation officielle node.js](https://nodejs.org/fr/docs)  
+

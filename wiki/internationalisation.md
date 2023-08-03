@@ -173,7 +173,8 @@ const rabais = 15 / 100;
 
 ```
 
-[CodeSandbox - Intl](https://codesandbox.io/p/sandbox/intl-2wztzk)  
+!!! codesandbox "CodeSandbox"  
+    [Démo - Intl](https://codesandbox.io/p/sandbox/intl-2wztzk)  
 
 # Sélecteur de langue  
 

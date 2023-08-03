@@ -93,7 +93,8 @@ export default Personnage;
     <PersonnageAddress as="span">{props.nom}</PersonnageAddress>
     ```
 
-[CodeSandbox - Styled Components](https://codesandbox.io/p/sandbox/personnage-base-jmcyw9)  
+!!! codesandbox "CodeSandbox"  
+    [Démo - Styled Components](https://codesandbox.io/p/sandbox/personnage-base-jmcyw9)  
 
 !!! manuel 
     [Styled Components - Basics](https://styled-components.com/docs/basics)  
@@ -148,5 +149,5 @@ const Personnage = (props: IPersonnageProps) => {
 export default Personnage;
 
 ```
-
-[CodeSandbox - MaterialUI](https://codesandbox.io/p/sandbox/personnage-base-qqwqxw)  
+!!! codesandbox "CodeSandbox"  
+    [Démo - Material UI](https://codesandbox.io/p/sandbox/personnage-base-qqwqxw)  

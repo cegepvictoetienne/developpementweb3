@@ -1,27 +1,36 @@
 # Tous les manuels référencés dans le cours 
 ## Introduction à Node.js
+[Documentation officielle node.js](https://nodejs.org/fr/docs)  
 ## Introduction à TypeScript
+[Manuel TypeScript](https://www.typescriptlang.org/fr/docs/handbook/intro.html)  
 ## Node.js - Serveur Web
+[node.js - faire son premier serveur Web](https://nodejs.org/fr/docs/guides/getting-started-guide)  
 ## NPM
-[NPM JS](https://docs.npmjs.com/)  
-[Wikipedia](https://fr.wikipedia.org/wiki/Npm)  
+[Documentation de npm js](https://docs.npmjs.com/)  
+[Wikipedia - Article sur npm](https://fr.wikipedia.org/wiki/Npm)  
 [npm init](https://docs.npmjs.com/cli/v6/commands/npm-init)  
 [npm-install](https://docs.npmjs.com/cli/v6/commands/npm-install)  
 [Documentation officielle de lodash](https://lodash.com)  
 ## TypeScript 2
+[Union dans TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#unions)  
+[Rétrécir le type - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)  
+[Alias de types - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#reusable-types-type-aliases)  
+[Enums - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/enums.html#handbook-content)  
+[Interfaces - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#reusable-types-interfaces)  
+[Generics - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html#handbook-content)  
 ## Introduction Express
 [Express JS](https://expressjs.com/fr/)  
 [Express API](https://expressjs.com/en/4x/api.html#req)
 ## Générateur Express
-[Express](https://expressjs.com/fr/starter/installing.html)  
-[Express Generator](https://github.com/seanpmaxwell/express-generator-typescript)  
+[Installation d'express](https://expressjs.com/fr/starter/installing.html)  
+[Express Generator avec TypeScript](https://github.com/seanpmaxwell/express-generator-typescript)  
 ## JavaScript asynchrone
-[Concepts](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Concepts)  
-[Asynchrone](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous)   
-[Introduction](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Introducing)  
-[Arrow Functions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions)  
-[Async Await](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Async_await)   
-[Await Keyword](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Async_await#the_await_keyword)  
+[Concepts de l'asynchrone en JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Concepts)  
+[Documentation MDN pour le JavaScript asynchrone](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous)   
+[Introduction à l'asynchrone en JavaScript](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Introducing)  
+[Fonctions fléchées sur MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/Arrow_functions)  
+[Async Await sur MDN](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Async_await)   
+[Le mot clé await sur MDN](https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Async_await#the_await_keyword)  
 ## MongoDB
 [MongoDB sur GitHub](https://mongodb.github.io/node-mongodb-native/4.0/)  
 [Vidéo Youtube](https://www.youtube.com/watch?v=R4AEyKehpss)  
@@ -39,7 +48,6 @@
 [Tutoriel - Virtuals](https://masteringjs.io/tutorials/mongoose/virtuals)  
 [MDN - PUT](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/PUT)  
 [MDN - PATCH](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/PATCH)  
-## Express et JWT
 ## Introduction à React
 [Documentation officielle Vite](https://vitejs.dev/guide/)  
 [Learn React](https://react.dev/learn)  
