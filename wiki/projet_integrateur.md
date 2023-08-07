@@ -68,7 +68,7 @@ Voici les règles à respecter pour chacune des parties :
 
 # Remise  
 - Le projet doit être remis avant le 15 décembre 2023 à 23h59  
-- À remettre, sur Teams :  
+- À remettre sur Teams :  
 
     - Lien GitHub (dépôt public ou privé*) de l’API.  
     - Ajouter un dossier Dev contenant le script de la base de données (scripts de création au besoin et scripts de données de test)  

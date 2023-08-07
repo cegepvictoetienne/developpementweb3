@@ -57,6 +57,8 @@
 ## React et les styles
 [Styled Components - Basics](https://styled-components.com/docs/basics)  
 [Material UI - Installation](https://mui.com/material-ui/getting-started/installation/)  
+[Material UI - Theming](https://mui.com/material-ui/customization/theming/)  
+[Material UI - Button - CSS](https://mui.com/material-ui/api/button/#css)  
 ## Router - useParams - useContext et API
 [React Router](https://reactrouter.com/en/main)  
 [BrowserRouter](https://reactrouter.com/en/main/router-components/browser-router)
