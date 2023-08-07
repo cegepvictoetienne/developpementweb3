@@ -67,6 +67,7 @@ nav:
       - 'Exercice 10 - React et styles': 'exercice10_react_styles.md'
       - 'Exercice 11 - Contexte et API': 'exercice11_context.md'
       - 'Exercice 12 - Internationalisation': 'exercice12_internationalisation.md'
+      - 'Exercice 15 - Netlify': 'exercice15_netlify.md'
   - 'Projet intégrateur': 'projet_integrateur.md'
   - 'Outils':
       - 'Masscode': 'masscode.md'
