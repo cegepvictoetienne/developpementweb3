@@ -8,3 +8,6 @@
     - Numéro de téléphone  
     - Date de naissance  
     - Courriel  
+
+- Faire un thème personnalisé avec Material UI.  
+
