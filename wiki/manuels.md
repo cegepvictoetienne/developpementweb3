@@ -21,6 +21,10 @@
 ## Introduction Express
 [Express JS](https://expressjs.com/fr/)  
 [Express API](https://expressjs.com/en/4x/api.html#req)
+[Morgan - ExpressJS](https://expressjs.com/en/resources/middleware/morgan.html)  
+[express.json - ExpressJS](https://expressjs.com/en/api.html#express.json)  
+[Router - ExpressJS](https://expressjs.com/en/5x/api.html#router)  
+[MDN HTTP Methods](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods)  
 ## Générateur Express
 [Installation d'express](https://expressjs.com/fr/starter/installing.html)  
 [Express Generator avec TypeScript](https://github.com/seanpmaxwell/express-generator-typescript)  
@@ -46,6 +50,7 @@
 [Mongoose - Messages d'erreur personnalisés](https://mongoosejs.com/docs/validation.html#custom-error-messages)  
 [Guide - Virtuals](https://mongoosejs.com/docs/guide.html#virtuals)   
 [Tutoriel - Virtuals](https://masteringjs.io/tutorials/mongoose/virtuals)  
+[Mongoose - Aggregate](https://mongoosejs.com/docs/api/aggregate.html)  
 [MDN - PUT](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/PUT)  
 [MDN - PATCH](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/PATCH)  
 ## Introduction à React
@@ -62,6 +67,9 @@
 ## Router - useParams - useContext et API
 [React Router](https://reactrouter.com/en/main)  
 [BrowserRouter](https://reactrouter.com/en/main/router-components/browser-router)
+[Route - Documentation](https://reactrouter.com/en/6.14.2/route/route)  
+[useContext - Documentation](https://react.dev/reference/react/useContext)  
+[Axios - Documentation](https://axios-http.com/docs/intro)  
 ## Internationalisation
 [React-intl](https://formatjs.io/docs/react-intl/)  
 [FormattedMessage](https://formatjs.io/docs/react-intl/components#formattedmessage)  

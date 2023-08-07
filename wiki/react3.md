@@ -129,6 +129,10 @@ Par exemple :
 
 Cette route indique que http://serveur/dadams pointe sur la composante __DouglasAdams__.  
 
+!!! manuel  
+    [Route - Documentation](https://reactrouter.com/en/6.14.2/route/route)  
+
+
 ## Routes imbriquées  
 
 L'élément __<Route\>__ (au singulier) peut contenir des routes enfants.  Comme ceci :  
@@ -186,6 +190,11 @@ Dans l'élément, on accède au paramètre avec la fonction __useParams()__ :
 Une façon de passer des données d'un élément parent vers un élément enfant est via les _props_.  Le flux normal de données dans React est de haut en bas. Les éléments en bas ne peuvent pas influencer les données venant de plus haut.  
 
 Lorsque c'est requis pour un élément enfant d'influencer les données venant d'un parent, React offre une fonctionnalité qui se nomme __contexte__.  Le contexte rend possible la mise à jour d'états par tous les sous-éléments selon les besoins.  
+
+
+!!! manuel  
+    [useContext - Documentation](https://react.dev/reference/react/useContext)  
+
 
 Prenons l'exemple suivant :  
 
@@ -401,4 +410,9 @@ axios.get('https://bieres.professeur.tech/api/bieres').then((response) => {
   setListeBieres(response.data.bieres);
 });
 ```
+
+!!! manuel  
+    [Axios - Documentation](https://axios-http.com/docs/intro)  
+
+
 

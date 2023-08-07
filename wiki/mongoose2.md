@@ -116,7 +116,7 @@ personSchema.virtual('fullName').
 
 ## Aggrégation  
 
-La bibliothèque Mongoose permet également de transformer des documents à l’aide de la méthode aggregate : [Mongoose - Aggregate](https://mongoosejs.com/docs/api/aggregate.html)  
+La bibliothèque Mongoose permet également de transformer des documents à l’aide de la méthode aggregate : 
 
 ``` ts title="aggregations.ts"
 try {    
@@ -133,6 +133,10 @@ try {    
 } 
 
 ```
+
+!!! manuel  
+    [Mongoose - Aggregate](https://mongoosejs.com/docs/api/aggregate.html)  
+
 
 
 ## REST – PUT  

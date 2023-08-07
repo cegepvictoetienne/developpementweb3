@@ -35,12 +35,12 @@ function doubler(item: number | string) {
 
 console.log(doubler('Allo'));
 console.log(doubler(12));
+```  
 
 !!! manuel  
     [Rétrécir le type - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)  
 
 
-```
 
 ## Union de type pour créer un alias  
 

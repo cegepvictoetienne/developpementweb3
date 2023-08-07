@@ -143,6 +143,10 @@ app.use(morgan('dev'));
 
 ```
 
+!!! manuel  
+    [Morgan - ExpressJS](https://expressjs.com/en/resources/middleware/morgan.html)  
+
+
 # Intergiciel – express.json()  
 
 Intergiciel pour transformer le json reçu du client en objet, remplace req.body.  
@@ -166,6 +170,10 @@ app.post('/', (req: express.Request<Utilisateur>, res: express.Response) => {
 
 ```
 
+!!! manuel  
+    [express.json - ExpressJS](https://expressjs.com/en/api.html#express.json)  
+
+
 # Routes  
 
 Les routes permettent de regrouper les URL d’un API.  
@@ -182,15 +190,23 @@ routeur.get('/', (req: express.Request, res: express.Response) => {
 app.use('/utilisateur', routeur);
 
 ```
+!!! manuel  
+    [Router - ExpressJS](https://expressjs.com/en/5x/api.html#router)  
+
+
 
 # Routes et méthodes HTTP  
 
 Dans l’exemple précédent, la requête utilise la méthode GET, qui récupèrent les informations directement dans l’URL. 
 
-Comme vous l’avez appris dans vos cours précédents, d’autres méthodes sont aussi définies dans le protocole HTTP ([MDN HTTP Methods](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods)). Les plus communes sont : GET, POST, PUT, DELETE.   
+Comme vous l’avez appris dans vos cours précédents, d’autres méthodes sont aussi définies dans le protocole HTTP. Les plus communes sont : GET, POST, PUT, DELETE.   
 
 Avec Node.js, il est possible d’utiliser la même URL avec différentes méthodes. Cela se fait en modifiant la méthode auprès de la route :  
 Méthode GET: 	router.get(path, function(req, res, next) { … })  
 Méthode POST:	router.post(path, function(req, res, next) { … })  
 Méthode PUT: 	router.put(path, function(req, res, next) { … })  
 Méthode DELETE:	router.delete(path, function(req, res, next) { … })  
+
+!!! manuel  
+    [MDN HTTP Methods](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods)  
+
