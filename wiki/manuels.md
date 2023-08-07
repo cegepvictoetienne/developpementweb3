@@ -77,5 +77,10 @@
 [FormattedDate](https://formatjs.io/docs/react-intl/components#formatteddate)  
 [FormattedTime](https://formatjs.io/docs/react-intl/components#formattedtime)  
 [FormattedNumber](https://formatjs.io/docs/react-intl/components#formattednumber)  
+## PWA
+[MDN - Progressive Web Apps](https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps)  
+[Stats et nouvelles sur PWA](https://www.pwastats.com/)  
+[Web.dev - Apprendre sur PWA](https://web.dev/learn/pwa/)  
+[Guide pour le plug-in PWA](https://vite-pwa-org.netlify.app/guide/)  
 ## Déploiement avec Netlify
 [Documentation Netlify](https://docs.netlify.com)  

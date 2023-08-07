@@ -20,7 +20,7 @@ Cours|Date|Sujet|Exercice
 17|2023-10-30|[Routes, contexte et API](react3.md)|[Exercice 11 - Contexte et API](exercice11_context.md)
 18|2023-11-01|[Internationalisation](internationalisation.md)|[Exercice 12 - Internatialisation](exercice12_internationalisation.md)
 19|2023-11-06|React|
-20|2023-11-09|React vs PWA|
+20|2023-11-09|[React et PWA](pwa.md)|[Exercice 14 - PWA](exercice14_pwa.md)
 21|2023-11-13|[Netlify](netlify.md)|[Exercice 15 - Netlify](exercice15_netlify.md)
 22|2023-11-15|Examen React|
 23|2023-11-20|Projet Application React|

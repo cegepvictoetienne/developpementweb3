@@ -52,6 +52,7 @@ nav:
           - 'React et les styles': 'react_styles.md'
           - 'Router - useParams - useContext et API': 'react3.md'
           - 'Internationalisation': 'internationalisation.md'
+          - 'PWA': 'pwa.md'
       - 'Déploiement':
           - 'Déploiement avec Netlify': 'netlify.md'
   - 'Exercices':
@@ -67,6 +68,7 @@ nav:
       - 'Exercice 10 - React et styles': 'exercice10_react_styles.md'
       - 'Exercice 11 - Contexte et API': 'exercice11_context.md'
       - 'Exercice 12 - Internationalisation': 'exercice12_internationalisation.md'
+      - 'Exercice 14 - PWA': 'exercice14_pwa.md'
       - 'Exercice 15 - Netlify': 'exercice15_netlify.md'
   - 'Projet intégrateur': 'projet_integrateur.md'
   - 'Outils':
