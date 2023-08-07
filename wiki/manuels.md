@@ -77,3 +77,5 @@
 [FormattedDate](https://formatjs.io/docs/react-intl/components#formatteddate)  
 [FormattedTime](https://formatjs.io/docs/react-intl/components#formattedtime)  
 [FormattedNumber](https://formatjs.io/docs/react-intl/components#formattednumber)  
+## Déploiement avec Netlify
+[Documentation Netlify](https://docs.netlify.com)  

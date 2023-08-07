@@ -21,7 +21,7 @@ Cours|Date|Sujet|Exercice
 18|2023-11-01|[Internationalisation](internationalisation.md)|[Exercice 12 - Internatialisation](exercice12_internationalisation.md)
 19|2023-11-06|React|
 20|2023-11-09|React vs PWA|
-21|2023-11-13|Netlify|
+21|2023-11-13|[Netlify](netlify.md)|[Exercice 15 - Netlify](exercice15_netlify.md)
 22|2023-11-15|Examen React|
 23|2023-11-20|Projet Application React|
 24|2023-11-22|Projet Application React|

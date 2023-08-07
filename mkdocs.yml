@@ -52,6 +52,8 @@ nav:
           - 'React et les styles': 'react_styles.md'
           - 'Router - useParams - useContext et API': 'react3.md'
           - 'Internationalisation': 'internationalisation.md'
+      - 'Déploiement':
+          - 'Déploiement avec Netlify': 'netlify.md'
   - 'Exercices':
       - 'Exercice 1 - Node': 'exercice1_node.md'
       - 'Exercice 2 - lodash': 'exercice2_lodash.md'
