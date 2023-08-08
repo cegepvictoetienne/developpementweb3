@@ -53,6 +53,7 @@ nav:
           - 'Router - useParams - useContext et API': 'react3.md'
           - 'Internationalisation': 'internationalisation.md'
           - 'PWA': 'pwa.md'
+          - 'Authentification': 'authentification.md'
       - 'Déploiement':
           - 'Déploiement avec Netlify': 'netlify.md'
   - 'Exercices':
