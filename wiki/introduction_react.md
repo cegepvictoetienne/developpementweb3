@@ -267,7 +267,7 @@ export default App;
 </figure>
 
 !!! codesandbox "CodeSandbox"    
-    [Démo Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-8hhz5t)  
+    [Démo - Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-8hhz5t)  
 
 !!! manuel 
     [useEffect](https://react.dev/reference/react/useEffect)  

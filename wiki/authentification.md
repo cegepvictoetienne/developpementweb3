@@ -268,8 +268,155 @@ L'authentification joue un rôle crucial dans la sécurité et la protection des
     };
     ```
 
+!!! codesandbox "CodeSandbox"  
+    [Démo - Page Login](https://codesandbox.io/p/sandbox/pagelogin-zv88kv)  
+
+
 # Installation dans un API  
 
-    Firebase peut créer des jetons dans l'application React qui servent à valider l'utilisateur dans votre API.  
+Firebase peut créer des jetons dans l'application React qui servent à valider l'utilisateur dans votre API.  
 
-    
+
+1. Installer le module Firebase Admin à votre API :  
+
+    ``` nodejsrepl title="console"
+    npm install firebase-admin
+    ```
+
+2. Générer firebase.json à partir de la console Firebase :  
+
+    <figure markdown>
+    ![ts-types-prenom](images/firebase-service-account.png){ width="600" }
+    <figcaption>Dans la configuration du projet, aller à l'onglet Service Accounts</figcaption>
+    </figure>
+
+    <figure markdown>
+    ![ts-types-prenom](images/firebase-generate-key.png){ width="600" }
+    <figcaption>Générer une clé</figcaption>
+    </figure>
+
+
+    __Le fichier généré donne un accès administratif à votre projet. Ne pas le mettre dans votre github!__ 
+
+3. Coder la validation du jeton dans l'API :  
+
+    ``` ts title="validationToken.ts"
+    import admin from 'firebase-admin';
+
+    var serviceAccount = require('../firebase.json');
+
+    admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    });
+
+    const verifyToken = async (token: string): Promise<boolean> => {
+    return admin
+        .auth()
+        .verifyIdToken(token)
+        .then((decodedToken) => {
+        const uid = decodedToken.uid;
+        return true;
+        })
+        .catch((error) => {
+        console.log(error);
+        return false;
+        });
+    };
+    ```
+
+4. Coder un intergiciel pour protéger vos routes :  
+
+    ``` ts title="authentificationFirebase.ts"
+    import admin from 'firebase-admin';
+    import express, { Express, Request, Response, NextFunction } from 'express';
+
+    var serviceAccount = require('../firebase.json');
+
+    admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    });
+
+    const verifyToken = async (token: string): Promise<boolean> => {
+    return admin
+        .auth()
+        .verifyIdToken(token)
+        .then((decodedToken) => {
+        const uid = decodedToken.uid;
+        return true;
+        })
+        .catch((error) => {
+        console.log(error);
+        return false;
+        });
+    };
+
+    export const firebaseAuthentication = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+    ) => {
+    const authHeader = req.headers.authorization;
+    console.log('start firebaseAuthentication');
+    if (authHeader) {
+        const idToken = authHeader.split(' ')[1];
+        console.log('idToken:', idToken);
+        admin
+        .auth()
+        .verifyIdToken(idToken)
+        .then(function (decodedToken) {
+            console.log('Next()');
+            next();
+        })
+        .catch(function (error) {
+            console.log('catch Error:', error);
+            const errorMessage = {
+            status: 403,
+            error: error,
+            };
+            res.sendStatus(403).send(errorMessage);
+            res.end();
+        });
+    } else {
+        console.log('no header');
+        const errorMessage = {
+        status: 401,
+        error: 'Missing authorization header',
+        };
+        res.sendStatus(401);
+        res.end();
+    }
+    };      
+    ```
+
+5. Dans votre application React, générer le jeton :  
+
+    ``` ts title="firebase.ts"
+    export const getToken = async () => {
+    if (!auth.currentUser) return '';
+
+    return await auth.currentUser
+        .getIdToken(false)
+        .then(function (idToken) {
+        return idToken;
+        })
+        .catch(function (error) {
+        console.log(error);
+        return null;
+        });
+    };
+    ```
+
+6. Dans votre application React, envoyer le jeton dans l'appel de votre API :  
+
+    ``` ts title="api.ts"
+    const token = await getToken();
+    const config = {
+        headers: { Authorization: `Bearer ${token}` },
+    };
+    const response = await axios
+        .get('/api/embeddings/logs', config)
+        .catch((reason) => console.log(reason));
+    ```
+
+
+  
