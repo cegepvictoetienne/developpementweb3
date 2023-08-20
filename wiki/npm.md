@@ -196,7 +196,7 @@ motDePasse="password"
 
 Utilisation dans le code :  
 
-``` ts title="a_ne_pas_faire.ts"
+``` ts title="a_faire.ts"
 import dotenv from 'dotenv';
 
 dotenv.config();

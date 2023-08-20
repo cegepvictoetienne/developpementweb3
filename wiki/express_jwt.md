@@ -27,7 +27,10 @@ import { IReq, IRes } from './types/express/misc';
 // **** Functions **** //
 
 /**
- * generate token.
+ * Générer un jeton.
+ * 
+ * @param {IReq} req - La requête au serveur
+ * @param {IRes} res - La réponse du serveur
  */
 async function generateToken(
   req: IReq<{ utilisateur: IUtilisateur }>,
@@ -60,7 +63,10 @@ export const UTILISATEUR_NOT_FOUND_ERR = 'Utilisateur non trouvé';
 // **** Functions **** //
 
 /**
- * Generate Token.
+ * Générer un jeton pour un utilisateur
+ * 
+ * @param {IUtilisateur} utilisateur - L'utilisateur demandant le jeton
+ * @returns {Promise<string>} - Le jeton signé
  */
 async function generateToken(utilisateur: IUtilisateur): Promise<string> {
   const utilisateurBD = await UtilisateurService.getOne(utilisateur.email);
@@ -80,6 +86,13 @@ async function generateToken(utilisateur: IUtilisateur): Promise<string> {
 ## L'intergiciel de vérification de jetons  
 
 ``` ts title="jetonsService.ts"  
+/**
+ * Intergiciel pour authentifier le jeton de l'utilisateur
+ * 
+ * @param {IReq} req - La requête au serveur
+ * @param {IRes} res - La réponse du serveur
+ * @param {NextFunction} next - La fonction a appeler pour continuer le processus.
+ */
 function authenticateToken(req: IReq, res: IRes, next: NextFunction) {
   // Ne pas vérifier le token si l'url est celui de generateToken
   const lastPartOfUrl = req.url.split('/').at(-1);

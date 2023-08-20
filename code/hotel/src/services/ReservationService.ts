@@ -11,6 +11,8 @@ export const RESERVATION_NOT_FOUND_ERR = 'Réservation non trouvée';
 
 /**
  * Extraire toutes les réservations.
+ *
+ * @returns {IReservation[]} Tableau de toutes les réservations
  */
 function getAll(): Promise<IReservation[]> {
   return ReservationRepo.getAll();
@@ -18,6 +20,8 @@ function getAll(): Promise<IReservation[]> {
 
 /**
  * Ajouter une réservation.
+ *
+ * @param {IReservation} reservation - Réservation à ajouter
  */
 function addOne(reservation: IReservation): Promise<void> {
   return ReservationRepo.add(reservation);
@@ -25,6 +29,8 @@ function addOne(reservation: IReservation): Promise<void> {
 
 /**
  * Mettre à jour une réservation.
+ *
+ * @param {IReservation} reservation - Réservation à mettre à jour
  */
 async function updateOne(reservation: IReservation): Promise<void> {
   const persists = await ReservationRepo.persists(reservation.id);
@@ -37,6 +43,8 @@ async function updateOne(reservation: IReservation): Promise<void> {
 
 /**
  * Efface une réservation par son ID
+ *
+ * @param {number} id - ID de la réservation à supprimer
  */
 async function _delete(id: number): Promise<void> {
   const persists = await ReservationRepo.persists(id);

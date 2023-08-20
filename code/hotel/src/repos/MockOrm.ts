@@ -15,14 +15,18 @@ interface IDb {
 // **** Functions **** //
 
 /**
- * Fetch the json from the file.
+ * Extraire le JSON de la base de données.
+ *
+ * @returns {IDb} Un JSON représentant une base de données
  */
 function openDb(): Promise<IDb> {
   return jsonfile.readFile(__dirname + '/' + DB_FILE_NAME) as Promise<IDb>;
 }
 
 /**
- * Update the file.
+ * Mettre à jour la base de données.
+ *
+ * @param {IDb} db - JSON représentant la BD
  */
 function saveDb(db: IDb): Promise<void> {
   return jsonfile.writeFile(__dirname + '/' + DB_FILE_NAME, db);

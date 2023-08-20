@@ -25,6 +25,14 @@ export interface IReservation {
 
 /**
  * Créer une réservation.
+ *
+ * @param {string=} nomClient - Le nom du client
+ * @param {string=} courrielClient - L'adresse de courriel du client
+ * @param {string=} dateDebut - Date de début de la réservation
+ * @param {string=} dateFin - Date de fin de la réservation
+ * @param {TypeChambre=} typeChambre - Le type de chambre réservée
+ * @param {number=} prixParNuit - Le prix de la chambre par nuit
+ * @param {number=} id - ID de la réservation dans la BD
  */
 function new_(
   nomClient?: string,
@@ -48,6 +56,10 @@ function new_(
 
 /**
  * Extraire une réservation d'un objet.
+ *
+ * @param {object} param - Objet représentant une réservation
+ *
+ * @returns {IReservation} - Une réservation
  */
 function from(param: object): IReservation {
   // Check is réservation
@@ -68,7 +80,11 @@ function from(param: object): IReservation {
 }
 
 /**
- * See if the param meets criteria to be a réservation.
+ * Vérifier si l'objet représente une réservation
+ *
+ * @param {unknown} arg - Un paramètre qui pourrait être une réservation
+ *
+ * @returns {boolean} - Vrai si c'est une réservation
  */
 function isReservation(arg: unknown): boolean {
   return (

@@ -6,6 +6,10 @@ import orm from './MockOrm';
 
 /**
  * Extraire une réservation.
+ *
+ * @param {string} courrielClient - Courriel du client
+ *
+ * @returns {IReservation | null} - Réservation si trouvée, sinon null.
  */
 async function getOne(courrielClient: string): Promise<IReservation | null> {
   const db = await orm.openDb();
@@ -19,6 +23,10 @@ async function getOne(courrielClient: string): Promise<IReservation | null> {
 
 /**
  * Vérifier si une réservation avec l'ID existe
+ *
+ * @param {number} id - ID de la réservation
+ *
+ * @returns {boolean} - Vrai si la réservation existe
  */
 async function persists(id: number): Promise<boolean> {
   const db = await orm.openDb();
@@ -32,6 +40,8 @@ async function persists(id: number): Promise<boolean> {
 
 /**
  * Extraire toutes les réservations.
+ *
+ * @returns {IReservation[]} - Tableau de toutes les réservations
  */
 async function getAll(): Promise<IReservation[]> {
   const db = await orm.openDb();
@@ -40,6 +50,8 @@ async function getAll(): Promise<IReservation[]> {
 
 /**
  * Ajouter une réservation.
+ *
+ * @param {IReservation} reservation - Réservation à ajouter
  */
 async function add(reservation: IReservation): Promise<void> {
   const db = await orm.openDb();
@@ -50,6 +62,8 @@ async function add(reservation: IReservation): Promise<void> {
 
 /**
  * Mettre à jour une réservation
+ *
+ * @param {IReservation} reservation - Réservation à mettre à jour
  */
 async function update(reservation: IReservation): Promise<void> {
   const db = await orm.openDb();
@@ -63,6 +77,8 @@ async function update(reservation: IReservation): Promise<void> {
 
 /**
  * Supprimer une réservation.
+ *
+ * @param {number} id - ID de la réservation à supprimer
  */
 async function delete_(id: number): Promise<void> {
   const db = await orm.openDb();

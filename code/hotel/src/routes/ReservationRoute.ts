@@ -8,6 +8,11 @@ import { IReq, IRes } from './types/express/misc';
 
 /**
  * Extraire toutes les réservations.
+ *
+ * @param {IReq} _ - non utilisé
+ * @param {IRes} res - Réponse du serveur
+ *
+ * @returns {string} - Tableau des réservations en JSON
  */
 async function getAll(_: IReq, res: IRes) {
   const reservations = await ReservationService.getAll();
@@ -16,6 +21,9 @@ async function getAll(_: IReq, res: IRes) {
 
 /**
  * Ajouter une réservation.
+ *
+ * @param {IReq} req - Requête au serveur avec une réservation
+ * @param {IRes} res - Réponse du serveur
  */
 async function add(req: IReq<{ reservation: IReservation }>, res: IRes) {
   const { reservation } = req.body;
@@ -25,6 +33,9 @@ async function add(req: IReq<{ reservation: IReservation }>, res: IRes) {
 
 /**
  * Mettre à jour une réservation.
+ *
+ * @param {IReq} req - Requête au serveur avec une réservation
+ * @param {IRes} res - Réponse du serveur
  */
 async function update(req: IReq<{ reservation: IReservation }>, res: IRes) {
   const { reservation } = req.body;
@@ -34,6 +45,9 @@ async function update(req: IReq<{ reservation: IReservation }>, res: IRes) {
 
 /**
  * Supprimer une réservation.
+ *
+ * @param {IReq} req - Requête au serveur avec l'id d'une réservation
+ * @param {IRes} res - Réponse du serveur
  */
 async function delete_(req: IReq, res: IRes) {
   const id = +req.params.id;
