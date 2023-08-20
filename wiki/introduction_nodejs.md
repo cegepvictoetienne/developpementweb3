@@ -6,7 +6,9 @@
 
 # Installation de node
 
-- Node.js : {==LTS Version 18.17.0==}  
+- Node.js : {==LTS Version 18.17.1==}  
+- [Téléchargement Node.js](https://nodejs.org/fr/download)  
+
 
 # Code JavaScript sur un serveur
 
@@ -20,7 +22,7 @@
 
 ``` ts title="tableau_de_fruits.js"
 console.log(
-  'J’écris directement dans la console! Je peux faire que du code qui s’exécute sur le serveur'
+  'J’écris directement dans la console! Je peux faire du code qui ne s’exécute que sur le serveur'
 );
 
 var fruits = ['pomme', 'orange', 'banane'];
@@ -34,7 +36,7 @@ function afficherElementTableau(item, index) {
 
 ``` nodejsrepl title="Résultat dans la console"
 > node tableau_de_fruits.js
-J’écris directement dans la console! Je peux faire que du code qui s’exécute sur le serveur
+J’écris directement dans la console! Je peux faire du code qui ne s’exécute que sur le serveur  
 0:pomme
 1:orange
 2:banane

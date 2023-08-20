@@ -2,7 +2,31 @@
 
 TypeScript c’est du JavaScript avec des types!
 
-Pourquoi des types?
+## Pourquoi utiliser TypeScript?  
+
+TypeScript est un langage de programmation qui a gagné en popularité grâce à son utilité dans le développement logiciel moderne. Voici quelques raisons pour lesquelles vous pourriez envisager d'utiliser TypeScript dans vos programmes :  
+
+1. **Sécurité et robustesse du code** : TypeScript introduit un système de types statiques qui permet de détecter des erreurs de typage dès la phase de développement. Cela aide à éviter de nombreux bugs liés aux types et garantit une meilleure qualité du code.  
+
+2. **Meilleure maintenance** : Les systèmes de types aident les développeurs à comprendre plus facilement le code existant, à détecter des erreurs potentielles et à faciliter les refontes. Cela conduit à une meilleure maintenance à long terme.  
+
+3. **Meilleure IDE (environnement de développement intégré) support** : Comme TypeScript fournit des informations détaillées sur les types, les IDE peuvent offrir une assistance au code plus puissante, comme l'autocomplétion, la vérification en temps réel et la navigation dans le code.  
+
+4. **Évolution en douceur depuis JavaScript** : TypeScript est un sur-ensemble de JavaScript, ce qui signifie que vous pouvez migrer progressivement votre code JavaScript existant vers TypeScript sans avoir à tout réécrire. Les fichiers TypeScript peuvent contenir du code JavaScript valide.  
+
+5. **Évite les erreurs courantes** : Les types statiques aident à éviter des erreurs courantes comme les références null ou undefined, les erreurs de type et d'autres problèmes fréquents en JavaScript.  
+
+6. **Facilite la collaboration** : Les types statiques documentent de manière plus explicite les attentes concernant les données et les fonctions, ce qui facilite la collaboration entre les développeurs.  
+
+7. **Meilleure échelle et modularité** : TypeScript encourage la construction d'applications modulaires avec des types spécifiques pour les interfaces et les contrats entre les modules. Cela rend les applications plus faciles à développer et à faire évoluer.  
+
+8. **Communauté active et écosystème croissant** : TypeScript est soutenu par Microsoft et a une communauté active. De nombreux outils et bibliothèques populaires sont également compatibles avec TypeScript.  
+
+9. **Compatibilité avec les normes ES** : TypeScript suit généralement les normes ES (ECMAScript), ce qui signifie qu'il prend en charge les fonctionnalités JavaScript modernes tout en ajoutant des fonctionnalités supplémentaires.  
+
+10. **Meilleure documentation et apprentissage progressif** : TypeScript offre des informations plus détaillées sur le code, ce qui peut faciliter l'apprentissage d'un nouveau codebase ou l'intégration de nouveaux membres dans une équipe de développement.  
+
+En résumé, utiliser TypeScript peut améliorer la qualité, la robustesse et la maintenabilité de votre code, tout en offrant des avantages en termes d'assistance au développement et de collaboration. Cependant, il est important de noter que le choix d'utiliser TypeScript dépend des besoins spécifiques de votre projet et de votre équipe.  
 
 Aide à trouver les erreurs dans notre code.
 
@@ -161,6 +185,11 @@ type Chat = {
   race?: string;
 };
 
+/** 
+ * Affiche le détail d'un chat
+ * 
+ * @param {Chat} unchat - Un chat à afficher
+ **/
 function afficherChat(unchat: Chat): void {
   console.log(
     `Le chat se nomme ${unchat.nom} et a ${unchat.nombreDeVies} vies.`
@@ -192,6 +221,12 @@ On valide que seulement les objets d’un type peuvent être utilisés dans une 
 Très utile pour documenter une fonction :  
 
 ``` ts title="deux_nombres.ts"
+/**
+ * Multiplie deux nombres
+ *
+ * @param {number} nombre1 - Premier nombre
+ * @param {number} nombre2 - Second nombre
+ **/
 function multiplierDeuxNombres(nombre1: number, nombre2: number): number {
   return nombre1 * nombre2;
 }
@@ -305,3 +340,7 @@ Quelques paramètres utiles :
   }
 }
 ```  
+
+!!! manuel    
+    [What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)  
+    [tsconfig reference](https://www.typescriptlang.org/tsconfig)  
