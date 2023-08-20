@@ -38,7 +38,7 @@ npm run dev
 L'exemple suivant code une mini API qui gère des réservations dans un hotel.  
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - API Express](https://codesandbox.io/p/sandbox/cegepvicto-devweb3-hotel-5lkjd4)  
+    [Démo - API Express](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/hotel)  
 
 ## Étape 1 - Créer l’interface model/Reservation.ts  
 

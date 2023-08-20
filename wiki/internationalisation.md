@@ -174,7 +174,7 @@ const rabais = 15 / 100;
 ```
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - Intl](https://codesandbox.io/p/sandbox/intl-2wztzk)  
+    [Démo - Intl](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/intl)  
 
 # Sélecteur de langue  
 
