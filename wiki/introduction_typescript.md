@@ -206,11 +206,24 @@ const produit2 = multiplierDeuxNombres('DIX', 'DEUX'); // Donne une erreur
 
 # Compiler TypeScript en JavaScript  
 
+
 TypeScript ne peut pas être exécuté directement par Node ou par le navigateur. Il faut le compiler (parfois appelé « transpiler ») en JavaScript avant son exécution.  
 
 ``` nodejsrepl title="console"
 tsc
 ```
+
+## Configurer tsc  
+
+Pour compiler, il est important de générer le fichier tsconfig.json avant de faire la commmande tsc :  
+
+
+``` nodejsrepl title="console"
+tsc -init
+```
+
+Voici les résultats, selon la version de JavaScript :  
+
 
 ## TypeScript
 ``` ts title="chat.ts"
