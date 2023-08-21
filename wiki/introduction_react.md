@@ -48,38 +48,11 @@ Pour l'installer :  [React Developer Tools pour Chrome](https://chrome.google.co
 Utiliser des fonctions au lieu des classes en React est la manière officielle de programmer dans cet environnement.  
 
 ``` ts title="personnage.component.tsx"
-import './personnage.styles.css';
-
-const Personnage = () => {
-  const nomDuPersonnage = 'Fluffy McChat';
-  const photoDuPersonnage = 'https://placekitten.com/300/300';
-  const adresseDuPersonnage = '123 Ave Des Félins';
-
-  return (
-    <div className="container">
-      <div className="photo">
-        <img src={photoDuPersonnage} />
-      </div>
-      <div className="info">
-        <p>{nomDuPersonnage}</p>
-        <p className="address">{adresseDuPersonnage}</p>
-      </div>
-    </div>
-  );
-};
-
-export default Personnage;
+{!personnage_base/src/components/personnage.component.tsx!}
 ```
 
 ``` ts title="app.tsx"
-import Personnage from './components/personnage.component';
-import './App.css';
-
-function App() {
-  return <Personnage />;
-}
-
-export default App;
+{!personnage_base/src/app.tsx!}
 ```
 
 <figure markdown>
@@ -88,7 +61,7 @@ export default App;
 </figure>
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - Personnage - Base](https://codesandbox.io/p/sandbox/personnage-base-j9xc7h)  
+    [Démo - Personnage - Base](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base)  
 
 !!! manuel 
     [Learn React](https://react.dev/learn)  
@@ -101,59 +74,11 @@ export default App;
 
 
 ``` ts title="personnage.component.tsx"
-import './personnage.styles.css';
-
-interface IPersonnageProps {
-  nom: string;
-  photo: string;
-  adresse: string;
-}
-
-const Personnage = (props: IPersonnageProps) => {
-  return (
-    <div className="container">
-      <div className="photo">
-        <img src={props.photo} />
-      </div>
-      <div className="info">
-        <p>{props.nom}</p>
-        <p className="address">{props.adresse}</p>
-      </div>
-    </div>
-  );
-};
-
-export default Personnage;
-
+{!personnage_base_props/src/components/personnage.component.tsx!}
 ```
 
 ``` ts title="app.tsx"
-import Personnage from './components/personnage.component';
-import './App.css';
-
-function App() {
-  const nomDuPersonnage = 'Fluffy McChat';
-  const photoDuPersonnage = 'https://placekitten.com/300/300';
-  const adresseDuPersonnage = '123 Ave Des Félins';
-
-  return (
-    <>
-      <Personnage
-        nom={nomDuPersonnage}
-        photo={photoDuPersonnage}
-        adresse={adresseDuPersonnage}
-      />
-      <Personnage
-        nom="Charmin Ledoux"
-        photo="https://placekitten.com/300/300"
-        adresse="444 de le Bête"
-      />
-    </>
-  );
-}
-
-export default App;
-
+{!personnage_base_props/src/app.tsx!}
 ```
 
 <figure markdown>
@@ -162,7 +87,7 @@ export default App;
 </figure>
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - Personnage - Props](https://codesandbox.io/p/sandbox/personnage-base-8z5j5g)  
+    [Démo - Personnage - Props](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_props)  
 
 !!! manuel 
     [Props](https://react.dev/learn/passing-props-to-a-component)  
@@ -174,35 +99,7 @@ export default App;
 - Réagit lorsque la valeur change  
 
 ``` ts title="app.tsx"
-import Personnage from './components/personnage.component';
-import { useState } from 'react';
-import './App.css';
-
-function App() {
-  const [nom, setNom] = useState('');
-
-  const nomDuPersonnage = 'Fluffy McChat';
-  const photoDuPersonnage = 'https://placekitten.com/300/300';
-  const adresseDuPersonnage = '123 Ave Des Félins';
-
-  return (
-    <>
-      <input value={nom} onChange={(e) => setNom(e.target.value)} />
-      <Personnage
-        nom={nomDuPersonnage}
-        photo={photoDuPersonnage}
-        adresse={adresseDuPersonnage}
-      />
-      <Personnage
-        nom={nom}
-        photo="https://placekitten.com/300/300"
-        adresse="444 de le Bête"
-      />
-    </>
-  );
-}
-
-export default App;
+{!personnage_base_useState/src/app.tsx!}
 ```
 
 <figure markdown>
@@ -211,7 +108,7 @@ export default App;
 </figure>
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - Personnage - useState](https://codesandbox.io/p/sandbox/personnage-base-6kdzhk)  
+    [Démo - Personnage - useState](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_useState)  
 
 !!! manuel 
     [useState](https://react.dev/reference/react/useState)  
@@ -223,42 +120,7 @@ Faire des traitements de données seulement lors d’événements précis, comme
 
 
 ``` ts title="app.tsx"
-import Personnage from './components/personnage.component';
-import { useState, useEffect } from 'react';
-import './App.css';
-
-function App() {
-  const [nom, setNom] = useState('');
-  const [longueurNom, setLongueurNom] = useState(0);
-
-  useEffect(() => {
-    setLongueurNom(nom.length);
-  }, [nom]);
-
-  const nomDuPersonnage = 'Fluffy McChat';
-  const photoDuPersonnage = 'https://placekitten.com/300/300';
-  const adresseDuPersonnage = '123 Ave Des Félins';
-
-  return (
-    <>
-      <input value={nom} onChange={(e) => setNom(e.target.value)} />
-      <span>Le nom a {longueurNom} caractères</span>
-      <Personnage
-        nom={nomDuPersonnage}
-        photo={photoDuPersonnage}
-        adresse={adresseDuPersonnage}
-      />
-      <Personnage
-        nom={nom}
-        photo="https://placekitten.com/300/300"
-        adresse="444 de le Bête"
-      />
-    </>
-  );
-}
-
-export default App;
-
+{!personnage_base_useEffect/src/app.tsx!}
 ```
 
 <figure markdown>
@@ -267,7 +129,7 @@ export default App;
 </figure>
 
 !!! codesandbox "CodeSandbox"    
-    [Démo - Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-8hhz5t)  
+    [Démo - Personnage - useEffect](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_useEffect)  
 
 !!! manuel 
     [useEffect](https://react.dev/reference/react/useEffect)  

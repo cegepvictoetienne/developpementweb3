@@ -27,8 +27,15 @@ console.log(
 
 var fruits = ['pomme', 'orange', 'banane'];
 
+
 fruits.forEach(afficherElementTableau);
 
+/*
+* Affiche à la console un élément du tableau
+*
+* @param item - L'item à afficher
+* @param index - La position de l'item dans le tableau
+*/
 function afficherElementTableau(item, index) {
   console.log(index + ':' + item);
 }

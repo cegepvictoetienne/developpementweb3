@@ -178,42 +178,10 @@ Les objets peuvent être typés comme les variables :
 Si nous voulons créer plusieurs objets avec la même forme, créer un type peut aider :  
 
 ``` ts title="chat.ts"
-type Chat = {
-  nom: string;
-  nombreDeVies: number;
-  surnoms: string[];
-  race?: string;
-};
-
-/** 
- * Affiche le détail d'un chat
- * 
- * @param {Chat} unchat - Un chat à afficher
- **/
-function afficherChat(unchat: Chat): void {
-  console.log(
-    `Le chat se nomme ${unchat.nom} et a ${unchat.nombreDeVies} vies.`
-  );
-}
-
-const fanta: Chat = {
-  nom: 'Fanta',
-  nombreDeVies: 9,
-  surnoms: ['Chaton', 'Tannant'],
-};
-
-const guizmo: Chat = {
-  nom: 'Guizmo',
-  nombreDeVies: 3,
-  surnoms: ['Mou'],
-  race: 'Siamois',
-};
-
-afficherChat(fanta);
-afficherChat(guizmo);
+{!intro_typescript/chat.ts!}
 ```  
 
-On s’assure que tous les objets ont les même attributs.  
+On s’assure que tous les objets ont les mêmes attributs.  
 On valide que seulement les objets d’un type peuvent être utilisés dans une fonction.  
 
 ## Paramètres de fonctions  
@@ -244,84 +212,20 @@ TypeScript ne peut pas être exécuté directement par Node ou par le navigateur
 tsc
 ```
 
-=== "TypeScript"
-    ``` ts title="chat.ts"
-    type Chat = {
-    nom: string;
-    nombreDeVies: number;
-    surnoms: string[];
-    race?: string;
-    };
+## TypeScript
+``` ts title="chat.ts"
+{!intro_typescript/chat.ts!}
+```
 
-    function afficherChat(unchat: Chat): void {
-    console.log(
-        `Le chat se nomme ${unchat.nom} et a ${unchat.nombreDeVies} vies.`
-    );
-    }
+## JavaScript ES6
+``` ts title="chat.js"
+{!intro_typescript/chat_ES6.js!}
+```
 
-    const fanta: Chat = {
-    nom: 'Fanta',
-    nombreDeVies: 9,
-    surnoms: ['Chaton', 'Tannant'],
-    };
-
-    const guizmo: Chat = {
-    nom: 'Guizmo',
-    nombreDeVies: 3,
-    surnoms: ['Mou'],
-    race: 'Siamois',
-    };
-
-    afficherChat(fanta);
-    afficherChat(guizmo);
-    ```
-
-=== "JavaScript ES5"
-    ``` ts title="chat.js"
-    'use strict';
-    function afficherChat(unchat) {
-    console.log(
-        'Le chat se nomme '
-        .concat(unchat.nom, ' et a ')
-        .concat(unchat.nombreDeVies, ' vies.')
-    );
-    }
-    var fanta = {
-    nom: 'Fanta',
-    nombreDeVies: 9,
-    surnoms: ['Chaton', 'Tannant'],
-    };
-    var guizmo = {
-    nom: 'Guizmo',
-    nombreDeVies: 3,
-    surnoms: ['Mou'],
-    race: 'Siamois',
-    };
-    afficherChat(fanta);
-    afficherChat(guizmo);
-
-    ```
-
-=== "JavaScript ES2022"
-    ``` ts title="chat.js"
-    "use strict";
-    function afficherChat(unchat) {
-        console.log(`Le chat se nomme ${unchat.nom} et a ${unchat.nombreDeVies} vies.`);
-    }
-    const fanta = {
-        nom: 'Fanta',
-        nombreDeVies: 9,
-        surnoms: ['Chaton', 'Tannant'],
-    };
-    const guizmo = {
-        nom: 'Guizmo',
-        nombreDeVies: 3,
-        surnoms: ['Mou'],
-        race: 'Siamois',
-    };
-    afficherChat(fanta);
-    afficherChat(guizmo);
-    ```
+## JavaScript ES2022
+``` ts title="chat.js"
+{!intro_typescript/chat_ES2022.js!}
+```
 
 ## Configuration de tsc – tsconfig.json
 

@@ -78,6 +78,12 @@ const richmond: Utilisateur = {
     actif: true,
 };
 
+/**
+ * Dire bonjour à un employé
+ * 
+ * @param {Employe} employe - L'employé à qui on dit bonjour 
+ * 
+ */
 function direBonjour(employe: Employe) {
     if ('niveau' in employe) {
         console.log(
@@ -95,7 +101,7 @@ direBonjour(richmond);
 
 ## Union de type – pour restreindre les valeurs  
 
-``` ts title="tableau_de_fruits.ts"
+``` ts title="chat.ts"
 type Chat {
     nom: string,
     age: number,
@@ -108,6 +114,9 @@ const fanta : Chat = {
     race: 'Ragdoll',
 };
 
+/*
+ * La race pour Furguie n'est pas acceptée pour le type Chat
+ */
 const furguie : Chat = {
     nom: 'Furguie',
     age: 3,

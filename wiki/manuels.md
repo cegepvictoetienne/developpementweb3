@@ -3,7 +3,8 @@
 [Documentation officielle node.js](https://nodejs.org/fr/docs)  
 ## Introduction à TypeScript
 [Manuel TypeScript](https://www.typescriptlang.org/fr/docs/handbook/intro.html)  
-## Node.js - Serveur Web
+[What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)  
+[tsconfig reference](https://www.typescriptlang.org/tsconfig)  ## Node.js - Serveur Web
 [node.js - faire son premier serveur Web](https://nodejs.org/fr/docs/guides/getting-started-guide)  
 ## NPM
 [Documentation de npm js](https://docs.npmjs.com/)  

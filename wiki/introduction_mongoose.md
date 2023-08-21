@@ -59,6 +59,8 @@ import { IAuteur, Auteur } from '@src/models/Auteur';
 import mongoose from 'mongoose';
 /**
 * Extraire tous les auteurs.
+*
+* @returns {IAuteur[]} Un tableau de tous les auteurs
 */
 async function getAll(): Promise<IAuteur[]> {
     await mongoose.connect(process.env.MONGODB_URI!);
@@ -74,6 +76,10 @@ async function getAll(): Promise<IAuteur[]> {
 ``` ts title="route.ts"
 /**
 * Extraire un auteur.
+*
+* @param {string} id - ID de l'auteur à extraire
+*
+* @returns {IAuteur} - Un auteur si trouvé
 */
 
 async function getOne(id: string,): Promise<IAuteur | null> {
@@ -92,6 +98,8 @@ async function getOne(id: string,): Promise<IAuteur | null> {
 ``` ts title="route.ts"
 /**
 * Ajouter un auteur.
+* 
+* @param {IAuteur} auteur - Auteur à ajouter
 */
 
 async function add(auteur: IAuteur): Promise<void> {

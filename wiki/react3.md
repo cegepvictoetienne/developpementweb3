@@ -15,72 +15,12 @@ npm i @types/react-router-dom --save-dev
  
 # Exemple de SPA avec Router  
 
-``` ts title="app.tsx"
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Outlet,
-  useParams,
-} from 'react-router-dom';
-
-import './App.css';
-
-function Modele() {
-  return (
-    <div>
-      <a href="/">Page principale</a>&nbsp;
-      <a href="/dadams">Douglas Adams</a>&nbsp;
-      <a href="/oscard">Orson Scott Card</a>
-      <br />
-      <Outlet />
-    </div>
-  );
-}
-function PagePrincipale() {
-  return <h1>Page principale</h1>;
-}
-
-function DouglasAdams() {
-  return (
-    <>
-      <h1>Page de Douglas Adams</h1>&nbsp;
-      <a href="/livre/1">Livre 1</a>&nbsp;
-      <a href="/livre/2">Livre 2</a>&nbsp;
-    </>
-  );
-}
-
-function OrsonScottCard() {
-  return <h1>Page de Orson Scott Card</h1>;
-}
-
-function Livre() {
-  const { id } = useParams();
-  return <h1>Livre #{id}</h1>;
-}
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Modele />}>
-          <Route index element={<PagePrincipale />} />
-          <Route path="dadams" element={<DouglasAdams />} />
-          <Route path="oscard" element={<OrsonScottCard />} />
-          <Route path="livre/:id" element={<Livre />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
-
-export default App;
-
+``` ts title="App.tsx"
+{!monrouteur/src/App.tsx!}
 ```
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - monrouteur](https://codesandbox.io/p/sandbox/monrouteur-9w8fc4)  
+    [Démo - monrouteur](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/monrouteur)  
 
 # Différents éléments du projet monrouteur  
 
@@ -88,7 +28,7 @@ export default App;
 
 Un __<BrowserRouter\>__ stocke l'emplacement actuel dans la barre d'adresse du navigateur en utilisant des URL propres et navigue en utilisant la pile d'historique intégrée du navigateur.
 
-``` ts title="app.tsx"
+``` ts title="App.tsx"
 function App() {
   return (
     <BrowserRouter>
@@ -226,180 +166,26 @@ Tous les éléments sous __ContextePanier__ peuvent accèder au contenu et le mo
 
 Voici les éléments pertinents pour l'utilisation de contexte :  
 
-``` ts title="panier.contexte.tsx"
-import React, { useState } from 'react';
-
-interface IItemPanier {
-  id: number;
-  nom: string;
-  photo: string;
-  prix: number;
-  quantite: number;
-}
-
-export type PanierContextType = {
-  itemsPanier: IItemPanier[];
-  panierOuvert: boolean;
-  setItemsPanier: (itemsPanier: IItemPanier[]) => void;
-  setPanierOuvert: (ouvert: boolean) => void;
-};
-
-const panierVide: IItemPanier[] = [];
-
-export const PanierContext = React.createContext<PanierContextType>({
-  itemsPanier: panierVide,
-  panierOuvert: false,
-  setItemsPanier: (itemsPanier: IItemPanier[]) => {},
-  setPanierOuvert: (ouvert: boolean) => {},
-});
-
-export default function PanierProvider(props: any) {
-  const [itemsPanier, setItemsPanier] = useState(panierVide);
-  const [panierOuvert, setPanierOuvert] = useState(false);
-
-  const values = {
-    itemsPanier,
-    panierOuvert,
-    setItemsPanier,
-    setPanierOuvert: setPanierOuvert,
-  };
-  return (
-    <PanierContext.Provider value={values}>
-      {props.children}
-    </PanierContext.Provider>
-  );
-}
+``` ts title="panier.context.tsx"
+{!chapeaux/src/contexts/panier.context.tsx!}
 
 ```
 
-``` ts title="app.tsx"
-import './App.css';
-import PanierProvider from './contexts/panier.context';
-import Home from './components/home.component';
-
-function App() {
-  return (
-    <PanierProvider>
-      <Home />
-    </PanierProvider>
-  );
-}
-
-export default App;
+``` ts title="App.tsx"
+{!chapeaux/src/App.tsx!}
 ```
 
 ``` ts title="panier.component.tsx"
-import React, { useContext } from 'react';
-import { Drawer } from '@mui/material';
-import { PanierContext } from '../contexts/panier.context';
-import Fiche from './fiche.component';
-import { Box } from '@mui/material';
-
-export default function Panier() {
-  const { itemsPanier, setItemsPanier, panierOuvert, setPanierOuvert } =
-    useContext(PanierContext);
-  return (
-    <Drawer
-      anchor="right"
-      open={panierOuvert}
-      onClose={() => {
-        setPanierOuvert(false);
-      }}
-    >
-      <Box sx={{ width: 300 }}>
-        {itemsPanier &&
-          itemsPanier.map((item) => {
-            return <Fiche chapeau={item} dansPanier={true} />;
-          })}
-      </Box>
-    </Drawer>
-  );
-}
+{!chapeaux/src/components/panier.component.tsx!}
 
 ```
 
 ``` ts title="fiche.component.tsx"
-import { useContext } from 'react';
-import { Card } from '@mui/material';
-import { CardActions } from '@mui/material';
-import { CardContent } from '@mui/material';
-import { CardMedia } from '@mui/material';
-import { Button } from '@mui/material';
-import { Typography } from '@mui/material';
-import { PanierContext } from '../contexts/panier.context';
-import { IChapeau } from '../models/ichapeau.model';
-
-interface IFiche {
-  chapeau: IChapeau;
-  dansPanier: boolean;
-}
-
-export default function Fiche(props: IFiche) {
-  const { itemsPanier, setItemsPanier } = useContext(PanierContext);
-
-  const ajouterAuPanier = () => {
-    const nouveauPanier = [...itemsPanier, { ...props.chapeau, quantite: 1 }];
-    console.log(nouveauPanier);
-    setItemsPanier(nouveauPanier);
-  };
-
-  const retirerDuPanier = () => {
-    var i = 0;
-    console.log('retirer du panier : ', props.chapeau.id);
-    while (i < itemsPanier.length) {
-      if (itemsPanier[i].id === props.chapeau.id) {
-        itemsPanier.splice(i, 1);
-      } else {
-        ++i;
-      }
-    }
-    const nouveauPanier = [...itemsPanier];
-    setItemsPanier(nouveauPanier);
-  };
-
-  return (
-    <Card sx={{ width: 300, maxWidth: 300, height: 300, maxHeight: 300 }}>
-      <CardMedia
-        component="img"
-        height="150"
-        sx={{ objectFit: 'contain' }}
-        image={props.chapeau.photo}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h6" component="div">
-          {props.chapeau.nom}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {props.chapeau.prix}&nbsp;$
-        </Typography>
-      </CardContent>
-      <CardActions>
-        {!props.dansPanier && (
-          <Button
-            size="small"
-            color="primary"
-            onClick={(e: React.MouseEvent) => ajouterAuPanier()}
-          >
-            Ajouter au panier
-          </Button>
-        )}
-        {props.dansPanier && (
-          <Button
-            size="small"
-            color="primary"
-            onClick={(e: React.MouseEvent) => retirerDuPanier()}
-          >
-            Retirer du panier
-          </Button>
-        )}
-      </CardActions>
-    </Card>
-  );
-}
+{!chapeaux/src/components/fiche.component.tsx!}
 ```
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - Chapeaux en folie](https://codesandbox.io/p/sandbox/chapeaux-q8fdtk)  
+    [Démo - Chapeaux en folie](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/chapeaux)  
 
 ## Se connecter à un API  
 

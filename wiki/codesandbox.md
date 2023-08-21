@@ -1,18 +1,18 @@
 # Tous les démos CodeSandbox référencés dans le cours 
 ## Générateur Express
-[Démo - API Express](https://codesandbox.io/p/sandbox/cegepvicto-devweb3-hotel-5lkjd4)  
+[Démo - API Express](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/hotel)  
 ## Introduction à React
-[Démo - Personnage - Base](https://codesandbox.io/p/sandbox/personnage-base-j9xc7h)  
-[Démo - Personnage - Props](https://codesandbox.io/p/sandbox/personnage-base-8z5j5g)  
-[Démo - Personnage - useState](https://codesandbox.io/p/sandbox/personnage-base-6kdzhk)  
-[Démo - Personnage - useEffect](https://codesandbox.io/p/sandbox/personnage-base-8hhz5t)  
+[Démo - Personnage - Base](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base)  
+[Démo - Personnage - Props](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_props)  
+[Démo - Personnage - useState](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_useState)  
+[Démo - Personnage - useEffect](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_useEffect)  
 ## React et les styles
-[Démo - Styled Components](https://codesandbox.io/p/sandbox/personnage-base-jmcyw9)  
-[Démo - Material UI](https://codesandbox.io/p/sandbox/personnage-base-qqwqxw)  
+[Démo - Styled Components](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_styledComponents)  
+[Démo - Material UI](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_MUI)  
 ## Router - useParams - useContext et API
-[Démo - monrouteur](https://codesandbox.io/p/sandbox/monrouteur-9w8fc4)  
-[Démo - Chapeaux en folie](https://codesandbox.io/p/sandbox/chapeaux-q8fdtk)  
+[Démo - monrouteur](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/monrouteur)  
+[Démo - Chapeaux en folie](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/chapeaux)  
 ## Internationalisation
-[Démo - Intl](https://codesandbox.io/p/sandbox/intl-2wztzk)  
+[Démo - Intl](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/intl)  
 ## Authentification
 [Démo - Page Login](https://codesandbox.io/p/sandbox/pagelogin-zv88kv)  

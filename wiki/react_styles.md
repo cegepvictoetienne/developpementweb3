@@ -18,72 +18,11 @@ npm i @types/styled-components --save-dev
 ### Remplacer le css par un fichier tsx  
 
 ``` ts title="personnage.styles.tsx"
-import styled from 'styled-components';
-
-export const PersonnageContainer = styled.div`
-  max-width: 400px;
-  width: 300px;
-  margin: 0 auto;
-  background-color: #fff;
-  color: #000;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-`;
-
-export const PersonnagePhoto = styled.div`
-  text-align: center;
-  margin-bottom: 20px;
-`;
-
-export const PersonnageImage = styled.img`
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-`;
-
-export const PersonnageInfo = styled.div`
-  margin-bottom: 20px;
-`;
-
-export const PersonnageAddress = styled.p`
-  font-style: italic;
-`;
-
+{!personnage_styledComponents/src/components/personnage.styles.tsx!}
 ```
 
 ``` ts title="personnage.component.tsx"
-import {
-  PersonnageContainer,
-  PersonnageAddress,
-  PersonnageImage,
-  PersonnageInfo,
-  PersonnagePhoto,
-} from './personnage.styles';
-
-interface IPersonnageProps {
-  nom: string;
-  photo: string;
-  adresse: string;
-}
-
-const Personnage = (props: IPersonnageProps) => {
-  return (
-    <PersonnageContainer>
-      <PersonnagePhoto>
-        <PersonnageImage src={props.photo} />
-      </PersonnagePhoto>
-      <PersonnageInfo>
-        <PersonnageAddress as="span">{props.nom}</PersonnageAddress>
-        <PersonnageAddress>{props.adresse}</PersonnageAddress>
-      </PersonnageInfo>
-    </PersonnageContainer>
-  );
-};
-
-export default Personnage;
-
+{!personnage_styledComponents/src/components/personnage.component.tsx!}
 ```
 
 !!! note "Truc"  
@@ -94,7 +33,7 @@ export default Personnage;
     ```
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - Styled Components](https://codesandbox.io/p/sandbox/personnage-base-jmcyw9)  
+    [Démo - Styled Components](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_styledComponents)  
 
 !!! manuel 
     [Styled Components - Basics](https://styled-components.com/docs/basics)  
@@ -117,40 +56,11 @@ npm install @mui/icons-material
 ## Utiliser Material UI  
 
 ``` ts title="personnage.component.tsx"
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { Grid } from '@mui/material';
+{!personnage_MUI/src/components/personnage.component.tsx!}
+```  
 
-interface IPersonnageProps {
-  nom: string;
-  photo: string;
-  adresse: string;
-}
-
-const Personnage = (props: IPersonnageProps) => {
-  return (
-    <Card sx={{ width: 400 }}>
-      <Grid container spacing={0} direction="column" alignItems="center">
-        <CardMedia
-          image={props.photo}
-          sx={{ height: 150, width: 150, borderRadius: '50%' }}
-        />
-      </Grid>
-      <Box>
-        <Typography variant="subtitle1">{props.nom}</Typography>
-        <Typography variant="subtitle1">{props.adresse}</Typography>
-      </Box>
-    </Card>
-  );
-};
-
-export default Personnage;
-
-```
 !!! codesandbox "CodeSandbox"  
-    [Démo - Material UI](https://codesandbox.io/p/sandbox/personnage-base-qqwqxw)  
+    [Démo - Material UI](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_MUI)  
 
 ## Thèmes dans Material UI  
 
@@ -160,53 +70,10 @@ La manière la plus efficace pour changer l'apparence de votre application avec 
     [Material UI - Theming](https://mui.com/material-ui/customization/theming/)  
 
 
-La place idéale pour ajouter un thème à votre application est `app.tsx` :  
+La place idéale pour ajouter un thème à votre application est `App.tsx` :  
 
 ``` ts title="app.tsx"
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Conversation from './routes/conversation.route';
-import SignIn from './components/sign-in.component';
-import './App.css';
-import Embeddings from './routes/embeddings.route';
-import { CssBaseline } from '@mui/material';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-
-const themeApplication = createTheme({
-  palette: {
-    mode: 'light',
-    primary: {
-      main: '#363434',
-    },
-    secondary: {
-      main: '#f50057',
-    },
-    background: {
-      default: '#171719',
-      paper: '#202027',
-    },
-    text: {
-      primary: '#EFECEC',
-      secondary: '#FFFFFF',
-      disabled: 'rgba(70,38,38,0.5)',
-    },
-  },
-});
-
-function App() {
-  return (
-    <ThemeProvider theme={themeApplication}>
-      <CssBaseline />
-      <Routes>
-        <Route path="/" element={<Conversation />} />
-        <Route path="/embeddings" element={<Embeddings />} />
-        <Route path="/login" element={<SignIn />} />
-      </Routes>
-    </ThemeProvider>
-  );
-}
-
-export default App;
+{!personnage_MUI/src/App.tsx!}
 ```
 
 Vous pouvez aussi assigner une apparence spécifiquement à un type de composant comme suit :  
