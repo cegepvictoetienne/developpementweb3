@@ -23,7 +23,7 @@ Nom : Étienne Rivard
 - React
 - Progressive Web Apps \(PWA\)
 - Netlify
-- Plan de cours disponible sur Teams
+- Plan de cours disponible dans Léa  
 
 ## Horaire pour l'automne 2023
 
