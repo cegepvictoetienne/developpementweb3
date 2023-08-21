@@ -52,7 +52,7 @@ Utiliser des fonctions au lieu des classes en React est la manière officielle d
 ```
 
 ``` ts title="app.tsx"
-{!personnage_base/src/app.tsx!}
+{!personnage_base/src/App.tsx!}
 ```
 
 <figure markdown>
@@ -78,7 +78,7 @@ Utiliser des fonctions au lieu des classes en React est la manière officielle d
 ```
 
 ``` ts title="app.tsx"
-{!personnage_base_props/src/app.tsx!}
+{!personnage_base_props/src/App.tsx!}
 ```
 
 <figure markdown>
@@ -99,7 +99,7 @@ Utiliser des fonctions au lieu des classes en React est la manière officielle d
 - Réagit lorsque la valeur change  
 
 ``` ts title="app.tsx"
-{!personnage_base_useState/src/app.tsx!}
+{!personnage_base_useState/src/App.tsx!}
 ```
 
 <figure markdown>
@@ -120,7 +120,7 @@ Faire des traitements de données seulement lors d’événements précis, comme
 
 
 ``` ts title="app.tsx"
-{!personnage_base_useEffect/src/app.tsx!}
+{!personnage_base_useEffect/src/App.tsx!}
 ```
 
 <figure markdown>
