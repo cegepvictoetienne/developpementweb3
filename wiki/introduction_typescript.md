@@ -39,7 +39,7 @@ Aide à trouver les erreurs dans notre code.
 Pour installer TypeScript, utiliser la commande suivante :
 
 ``` nodejsrepl title="console"
-npm install –g tsc
+npm install –g typescript
 ```
 
 !!! note
