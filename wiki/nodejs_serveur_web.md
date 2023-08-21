@@ -11,6 +11,9 @@
 !!! manuel  
     [node.js - faire son premier serveur Web](https://nodejs.org/fr/docs/guides/getting-started-guide)  
 
+!!! note  
+    N'oubliez pas d'installer @types/node pour que TypeScript reconnaisse les modules standards nodejs.  
+
 
 ## Créer un serveur  
 

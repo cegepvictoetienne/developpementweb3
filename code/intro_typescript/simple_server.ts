@@ -1,4 +1,4 @@
-import http from 'http';
+import * as http from 'http';
 
 const hostname = 'localhost';
 const port = 8080;
