@@ -50,9 +50,9 @@ app.listen(PORT, () => {
     - D’accéder aux données transmise dans le corps de la requête (body)  
     - De manipuler les cookies  
     - Etc.  
-- Les prochaines diapositives vous montrerons comment :  
-- Obtenir les paramètres dans une méthode {==GET==}  
-- Obtenir les informations du body dans une méthode {==POST==}  
+- Les prochaines sections vous montrerons comment :  
+    - Obtenir les paramètres dans une méthode {==GET==}  
+    - Obtenir les informations du body dans une méthode {==POST==}  
 
 !!! manuel 
     [Express API](https://expressjs.com/en/4x/api.html#req)
@@ -63,11 +63,11 @@ app.listen(PORT, () => {
 
 !!! note
 
-    :id  
+    __:id__  
 
-    Le : informe que cette valeur est variable
+    Le __:__ informe que cette valeur est variable
 
-    id= req.params.id
+    `id=req.params.id`  
 
     Récupère la valeur du paramètre dans une variable nommée id.
 

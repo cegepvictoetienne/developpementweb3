@@ -26,10 +26,10 @@ let utilisateurs: Utilisateur[] = [
   { nom: 'Richmond', age: 40, actif: true },
 ];
 
-// Avec Lodash, créer un tableau qui ne prend qu'une tranche des utilisateurs à partir du début jusqu'au premier utilisateur inactif
-const premiersActifs = 'À faire';
-console.log('Liste des premiers utilisateurs actifs :');
-console.log(premiersActifs);
+// Avec Lodash, créer un tableau qui ne prend que les utilisateurs actifs
+const utilisateursActifs = 'À faire';
+console.log('Liste des utilisateurs actifs :');
+console.log(utilisateursActifs);
 
 // Avec Lodash, créer un tableau qui contient seulement les utilisateurs de 40 ans et plus
 const utilisateurs40plus = 'À faire';
