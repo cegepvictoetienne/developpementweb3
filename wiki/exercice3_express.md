@@ -11,5 +11,6 @@
     - Type = Chat ou Chien  
     - Age  
     - Propriétaire  
-- Faire un intergiciel pour garder l’historique des appels à votre API  
+- Faire un intergiciel pour garder l’historique des appels à votre API. 
+- __Pas besoin de couche de persistance__. Tout peut être fait en mémoire!  
 - Bien sûr, c’est en TypeScript, donc un type Animal doit être créé!  
