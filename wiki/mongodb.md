@@ -172,3 +172,6 @@ router.get('/', async (req: IReq, res: IRes) => {  
 });
 
 ```
+
+!!! note  
+    Les bases de données utilisées dans cette leçon proviennent de [ce dépôt GitHub](https://github.com/neelabalan/mongodb-sample-dataset/tree/main)  

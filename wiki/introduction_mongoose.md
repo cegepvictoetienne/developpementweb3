@@ -49,7 +49,7 @@ export const Auteur = model<IAuteur>('Auteur', AuteurSchema);
 
 !!! note
 
-    Le premier paramètre de model<>() est le nom singulier de la collection de votre modèle. __Mongoose__ recherche automatiquement la version au __pluriel__ du nom comme nom de la collection. Par exemple, _Auteur_ aura la collection _auteurs_.  
+    Le premier paramètre de model<>() est le nom singulier de la collection de votre modèle. __Mongoose__ recherche automatiquement la version au __pluriel__ du nom comme nom de la collection. Par exemple, _Auteur_ aura la collection _auteurs_. Pour empêcher que Mongoose n'utilise un mauvais pluriel (pensez Bijou qui devient Bijoux et non pas Bijous), faire la commande : `mongoose.pluralize(null);`   
 
 ## Les routes : Get - Tous  
 
