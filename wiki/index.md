@@ -29,6 +29,10 @@ Nom : Étienne Rivard
 
 [Voir l'horaire ici](horaire.md)
 
+## Règles pour l'utilisation du code emprunté 
+
+[Voir le site de la technique pour le code emprunté](https://techinfo.kerzo.ca/code-emprunte/)  
+
 # Évaluations
 
 |           Évaluation           | Pondération |                    Échéancier                    |
