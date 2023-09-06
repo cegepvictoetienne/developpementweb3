@@ -173,5 +173,104 @@ router.get('/', async (req: IReq, res: IRes) => {  
 
 ```
 
+# Utilisation d'une interface pour la collection  
+``` ts title="movie.ts"
+    /// Code généré par : OpenAI. (2023). ChatGPT (version 3 août 2023) [Modèle massif 
+    /// de langage]. https://chat.openai.com/chat
+export interface IMovie {
+  _id: {
+    $oid: string;
+  };
+  plot: string;
+  genres: string[];
+  runtime: {
+    $numberInt: string;
+  };
+  cast: string[];
+  num_mflix_comments: {
+    $numberInt: string;
+  };
+  title: string;
+  fullplot: string;
+  countries: string[];
+  released: {
+    $date: {
+      $numberLong: string;
+    };
+  };
+  directors: string[];
+  rated: string;
+  awards: {
+    wins: {
+      $numberInt: string;
+    };
+    nominations: {
+      $numberInt: string;
+    };
+    text: string;
+  };
+  lastupdated: string;
+  year: {
+    $numberInt: string;
+  };
+  imdb: {
+    rating: {
+      $numberDouble: string;
+    };
+    votes: {
+      $numberInt: string;
+    };
+    id: {
+      $numberInt: string;
+    };
+  };
+  type: string;
+  tomatoes: {
+    viewer: {
+      rating: {
+        $numberInt: string;
+      };
+      numReviews: {
+        $numberInt: string;
+      };
+      meter: {
+        $numberInt: string;
+      };
+    };
+    lastUpdated: {
+      $date: {
+        $numberLong: string;
+      };
+    };
+  };
+}
+```
+
+``` ts title="tableau_de_fruits.ts"
+import { MongoClient } from 'mongodb';
+import { IMovie } from './movie';
+
+// Replace the uri string with your MongoDB deployment's connection string.
+const uri = 'mongodb://localhost:27017/?readPreference=primary&ssl=false';
+const client = new MongoClient(uri);
+async function run() {
+  try {
+    await client.connect();
+    const database = client.db('sample_mflix');
+    const movies = database.collection<IMovie>('movies'); // Query for a movie that has the title 'Back to the Future'
+    const query = { title: 'Back to the Future' };
+    const movie = await movies.findOne(query);
+    console.log(movie);
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
+}
+run().catch(console.dir);
+
+```
+
+
+
 !!! note  
     Les bases de données utilisées dans cette leçon proviennent de [ce dépôt GitHub](https://github.com/neelabalan/mongodb-sample-dataset/tree/main)  
