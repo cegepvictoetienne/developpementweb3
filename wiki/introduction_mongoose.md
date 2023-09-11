@@ -23,7 +23,7 @@ npm install mongoose
 
 Vous devez ensuite définir le schéma des données à stocker dans une base de données MongoDB.   
 Une pratique recommandée consiste à créer un dossier models dans lequel tous les schémas de votre application seront stockés
-La prochaine diapositive présente la définition d’un objet auteur. [MDN Author Model](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose#author_model)  
+Voici la définition d’un objet auteur : [MDN Author Model](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose#author_model)  
 
 ## Schéma Mongoose - Auteur  
 
