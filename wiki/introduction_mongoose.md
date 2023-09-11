@@ -57,13 +57,16 @@ export const Auteur = model<IAuteur>('Auteur', AuteurSchema);
 import { IAuteur, Auteur } from '@src/models/Auteur';
 
 import mongoose from 'mongoose';
+const uri =
+  'mongodb://localhost:27017/nom_bd?readPreference=primary&ssl=false';
+
 /**
 * Extraire tous les auteurs.
 *
 * @returns {IAuteur[]} Un tableau de tous les auteurs
 */
 async function getAll(): Promise<IAuteur[]> {
-    await mongoose.connect(process.env.MONGODB_URI!);
+    await mongoose.connect(uri);
     const auteurs = await Auteur.find();
     mongoose.connection.close();
     return auteurs;
