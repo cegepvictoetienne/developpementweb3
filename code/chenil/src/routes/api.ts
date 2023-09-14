@@ -3,7 +3,7 @@ import jetValidator from 'jet-validator';
 
 import Paths from '../constants/Paths';
 import AnimalRoutes from './AnimalRoutes';
-import Animal from '@src/models/Animal';
+import Animal, { IAnimal } from '@src/models/Animal';
 import HttpStatusCodes from '@src/constants/HttpStatusCodes';
 
 // **** Variables **** //
@@ -13,6 +13,7 @@ const apiRouter = Router(),
 
 // ** Validation d'un animal ** //
 function validateAnimal(req: Request, res: Response, next: NextFunction) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const nouvelAnimal = new Animal(req.body.animal);
   const error = nouvelAnimal.validateSync();
   if (error !== null && error !== undefined) {
