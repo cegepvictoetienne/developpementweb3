@@ -55,6 +55,7 @@ nav:
           - 'Internationalisation': 'internationalisation.md'
           - 'PWA': 'pwa.md'
           - 'Authentification': 'authentification.md'
+          - 'Accessibilité': 'accessibilite.md'
       - 'Déploiement':
           - 'Déploiement avec Netlify': 'netlify.md'
   - 'Exercices':
