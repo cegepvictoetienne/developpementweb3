@@ -16,7 +16,7 @@ Voici les règles à respecter pour chacune des parties :
 
 1.	Base de données : 
 
-    - Base de données NoSQL (MongoDB seulement!)
+    - Base de données NoSQL (MongoDB, Neo4j, etc.)
         - Minimum 12 propriétés
         - Au moins une propriété de chacun de ces types :  
             - String  

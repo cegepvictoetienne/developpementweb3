@@ -83,5 +83,7 @@
 [Stats et nouvelles sur PWA](https://www.pwastats.com/)  
 [Web.dev - Apprendre sur PWA](https://web.dev/learn/pwa/)  
 [Guide pour le plug-in PWA](https://vite-pwa-org.netlify.app/guide/)  
+## Accessibilité
+[Liste des rôles ARIA](https://www.w3.org/TR/wai-aria-1.0/roles#role_definitions)  
 ## Déploiement avec Netlify
 [Documentation Netlify](https://docs.netlify.com)  
