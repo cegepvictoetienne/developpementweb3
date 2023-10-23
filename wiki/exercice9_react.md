@@ -2,7 +2,7 @@
 
 - Faire un validateur de mot de passe :  
     - Avoir une composante pour l’affichage de la validation et la gestion du rouge/vert.  
-    - Utiliser useState et useEffect pour gérer les valeurs.  
+    - Utiliser useState pour gérer les valeurs.  
     - Utiliser une interface pour les props de la composante.  
 
 <figure markdown>
