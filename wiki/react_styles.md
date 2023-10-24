@@ -8,12 +8,9 @@
 Pour l’installer dans votre projet :  
 
 ``` nodejsrepl title="console"
-npm i styled-components@5.3.6
+npm i styled-components
 npm i @types/styled-components --save-dev
 ```
-
-!!! warning "Attention" 
-    Il y a un bogue avec la version 6 qui empêche l’installation avec npm, il faut spécifier la version 5.3.6.  
 
 ### Remplacer le css par un fichier tsx  
 
