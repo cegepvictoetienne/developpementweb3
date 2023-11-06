@@ -18,7 +18,7 @@ Cours|Date|Sujet|Exercice
 15|2023-10-23|[Introduction à React](introduction_react.md)|[Exercice 9 - React](exercice9_react.md)
 16|2023-10-25|[React et les styles](react_styles.md)|[Exercice 10 - React et styles](exercice10_react_styles.md)
 17|2023-10-30|[Routes, contexte et API](react3.md)|[Exercice 11 - Contexte et API](exercice11_context.md)
-18|2023-11-01|{--[Internationalisation](internationalisation.md) <br />[Accessibilité](accessibilite.md)--}|{--[Exercice 12 - Internatialisation](exercice12_internationalisation.md)--}
+18|2023-11-01|{--[Internationalisation](internationalisation.md) <br />[Accessibilité](accessibilite.md)--}|{--[Exercice 12 - Internationalisation](exercice12_internationalisation.md)--}
 19|2023-11-06|{++[Internationalisation](internationalisation.md) <br />[Accessibilité](accessibilite.md)++}|{++[Exercice 12 - Internationalisation](exercice12_internationalisation.md)++}
 20|2023-11-09|{++[Authentification](authentification.md)++}|{++[Exercice 13 - Authentification](exercice13_authentification.md)++}
 21|2023-11-13|{++[React et PWA](pwa.md)++}|{++[Exercice 14 - PWA](exercice14_pwa.md)++}
