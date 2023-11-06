@@ -70,20 +70,14 @@ const chapeaux: IChapeau[] = [
 
 export default function Home() {
   const [nombreItemsDansPanier, setNombreItemsDansPanier] = useState(0);
-  const { itemsPanier, setItemsPanier, panierOuvert, setPanierOuvert } =
-    useContext(PanierContext);
+  const { itemsPanier, setPanierOuvert } = useContext(PanierContext);
 
   useEffect(() => {
     setNombreItemsDansPanier(itemsPanier.length);
   }, [itemsPanier]);
 
-  useEffect(() => {
-    console.log('panierOuvert', panierOuvert);
-  }, [panierOuvert]);
-
   const togglePanier = async (event: React.MouseEvent) => {
     event.preventDefault();
-    console.log('Click panier', panierOuvert);
     setPanierOuvert(true);
   };
 

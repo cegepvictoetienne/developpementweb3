@@ -57,7 +57,7 @@ export default function Fiche(props: IFiche) {
           <Button
             size="small"
             color="primary"
-            onClick={(e: React.MouseEvent) => ajouterAuPanier()}
+            onClick={() => ajouterAuPanier()}
           >
             Ajouter au panier
           </Button>
@@ -66,7 +66,7 @@ export default function Fiche(props: IFiche) {
           <Button
             size="small"
             color="primary"
-            onClick={(e: React.MouseEvent) => retirerDuPanier()}
+            onClick={() => retirerDuPanier()}
           >
             Retirer du panier
           </Button>

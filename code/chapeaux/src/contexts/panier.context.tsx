@@ -20,8 +20,8 @@ const panierVide: IItemPanier[] = [];
 export const PanierContext = React.createContext<PanierContextType>({
   itemsPanier: panierVide,
   panierOuvert: false,
-  setItemsPanier: (itemsPanier: IItemPanier[]) => {},
-  setPanierOuvert: (ouvert: boolean) => {},
+  setItemsPanier: () => {},
+  setPanierOuvert: () => {},
 });
 
 export default function PanierProvider(props: any) {
@@ -32,7 +32,7 @@ export default function PanierProvider(props: any) {
     itemsPanier,
     panierOuvert,
     setItemsPanier,
-    setPanierOuvert: setPanierOuvert,
+    setPanierOuvert,
   };
   return (
     <PanierContext.Provider value={values}>

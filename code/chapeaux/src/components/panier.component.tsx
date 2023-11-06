@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Drawer } from '@mui/material';
 import { PanierContext } from '../contexts/panier.context';
 import Fiche from './fiche.component';
 import { Box } from '@mui/material';
 
 export default function Panier() {
-  const { itemsPanier, setItemsPanier, panierOuvert, setPanierOuvert } =
+  const { itemsPanier, panierOuvert, setPanierOuvert } =
     useContext(PanierContext);
   return (
     <Drawer
