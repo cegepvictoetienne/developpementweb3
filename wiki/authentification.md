@@ -102,7 +102,7 @@ L'authentification joue un rôle crucial dans la sécurité et la protection des
      * Basé sur le modèle de Material UI 
      * https://github.com/mui/material-ui/tree/v5.14.4/docs/data/material/getting-started/templates/sign-in
      **/
-    import { useEffect, useState } from 'react';
+    import { useEffect } from 'react';
     import { useNavigate } from 'react-router-dom';
     import { auth, logInWithEmailAndPassword } from '../firebase';
     import { useAuthState } from 'react-firebase-hooks/auth';
@@ -117,8 +117,6 @@ L'authentification joue un rôle crucial dans la sécurité et la protection des
     import Grid from '@mui/material/Grid';
     import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
     import Typography from '@mui/material/Typography';
-
-    import './login.css';
 
     function Copyright(props: any) {
     return (
@@ -139,8 +137,6 @@ L'authentification joue un rôle crucial dans la sécurité et la protection des
 
     function Login() {
     const [user, loading] = useAuthState(auth);
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -298,32 +294,6 @@ Firebase peut créer des jetons dans l'application React qui servent à valider 
 
     __Le fichier généré donne un accès administratif à votre projet. Ne pas le mettre dans votre github!__ 
 
-3. Coder la validation du jeton dans l'API :  
-
-    ``` ts title="validationToken.ts"
-    import admin from 'firebase-admin';
-
-    var serviceAccount = require('../firebase.json');
-
-    admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    });
-
-    const verifyToken = async (token: string): Promise<boolean> => {
-    return admin
-        .auth()
-        .verifyIdToken(token)
-        .then((decodedToken) => {
-        const uid = decodedToken.uid;
-        return true;
-        })
-        .catch((error) => {
-        console.log(error);
-        return false;
-        });
-    };
-    ```
-
 4. Coder un intergiciel pour protéger vos routes :  
 
     ``` ts title="authentificationFirebase.ts"
@@ -335,20 +305,6 @@ Firebase peut créer des jetons dans l'application React qui servent à valider 
     admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     });
-
-    const verifyToken = async (token: string): Promise<boolean> => {
-    return admin
-        .auth()
-        .verifyIdToken(token)
-        .then((decodedToken) => {
-        const uid = decodedToken.uid;
-        return true;
-        })
-        .catch((error) => {
-        console.log(error);
-        return false;
-        });
-    };
 
     export const firebaseAuthentication = async (
     req: Request,
