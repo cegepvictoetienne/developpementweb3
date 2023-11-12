@@ -73,6 +73,7 @@ nav:
       - 'Exercice 12 - Internationalisation': 'exercice12_internationalisation.md'
       - 'Exercice 13 - Authenrification': 'exercice13_authentification.md'
       - 'Exercice 14 - PWA': 'exercice14_pwa.md'
+      - 'Exercice Préparation Examen': 'exercice_prep_exam.md'
       - 'Exercice 15 - Netlify': 'exercice15_netlify.md'
   - 'Projet intégrateur': 'projet_integrateur.md'
   - 'Outils':
