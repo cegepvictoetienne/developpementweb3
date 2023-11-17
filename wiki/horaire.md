@@ -23,10 +23,11 @@ Cours|Date|Sujet|Exercice
 20|2023-11-09|{++[Authentification](authentification.md)++}|{++[Exercice 13 - Authentification](exercice13_authentification.md)++}
 21|2023-11-13|{++[React et PWA](pwa.md)++}|{++[Exercice 14 - PWA](exercice14_pwa.md)++}
 22|2023-11-15|Examen React|
-23|2023-11-20|{++[Netlify](netlify.md)++}|{++[Exercice 15 - Netlify](exercice15_netlify.md)++}
-23|2023-11-20|{--Projet Application React--}|
-24|2023-11-22|Projet Application React|
-25|2023-11-27|Projet Application React|
+22|:warning: {++2023-11-20++}|{++Retour sur l'examen React++}|
+|2023-11-20|{--Projet Application React--}|
+|2023-11-22|{--Projet Application React--}|
+24|:warning: {++2023-11-22++}|{++Grève++}|
+25|:warning: {++2023-11-27++}|{++[Netlify](netlify.md)++}|{++[Exercice 15 - Netlify](exercice15_netlify.md)++}
 26|2023-11-29|Projet Application React|
 27|2023-12-04|Projet Application React|
 28|2023-12-06|Projet Application React|

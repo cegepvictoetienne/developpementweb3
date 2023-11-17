@@ -106,6 +106,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - markdown_include.include:
       base_path: code
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 docs_dir: 'wiki'
 site_dir: 'www'
