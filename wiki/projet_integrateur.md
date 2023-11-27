@@ -67,7 +67,7 @@ Voici les règles à respecter pour chacune des parties :
     - Publication de l’application (Netlify, GitHub Pages ou autre)  
 
 # Remise  
-- Le projet doit être remis avant le 15 décembre 2023 à 23h59  
+- Le projet doit être remis avant le **20 décembre 2023 à 23h59**   
 - À remettre sur Teams :  
 
     - Lien GitHub (dépôt public ou privé*) de l’API.  
@@ -80,7 +80,7 @@ Voici les règles à respecter pour chacune des parties :
 - Lien GitHub (dépôt public ou privé*) de l’application.   
 - Le fichier README doit contenir les informations suivantes :  
     - Procédure d’installation de l’application sur un poste local  
-    - Description sommaire de de l’application publiée  
+    - Description sommaire de l’application publiée  
     - Informations d’authentification  
 
 *Si dépôt privé, envoyer une invitation de collaboration à rivard.etienne@cegepvicto.ca  
@@ -92,7 +92,7 @@ __Base de données (10%)__ {: colspan=5}||&#8288 {: style="padding:0"}|&#8288 {:
 Choix|||Le choix du SGBD est pertinent. <br/><br/>2 points|Le choix du SGBD n’est pas optimal. <br/><br/>1 point|Le choix du SGBD n’est pas du tout approprié.<br/><br/>0 point
 Schéma|Le schéma de la base de données répond totalement aux exigences demandées. <br/><br/>4 points|Un ou 2 éléments du schéma ne répondent pas aux exigences demandées<br/><br/>3 points|3 à 5 éléments du schéma ne répondent pas aux exigences demandées<br/><br/>1 point||Plus de 5 éléments ne répondent pas aux exigences demandées<br/><br/>0 point
 Publication|||Le base de données est publiée. <br/><br/>2 points||La base de données n’est pas publiée<br/><br/>0 point
-Jeu de tests|Le jeu de données de permet de tester l’ensemble des fonctionnalités.<br/><br/>2 points||Le jeu de données de permet de tester partiellement les fonctionnalités.<br/><br/>1 point||Le jeu de données de permet de tester moins de 25% des fonctionnalités.<br/><br/>0 point
+Jeu de tests|Le jeu de données permet de tester l’ensemble des fonctionnalités.<br/><br/>2 points||Le jeu de données permet de tester partiellement les fonctionnalités.<br/><br/>1 point||Le jeu de données permet de tester moins de 25% des fonctionnalités.<br/><br/>0 point
 __Interface applicative (API) (40%)__ {: colspan=5}||&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}
 Méthodes HTTP|L’interface applicative implémente __correctement l’ensemble__ des méthodes HTTP demandées. <br/>(GET, POST, PUT, PATCH, DELETE)<br/><br/>8 points|L’interface applicative implémente __correctement 75%__ des méthodes HTTP demandées.  <br/>(GET, POST, PUT, PATCH, DELETE)<br/><br/>6 points|L’interface applicative implémente __correctement 50%__ des méthodes HTTP demandées. <br/>(GET, POST, PUT, PATCH, DELETE)<br/><br/>4 points|L’interface applicative implémente __correctement 25%__ des méthodes HTTP demandées. <br/>(GET, POST, PUT, PATCH, DELETE)<br/><br/>2 points|L’interface applicative implémente __moins de 25%__ des méthodes HTTP demandées. <br/> (GET, POST, PUT, PATCH, DELETE)<br/><br/>0 point
 GET avec filtre|L’interface applicative implémente correctement un minimum de 2 méthodes GET avec filtres. Ces requêtes sont pertinentes au projet.  <br/><br/>4 points|L’interface applicative implémente partiellement un minimum de 2 méthodes GET avec filtres. Ces requêtes sont pertinentes au projet.  <br/><br/>3 points|L’interface applicative implémente partiellement moins de 2 méthodes GET avec filtres. Ces requêtes sont peu pertinentes au projet.  <br/><br/>2 points||L’interface applicative n’implémente pas correctement de méthodes GET avec filtres, ou ces requêtes ne sont pas pertinentes au projet<br/><br/>0 point
@@ -107,7 +107,7 @@ Documentation|La documentation de l’interface applicative est claire et compl�
 La qualité générale de l’interface applicative (API) démontre une rigueur dans l’application des procédures d’assurance qualité.<br/>{==(Correction négative, -1 par bogue identifié)==} {: colspan=5}||&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}
 __Application Web (50%)__ {: colspan=5}||&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}
 Composants|L’application est optimalement décomposée en composants.<br/><br/>5 points||L’application est correctement décomposée en composants<br/><br/>4 points|L’application est décomposée en composants, mais contient une ou 2 erreurs de structure. <br/><br/>2 points|L’application n’est pas correctement décomposée<br/><br/>0 point
-Hooks|Les techniques de programmation utilisées démontrent une excellente maîtrise de l’approche par hooks<br/><br/>5 points|Les techniques de programmation utilisées démontrent une bonne maîtrise de l’approche par hooks <br/><br/>3 points|Les techniques de programmation utilisées démontrent une légère maîtrise de l’approche par hooks<br/><br/>2 points||Les techniques de programmation utilisées ne démontrent pas la maîtrise de l’approchepar hooks<br/><br/>0 point
+Hooks|Les techniques de programmation utilisées démontrent une excellente maîtrise de l’approche par hooks<br/><br/>5 points|Les techniques de programmation utilisées démontrent une bonne maîtrise de l’approche par hooks <br/><br/>3 points|Les techniques de programmation utilisées démontrent une légère maîtrise de l’approche par hooks<br/><br/>2 points||Les techniques de programmation utilisées ne démontrent pas la maîtrise de l’approche par hooks<br/><br/>0 point
 Méthodes HTTP|L’application implémente correctement l’ensemble des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>12 points|L’application implémente correctement 75% des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>9 points|L’application implémente correctement 50% des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>7 points|L’application implémente correctement 25% des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>3 points|L’application implémente correctement moins de 25% des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>0 point
 Validations|L’application contient des validations appropriées.<br/><br/>5 points||L’application contient des validations partiellement appropriées.<br/><br/>3 points||L’application ne contient pas de validations appropriées.<br/><br/>0 point
 Visuel|L’application intègre adéquatement des composants visuels répondant aux exigences du projet. <br/><br/>5 points||L’application intègre partiellement des composants visuels répondant aux exigences du projet. <br/><br/>3 points||L’application n’intègre pas des composants visuels répondant aux exigences du projet. <br/><br/>0 point

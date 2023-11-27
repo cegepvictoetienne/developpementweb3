@@ -26,10 +26,11 @@ Cours|Date|Sujet|Exercice
 22|:warning: {++2023-11-20++}|{++Retour sur l'examen React++}|
 |2023-11-20|{--Projet Application React--}|
 |2023-11-22|{--Projet Application React--}|
-24|:warning: {++2023-11-22++}|{++Grève++}|
-25|:warning: {++2023-11-27++}|{++[Netlify](netlify.md)++}|{++[Exercice 15 - Netlify](exercice15_netlify.md)++}
-26|2023-11-29|Projet Application React|
-27|2023-12-04|Projet Application React|
-28|2023-12-06|Projet Application React|
-29|2023-12-11|Projet Application React|
-30|2023-12-15|Projet Application React|
+23|:warning: {++2023-11-22++}|{++Grève++}|
+24|:warning: {++2023-11-27++}|{++[Netlify](netlify.md)++}|{++[Exercice 15 - Netlify](exercice15_netlify.md)++}
+25|2023-11-29|Projet Application React|
+26|2023-12-04|Projet Application React|
+27|2023-12-06|Projet Application React|
+28|2023-12-11|Projet Application React|
+29|2023-12-15|Projet Application React|
+30|:warning: {++2023-12-20++}|{++Projet Application React - :warning: Remise du projet :warning:++}|
