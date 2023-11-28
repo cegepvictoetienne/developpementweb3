@@ -102,6 +102,10 @@ Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité _server
     <figcaption>Dans Atlas, permettez à 0.0.0.0 de se connecter</figcaption>
     </figure>  
 
+## Procédures  
+
+Veuillez consulter la procédure suivante pour plus d'informations sur le déploiement de la documentation API sur Netlify : [Rendre la documentation disponible pour l'api](documentation.md)
+
 # Déploiement d'une application React  
 
 1. Pousser votre site sur github.  

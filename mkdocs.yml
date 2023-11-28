@@ -58,6 +58,8 @@ nav:
           - 'Accessibilité': 'accessibilite.md'
       - 'Déploiement':
           - 'Déploiement avec Netlify': 'netlify.md'
+  - 'Procédures':
+      - "Rendre la documentation disponible pour l'api": 'documentation.md'
   - 'Exercices':
       - 'Exercice 1 - Node': 'exercice1_node.md'
       - 'Exercice 2 - lodash': 'exercice2_lodash.md'
