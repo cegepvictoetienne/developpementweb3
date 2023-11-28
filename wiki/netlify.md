@@ -68,7 +68,7 @@ Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité _server
         node_bundler = "esbuild"
     [[redirects]]
         force = true
-        from = "/api/*"
+        from = "/*"
         status = 200
         to = "/.netlify/functions/api/:splat"
     ```  

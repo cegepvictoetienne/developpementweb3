@@ -6,9 +6,15 @@
 
     ![SwaggerEditor](./images/swaggereditor1.png)
 
-1. Exporter votre documentation en format html.  
+1. Exporter votre documentation en format yaml.  
 
     ![SwaggerEditor](./images/swaggereditor2.png)
+
+1. Convertir le fichier yaml en html avec redoc-cli.  
+
+    ``` nodejsrepl title="console"
+    npx @redocly/cli build-docs -o index.html api.yaml
+    ```
 
 1. Copier le index.html dans le dossier 'src' de votre projet. 
 
@@ -19,7 +25,8 @@
     ```javascript
     // rend disponible la documentation de l'interface logicielle
     app.get('/api-docs/', async (req, res) => {
-        res.set('Content-Type', 'text/html; charset=utf-8');
+        res.set('Content-Security-Policy', 'script-src blob:');
+        res.set('Content-Security-Policy', 'worker-src blob:');
         res.sendFile(path.join(__dirname, 'index.html'));
     });
 
@@ -42,21 +49,9 @@
     node_bundler = "esbuild"
     [[redirects]]
     force = true
-    from = "/api/*"
+    from = "/*"
     status = 200
     to = "/.netlify/functions/api/:splat"
-    # Ajout du redirect vers la documentation de l'interface logicielle
-    [[redirects]]
-    force = true
-    from = "/api-docs/*"
-    status = 200
-    to = "/.netlify/functions/api/api-docs/:splat"
-    # Ajout du redirect vers la documentation de l'interface logicielle à partir de la racine
-    [[redirects]]
-    force = true
-    from = "/"
-    status = 200
-    to = "/.netlify/functions/api/api-docs/"
     ```
 
 1. Pousser les changements dans le dépôt git et vérifier que la documentation est disponible sur le serveur netlify.  
