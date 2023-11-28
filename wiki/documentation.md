@@ -20,7 +20,7 @@
     npm install require-text --save
     ```
 
-1. Ajouter le code suivant dans le fichier 'server.js' pour rendre disponible la documentation dans la route '/api-docs.  
+1. Ajouter le code suivant dans le fichier 'server.ts' pour rendre disponible la documentation dans la route '/api-docs.  
 
     ```javascript
     var requireText = require('require-text');
