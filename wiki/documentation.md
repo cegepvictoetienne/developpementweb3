@@ -2,13 +2,13 @@
 
 ## Documentation de l'interface logicielle
 
-1. Utiliser [SwaggerHub](https://app.swaggerhub.com/home) pour créer la documentation de l'interface logicielle.  
+1. Utiliser [SwaggerEditor](https://editor-next.swagger.io) pour créer la documentation de l'interface logicielle.  
 
-    ![SwaggerHub](./images/swaggerhub1.png)
+    ![SwaggerEditor](./images/swaggereditor1.png)
 
 1. Exporter votre documentation en format html.  
 
-    ![SwaggerHub](./images/swaggerhub2.png)
+    ![SwaggerEditorb](./images/swaggereditor2.png)
 
 1. Copier le index.html dans le dossier 'src' de votre projet. 
 
