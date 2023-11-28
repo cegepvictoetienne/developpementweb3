@@ -8,7 +8,7 @@
 
 1. Exporter votre documentation en format html.  
 
-    ![SwaggerEditorb](./images/swaggereditor2.png)
+    ![SwaggerEditor](./images/swaggereditor2.png)
 
 1. Copier le index.html dans le dossier 'src' de votre projet. 
 
