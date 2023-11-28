@@ -14,23 +14,13 @@
 
 1. Copier également le index.html dans le dossier 'functions' de votre projet, pour le rendre disponible sur le serveur netlify.
 
-1. installer le module node 'require-text' pour pouvoir lire le fichier index.html dans le code javascript.  
-
-    ```bash
-    npm install require-text --save
-    ```
-
 1. Ajouter le code suivant dans le fichier 'server.ts' pour rendre disponible la documentation dans la route '/api-docs.  
 
     ```javascript
-    var requireText = require('require-text');
-    
-    var apihtml = requireText(__dirname + '/index.html', require);
-
     // rend disponible la documentation de l'interface logicielle
     app.get('/api-docs/', async (req, res) => {
         res.set('Content-Type', 'text/html; charset=utf-8');
-        res.send(apihtml);
+        res.sendFile(path.join(__dirname, 'index.html'));
     });
 
     // redirige vers api-docs
