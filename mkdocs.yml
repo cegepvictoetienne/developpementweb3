@@ -56,6 +56,8 @@ nav:
           - 'PWA': 'pwa.md'
           - 'Authentification': 'authentification.md'
           - 'Accessibilité': 'accessibilite.md'
+      - 'Next.js':
+          - 'Introduction à Next.js': 'introduction_nextjs.md'
       - 'Déploiement':
           - 'Déploiement avec Netlify': 'netlify.md'
   - 'Procédures':
