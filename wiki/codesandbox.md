@@ -1,6 +1,4 @@
 # Tous les démos CodeSandbox référencés dans le cours 
-## Générateur Express
-[Démo - API Express](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/hotel)  
 ## Introduction à React
 [Démo - Personnage - Base](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base)  
 [Démo - Personnage - Props](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_props)  
