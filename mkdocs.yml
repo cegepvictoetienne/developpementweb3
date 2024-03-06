@@ -49,6 +49,7 @@ nav:
           - 'Introduction à Next.js': 'nextjs/intro_nextjs.md'
           - 'Client vs Serveur': 'nextjs/nextjs_client_vs_serveur.md'
           - 'Gestion erreurs': 'nextjs/nextjs_gestion_erreurs.md'
+          - 'Gestion formulaire': 'nextjs/nextjs_gerer_formulaire.md'
       - 'Déploiement':
           - 'Déploiement avec Netlify': 'react/netlify.md'
   - 'Exercices':

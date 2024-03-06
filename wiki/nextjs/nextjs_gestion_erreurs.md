@@ -44,4 +44,20 @@ export default function NotFound() {
 }
 ```
 
+## Appel des pages d'erreur
+
+Pour appeler les pages d'erreur, d'utiliser la fonction notFound de.  
+
+``` ts title="repas.tsx"
+
+import { notFound } from 'next/navigation';
+
+export default function Repas() {
+  if (pas_trouve) {
+    notFound();
+  }
+  ...
+}
+```
+
 
