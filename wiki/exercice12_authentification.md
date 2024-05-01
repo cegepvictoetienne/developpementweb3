@@ -1,4 +1,4 @@
-# Exercice 13 - Authentification  
+# Exercice - Authentification  
 
 - Faire une mini-application React avec une page de login et un appel à votre API du projet intégrateur.  
 - Sécuriser la mini-application avec Firebase   

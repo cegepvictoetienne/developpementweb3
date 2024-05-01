@@ -42,7 +42,6 @@ Voici les règles à respecter pour chacune des parties :
         - POST   
         - PUT et/ou PATCH  
         - DELETE  
-    - Utilisation d’au minimum 2 propriétés virtuelles (ou l’équivalent)  
     - Validations appropriées :  
         - Champs requis  
         - Types  
@@ -60,20 +59,19 @@ Voici les règles à respecter pour chacune des parties :
     - Internationalisée (minimum 2 langues)  
     - Interactions avec toutes les méthodes HTTP implémentées par l’API  
     - Utilisation de formulaires lorsque nécessaire (minimum 1 formulaire, 5 champs)    
-    - Avec validations adéquates et cohérentes avec les validations serveur   
+    - Avec validations adéquates et cohérentes avec les validations serveur. Les messages issus des validations doivent être affichés à l’utilisateur.   
     - Minimum 2 composants utilisés à des fins d’affichage  
     - Authentification obligatoire pour certaines fonctionnalités ciblées (minimum 1), adaptée à la réalité du projet. L’authentification peut être intégrée dans l’API ou comme serveur tiers.  
     - Configuration en tant qu’application progressive
     - Publication de l’application (Netlify, GitHub Pages ou autre)  
 
 # Remise  
-- Le projet doit être remis avant le 15 décembre 2023 à 23h59  
+- Le projet doit être remis avant le 15 décembre 2024 à 23h59  
 - À remettre sur Teams :  
 
     - Lien GitHub (dépôt public ou privé*) de l’API.  
     - Ajouter un dossier Dev contenant le script de la base de données (scripts de création au besoin et scripts de données de test)  
     - Le fichier README doit contenir les informations suivantes :  
-
         - Procédure d’installation de l’API sur un poste local  
         - Type de base de données et procédure de création de la base de données.   
         - URL de l’API publiée  

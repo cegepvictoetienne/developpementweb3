@@ -1,4 +1,4 @@
-# Exercice 10 - React et les styles  
+# Exercice - React et les styles  
 
 - Faire un carnet d’adresses avec Material UI et Styled Components (essayer les deux dans des projets différents)  
 - Afficher sous forme de carte les informations suivantes :  

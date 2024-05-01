@@ -171,6 +171,8 @@ Donc, pour compiler et exécuter en même temps, écrire le script suivant dans 
 
 ## Module dotenv  
 
+À partir de node 20.6.0, il est possible de créer un fichier .env pour y mettre les paramètres de votre application.
+
 Paramétrer votre application directement dans le code est imprudent. Des informations confidentielles peuvent se retrouver dans votre repo GitHub à la vue de tout le monde, ex :  
 
 
@@ -178,12 +180,6 @@ Paramétrer votre application directement dans le code est imprudent. Des inform
 const cleAPI = "FKSDKLJFKDSKLJF898FSDKJKSD898F9DSKLFDSKFSD";
 const utilisateurBD = "admin";
 const motDePasse="password";
-```
-
-Installation : 
-
-``` nodejsrepl title="console"
-npm install dotenv  
 ```
 
 Fichier contenant les paramètres : .env  
@@ -196,12 +192,13 @@ motDePasse="password"
 
 Utilisation dans le code :  
 
-``` ts title="a_faire.ts"
-import dotenv from 'dotenv';
-
-dotenv.config();
-
+``` js title="a_faire.ts"
 const cleAPI = process.env.cleAPI;
+console.log(cleAPI);
+```
+
+``` nodejsrepl title="console"
+node --env-file=.env a_faire.js
 ```
 
 ## npm – mise à jour  
@@ -251,7 +248,7 @@ Il importe de faire attention lors de l’ajout d’un module. Il faut s’assur
 - [Info sur le GitHub de Node.js](https://github.com/nodejs/node/blob/HEAD/SECURITY.md#security)  
 - [Article Developpez.com](https://securite.developpez.com/actu/309772/Quatre-packages-npm-trouves-en-train-d-ouvrir-des-shells-sur-des-systemes-Linux-et-Windows-Tout-ordinateur-avec-l-un-de-ces-packages-installes-doit-etre-considere-comme-totalement-compromis/)  
 
-## .gitignore vs node et dotenv  
+## .gitignore vs node et .env  
 
 Il est essentiel de ne pas envoyer dans votre dépôt git le dossier node_modules, ajoutez cette ligne dans .gitignore :  
 

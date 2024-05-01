@@ -34,13 +34,11 @@ nav:
   - 'Horaire': 'horaire.md'
   - 'Leçons':
       - 'Node.js et TypeScript':
-          - 'Introduction à Node.js': 'introduction_nodejs.md'
           - 'Introduction à TypeScript': 'introduction_typescript.md'
-          - 'Node.js - Serveur Web': 'nodejs_serveur_web.md'
           - 'NPM': 'npm.md'
           - 'TypeScript 2': 'typescript_2.md'
       - 'Express et MongoDB':
-          - 'Introduction Express': 'introduction_express.md'
+          - 'Intergiciels Express': 'intergiciels_express.md'
           - 'Générateur Express': 'generateur_express.md'
           - 'JavaScript asynchrone': 'javascript_async.md'
           - 'MongoDB': 'mongodb.md'
@@ -61,22 +59,21 @@ nav:
   - 'Procédures':
       - "Rendre la documentation disponible pour l'api": 'documentation.md'
   - 'Exercices':
-      - 'Exercice 1 - Node': 'exercice1_node.md'
-      - 'Exercice 2 - lodash': 'exercice2_lodash.md'
-      - 'Exercice 3 - Express': 'exercice3_express.md'
-      - 'Exercice 4 - Express avec modèle': 'exercice4_express_avec_modele.md'
-      - 'Exercice 5 - Mongo DB': 'exercice5_mongodb.md'
+      - 'Exercice 1 - lodash': 'exercice1_lodash.md'
+      - 'Exercice 2 - Express avec modèle': 'exercice2_express_avec_modele.md'
+      - 'Exercice 3 - Intergiciels Express': 'exercice3_intergiciels_express.md'
+      - 'Exercice 4 - Mongo DB': 'exercice4_mongodb.md'
+      - 'Exercice 5 - Mongoose': 'exercice5_mongoose.md'
       - 'Exercice 6 - Mongoose': 'exercice6_mongoose.md'
-      - 'Exercice 7 - Mongoose': 'exercice7_mongoose.md'
-      - 'Exercice 8 - Express et JWT': 'exercice8_express_jwt.md'
-      - 'Exercice 9 - React': 'exercice9_react.md'
-      - 'Exercice 10 - React et styles': 'exercice10_react_styles.md'
-      - 'Exercice 11 - Contexte et API': 'exercice11_context.md'
-      - 'Exercice 12 - Internationalisation': 'exercice12_internationalisation.md'
-      - 'Exercice 13 - Authenrification': 'exercice13_authentification.md'
-      - 'Exercice 14 - PWA': 'exercice14_pwa.md'
+      - 'Exercice 7 - Express et JWT': 'exercice7_express_jwt.md'
+      - 'Exercice 8 - React': 'exercice8_react.md'
+      - 'Exercice 9 - React et styles': 'exercice9_react_styles.md'
+      - 'Exercice 10 - Contexte et API': 'exercice10_context.md'
+      - 'Exercice 11 - Internationalisation': 'exercice11_internationalisation.md'
+      - 'Exercice 12 - Authenrification': 'exercice12_authentification.md'
+      - 'Exercice 13 - PWA': 'exercice13_pwa.md'
       - 'Exercice Préparation Examen': 'exercice_prep_exam.md'
-      - 'Exercice 15 - Netlify': 'exercice15_netlify.md'
+      - 'Exercice 14 - Netlify': 'exercice14_netlify.md'
   - 'Projet intégrateur': 'projet_integrateur.md'
   - 'Outils':
       - 'Masscode': 'masscode.md'
@@ -109,8 +106,8 @@ markdown_extensions:
   - markdown_include.include:
       base_path: code
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 docs_dir: 'wiki'
 site_dir: 'www'

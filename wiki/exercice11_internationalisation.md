@@ -1,7 +1,4 @@
-# Exercice 12 - Internationalisation  
-
-# Exercice 12 - Internationalisation  
-
+# Exercice - Internationalisation  
 
 - Créer une application React
 - Afficher une facture avec les éléments suivants :

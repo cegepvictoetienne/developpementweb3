@@ -1,4 +1,4 @@
-# Exercice 3 - TypeScript et Express  
+# Exercice - Express avec modèle  
 
 - Faire un API pour une chenil qui doit faire l’inventaire de ses résidents (chats et chiens)  
 - GET /animal pour la liste de tous les animaux  
@@ -11,6 +11,9 @@
     - Type = Chat ou Chien  
     - Age  
     - Propriétaire  
-- Faire un intergiciel pour garder l’historique des appels à votre API. 
-- __Pas besoin de couche de persistance__. Tout peut être fait en mémoire!  
 - Bien sûr, c’est en TypeScript, donc un type Animal doit être créé!  
+- Faire l’API des animaux avec le modèle généré (express-generator-typescript).
+- Assurez-vous de valider le nom, la race et le propriétaire de l’animal.
+- Ajouter le numéro de téléphone du propriétaire et valider que le numéro est bien sous la forme (999) 999-9999
+- Testez les méthodes en utilisant Postman
+

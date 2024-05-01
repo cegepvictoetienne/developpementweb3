@@ -1,12 +1,8 @@
 # Tous les manuels référencés dans le cours 
-## Introduction à Node.js
-[Documentation officielle node.js](https://nodejs.org/fr/docs)  
 ## Introduction à TypeScript
 [Manuel TypeScript](https://www.typescriptlang.org/fr/docs/handbook/intro.html)  
 [What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)  
-[tsconfig reference](https://www.typescriptlang.org/tsconfig)  ## Node.js - Serveur Web
-[node.js - faire son premier serveur Web](https://nodejs.org/fr/docs/guides/getting-started-guide)  
-## NPM
+[tsconfig reference](https://www.typescriptlang.org/tsconfig)  ## NPM
 [Documentation de npm js](https://docs.npmjs.com/)  
 [Wikipedia - Article sur npm](https://fr.wikipedia.org/wiki/Npm)  
 [npm init](https://docs.npmjs.com/cli/v6/commands/npm-init)  
@@ -19,13 +15,9 @@
 [Enums - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/enums.html#handbook-content)  
 [Interfaces - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#reusable-types-interfaces)  
 [Generics - Manuel TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html#handbook-content)  
-## Introduction Express
-[Express JS](https://expressjs.com/fr/)  
-[Express API](https://expressjs.com/en/4x/api.html#req)
+## Intergiciels Express
 [Morgan - ExpressJS](https://expressjs.com/en/resources/middleware/morgan.html)  
 [express.json - ExpressJS](https://expressjs.com/en/api.html#express.json)  
-[Router - ExpressJS](https://expressjs.com/en/5x/api.html#router)  
-[MDN HTTP Methods](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods)  
 ## Générateur Express
 [Installation d'express](https://expressjs.com/fr/starter/installing.html)  
 [Express Generator avec TypeScript](https://github.com/seanpmaxwell/express-generator-typescript)  

@@ -1,4 +1,4 @@
-# Exercice 9 - React  
+# Exercice - React  
 
 - Faire un validateur de mot de passe :  
     - Avoir une composante pour l’affichage de la validation et la gestion du rouge/vert.  

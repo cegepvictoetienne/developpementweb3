@@ -1,8 +1,8 @@
-# Exercice 7 - Mongoose   
+# Exercice - Mongo DB  
 
 Modèle de données : [persons.json](donnees/persons.json)  
 
-- Partez du schéma [créé au cours 6](exercice6_mongoose.md)  
+- Partez du modèle persons.json.  
 - Créez un service web intégrant les 4 méthodes de base (CRUD) avec l’ensemble des attributs.   
 - Assurez-vous que les données sont adéquatement stockées (avec les bons types) et que la structure est conforme.   
 - Attributs obligatoires :   
@@ -11,7 +11,7 @@ Modèle de données : [persons.json](donnees/persons.json)
     - isActive  
     - registered  
     - Balance  
-- Vous devez aussi valider les champs facultatifs.
+- Vous devez aussi valider les champs facultatifs.   
 - Ajoutez d’autres routes :  
     - /persons/? : permet de récupérer les informations d’une seule personne à partir de son identifiant  
     - /persons/q/? : permet de rechercher l’information dans les attributs nom, prénom et courriel  

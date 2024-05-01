@@ -25,7 +25,7 @@ Nom : Étienne Rivard
 - Netlify
 - Plan de cours disponible dans Léa  
 
-## Horaire pour l'automne 2023
+## Horaire pour l'automne 2024
 
 [Voir l'horaire ici](horaire.md)
 
