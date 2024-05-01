@@ -8,8 +8,8 @@
 Pour l’installer dans votre projet :  
 
 ``` nodejsrepl title="console"
-npm i styled-components
-npm i @types/styled-components --save-dev
+bun i styled-components
+bun i @types/styled-components --save-dev
 ```
 
 ### Remplacer le css par un fichier tsx  
@@ -42,9 +42,9 @@ Librairie de composantes pré-stylisées.
 Pour l’installer dans votre projet :  
 
 ``` nodejsrepl title="console"
-npm i @mui/material @emotion/react @emotion/styled
-npm i @fontsource/roboto
-npm install @mui/icons-material
+bun i @mui/material @emotion/react @emotion/styled
+bun i @fontsource/roboto
+bun install @mui/icons-material
 ```
 
 !!! manuel 

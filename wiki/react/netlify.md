@@ -27,13 +27,13 @@ Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité _server
 1. installer les modules serverless-http et Netlify Functions :  
 
     ``` nodejsrepl title="console"
-    npm i serverless-http @netlify/functions  
+    bun i serverless-http @netlify/functions  
     ```
 
 2. installer le module netlify-cli en dev :  
 
     ``` nodejsrepl title="console"
-    npm i netlify-cli --save-dev
+    bun i netlify-cli --save-dev
     ```
 
 3. Décorer l’objet app avec un appel à serverless dans un nouveau fichier. Permet d’exposer vos routes à Netlify.  Mettre le nouveau fichier dans le dossier /functions (à la racine du projet).  

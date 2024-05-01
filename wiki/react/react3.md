@@ -9,8 +9,8 @@ Permettre de passer d’une page à l’autre dans votre application React.
 Pour l'installer dans votre projet :  
 
 ``` nodejsrepl title="console"
-npm i react-router-dom
-npm i @types/react-router-dom --save-dev
+bun i react-router-dom
+bun i @types/react-router-dom --save-dev
 ```
  
 # Exemple de SPA avec Router  

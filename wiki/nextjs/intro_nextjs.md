@@ -11,7 +11,7 @@ Avec Next.js, les pages sont générées du côté serveur au lieu du côté cli
 
 ``` nodejsrepl title="console"
 
-npx create-next-app@latest
+bunx create-next-app@latest
 
 
 ✔ What is your project named? … firstapp
@@ -50,7 +50,7 @@ npx create-next-app@latest
 # Démarrer le projet
 
 ``` nodejsrepl title="console"
-    npm run dev
+    bun run dev
 ```
 
 ![](images/premier_site_nextjs.png)

@@ -9,7 +9,7 @@ Voici comment générer l’application :
 1. Situez vous dans le dossier où vous désirez créer l’application (le dossier de l’application sera automatiquement créé à la prochaine étape)  
 1. Exécutez la commande de création d’application :  
     ``` nodejsrepl title="console"
-    npm create vite@latest my_app
+    bun create vite@latest my_app
     ```
 1. Suivez les instructions et choisir __React__ et __TypeScript__  
 1. Une fois l’application générée, déplacez-vous dans le dossier créé :  
@@ -18,8 +18,8 @@ Voici comment générer l’application :
     ```
 1. Exécutez l’application en utilisant les commandes suivantes :  
     ``` nodejsrepl title="console"
-    npm install
-    npm run dev
+    bun install
+    bun run dev
     ```
 
 <figure markdown>

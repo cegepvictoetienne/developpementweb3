@@ -15,7 +15,7 @@ Les __applications web progressives__ (ou _progressive web applications_ en 
 1. Installation du plug-in  :
 
     ``` nodejsrepl title="console"
-    npm install -D vite-plugin-pwa
+    bun install -D vite-plugin-pwa
     ```  
 
 2. Modifier vite.config.ts pour générer le manifest requis pour PWA :  

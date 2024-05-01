@@ -33,19 +33,6 @@ Aide à trouver les erreurs dans notre code.
 !!! manuel  
     [Manuel TypeScript](https://www.typescriptlang.org/fr/docs/handbook/intro.html)  
 
-
-# Installation de TypeScript  
-
-Pour installer TypeScript, utiliser la commande suivante :
-
-``` nodejsrepl title="console"
-npm install –g typescript
-```
-
-!!! note
-
-    Ça installe sur votre poste le compilateur TypeScript qui transforme le code en JavaScript. Nous allons voir npm plus en détail au prochain cours
-
 # Indiquer les types aux variables  
 
 <figure markdown>
@@ -204,60 +191,10 @@ const produit1 = multiplierDeuxNombres(2, 4);
 const produit2 = multiplierDeuxNombres('DIX', 'DEUX'); // Donne une erreur
 ```
 
-# Compiler TypeScript en JavaScript  
+## Exécution de TypeScript
 
+Bun permet nativement l'exécution de TypeScript :  
 
-TypeScript ne peut pas être exécuté directement par Node ou par le navigateur. Il faut le compiler (parfois appelé « transpiler ») en JavaScript avant son exécution.  
-
-``` nodejsrepl title="console"
-tsc
+``` bash
+bun fichier.ts
 ```
-
-## Configurer tsc  
-
-Pour compiler, il est important de générer le fichier tsconfig.json avant de faire la commmande tsc :  
-
-
-``` nodejsrepl title="console"
-tsc -init
-```
-
-Voici les résultats, selon la version de JavaScript :  
-
-
-## TypeScript
-``` ts title="chat.ts"
-{!intro_typescript/chat.ts!}
-```
-
-## JavaScript ES6
-``` ts title="chat.js"
-{!intro_typescript/chat_ES6.js!}
-```
-
-## JavaScript ES2022
-``` ts title="chat.js"
-{!intro_typescript/chat_ES2022.js!}
-```
-
-## Configuration de tsc – tsconfig.json
-
-tsconfig.json permet de configurer comment tsc compile les fichiers TypeScript.  
-
-Quelques paramètres utiles :  
-
-``` json title="tsconfig.json"
-{
-  "compilerOptions": {
-  "target": "ES2022" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-  "module": "commonjs" /* Specify what module code is generated. */,
-  "outDir": "./dist",  /* Specify an output folder for all emitted files. */
-  "strict": true /* Enable all strict type-checking options. */,
-  "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  }
-}
-```  
-
-!!! manuel    
-    [What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)  
-    [tsconfig reference](https://www.typescriptlang.org/tsconfig)  

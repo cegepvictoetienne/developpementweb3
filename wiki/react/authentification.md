@@ -7,7 +7,7 @@ L'authentification joue un rôle crucial dans la sécurité et la protection des
 1. Installer les modules pour Firebase dans React :  
 
     ``` nodejsrepl title="console"
-    npm install firebase react-firebase-hooks
+    bun install firebase react-firebase-hooks
     ```  
 
 2. Configurer Firebase :  
@@ -276,7 +276,7 @@ Firebase peut créer des jetons dans l'application React qui servent à valider 
 1. Installer le module Firebase Admin à votre API :  
 
     ``` nodejsrepl title="console"
-    npm install firebase-admin
+    bun install firebase-admin
     ```
 
 2. Générer firebase.json à partir de la console Firebase :  

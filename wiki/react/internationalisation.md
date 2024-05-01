@@ -20,7 +20,7 @@
 Pour installer React-Intl :  
 
 ``` nodejsrepl title="console"
-npm install react-intl
+bun install react-intl
 ```
 
 !!! manuel 
