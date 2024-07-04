@@ -1559,39 +1559,37 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 <li>
 <p>Base de données : </p>
 <ul>
-<li>Base de données NoSQL (MongoDB, Neo4j, etc.)<ul>
-<li>Minimum 12 propriétés</li>
+<li>Base de données MongoDB<ul>
+<li>Minimum 8 propriétés</li>
 <li>Au moins une propriété de chacun de ces types :  <ul>
 <li>String  </li>
 <li>Number  </li>
 <li>Date  </li>
 <li>Bool  </li>
-<li>Tableau de types natifs (string, number, etc.)  </li>
-<li>Tableau d'objets  </li>
+<li>Tableau de types natifs (string, number, etc.)    </li>
 </ul>
 </li>
 <li>Possibilité d’utiliser plusieurs collections (recommandé pour les modèles plus avancés)  </li>
 </ul>
 </li>
 <li>Jeu de données test  </li>
-<li>Publication de la base de données  </li>
+<li>Publication de la base de données (MongoDB Atlas ou autre)</li>
 </ul>
 </li>
 <li>
 <p>Interface applicative (API) :</p>
 <ul>
-<li>Robuste (validation et messages d’erreur personnalisées, en français)  </li>
+<li>Robuste (validation et messages d’erreur personnalisés, en français)  </li>
 <li>Sécuritaire  </li>
 <li>Implémente méthodes HTTP ciblées : <ul>
 <li>GET <ul>
 <li>GET ALL</li>
 <li>GET by ID</li>
 <li>GET avec Filtres (<strong>au moins 2</strong>)</li>
-<li>GET – Stats (<strong>transformation des données – au moins 2</strong>)</li>
 </ul>
 </li>
 <li>POST   </li>
-<li>PUT et/ou PATCH  </li>
+<li>PUT</li>
 <li>DELETE  </li>
 </ul>
 </li>
@@ -1613,20 +1611,20 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 <li>Approche « mobile first », idéalement responsive, minimalement correctement affichée sur 3 résolutions d’écran (mobile, tablette et pc). </li>
 <li>À l’aide de React fonctionnel.  </li>
 <li>Décomposée en minimum 5 composants (ou l’équivalent)  </li>
-<li>Internationalisée (minimum 2 langues)  </li>
+<li>Internationalisée (Français et Anglais)  </li>
 <li>Interactions avec toutes les méthodes HTTP implémentées par l’API  </li>
 <li>Utilisation de formulaires lorsque nécessaire (minimum 1 formulaire, 5 champs)    </li>
 <li>Avec validations adéquates et cohérentes avec les validations serveur. Les messages issus des validations doivent être affichés à l’utilisateur.   </li>
-<li>Minimum 2 composants utilisés à des fins d’affichage  </li>
+<li>Minimum 2 composants utilisés à des fins d’affichage.  </li>
 <li>Authentification obligatoire pour certaines fonctionnalités ciblées (minimum 1), adaptée à la réalité du projet. L’authentification peut être intégrée dans l’API ou comme serveur tiers.  </li>
-<li>Configuration en tant qu’application progressive</li>
+<li>Configuration en tant qu’application progressive.</li>
 <li>Publication de l’application (Netlify, GitHub Pages ou autre)  </li>
 </ul>
 </li>
 </ol>
 <h1 id="remise">Remise</h1>
 <ul>
-<li>Le projet doit être remis avant le 15 décembre 2024 à 23h59  </li>
+<li>Le projet doit être remis avant le 13 décembre 2024 à 23h59  </li>
 <li>
 <p>À remettre sur Teams :  </p>
 <ul>
@@ -1634,14 +1632,14 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 <li>Ajouter un dossier Dev contenant le script de la base de données (scripts de création au besoin et scripts de données de test)  </li>
 <li>Le fichier README doit contenir les informations suivantes :  <ul>
 <li>Procédure d’installation de l’API sur un poste local  </li>
-<li>Type de base de données et procédure de création de la base de données.   </li>
+<li>Procédure de création de la base de données.   </li>
 <li>URL de l’API publiée  </li>
 </ul>
 </li>
 <li>Lien GitHub (dépôt public ou privé*) de l’application.   </li>
 <li>Le fichier README doit contenir les informations suivantes :  </li>
 <li>Procédure d’installation de l’application sur un poste local  </li>
-<li>Description sommaire de de l’application publiée  </li>
+<li>Description sommaire de l’application publiée  </li>
 <li>Informations d’authentification  </li>
 </ul>
 </li>
@@ -1669,18 +1667,10 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 <td style="padding:0">&#8288;</td>
 </tr>
 <tr>
-<td>Choix</td>
-<td></td>
-<td></td>
-<td>Le choix du SGBD est pertinent. <br/><br/>2 points</td>
-<td>Le choix du SGBD n’est pas optimal. <br/><br/>1 point</td>
-<td>Le choix du SGBD n’est pas du tout approprié.<br/><br/>0 point</td>
-</tr>
-<tr>
 <td>Schéma</td>
-<td>Le schéma de la base de données répond totalement aux exigences demandées. <br/><br/>4 points</td>
-<td>Un ou 2 éléments du schéma ne répondent pas aux exigences demandées<br/><br/>3 points</td>
-<td>3 à 5 éléments du schéma ne répondent pas aux exigences demandées<br/><br/>1 point</td>
+<td>Le schéma de la base de données répond totalement aux exigences demandées. <br/><br/>6 points</td>
+<td>Un ou 2 éléments du schéma ne répondent pas aux exigences demandées<br/><br/>5 points</td>
+<td>3 à 5 éléments du schéma ne répondent pas aux exigences demandées<br/><br/>3 points</td>
 <td></td>
 <td>Plus de 5 éléments ne répondent pas aux exigences demandées<br/><br/>0 point</td>
 </tr>
@@ -1710,41 +1700,33 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 </tr>
 <tr>
 <td>Méthodes HTTP</td>
-<td>L’interface applicative implémente <strong>correctement l’ensemble</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, PATCH, DELETE)<br/><br/>8 points</td>
-<td>L’interface applicative implémente <strong>correctement 75%</strong> des méthodes HTTP demandées.  <br/>(GET, POST, PUT, PATCH, DELETE)<br/><br/>6 points</td>
-<td>L’interface applicative implémente <strong>correctement 50%</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, PATCH, DELETE)<br/><br/>4 points</td>
-<td>L’interface applicative implémente <strong>correctement 25%</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, PATCH, DELETE)<br/><br/>2 points</td>
-<td>L’interface applicative implémente <strong>moins de 25%</strong> des méthodes HTTP demandées. <br/> (GET, POST, PUT, PATCH, DELETE)<br/><br/>0 point</td>
+<td>L’interface applicative implémente <strong>correctement l’ensemble</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, DELETE)<br/><br/>8 points</td>
+<td>L’interface applicative implémente <strong>correctement 75%</strong> des méthodes HTTP demandées.  <br/>(GET, POST, PUT, DELETE)<br/><br/>6 points</td>
+<td>L’interface applicative implémente <strong>correctement 50%</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, DELETE)<br/><br/>4 points</td>
+<td>L’interface applicative implémente <strong>correctement 25%</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, DELETE)<br/><br/>2 points</td>
+<td>L’interface applicative implémente <strong>moins de 25%</strong> des méthodes HTTP demandées. <br/> (GET, POST, PUT, DELETE)<br/><br/>0 point</td>
 </tr>
 <tr>
 <td>GET avec filtre</td>
-<td>L’interface applicative implémente correctement un minimum de 2 méthodes GET avec filtres. Ces requêtes sont pertinentes au projet.  <br/><br/>4 points</td>
+<td>L’interface applicative implémente correctement un minimum de 2 méthodes GET avec filtres. Ces requêtes sont pertinentes au projet.  <br/><br/>5 points</td>
 <td>L’interface applicative implémente partiellement un minimum de 2 méthodes GET avec filtres. Ces requêtes sont pertinentes au projet.  <br/><br/>3 points</td>
 <td>L’interface applicative implémente partiellement moins de 2 méthodes GET avec filtres. Ces requêtes sont peu pertinentes au projet.  <br/><br/>2 points</td>
 <td></td>
 <td>L’interface applicative n’implémente pas correctement de méthodes GET avec filtres, ou ces requêtes ne sont pas pertinentes au projet<br/><br/>0 point</td>
 </tr>
 <tr>
-<td>GET avec transformation</td>
-<td>L’interface applicative implémente correctement un minimum de 2 méthodes GET avec transformations. Ces requêtes sont pertinentes au projet.  <br/><br/>4 points</td>
-<td>L’interface applicative implémente partiellement un minimum de 2 méthodes GET avec transformations. Ces requêtes sont pertinentes au projet.  <br/><br/>3 points</td>
-<td>L’interface applicative implémente partiellement moins de 2 méthodes GET avec transformations. Ces requêtes sont peu pertinentes au projet.  <br/><br/>2 points</td>
-<td></td>
-<td>L’interface applicative n’implémente pas correctement de méthodes GET avec transformations, ou ces requêtes ne sont pas pertinentes au projet<br/><br/>0 point</td>
-</tr>
-<tr>
 <td>Validations natives</td>
-<td>L’interface applicative contient des <strong>validations natives</strong> appropriées aux données représentées dans le schéma.<br/><br/>4 points</td>
+<td>L’interface applicative contient des <strong>validations natives</strong> appropriées aux données représentées dans le schéma.<br/><br/>5 points</td>
 <td></td>
-<td>L’interface applicative contient des <strong>validations natives</strong> partiellement appropriées aux données représentées dans le schéma<br/><br/>3 points</td>
+<td>L’interface applicative contient des <strong>validations natives</strong> partiellement appropriées aux données représentées dans le schéma<br/><br/>4 points</td>
 <td></td>
 <td>L’interface applicative ne contient pas de <strong>validations natives</strong> appropriées aux données représentées dans le schéma<br/><br/>0 point</td>
 </tr>
 <tr>
 <td>Validations personnalisées</td>
-<td>L’interface applicative contient au minimum 2 <strong>validations personnalisées</strong> appropriées aux données représentées dans le schéma.<br/><br/>4 points</td>
+<td>L’interface applicative contient au minimum 2 <strong>validations personnalisées</strong> appropriées aux données représentées dans le schéma.<br/><br/>5 points</td>
 <td></td>
-<td>L’interface applicative contient au moins 1 <strong>validation personnalisée</strong> appropriée aux données représentées dans le schéma.<br/><br/>3 points</td>
+<td>L’interface applicative contient au moins 1 <strong>validation personnalisée</strong> appropriée aux données représentées dans le schéma.<br/><br/>4 points</td>
 <td></td>
 <td>L’interface applicative ne contient pas de <strong>validation personnalisée</strong> appropriée aux données représentées dans le schéma<br/><br/>0 point</td>
 </tr>
@@ -1766,7 +1748,7 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 </tr>
 <tr>
 <td>Publication</td>
-<td>L’interface applicative est publiée et fonctionnelle. <br/><br/>2 points</td>
+<td>L’interface applicative est publiée et fonctionnelle. <br/><br/>3 points</td>
 <td></td>
 <td>L’interface applicative n’est pas correctement publiée. <br/>Certaines fonctionnalités ne fonctionnement pas. <br/><br/>1 point</td>
 <td></td>
@@ -1822,11 +1804,11 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 </tr>
 <tr>
 <td>Validations</td>
-<td>L’application contient des validations appropriées.<br/><br/>5 points</td>
+<td>L’application contient des validations appropriées avec messages à l'utilisateur dans l'interface graphique.<br/><br/>5 points</td>
 <td></td>
-<td>L’application contient des validations partiellement appropriées.<br/><br/>3 points</td>
+<td>L’application contient des validations partiellement appropriées qui ont des messages affichés à l'utilisateur.<br/><br/>3 points</td>
 <td></td>
-<td>L’application ne contient pas de validations appropriées.<br/><br/>0 point</td>
+<td>L’application ne contient pas de validations appropriées ou ne sont pas affichées à l'utilisateur.<br/><br/>0 point</td>
 </tr>
 <tr>
 <td>Visuel</td>
@@ -1846,11 +1828,11 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 </tr>
 <tr>
 <td>Internationalisation</td>
-<td>L’application est entièrement internationalisée dans un minimum de 2 langues<br/><br/>5 points</td>
+<td>L’application est entièrement internationalisée en Français et en Anglais<br/><br/>5 points</td>
 <td></td>
-<td>L’application est partiellement internationalisée dans un minimum de 2 langues<br/><br/>3 points</td>
+<td>L’application est partiellement internationaliséeen Français et en Anglais<br/><br/>3 points</td>
 <td></td>
-<td>L’application n’est pas internationalisée dans un minimum de 2 langues<br/><br/>0 point</td>
+<td>L’application n’est pas internationalisée en Français et en Anglais<br/><br/>0 point</td>
 </tr>
 <tr>
 <td>Organisation visuelle</td>
