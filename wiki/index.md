@@ -31,7 +31,7 @@ Nom : Étienne Rivard
 
 ## Règles pour l'utilisation du code emprunté 
 
-[Voir le site de la technique pour le code emprunté](https://techinfo.kerzo.ca/code-emprunte/)  
+[Voir le site de la technique pour le code emprunté](https://techinfo.profinfo.ca/code-emprunte/)  
 
 # Évaluations
 

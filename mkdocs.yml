@@ -80,6 +80,7 @@ nav:
   - 'Manuels': 'manuels.md'
   - 'CodeSandbox': 'codesandbox.md'
   - 'À propos': 'apropos.md'
+  - "Techniques de l'informatique": 'https://techinfo.profinfo.ca'
 
 markdown_extensions:
   - admonition
