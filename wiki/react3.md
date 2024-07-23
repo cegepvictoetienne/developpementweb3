@@ -192,7 +192,7 @@ Voici les éléments pertinents pour l'utilisation de contexte :
 Il est préférable d’utiliser la librairie Axios pour aller chercher vos données de l’API :
 
 ``` ts title="fetch_bieres.ts"
-axios.get('https://bieres.professeur.tech/api/bieres').then((response) => {
+axios.get('https://bieres.profinfo.ca/api/bieres').then((response) => {
   setListeBieres(response.data.bieres);
 });
 ```
