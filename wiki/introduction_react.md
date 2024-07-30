@@ -22,6 +22,8 @@ Voici comment générer l’application :
     npm run dev
     ```
 
+Si vous avez des erreurs de modules dépréciés, vous pouvez les corriger en suivant les instructions de la section [Module déprécié](module_deprecie.md).
+
 <figure markdown>
   ![react-vite](images/react-vite.png){ width="600" }
   <figcaption>Page par défaut d'une application Vite en React</figcaption>

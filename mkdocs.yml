@@ -59,6 +59,7 @@ nav:
           - 'Déploiement avec Netlify': 'netlify.md'
   - 'Procédures':
       - "Rendre la documentation disponible pour l'api": 'documentation.md'
+      - 'Module déprécié': 'module_deprecie.md'
   - 'Exercices':
       - 'Exercice 1 - lodash': 'exercice1_lodash.md'
       - 'Exercice 2 - Express avec modèle': 'exercice2_express_avec_modele.md'

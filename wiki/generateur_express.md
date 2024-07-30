@@ -18,6 +18,8 @@ cd mapremierappexpress
 npm install 
 ```
 
+Si vous avez des erreurs de modules dépréciés, vous pouvez les corriger en suivant les instructions de la section [Module déprécié](module_deprecie.md).
+
 Exécutez l’application en utilisant la commande suivante :  
 
 ``` nodejsrepl title="console"
@@ -38,60 +40,60 @@ npm run dev
 L'exemple suivant code une mini API qui gère des réservations dans un hotel.  
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - API Express](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/hotel)  
+    [Démo - API Express](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/hotel24)  
 
 ## Étape 1 - Créer l’interface model/Reservation.ts  
 
 
 ``` ts title="model/Reservation.ts"
-{!hotel/src/models/Reservation.ts!}
+{!hotel24/src/models/Reservation.ts!}
 
 ```
 
 ## Étape 2 - Ajouter le modèle à la base de données bidon 
 
 ``` ts title="repos/MockOrm.ts"
-{!hotel/src/repos/MockOrm.ts!}
+{!hotel24/src/repos/MockOrm.ts!}
 
 ```
 
 ## Étape 3 - Mettre à jour la base de données  
 
 ``` json title="repos/database.json"  
-{!hotel/src/repos/database.json!}
+{!hotel24/src/repos/database.json!}
 ```  
 
 ## Étape 4 - Créer le repo  
 
 ``` ts title="repos/ReservationRepo.ts"  
-{!hotel/src/repos/ReservationRepo.ts!}
+{!hotel24/src/repos/ReservationRepo.ts!}
 
 ```
 
 ## Étape 5 - Créer le service  
 
 ``` ts title="services/ReservationService.ts"
-{!hotel/src/services/ReservationService.ts!}
+{!hotel24/src/services/ReservationService.ts!}
 
 ```
 
 ## Étape 6 - Créer les routes  
 
 ``` ts title="routes/ReservationRoute.ts"
-{!hotel/src/routes/ReservationRoute.ts!}
+{!hotel24/src/routes/ReservationRoute.ts!}
 
 ```
 
-## Étape 7 - Ajouter les chemins de l’API dans les constantes  
+## Étape 7 - Ajouter les chemins de l’API dans les commons  
 
-``` ts title="routes/constants/Paths.ts"
-{!hotel/src/routes/constants/Paths.ts!}
+``` ts title="/common/Paths.ts"
+{!hotel24/src/common/Paths.ts!}
 
 ```
 
-## Étape 8 - Ajouter les chemins de l’API dans api.ts  
+## Étape 8 - Ajouter les chemins de l’API dans index.ts  
 
-``` ts title="routes/api.ts"
-{!hotel/src/routes/api.ts!}
+``` ts title="routes/index.ts"
+{!hotel24/src/routes/index.ts!}
 
 ```
