@@ -14,9 +14,9 @@ Cours|Date|Sujet|Exercice
 11|2024-09-27 08:15:00|Projet API|
 12|2024-10-02 15:15:00|Projet API|
 13|2024-10-04 08:15:00|Projet API|
-14|2024-10-09 15:15:00|[Introduction à React](introduction_react.md)|[Exercice 8 - React](exercice8_react.md)
+14|2024-10-09 15:15:00|[Introduction à React](introduction_react.md)<br/> [Penser en React](penser_en_react.md)|[Exercice 8 - React](exercice8_react.md)
 15|2024-10-11 08:15:00|[React et les styles](react_styles.md)|[Exercice 9 - React et styles](exercice9_react_styles.md)
-16|2024-10-23 15:15:00|[Routes, contexte et API](react3.md)|[Exercice 10 - Contexte et API](exercice10_context.md)
+16|2024-10-23 15:15:00|[Routes, contexte et API](react3.md)<br/> [Régles de React](regles_react.md)|[Exercice 10 - Contexte et API](exercice10_context.md)
 17|2024-10-25 08:15:00|[Internationalisation](internationalisation.md) <br />[Accessibilité](accessibilite.md)|[Exercice 11 - Internatialisation](exercice11_internationalisation.md)
 18|2024-10-30 15:15:00|[Authentification](authentification.md)|[Exercice 12 - Authentification](exercice12_authentification.md)
 19|2024-11-01 08:15:00|[React et PWA](pwa.md)|[Exercice 13 - PWA](exercice13_pwa.md)

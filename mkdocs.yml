@@ -51,6 +51,7 @@ nav:
           - 'Penser en React': 'penser_en_react.md'
           - 'React et les styles': 'react_styles.md'
           - 'Router - useParams - useContext et API': 'react3.md'
+          - 'Règles de Réact': 'regles_react.md'
           - 'Internationalisation': 'internationalisation.md'
           - 'PWA': 'pwa.md'
           - 'Authentification': 'authentification.md'

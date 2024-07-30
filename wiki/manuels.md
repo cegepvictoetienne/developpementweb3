@@ -52,6 +52,8 @@
 [Props](https://react.dev/learn/passing-props-to-a-component)  
 [useState](https://react.dev/reference/react/useState)  
 [useEffect](https://react.dev/reference/react/useEffect)  
+## Règles de Réact
+[Rules of React](https://react.dev/reference/rules)
 ## React et les styles
 [Styled Components - Basics](https://styled-components.com/docs/basics)  
 [Material UI - Installation](https://mui.com/material-ui/getting-started/installation/)  
