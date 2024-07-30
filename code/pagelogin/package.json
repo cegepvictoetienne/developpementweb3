@@ -32,5 +32,11 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "overrides": {
+    "eslint": {
+      "@humanwhocodes/config-array": "npm:@eslint/config-array",
+      "file-entry-cache": "^8.0.0"
+    }
   }
 }
