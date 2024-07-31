@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../projet_integrateur/">
+        <link rel="prev" href="../react3/">
       
       
-        <link rel="next" href="../manuels/">
+        <link rel="next" href="../internationalisation/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Masscode - Développement Web 3</title>
+        <title>Règles de Réact - Développement Web 3</title>
       
     
     
@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#masscode-outil-pour-conserver-les-bouts-de-code" class="md-skip">
+        <a href="#regles-de-react" class="md-skip">
           Aller au contenu
         </a>
       
@@ -143,7 +143,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Masscode
+              Règles de Réact
             
           </span>
         </div>
@@ -273,17 +273,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -297,7 +299,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Leçons
@@ -625,17 +627,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -649,7 +653,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             React
@@ -735,6 +739,211 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Règles de Réact
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Règles de Réact
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composants-et-hooks-doivent-etre-purs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composants et Hooks doivent être purs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Composants et Hooks doivent être purs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-les-composants-doivent-etre-idempotents" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Les composants doivent être idempotents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-les-effets-secondaires-en-dehors-du-rendu" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Les effets secondaires en dehors du rendu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-props-et-state-immuables" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Props et state immuables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-valeurs-et-arguments-des-hooks-immuables" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Valeurs et arguments des hooks immuables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-valeurs-immuables-apres-le-passage-au-jsx" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Valeurs immuables après le passage au JSX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appels-des-composants-et-hooks-par-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appels des composants et hooks par React
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appels des composants et hooks par React">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ne-jamais-appeler-directement-les-fonctions-de-composants" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Ne jamais appeler directement les fonctions de composants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ne-jamais-passer-des-hooks-comme-des-valeurs-regulieres" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Ne jamais passer des hooks comme des valeurs régulières
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regles-des-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Règles des hooks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Règles des hooks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-appeler-les-hooks-au-niveau-superieur-uniquement" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Appeler les hooks au niveau supérieur uniquement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-appeler-les-hooks-uniquement-a-partir-des-fonctions-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Appeler les hooks uniquement à partir des fonctions React
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1368,81 +1577,6 @@
       
   
   
-    
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Outils
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Outils
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Masscode
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
   
   
     <li class="md-nav__item">
@@ -1539,6 +1673,158 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composants-et-hooks-doivent-etre-purs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composants et Hooks doivent être purs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Composants et Hooks doivent être purs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-les-composants-doivent-etre-idempotents" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Les composants doivent être idempotents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-les-effets-secondaires-en-dehors-du-rendu" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Les effets secondaires en dehors du rendu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-props-et-state-immuables" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Props et state immuables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-valeurs-et-arguments-des-hooks-immuables" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Valeurs et arguments des hooks immuables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-valeurs-immuables-apres-le-passage-au-jsx" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Valeurs immuables après le passage au JSX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appels-des-composants-et-hooks-par-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appels des composants et hooks par React
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appels des composants et hooks par React">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ne-jamais-appeler-directement-les-fonctions-de-composants" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Ne jamais appeler directement les fonctions de composants
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ne-jamais-passer-des-hooks-comme-des-valeurs-regulieres" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Ne jamais passer des hooks comme des valeurs régulières
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regles-des-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Règles des hooks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Règles des hooks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-appeler-les-hooks-au-niveau-superieur-uniquement" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Appeler les hooks au niveau supérieur uniquement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-appeler-les-hooks-uniquement-a-partir-des-fonctions-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Appeler les hooks uniquement à partir des fonctions React
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1552,10 +1838,36 @@
                   
 
 
-<h1 id="masscode-outil-pour-conserver-les-bouts-de-code">Masscode - Outil pour conserver les bouts de code</h1>
-<p><a href="https://masscode.io">Site de Masscode</a>   </p>
-<p><a href="https://marketplace.visualstudio.com/items?itemName=AntonReshetov.masscode-assistant">Plugin VSCode</a>  </p>
-<p><a href="https://www.dropbox.com/scl/fi/8orzi1tzba9d5w46bomln/db.json?dl=0&amp;rlkey=wdf6zbzqdseycfcel24cf0ume">Base de données Masscode du professeur</a>  </p>
+<h1 id="regles-de-react">Règles de React</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Les règles de React sont des principes essentiels pour écrire du code idiomatique en React. Suivre ces règles aide à créer des applications bien organisées, sûres et composables.</p>
+<h2 id="composants-et-hooks-doivent-etre-purs">Composants et Hooks doivent être purs</h2>
+<h3 id="1-les-composants-doivent-etre-idempotents">1. Les composants doivent être idempotents</h3>
+<p>Les composants React doivent toujours renvoyer la même sortie pour les mêmes entrées (props, state, context).</p>
+<h3 id="2-les-effets-secondaires-en-dehors-du-rendu">2. Les effets secondaires en dehors du rendu</h3>
+<p>Les effets secondaires ne doivent pas être exécutés dans la fonction de rendu car React peut rendre les composants plusieurs fois.</p>
+<h3 id="3-props-et-state-immuables">3. Props et state immuables</h3>
+<p>Les props et le state d'un composant sont des instantanés immuables. Ne les modifiez jamais directement.</p>
+<h3 id="4-valeurs-et-arguments-des-hooks-immuables">4. Valeurs et arguments des hooks immuables</h3>
+<p>Une fois les valeurs passées à un hook, elles ne doivent pas être modifiées. Comme les props, elles deviennent immuables.</p>
+<h3 id="5-valeurs-immuables-apres-le-passage-au-jsx">5. Valeurs immuables après le passage au JSX</h3>
+<p>Ne modifiez pas les valeurs après leur utilisation dans le JSX. Effectuez les mutations avant de créer le JSX.</p>
+<h2 id="appels-des-composants-et-hooks-par-react">Appels des composants et hooks par React</h2>
+<h3 id="1-ne-jamais-appeler-directement-les-fonctions-de-composants">1. Ne jamais appeler directement les fonctions de composants</h3>
+<p>Les composants doivent être utilisés uniquement dans le JSX, pas appelés comme des fonctions régulières.</p>
+<h3 id="2-ne-jamais-passer-des-hooks-comme-des-valeurs-regulieres">2. Ne jamais passer des hooks comme des valeurs régulières</h3>
+<p>Les hooks doivent être appelés uniquement à l'intérieur des composants, et non passés comme des valeurs normales.</p>
+<h2 id="regles-des-hooks">Règles des hooks</h2>
+<h3 id="1-appeler-les-hooks-au-niveau-superieur-uniquement">1. Appeler les hooks au niveau supérieur uniquement</h3>
+<p>Ne pas appeler les Hooks à l'intérieur de boucles, de conditions ou de fonctions imbriquées. Utilisez-les toujours au niveau supérieur de votre fonction React.</p>
+<h3 id="2-appeler-les-hooks-uniquement-a-partir-des-fonctions-react">2. Appeler les hooks uniquement à partir des fonctions React</h3>
+<p>Ne pas appeler les hooks à partir de fonctions JavaScript régulières.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Suivre les règles de React aide à maintenir des applications prévisibles, déboguables et optimisées. Utilisez le mode strict de React et le plugin ESLint pour vérifier automatiquement le respect de ces règles.</p>
+<div class="admonition manuel">
+<p class="admonition-title">Manuel</p>
+<p><a href="https://react.dev/reference/rules">Rules of React</a></p>
+</div>
 
 
 
@@ -1608,6 +1920,8 @@
       <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
         <script src="../javascript/alltarget.js"></script>
+      
+        <script src="../javascript/addTranslations.js"></script>
       
     
   </body>

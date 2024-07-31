@@ -827,6 +827,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../regles_react/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Règles de Réact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../internationalisation/" class="md-nav__link">
         
   
@@ -1450,69 +1471,6 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Outils
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Outils
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../masscode/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Masscode
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../manuels/" class="md-nav__link">
         
@@ -1665,12 +1623,12 @@
 
 
 <h1 id="express-et-jwt">Express et JWT</h1>
-<p>JWT (JSON Web Token) permet d’authentifier un utilisateur lors de chaque appel aux API.  </p>
+<p>JWT (JSON Web Token) permet d’authentifier un utilisateur lors de chaque appel d'un point d'interface logicielle.  </p>
 <ul>
-<li>Le jeton (token) est généré par le serveur, qui s’assure que l’utilisateur est bien celui qu’il prétend.  </li>
-<li>Le jeton est envoyé au client et ce dernier le conserve dans un témoin (cookie) pour l’utiliser à chaque appel d’API.  </li>
-<li>Un middleware sur le serveur valide chaque appel d’API en vérifiant le jeton.  </li>
-<li>Si le jeton n’est pas valide, l’API ne retourne pas de données.  </li>
+<li>Le jeton est généré par le serveur, qui s’assure que l’utilisateur est bien celui qu’il prétend.  </li>
+<li>Le jeton est envoyé au client et ce dernier le conserve dans un témoin pour l’utiliser à chaque appel d'un point d'interface logicielle.  </li>
+<li>Un intergiciel du côté du serveur valide chaque appel d'un point d'interface logicielle en vérifiant le jeton.  </li>
+<li>Si le jeton n’est pas valide, le point d'interface logicielle ne retourne pas de données.  </li>
 </ul>
 <div class="admonition manuel">
 <p class="admonition-title">Manuel</p>
@@ -1819,6 +1777,8 @@
       <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
         <script src="../javascript/alltarget.js"></script>
+      
+        <script src="../javascript/addTranslations.js"></script>
       
     
   </body>

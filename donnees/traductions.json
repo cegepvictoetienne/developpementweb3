@@ -1,0 +1,21 @@
+{
+  "application dorsale": "back-end",
+  "dépôt github": "github repository",
+  "dépôt git": "git repository",
+  "déprécié": "deprecated",
+  "flux vidéo": "stream",
+  "fonction de rappel": "callback function",
+  "fonctions de rappel": "callback functions",
+  "fonction fléchée": "arrow function",
+  "fonctions fléchées": "arrow functions",
+  "gestionnaire_de_paquets": "package manager",
+  "historique": "log",
+  "intergiciel": "middleware",
+  "Intergiciel": "Middleware",
+  "interface logicielle": "API",
+  "jeton": "token",
+  "maquette froide": "mockup",
+  "plugiciel": "plug-in",
+  "pilote": "driver",
+  "témoin": "cookie"
+}

@@ -749,6 +749,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../regles_react/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Règles de Réact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../internationalisation/" class="md-nav__link">
         
   
@@ -1423,69 +1444,6 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Outils
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            Outils
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../masscode/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Masscode
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../manuels/" class="md-nav__link">
         
@@ -1619,7 +1577,7 @@
 <li>Hébergement statique : Netlify est principalement conçu pour les sites web statiques, ce qui signifie que vos fichiers HTML, CSS, JavaScript et autres médias sont préconstruits et livrés aux utilisateurs tels quels, sans nécessiter de traitement côté serveur.  </li>
 <li>Optimisation des performances : Netlify propose des fonctionnalités telles que la mise en cache globale, la compression des images et des fichiers, ainsi que la distribution de contenu via un réseau de diffusion de contenu (CDN), ce qui améliore la vitesse de chargement et l'expérience utilisateur.  </li>
 <li>Gestion des domaines et des certificats SSL : Netlify permet d'associer facilement des noms de domaine personnalisés à vos sites et fournit des certificats SSL gratuits pour assurer des connexions sécurisées.
-Fonctionnalités de formulaire : Netlify propose également des fonctionnalités de formulaire qui vous permettent de gérer les soumissions de formulaires sans nécessiter de backend personnalisé.  </li>
+Fonctionnalités de formulaire : Netlify propose également des fonctionnalités de formulaire qui vous permettent de gérer les soumissions de formulaires sans nécessiter d'application dorsale personnalisée.  </li>
 <li>Fonctions serverless : Netlify prend également en charge les fonctions serverless, ce qui vous permet d'ajouter des fonctionnalités dynamiques à votre site statique sans avoir à gérer une infrastructure serveur.
 Intégrations tierces : Netlify peut être intégré à divers services tiers tels que GitHub, GitLab, Bitbucket, et d'autres outils de développement.  </li>
 </ul>
@@ -1628,8 +1586,8 @@ Intégrations tierces : Netlify peut être intégré à divers services tiers te
 <p class="admonition-title">Manuel</p>
 <p><a href="https://docs.netlify.com">Documentation Netlify</a>  </p>
 </div>
-<h1 id="etapes-de-deploiement-du-back-end-avec-netlify">Étapes de déploiement du back-end avec Netlify</h1>
-<p>Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité <em>serverless</em>.  Voici les étapes pour déployer votre <em>back_end</em>.  </p>
+<h1 id="etapes-de-deploiement-de-lapplication-dorsale-avec-netlify">Étapes de déploiement de l'application dorsale avec Netlify</h1>
+<p>Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité <em>serverless</em>.  Voici les étapes pour déployer votre <em>application dorsale</em>.  </p>
 <ol>
 <li>
 <p>installer les modules serverless-http et Netlify Functions :  </p>
@@ -1675,7 +1633,7 @@ Intégrations tierces : Netlify peut être intégré à divers services tiers te
 </span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="err">s</span><span class="kc">tatus</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">200</span>
 </span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">&quot;/.netlify/functions/api/:splat&quot;</span>
 </span></code></pre></div>
-<p>Le redirects sert à recevoir les requêtes du style https://monbackend/api/x et le rediriger vers /.netlify functions/api/x (la façon interne de Netlify pour exposer les fonctions back-end).  </p>
+<p>Le redirects sert à recevoir les requêtes du style https://monbackend/api/x et le rediriger vers /.netlify functions/api/x (la façon interne de Netlify pour exposer les fonctions de l'application dorsale).  </p>
 </li>
 <li>
 <p>Git push de votre projet et création du déploiement Netlify  </p>
@@ -1784,6 +1742,8 @@ Intégrations tierces : Netlify peut être intégré à divers services tiers te
       <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
         <script src="../javascript/alltarget.js"></script>
+      
+        <script src="../javascript/addTranslations.js"></script>
       
     
   </body>
