@@ -27,8 +27,11 @@ async function getAll(_: IReq, res: IRes) {
  */
 async function add(req: IReq<{ reservation: IReservation }>, res: IRes) {
   const { reservation } = req.body;
-  await ReservationService.addOne(reservation);
-  return res.status(HttpStatusCodes.CREATED).end();
+  const returnedReservation = await ReservationService.addOne(reservation);
+  return res
+    .status(HttpStatusCodes.CREATED)
+    .json({ reservation: returnedReservation })
+    .end();
 }
 
 /**

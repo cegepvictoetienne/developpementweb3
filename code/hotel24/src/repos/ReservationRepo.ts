@@ -53,11 +53,12 @@ async function getAll(): Promise<IReservation[]> {
  *
  * @param {IReservation} reservation - Réservation à ajouter
  */
-async function add(reservation: IReservation): Promise<void> {
+async function add(reservation: IReservation): Promise<IReservation> {
   const db = await orm.openDb();
   reservation.id = getRandomInt();
   db.reservations.push(reservation);
-  return orm.saveDb(db);
+  orm.saveDb(db);
+  return reservation;
 }
 
 /**

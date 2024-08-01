@@ -23,7 +23,7 @@ function getAll(): Promise<IReservation[]> {
  *
  * @param {IReservation} reservation - Réservation à ajouter
  */
-function addOne(reservation: IReservation): Promise<void> {
+function addOne(reservation: IReservation): Promise<IReservation> {
   return ReservationRepo.add(reservation);
 }
 

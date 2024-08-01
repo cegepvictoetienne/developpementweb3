@@ -1,11 +1,11 @@
 # Express et JWT  
 
-JWT (JSON Web Token) permet d’authentifier un utilisateur lors de chaque appel aux API.  
+JWT (JSON Web Token) permet d’authentifier un utilisateur lors de chaque appel d'un point d'interface logicielle.  
 
-- Le jeton (token) est généré par le serveur, qui s’assure que l’utilisateur est bien celui qu’il prétend.  
-- Le jeton est envoyé au client et ce dernier le conserve dans un témoin (cookie) pour l’utiliser à chaque appel d’API.  
-- Un middleware sur le serveur valide chaque appel d’API en vérifiant le jeton.  
-- Si le jeton n’est pas valide, l’API ne retourne pas de données.  
+- Le jeton est généré par le serveur, qui s’assure que l’utilisateur est bien celui qu’il prétend.  
+- Le jeton est envoyé au client et ce dernier le conserve dans un témoin pour l’utiliser à chaque appel d'un point d'interface logicielle.  
+- Un intergiciel du côté du serveur valide chaque appel d'un point d'interface logicielle en vérifiant le jeton.  
+- Si le jeton n’est pas valide, le point d'interface logicielle ne retourne pas de données.  
 
 !!! Manuel  
     [Wikipedia - Article sur JWT](https://en.wikipedia.org/wiki/JSON_Web_Token)  

@@ -28,6 +28,7 @@ extra_css:
 
 extra_javascript:
   - javascript/alltarget.js
+  - javascript/addTranslations.js
 
 nav:
   - 'Page principale': 'index.md'
@@ -40,6 +41,7 @@ nav:
       - 'Express et MongoDB':
           - 'Intergiciels Express': 'intergiciels_express.md'
           - 'Générateur Express': 'generateur_express.md'
+          - 'Tests unitaires': 'tester_api.md'
           - 'JavaScript asynchrone': 'javascript_async.md'
           - 'MongoDB': 'mongodb.md'
           - 'Introduction à Mongoose': 'introduction_mongoose.md'
@@ -64,7 +66,7 @@ nav:
   - 'Exercices':
       - 'Exercice 1 - lodash': 'exercice1_lodash.md'
       - 'Exercice 2 - Express avec modèle': 'exercice2_express_avec_modele.md'
-      - 'Exercice 3 - Intergiciels Express': 'exercice3_intergiciels_express.md'
+      - 'Exercice 3 - Intergiciels Express et tests API': 'exercice3_intergiciels_express.md'
       - 'Exercice 4 - Mongo DB': 'exercice4_mongodb.md'
       - 'Exercice 5 - Mongoose': 'exercice5_mongoose.md'
       - 'Exercice 6 - Mongoose': 'exercice6_mongoose.md'
@@ -78,8 +80,6 @@ nav:
       - 'Exercice Préparation Examen': 'exercice_prep_exam.md'
       - 'Exercice 14 - Netlify': 'exercice14_netlify.md'
   - 'Projet intégrateur': 'projet_integrateur.md'
-  - 'Outils':
-      - 'Masscode': 'masscode.md'
   - 'Manuels': 'manuels.md'
   - 'CodeSandbox': 'codesandbox.md'
   - 'À propos': 'apropos.md'

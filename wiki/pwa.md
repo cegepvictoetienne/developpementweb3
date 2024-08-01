@@ -7,12 +7,12 @@ Les __applications web progressives__ (ou _progressive web applications_ en 
     [Stats et nouvelles sur PWA](https://www.pwastats.com/)  
     [Web.dev - Apprendre sur PWA](https://web.dev/learn/pwa/)  
 
-# Utilisation du plug-in PWA pour vite  
+# Utilisation du plugiciel PWA pour vite  
 
 !!! manuel  
-    [Guide pour le plug-in PWA](https://vite-pwa-org.netlify.app/guide/)  
+    [Guide pour le plugiciel PWA](https://vite-pwa-org.netlify.app/guide/)  
 
-1. Installation du plug-in  :
+1. Installation du plugiciel  :
 
     ``` nodejsrepl title="console"
     npm install -D vite-plugin-pwa

@@ -50,3 +50,32 @@ article a[href^="https://"]::after
 .md-grid {
   max-width: 100%; /* or 100%, if you want to stretch to full-width */
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* Underline the word */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #f9f9f9;
+  color: #000;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position the tooltip above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* Prevent the tooltip text from wrapping */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

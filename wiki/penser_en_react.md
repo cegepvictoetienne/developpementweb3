@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Pour bien débuter une application en React, il est recommandé de débuter par un mockup de l'application. Cela permet de visualiser l'ensemble des composants nécessaires à la réalisation de l'application.
+Pour bien débuter une application en React, il est recommandé de débuter par une maquette froide de l'application. Cela permet de visualiser l'ensemble des composants nécessaires à la réalisation de l'application.
 
 <figure markdown>
   ![Mockup](images/mockup-liste-produit.png){ width="600" }
@@ -106,7 +106,7 @@ Dans notre cas, le texte de recherche et l'état de la case à cocher seront uti
 Maintenant que l'état est levé au composant parent commun, nous pouvons ajouter des interactions à notre application.
 
 !!! note "Passage de données par props"
-    Les fonctions de rappel (callback) sont passées de haut en bas dans React. Cela signifie que les fonctions de rappel sont passées du composant parent au composant enfant par le biais de `props`.
+    Les fonctions de rappel sont passées de haut en bas dans React. Cela signifie que les fonctions de rappel sont passées du composant parent au composant enfant par le biais de `props`.
 
 Ajoutez une fonction de rappel pour gérer le changement de texte de recherche et de la case à cocher dans `BarreRecherche`.
 

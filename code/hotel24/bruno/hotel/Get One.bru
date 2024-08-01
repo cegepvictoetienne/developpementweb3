@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: http://localhost:3000/api/reservations
+  url: http://localhost:3000/api/reservations/{{_id}}
   body: none
   auth: none
 }
@@ -14,7 +14,7 @@ tests {
   test("Kamala doit être dans les données", function() {
     const data = res.getBody();
     
-    const isKamalaInArray = data.reservations.some(reservation => reservation.courrielClient === "kamala@profinfo.ca");
+    const isKamalaInArray = data.reservation.courrielClient === "kamala@profinfo.ca";
     
     expect(isKamalaInArray).to.equal(true);
     }

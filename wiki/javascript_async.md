@@ -83,7 +83,7 @@ choisirIngredients()
 
 ## Fonctions fléchées  
 
-Une expression de fonction fléchée (arrow function en anglais) permet d’avoir une syntaxe plus courte que les expressions de fonction. Les fonctions fléchées sont souvent anonymes et ne sont pas destinées à être utilisées pour déclarer des méthodes.  
+Une expression de fonction fléchée permet d’avoir une syntaxe plus courte que les expressions de fonction. Les fonctions fléchées sont souvent anonymes et ne sont pas destinées à être utilisées pour déclarer des méthodes.  
 
 ``` ts title="promise_arrow.ts"
 choisirIngredients()

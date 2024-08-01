@@ -35,7 +35,7 @@ Si vous avez des erreurs de modules dépréciés, vous pouvez les corriger en su
 
 # React Developer Tools  
 
-React Developer Tools est un plugin dans Chrome pour aider au débogage de vos applications React.  
+React Developer Tools est un plugiciel dans Chrome pour aider au débogage de vos applications React.  
 
 Pour l'installer :  [React Developer Tools pour Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)  
 

@@ -10,7 +10,7 @@ Voici quelques caractéristiques clés de Netlify :
 - Hébergement statique : Netlify est principalement conçu pour les sites web statiques, ce qui signifie que vos fichiers HTML, CSS, JavaScript et autres médias sont préconstruits et livrés aux utilisateurs tels quels, sans nécessiter de traitement côté serveur.  
 - Optimisation des performances : Netlify propose des fonctionnalités telles que la mise en cache globale, la compression des images et des fichiers, ainsi que la distribution de contenu via un réseau de diffusion de contenu (CDN), ce qui améliore la vitesse de chargement et l'expérience utilisateur.  
 - Gestion des domaines et des certificats SSL : Netlify permet d'associer facilement des noms de domaine personnalisés à vos sites et fournit des certificats SSL gratuits pour assurer des connexions sécurisées.
-Fonctionnalités de formulaire : Netlify propose également des fonctionnalités de formulaire qui vous permettent de gérer les soumissions de formulaires sans nécessiter de backend personnalisé.  
+Fonctionnalités de formulaire : Netlify propose également des fonctionnalités de formulaire qui vous permettent de gérer les soumissions de formulaires sans nécessiter d'application dorsale personnalisée.  
 - Fonctions serverless : Netlify prend également en charge les fonctions serverless, ce qui vous permet d'ajouter des fonctionnalités dynamiques à votre site statique sans avoir à gérer une infrastructure serveur.
 Intégrations tierces : Netlify peut être intégré à divers services tiers tels que GitHub, GitLab, Bitbucket, et d'autres outils de développement.  
 
@@ -20,9 +20,9 @@ En résumé, Netlify facilite le processus de création, de déploiement et de g
     [Documentation Netlify](https://docs.netlify.com)  
 
 
-# Étapes de déploiement du back-end avec Netlify  
+# Étapes de déploiement de l'application dorsale avec Netlify  
 
-Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité _serverless_.  Voici les étapes pour déployer votre *back_end*.  
+Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité _serverless_.  Voici les étapes pour déployer votre *application dorsale*.  
 
 1. installer les modules serverless-http et Netlify Functions :  
 
@@ -73,7 +73,7 @@ Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité _server
         to = "/.netlify/functions/api/:splat"
     ```  
 
-    Le redirects sert à recevoir les requêtes du style https://monbackend/api/x et le rediriger vers /.netlify functions/api/x (la façon interne de Netlify pour exposer les fonctions back-end).  
+    Le redirects sert à recevoir les requêtes du style https://monbackend/api/x et le rediriger vers /.netlify functions/api/x (la façon interne de Netlify pour exposer les fonctions de l'application dorsale).  
 
 5. Git push de votre projet et création du déploiement Netlify  
 
