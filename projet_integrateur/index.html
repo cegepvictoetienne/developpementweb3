@@ -494,6 +494,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../tester_api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tests unitaires
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../javascript_async/" class="md-nav__link">
         
   
@@ -1096,7 +1117,7 @@
         
   
   <span class="md-ellipsis">
-    Exercice 3 - Intergiciels Express
+    Exercice 3 - Intergiciels Express et tests API
   </span>
   
 
@@ -1618,9 +1639,10 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 <li>Types  </li>
 <li>Tailles et intervalles (min, max, longueur du tableau)  </li>
 <li>Messages personnalisés en français  </li>
-<li>Au moins 2 validations personnalisées  </li>
+<li>Au moins 2 validations personnalisées</li>
 </ul>
 </li>
+<li>Tests unitaires (Jasmine et Supertest)  </li>
 <li>Documentation : toutes les routes doivent être documentées sur la page d’accueil de l’api (exemple : <a href="https://developers.google.com/classroom/reference/rest/">Google Classroom REST API</a> )  </li>
 <li>Publication de l’API (Netlify ou autre)  </li>
 </ul>
@@ -1690,7 +1712,7 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 <td>Schéma</td>
 <td>Le schéma de la base de données répond totalement aux exigences demandées. <br/><br/>6 points</td>
 <td>Un ou 2 éléments du schéma ne répondent pas aux exigences demandées<br/><br/>5 points</td>
-<td>3 à 5 éléments du schéma ne répondent pas aux exigences demandées<br/><br/>3 points</td>
+<td>3 à 5 éléments du schéma ne répondent pas aux exigences demandées<br/><br/>4 points</td>
 <td></td>
 <td>Plus de 5 éléments ne répondent pas aux exigences demandées<br/><br/>0 point</td>
 </tr>
@@ -1720,10 +1742,10 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 </tr>
 <tr>
 <td>Méthodes HTTP</td>
-<td>L’interface applicative implémente <strong>correctement l’ensemble</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, DELETE)<br/><br/>8 points</td>
-<td>L’interface applicative implémente <strong>correctement 75%</strong> des méthodes HTTP demandées.  <br/>(GET, POST, PUT, DELETE)<br/><br/>6 points</td>
-<td>L’interface applicative implémente <strong>correctement 50%</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, DELETE)<br/><br/>4 points</td>
-<td>L’interface applicative implémente <strong>correctement 25%</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, DELETE)<br/><br/>2 points</td>
+<td>L’interface applicative implémente <strong>correctement l’ensemble</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, DELETE)<br/><br/>4 points</td>
+<td>L’interface applicative implémente <strong>correctement 75%</strong> des méthodes HTTP demandées.  <br/>(GET, POST, PUT, DELETE)<br/><br/>3 points</td>
+<td>L’interface applicative implémente <strong>correctement 50%</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, DELETE)<br/><br/>2 points</td>
+<td>L’interface applicative implémente <strong>correctement 25%</strong> des méthodes HTTP demandées. <br/>(GET, POST, PUT, DELETE)<br/><br/>1 point</td>
 <td>L’interface applicative implémente <strong>moins de 25%</strong> des méthodes HTTP demandées. <br/> (GET, POST, PUT, DELETE)<br/><br/>0 point</td>
 </tr>
 <tr>
@@ -1752,27 +1774,27 @@ Vous devez choisir un projet de votre choix qui doit cependant être préalablem
 </tr>
 <tr>
 <td>Application sécurisée</td>
-<td>L’interface applicative est correctement <strong>sécurisée</strong>.<br/><br/>6 points</td>
+<td>L’interface applicative est correctement <strong>sécurisée</strong>.<br/><br/>4 points</td>
 <td></td>
-<td>L’interface applicative est partiellement <strong>sécurisée</strong>.<br/><br/>4 points</td>
+<td>L’interface applicative est partiellement <strong>sécurisée</strong>.<br/><br/>2 points</td>
 <td></td>
 <td>L’interface applicative n’est pas <strong>sécurisée</strong>.<br/><br/>0 point</td>
 </tr>
 <tr>
 <td>Messages d'erreur</td>
-<td>Les messages d’erreur sont personnalisés en français.<br/><br/>4 points</td>
+<td>Les messages d’erreur sont personnalisés en français.<br/><br/>2 points</td>
 <td></td>
-<td>L’interface applicative contient des messages d’erreurs appropriés.<br/><br/>3 points</td>
+<td>L’interface applicative contient des messages d’erreurs appropriés.<br/><br/>1 point</td>
 <td></td>
 <td>L’interface applicative ne contient pas de messages d’erreurs appropriés.<br/><br/>0 point</td>
 </tr>
 <tr>
-<td>Publication</td>
-<td>L’interface applicative est publiée et fonctionnelle. <br/><br/>3 points</td>
-<td></td>
-<td>L’interface applicative n’est pas correctement publiée. <br/>Certaines fonctionnalités ne fonctionnement pas. <br/><br/>1 point</td>
-<td></td>
-<td>L’interface applicative n’est pas publiée<br/><br/>0 point</td>
+<td>Tests unitaires automatisés</td>
+<td>L'ensemble des méthodes HTTP implémentés et des validations sont testées<br/><br/>6 points</td>
+<td>Les tests unitaires ne couvrent que <strong>75%</strong> des méthodes HTTP et validations<br/><br/>5 points</td>
+<td>Les tests unitaires ne couvrent que <strong>50%</strong> des méthodes HTTP et validations<br/><br/>4 points</td>
+<td>Les tests unitaires ne couvrent que <strong>25%</strong> des méthodes HTTP et validations<br/><br/>2 points</td>
+<td>Les tests unitaires couvrent moins de  <strong>25%</strong> des méthodes HTTP et validations<br/><br/>0 point</td>
 </tr>
 <tr>
 <td>Documentation</td>
