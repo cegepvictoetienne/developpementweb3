@@ -3,7 +3,7 @@ Cours|Date|Sujet|Exercice
 --|--|--|--
 1|2024-08-21 15:15:00|[Introduction à TypeScript](introduction_typescript.md) <br/> [npm](npm.md)|[Exercice 1 - lodash](exercice1_lodash.md)
 2|2024-08-23 08:15:00|[TypeScript 2](typescript_2.md)<br/>[Express - Générateur](generateur_express.md)|[Exercice 2 - Express avec modèle](exercice2_express_avec_modele.md)
-3|2024-08-28 15:15:00|[Intergiciels](intergiciels_express.md)|[Exercice 3 - Intergiciels Express](exercice3_intergiciels_express.md)
+3|2024-08-28 15:15:00|[Intergiciels](intergiciels_express.md)<br/>[Tester API](tester_api.md)|[Exercice 3 - Intergiciels Express et Tests API](exercice3_intergiciels_express.md)
 4|2024-08-30 08:15:00|[JavaScript asynchrone](javascript_async.md) <br/> [MongoDB](mongodb.md)|[Exercice 4 - MongoDB](exercice4_mongodb.md)
 5|2024-09-06 08:15:00|[Mongoose](introduction_mongoose.md)|[Exercice 5 - Mongoose](exercice5_mongoose.md)
 6|2024-09-11 15:15:00|[Mongoose - la suite](mongoose2.md)|[Exercice 6 - Mongoose](exercice6_mongoose.md)

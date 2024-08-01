@@ -52,8 +52,6 @@
 [Props](https://react.dev/learn/passing-props-to-a-component)  
 [useState](https://react.dev/reference/react/useState)  
 [useEffect](https://react.dev/reference/react/useEffect)  
-## Règles de Réact
-[Rules of React](https://react.dev/reference/rules)
 ## React et les styles
 [Styled Components - Basics](https://styled-components.com/docs/basics)  
 [Material UI - Installation](https://mui.com/material-ui/getting-started/installation/)  
@@ -65,6 +63,8 @@
 [Route - Documentation](https://reactrouter.com/en/6.14.2/route/route)  
 [useContext - Documentation](https://react.dev/reference/react/useContext)  
 [Axios - Documentation](https://axios-http.com/docs/intro)  
+## Règles de Réact
+[Rules of React](https://react.dev/reference/rules)
 ## Internationalisation
 [React-intl](https://formatjs.io/docs/react-intl/)  
 [FormattedMessage](https://formatjs.io/docs/react-intl/components#formattedmessage)  
@@ -76,7 +76,7 @@
 [MDN - Progressive Web Apps](https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps)  
 [Stats et nouvelles sur PWA](https://www.pwastats.com/)  
 [Web.dev - Apprendre sur PWA](https://web.dev/learn/pwa/)  
-[Guide pour le plug-in PWA](https://vite-pwa-org.netlify.app/guide/)  
+[Guide pour le plugiciel PWA](https://vite-pwa-org.netlify.app/guide/)  
 ## Accessibilité
 [Liste des rôles ARIA](https://www.w3.org/TR/wai-aria-1.0/roles#role_definitions)  
 ## Déploiement avec Netlify
