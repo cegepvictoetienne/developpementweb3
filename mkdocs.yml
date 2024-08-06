@@ -46,6 +46,7 @@ nav:
           - 'MongoDB': 'mongodb.md'
           - 'Introduction à Mongoose': 'introduction_mongoose.md'
           - 'Mongoose - La suite': 'mongoose2.md'
+          - 'Simulacre Mongoose': 'simulacre_mongoose.md'
           - 'Projet complet en Mongoose': 'projet_complet_mongoose.md'
           - 'Express et JWT': 'express_jwt.md'
       - 'React':

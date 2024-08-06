@@ -1,0 +1,21 @@
+{
+  "name": "simulacre_mongoose",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mongoose": "^8.5.2"
+  },
+  "devDependencies": {
+    "@jazim/mock-mongoose": "^1.0.1",
+    "@types/jasmine": "^5.1.4",
+    "jasmine": "^5.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
