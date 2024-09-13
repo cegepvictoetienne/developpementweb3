@@ -9,7 +9,8 @@
 ## React et les styles
 [Démo - Styled Components](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_styledComponents)  
 [Démo - Material UI](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_MUI)  
-## Router - useParams - useContext et API
+## React - TailwindCSS
+[Démo - TailwindCSS](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_tw) ## Router - useParams - useContext et API
 [Démo - monrouteur](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/monrouteur)  
 [Démo - Chapeaux en folie](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/chapeaux)  
 ## Internationalisation

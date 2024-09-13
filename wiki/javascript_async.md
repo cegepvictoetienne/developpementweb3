@@ -142,3 +142,20 @@ async function myFetch() {
 }
 ```   
 
+# Ordre traitement des appels asynchrones  
+
+``` ts title="order.ts"
+console.log("Début du script");
+
+setTimeout(() => {
+    console.log("setTimeout callback");
+}, 0);
+
+Promise.resolve().then(() => {
+    console.log("Promise callback 1");
+}).then(() => {
+    console.log("Promise callback 2");
+});
+
+console.log("Fin du script");
+```

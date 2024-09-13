@@ -2,7 +2,7 @@
 
 Modèle de données : [persons.json](donnees/persons.json)  
 
-- Partez du schéma [créé au cours 6](exercice6_mongoose.md)  
+- Partez du schéma [créé à l'exercice 5](exercice5_mongoose.md)  
 - Créez un service web intégrant les 4 méthodes de base (CRUD) avec l’ensemble des attributs.   
 - Assurez-vous que les données sont adéquatement stockées (avec les bons types) et que la structure est conforme.   
 - Attributs obligatoires :   

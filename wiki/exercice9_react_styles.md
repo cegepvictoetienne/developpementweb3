@@ -1,6 +1,6 @@
 # Exercice - React et les styles  
 
-- Faire un carnet d’adresses avec Material UI et Styled Components (essayer les deux dans des projets différents)  
+- Faire un carnet d’adresses avec Material UI, Styled Components et TailwindCSS (essayer les trois dans des projets différents)  
 - Afficher sous forme de carte les informations suivantes :  
     - Prénom  
     - Nom  
