@@ -17,105 +17,55 @@ JWT (JSON Web Token) permet d’authentifier un utilisateur lors de chaque appel
 npm install jsonwebtoken @types/jsonwebtoken
 ```
 
+## Le service de génération de jetons  
+
+``` ts title="src/services/JetonService.ts"
+{!api_avec_jwt/src/services/JetonService.ts!}
+```
+
+## Le chemin pour les jetons  
+
+``` ts title="src/common/Paths.ts"
+{!api_avec_jwt/src/common/Paths.ts!}
+```
+
 ## La route  
 
-``` ts title="jetonsRoute.ts"  
-import JetonService from '@src/services/JetonService';
-import { IUtilisateur } from '@src/models/Utilisateur';
-import { IReq, IRes } from './types/express/misc';
-
-// **** Functions **** //
-
-/**
- * Générer un jeton.
- * 
- * @param {IReq} req - La requête au serveur
- * @param {IRes} res - La réponse du serveur
- */
-async function generateToken(
-  req: IReq<{ utilisateur: IUtilisateur }>,
-  res: IRes
-) {
-  const { utilisateur } = req.body;
-  const token = await JetonService.generateToken(utilisateur);
-  return res.send(token);
-}
-
-// **** Export default **** //
-
-export default {
-  generateToken,
-} as const;
-
+``` ts title="src/routes/JetonRoutes.ts"
+{!api_avec_jwt/src/routes/JetonRoutes.ts!}
 ```
 
-## Le service de génération de jetons    
-
-
-``` ts title="jetonsService.ts"  
-import { IReq, IRes } from '@src/routes/types/express/misc';
-import { NextFunction } from 'express';
-
-// **** Variables **** //
-
-export const UTILISATEUR_NOT_FOUND_ERR = 'Utilisateur non trouvé';
-
-// **** Functions **** //
-
-/**
- * Générer un jeton pour un utilisateur
- * 
- * @param {IUtilisateur} utilisateur - L'utilisateur demandant le jeton
- * @returns {Promise<string>} - Le jeton signé
- */
-async function generateToken(utilisateur: IUtilisateur): Promise<string> {
-  const utilisateurBD = await UtilisateurService.getOne(utilisateur.email);
-  if (
-    utilisateurBD &&
-    (await pwdUtil.compare(utilisateur.motdepasse, utilisateurBD.motdepasse))
-  ) {
-    return jwt.sign(utilisateur.email, process.env.JWT_SECRET as string);
-  } else {
-    return '';
-  }
-}
-
+## Le Router
+  
+``` ts title="src/routes/index.ts"
+{!api_avec_jwt/src/routes/index.ts!}
 ```
 
+## L'intergiciel pour valider les jetons  
 
-## L'intergiciel de vérification de jetons  
-
-``` ts title="jetonsService.ts"  
-/**
- * Intergiciel pour authentifier le jeton de l'utilisateur
- * 
- * @param {IReq} req - La requête au serveur
- * @param {IRes} res - La réponse du serveur
- * @param {NextFunction} next - La fonction a appeler pour continuer le processus.
- */
-function authenticateToken(req: IReq, res: IRes, next: NextFunction) {
-  // Ne pas vérifier le token si l'url est celui de generateToken
-  const lastPartOfUrl = req.url.split('/').at(-1);
-  if (lastPartOfUrl === 'generateToken') {
-    next();
-    return;
-  }
-
-  const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
-
-  if (token == null) return res.sendStatus(401);
-  console.log(`In authenticateToken. secret is ${process.env.JWT_SECRET}`);
-  jwt.verify(token, process.env.JWT_SECRET as string, (err: any, user: any) => {
-    console.log(err);
-
-    if (err) return res.sendStatus(403);
-
-    req.utilisateur = user;
-
-    next();
-  });
-}
-
+``` ts title="src/util/authenticateToken.ts"
+{!api_avec_jwt/src/util/authenticateToken.ts!}
 ```
+
+## Ajouter l'intergiciel au serveur 
+
+``` ts title="src/server.ts"
+{!api_avec_jwt/src/server.ts!}
+```
+
+# Configurer Postman pour utiliser les jetons
+
+1. Créer une requête POST pour obtenir un jeton.
+  ![Postman - Créer une requête POST pour obtenir un jeton](images/postman_generatetoken1.png)
+
+2. Dans Script, ajouter le code suivant pour conserver le jeton dans une variable d'environnement.
+  ``` js
+  pm.environment.set("jwt-token", pm.response.json().token);
+  ```
+  ![Postman - Ajouter le code pour conserver le jeton dans une variable d'environnement](images/postman_generatetoken2.png)
+
+3. Créer une requête GET pour obtenir les données. Dans la section Auth, sélectionner Bearer Token et ajouter la variable d'environnement `jwt-token`.
+  ![Postman - Ajouter le jeton à la requête GET](images/postman_auth.png)
+
+4. Exécuter la requête de génération avant celle du GET pour obtenir les données.
 

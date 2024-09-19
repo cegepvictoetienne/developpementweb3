@@ -8,8 +8,8 @@ Cours|Date|Sujet|Exercice
 5|2024-09-06 08:15:00|[Mongoose](introduction_mongoose.md)<br/>[Mongoose - la suite](mongoose2.md)<br/>[Simulacre Mongoose](simulacre_mongoose.md)|[Exercice 5 - Mongoose](exercice5_mongoose.md)<br/>[Exercice 6 - Mongoose](exercice6_mongoose.md)
 6|2024-09-11 15:15:00|Continuer les exercices|[Exercice 5 - Mongoose](exercice5_mongoose.md)<br/>[Exercice 6 - Mongoose](exercice6_mongoose.md)
 7|2024-09-13 08:15:00|Évaluation formative|
-8|2024-09-18 15:15:00|Retour sur formatif <br/> [Express et JWT](express_jwt.md)|[Exercice 7 - Express et JWT](exercice7_express_jwt.md)
-9|2024-09-20 08:15:00|Projet API|
+8|2024-09-18 15:15:00|Retour sur formatif <br/> Projet API|
+9|2024-09-20 08:15:00|[Express et JWT](express_jwt.md) <br/>Projet API|[Exercice 7 - Express et JWT](exercice7_express_jwt.md)
 10|2024-09-25 15:15:00|Projet API|
 11|2024-09-27 08:15:00|Examen API|
 12|2024-10-02 15:15:00|Projet API|

@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 366115170645,
+      "name": "Sean Maxwell",
+      "email": "smaxwell@example.com",
+      "password": "wanda-1293",
+      "created": "2024-03-22T05:14:36.252Z"
+    },
+    {
+      "id": 310946254456,
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "password": "chili-in-the-sun",
+      "created": "2024-03-22T05:20:55.079Z"
+    },
+    {
+      "id": 143027113460,
+      "name": "Gordan Freeman",
+      "email": "nova@prospect.com",
+      "password": "half-life-3",
+      "created": "2024-03-22T05:42:18.895Z"
+    }
+  ]
+}
