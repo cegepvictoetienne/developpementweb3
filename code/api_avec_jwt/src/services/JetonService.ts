@@ -11,7 +11,7 @@ export const UTILISATEUR_NOT_FOUND_ERR = 'Utilisateur non trouvé';
 /**
  * Générer un jeton pour un utilisateur
  *
- * @param {IUtilisateur} utilisateur - L'utilisateur demandant le jeton
+ * @param {IUserLogin} utilisateur - L'utilisateur demandant le jeton
  * @returns {Promise} - Le jeton signé
  */
 async function generateToken(utilisateur: IUserLogin): Promise<string> {
