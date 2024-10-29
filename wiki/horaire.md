@@ -19,10 +19,10 @@ Cours|Date|Sujet|Exercice
 16|2024-10-23 15:15:00|[Routes, contexte et API](react3.md)<br/> [Régles de React](regles_react.md)|[Exercice 10 - Contexte et API](exercice10_context.md)
 17|2024-10-25 08:15:00|[Internationalisation](internationalisation.md) <br />[Accessibilité](accessibilite.md)|[Exercice 11 - Internatialisation](exercice11_internationalisation.md)
 18|2024-10-30 15:15:00|[Authentification](authentification.md)|[Exercice 12 - Authentification](exercice12_authentification.md)
-19|2024-11-01 08:15:00|[React et PWA](pwa.md)|[Exercice 13 - PWA](exercice13_pwa.md)
-20|2024-11-08 15:15:00|[Netlify](netlify.md)|[Exercice 14 - Netlify](exercice14_netlify.md)
-21|2024-11-13 15:15:00|Examen React|
-22|2024-11-15 08:15:00|Projet Application React|
+19|2024-11-01 08:15:00|[React et PWA](pwa.md)<br/>[Netlify](netlify.md)|[Exercice 13 - PWA](exercice13_pwa.md)<br/>[Exercice 14 - Netlify](exercice14_netlify.md)
+20|2024-11-08 15:15:00|Formatif React|
+21|2024-11-13 15:15:00|Projet Application React|
+22|2024-11-15 08:15:00|Examen React|
 23|2024-11-20 15:15:00|Projet Application React|
 24|2024-11-22 08:15:00|Projet Application React|
 25|2024-11-27 15:15:00|Projet Application React|

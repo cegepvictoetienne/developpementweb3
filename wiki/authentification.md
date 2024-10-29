@@ -53,7 +53,7 @@ L'authentification joue un rôle crucial dans la sécurité et la protection des
 
     <figure markdown>
     ![ts-types-prenom](images/firebase-add-authentication2.png){ width="600" }
-    <figcaption>Activerl'authentification par utilisateur/mot de passe</figcaption>
+    <figcaption>Activer l'authentification par utilisateur/mot de passe</figcaption>
     </figure>
 
     Ajouter un utilisateur :  

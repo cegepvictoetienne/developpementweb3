@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBOGYeeRxmXzzWubXf5hrzaH0nO7MtIlw0',
-  authDomain: 'pagesecurisee.firebaseapp.com',
-  projectId: 'pagesecurisee',
-  storageBucket: 'pagesecurisee.appspot.com',
-  messagingSenderId: '939912110408',
-  appId: '1:939912110408:web:205f2ab07d3aef992a537d',
+  apiKey: 'AIzaSyBFBTnP1GW3nRe0BTYl9eksALrHMqb48dY',
+  authDomain: 'page-securisee.firebaseapp.com',
+  projectId: 'page-securisee',
+  storageBucket: 'page-securisee.appspot.com',
+  messagingSenderId: '891134233416',
+  appId: '1:891134233416:web:b12a35bc7be8a46416417d',
 };
 
 // Initialize Firebase

@@ -77,7 +77,7 @@ nav:
       - 'Exercice 9 - React et styles': 'exercice9_react_styles.md'
       - 'Exercice 10 - Contexte et API': 'exercice10_context.md'
       - 'Exercice 11 - Internationalisation': 'exercice11_internationalisation.md'
-      - 'Exercice 12 - Authenrification': 'exercice12_authentification.md'
+      - 'Exercice 12 - Authentification': 'exercice12_authentification.md'
       - 'Exercice 13 - PWA': 'exercice13_pwa.md'
       - 'Exercice Préparation Examen': 'exercice_prep_exam.md'
       - 'Exercice 14 - Netlify': 'exercice14_netlify.md'
