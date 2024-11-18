@@ -61,7 +61,6 @@ Voici les règles à respecter pour chacune des parties :
     - Avec validations adéquates et cohérentes avec les validations serveur. Les messages issus des validations doivent être affichés à l’utilisateur.   
     - Minimum 2 composants utilisés à des fins d’affichage.  
     - Authentification obligatoire pour certaines fonctionnalités ciblées (minimum 1), adaptée à la réalité du projet. L’authentification peut être intégrée dans l’API ou comme serveur tiers.  
-    - Configuration en tant qu’application progressive.
     - Publication de l’application (Netlify, GitHub Pages ou autre)  
 
 # Remise  

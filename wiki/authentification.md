@@ -374,5 +374,6 @@ Firebase peut créer des jetons dans l'application React qui servent à valider 
         .catch((reason) => console.log(reason));
     ```
 
-
+!!! codesandbox "CodeSandbox"  
+    [Démo - API sécurisée](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/serveur_securise_firebase)  
   

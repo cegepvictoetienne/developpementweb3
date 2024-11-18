@@ -61,7 +61,6 @@ Voici les règles à respecter pour chacune des parties :
     - Avec validations adéquates et cohérentes avec les validations serveur. Les messages issus des validations doivent être affichés à l’utilisateur.   
     - Minimum 2 composants utilisés à des fins d’affichage.  
     - Authentification obligatoire pour certaines fonctionnalités ciblées (minimum 1), adaptée à la réalité du projet. L’authentification peut être intégrée dans l’API ou comme serveur tiers.  
-    - Configuration en tant qu’application progressive.
     - Publication de l’application (Netlify, GitHub Pages ou autre)  
 
 # Remise  
@@ -108,7 +107,6 @@ Visuel|L’application intègre adéquatement des composants visuels répondant 
 Application sécurisée|L’application est correctement sécurisée.<br/><br/>4 points||L’application est partiellement sécurisée.<br/><br/>3 points||L’application n’est pas sécurisée.<br/><br/>0 point
 Internationalisation|L’application est entièrement internationalisée en Français et en Anglais<br/><br/>5 points||L’application est partiellement internationaliséeen Français et en Anglais<br/><br/>3 points||L’application n’est pas internationalisée en Français et en Anglais<br/><br/>0 point
 Organisation visuelle|L’organisation visuelle des fonctionnalités est adéquate et cohérente dans un minimum de 3 affichages (mobile, tablette et PC)<br/><br/>3 points||Les fonctionnalités développées contiennent 1 ou 2 incohérences au niveau de l’organisation visuelle.<br/><br/>2 points||L’organisation visuelle des fonctionnalités développées est inadéquate ou incohérente.<br/><br/>0 point
-Navigation|La navigation est intuitive.<br/>_(Positionnement des boutons, retour à l’accueil, utilisation d’onglets, etc.)_<br/><br/>2 points||La navigation contient une erreur de parcours.<br/><br/>1 point||La navigation contient plus d’une erreur de parcours.<br/><br/>0 point
-PWA|L’application est configurée en tant qu’application progressive (PWA) et répond à plus de 75% des exigences.<br/><br/>2 points||L’application est configurée en tant qu’application progressive (PWA) et répond à plus de 50% des exigences.<br/><br/>1 point||L’application est configurée en tant qu’application progressive (PWA) ou répond à moins de 50% des exigences.<br/><br/>0 point
-Publication|L’application est publiée et fonctionnelle.<br/><br/>2 points||L’interface applicative n’est pas correctement publiée.  Certaines fonctionnalités ne fonctionnement pas. <br/><br/>1 point||L’application n’est pas publiée<br/><br/>0 point
+Navigation|La navigation est intuitive.<br/>_(Positionnement des boutons, retour à l’accueil, utilisation d’onglets, etc.)_<br/><br/>3 points||La navigation contient une erreur de parcours.<br/><br/>2 points||La navigation contient plus d’une erreur de parcours.<br/><br/>0 point
+Publication|L’application est publiée et fonctionnelle.<br/><br/>3 points||L’interface applicative n’est pas correctement publiée.  Certaines fonctionnalités ne fonctionnement pas. <br/><br/>2 points||L’application n’est pas publiée<br/><br/>0 point
 La qualité générale de l’application démontre une rigueur dans l’application des procédures d’assurance qualité.<br/>{==(Correction négative, -1 par bogue identifié)==} {: colspan=5}||&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}

@@ -61,16 +61,22 @@ Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité _server
 
     ``` json title="netlify.toml"  
     [build]
-        command = "echo build netlify"
-        functions = "functions"
+    command = "npm install && npm run build"
+    functions = "functions"
     [functions]
-        external_node_modules = ["express"]
-        node_bundler = "esbuild"
+    external_node_modules = ["express"]
+    included_files=["./functions/database.json"]
+    node_bundler = "esbuild"
     [[redirects]]
-        force = true
-        from = "/*"
-        status = 200
-        to = "/.netlify/functions/api/:splat"
+    force = true
+    from = "/api/*"
+    status = 200
+    to = "/.netlify/functions/api/:splat"
+    [[redirects]]
+    force = true
+    from = "/images/*"
+    status = 200
+    to = "/public/images/:splat"
     ```  
 
     Le redirects sert à recevoir les requêtes du style https://monbackend/api/x et le rediriger vers /.netlify functions/api/x (la façon interne de Netlify pour exposer les fonctions de l'application dorsale).  
