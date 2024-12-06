@@ -1,0 +1,20 @@
+[
+  {
+    "id": "m4cww0rbcjb8g39hd7l",
+    "file": "code/hotel/src/models/Reservation.ts",
+    "line": 14,
+    "message": "L'id devrait être optionnel!",
+    "author": "Etienne",
+    "timestamp": "2024-12-06T15:39:35.255Z",
+    "thread": []
+  },
+  {
+    "id": "m4cwxqei9bq1pljakhr",
+    "file": "code/hotel/src/routes/constants/Paths.ts",
+    "line": 7,
+    "message": "Bonne pratique d'utiliser /api/ comme chemin",
+    "author": "Etienne",
+    "timestamp": "2024-12-06T15:40:55.146Z",
+    "thread": []
+  }
+]
