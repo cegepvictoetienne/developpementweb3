@@ -30,6 +30,11 @@ extra_javascript:
   - javascript/alltarget.js
   - javascript/addTranslations.js
 
+extra:
+  analytics:
+    provider: google
+    property: G-E4EGLJXEM1
+
 nav:
   - 'Page principale': 'index.md'
   - 'Horaire': 'horaire.md'
