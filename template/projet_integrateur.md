@@ -64,7 +64,7 @@ Voici les règles à respecter pour chacune des parties :
     - Publication de l’application (Netlify, GitHub Pages ou autre)  
 
 # Remise  
-- Le projet doit être remis avant le 13 décembre 2024 à 23h59  
+- Le projet doit être remis avant le 15 décembre 2025 à 14h05  
 - À remettre sur Teams :  
 
     - Lien GitHub (dépôt public ou privé*) de l’API.  
@@ -80,5 +80,16 @@ Voici les règles à respecter pour chacune des parties :
     - Informations d’authentification  
 
 *Si dépôt privé, envoyer une invitation de collaboration à rivard.etienne@cegepvicto.ca  
+
+# Rencontre
+
+Une rencontre de 15 minutes durant la semaine d'examen est obligatoire. Durant cette rencontre, vous devrez expliquer votre code pour permettre l'évaluation de votre compréhension.  
+
+# Niveau d'intelligence artificielle à utiliser  
+
+&nbsp;|Niveau|Exigence pour l'évaluation  
+-|-|  
+:material-lightbulb-outline:{ .lg .middle }|**3**|  Les contenus générés par l'IA sont **reformulés ou cités** dans la production.<br/><br/>Ces contenus représentent une **petite partie** de la production.<br/><br/>[Plus de détails ici](https://techinfo.profinfo.ca/niveaux-ia/)
+
 
 # Grille de correction  

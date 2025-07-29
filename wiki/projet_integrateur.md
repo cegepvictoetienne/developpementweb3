@@ -64,7 +64,7 @@ Voici les règles à respecter pour chacune des parties :
     - Publication de l’application (Netlify, GitHub Pages ou autre)  
 
 # Remise  
-- Le projet doit être remis avant le 13 décembre 2024 à 23h59  
+- Le projet doit être remis avant le 15 décembre 2025 à 14h05  
 - À remettre sur Teams :  
 
     - Lien GitHub (dépôt public ou privé*) de l’API.  
@@ -81,6 +81,17 @@ Voici les règles à respecter pour chacune des parties :
 
 *Si dépôt privé, envoyer une invitation de collaboration à rivard.etienne@cegepvicto.ca  
 
+# Rencontre
+
+Une rencontre de 15 minutes durant la semaine d'examen est obligatoire. Durant cette rencontre, vous devrez expliquer votre code pour permettre l'évaluation de votre compréhension.  
+
+# Niveau d'intelligence artificielle à utiliser  
+
+&nbsp;|Niveau|Exigence pour l'évaluation  
+-|-|  
+:material-lightbulb-outline:{ .lg .middle }|**3**|  Les contenus générés par l'IA sont **reformulés ou cités** dans la production.<br/><br/>Ces contenus représentent une **petite partie** de la production.<br/><br/>[Plus de détails ici](https://techinfo.profinfo.ca/niveaux-ia/)
+
+
 # Grille de correction  
 Élément|Excellent|Satisfaisant|Minimal|Faible|Insuffisant
 --|--|--|--|--|--
@@ -96,17 +107,19 @@ Validations personnalisées|L’interface applicative contient au minimum 2 __va
 Application sécurisée|L’interface applicative est correctement __sécurisée__.<br/><br/>4 points||L’interface applicative est partiellement __sécurisée__.<br/><br/>2 points||L’interface applicative n’est pas __sécurisée__.<br/><br/>0 point
 Messages d'erreur|Les messages d’erreur sont personnalisés en français.<br/><br/>2 points||L’interface applicative contient des messages d’erreurs appropriés.<br/><br/>1 point||L’interface applicative ne contient pas de messages d’erreurs appropriés.<br/><br/>0 point
 Tests unitaires automatisés|L'ensemble des méthodes HTTP implémentés et des validations sont testées<br/><br/>6 points|Les tests unitaires ne couvrent que __75%__ des méthodes HTTP et validations<br/><br/>5 points|Les tests unitaires ne couvrent que __50%__ des méthodes HTTP et validations<br/><br/>4 points|Les tests unitaires ne couvrent que __25%__ des méthodes HTTP et validations<br/><br/>2 points|Les tests unitaires couvrent moins de  __25%__ des méthodes HTTP et validations<br/><br/>0 point
-Documentation|La documentation de l’interface applicative est claire et complète. <br/><br/>4 points||La documentation de l’interface applicative est floue ou incomplète.<br/><br/>2 points||La documentation de l’interface applicative est inexistante.<br/><br/>0 point
+Compréhension de son code|L'élève explique clairement et sans hésitation l'ensemble du code remis à l'enseignant<br/><br/>4 points||L'élève explique clairement et sans hésitation une majeure partie du code remis à l'enseignant<br/><br/>2 points||L'élève explique difficilement son code<br/><br/>0 point
+Documentation|La documentation de l’interface applicative est claire et complète. <br/><br/>2 points||La documentation de l’interface applicative est floue ou incomplète.<br/><br/>1 point||La documentation de l’interface applicative est inexistante.<br/><br/>0 point
 La qualité générale de l’interface applicative (API) démontre une rigueur dans l’application des procédures d’assurance qualité.<br/>{==(Correction négative, -1 par bogue identifié)==} {: colspan=5}||&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}
 __Application Web (50%)__ {: colspan=5}||&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}
 Composants|L’application est optimalement décomposée en composants.<br/><br/>5 points||L’application est correctement décomposée en composants<br/><br/>4 points|L’application est décomposée en composants, mais contient une ou 2 erreurs de structure. <br/><br/>2 points|L’application n’est pas correctement décomposée<br/><br/>0 point
 Hooks|Les techniques de programmation utilisées démontrent une excellente maîtrise de l’approche par hooks<br/><br/>5 points|Les techniques de programmation utilisées démontrent une bonne maîtrise de l’approche par hooks <br/><br/>3 points|Les techniques de programmation utilisées démontrent une légère maîtrise de l’approche par hooks<br/><br/>2 points||Les techniques de programmation utilisées ne démontrent pas la maîtrise de l’approchepar hooks<br/><br/>0 point
 Méthodes HTTP|L’application implémente correctement l’ensemble des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>12 points|L’application implémente correctement 75% des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>9 points|L’application implémente correctement 50% des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>7 points|L’application implémente correctement 25% des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>3 points|L’application implémente correctement moins de 25% des méthodes HTTP fournies par l’interface applicative (API).<br/><br/>0 point
 Validations|L’application contient des validations appropriées avec messages à l'utilisateur dans l'interface graphique.<br/><br/>5 points||L’application contient des validations partiellement appropriées qui ont des messages affichés à l'utilisateur.<br/><br/>3 points||L’application ne contient pas de validations appropriées ou ne sont pas affichées à l'utilisateur.<br/><br/>0 point
-Visuel|L’application intègre adéquatement des composants visuels répondant aux exigences du projet. <br/><br/>5 points||L’application intègre partiellement des composants visuels répondant aux exigences du projet. <br/><br/>3 points||L’application n’intègre pas des composants visuels répondant aux exigences du projet. <br/><br/>0 point
+Compréhension de son code|L'élève explique clairement et sans hésitation l'ensemble du code remis à l'enseignant<br/><br/>5 points||L'élève explique clairement et sans hésitation une majeure partie du code remis à l'enseignant<br/><br/>3 points||L'élève explique difficilement son code<br/><br/>0 point
+Visuel|L’application intègre adéquatement des composants visuels répondant aux exigences du projet. <br/><br/>4 points||L’application intègre partiellement des composants visuels répondant aux exigences du projet. <br/><br/>2 points||L’application n’intègre pas des composants visuels répondant aux exigences du projet. <br/><br/>0 point
 Application sécurisée|L’application est correctement sécurisée.<br/><br/>4 points||L’application est partiellement sécurisée.<br/><br/>3 points||L’application n’est pas sécurisée.<br/><br/>0 point
-Internationalisation|L’application est entièrement internationalisée en Français et en Anglais<br/><br/>5 points||L’application est partiellement internationaliséeen Français et en Anglais<br/><br/>3 points||L’application n’est pas internationalisée en Français et en Anglais<br/><br/>0 point
-Organisation visuelle|L’organisation visuelle des fonctionnalités est adéquate et cohérente dans un minimum de 3 affichages (mobile, tablette et PC)<br/><br/>3 points||Les fonctionnalités développées contiennent 1 ou 2 incohérences au niveau de l’organisation visuelle.<br/><br/>2 points||L’organisation visuelle des fonctionnalités développées est inadéquate ou incohérente.<br/><br/>0 point
-Navigation|La navigation est intuitive.<br/>_(Positionnement des boutons, retour à l’accueil, utilisation d’onglets, etc.)_<br/><br/>3 points||La navigation contient une erreur de parcours.<br/><br/>2 points||La navigation contient plus d’une erreur de parcours.<br/><br/>0 point
-Publication|L’application est publiée et fonctionnelle.<br/><br/>3 points||L’interface applicative n’est pas correctement publiée.  Certaines fonctionnalités ne fonctionnement pas. <br/><br/>2 points||L’application n’est pas publiée<br/><br/>0 point
+Internationalisation|L’application est entièrement internationalisée en Français et en Anglais<br/><br/>4 points||L’application est partiellement internationaliséeen Français et en Anglais<br/><br/>3 points||L’application n’est pas internationalisée en Français et en Anglais<br/><br/>0 point
+Organisation visuelle|L’organisation visuelle des fonctionnalités est adéquate et cohérente dans un minimum de 3 affichages (mobile, tablette et PC)<br/><br/>2 points||Les fonctionnalités développées contiennent 1 ou 2 incohérences au niveau de l’organisation visuelle.<br/><br/>1 point||L’organisation visuelle des fonctionnalités développées est inadéquate ou incohérente.<br/><br/>0 point
+Navigation|La navigation est intuitive.<br/>_(Positionnement des boutons, retour à l’accueil, utilisation d’onglets, etc.)_<br/><br/>2 points||La navigation contient une erreur de parcours.<br/><br/>1 point||La navigation contient plus d’une erreur de parcours.<br/><br/>0 point
+Publication|L’application est publiée et fonctionnelle.<br/><br/>2 points||L’interface applicative n’est pas correctement publiée.  Certaines fonctionnalités ne fonctionnement pas. <br/><br/>1 point||L’application n’est pas publiée<br/><br/>0 point
 La qualité générale de l’application démontre une rigueur dans l’application des procédures d’assurance qualité.<br/>{==(Correction négative, -1 par bogue identifié)==} {: colspan=5}||&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}|&#8288 {: style="padding:0"}
