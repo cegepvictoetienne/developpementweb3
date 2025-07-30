@@ -130,6 +130,16 @@ Pour exécuter votre programme, il suffit de faire la commande :
 npm start
 ```
 
+## nodemon vs node --watch
+
+Les versions modernes de node.js (>18) ont les fonctionnalités de base de `nodemon`. Il suffit de faire la commande suivante :
+
+```
+node --watch programme.js
+```
+
+Le seul avantage de `nodemon` est la possibilité de redémarrer le programme avec la commande `rs`.
+
 ## Module d’aide au développement – concurrently  
 
 Module qui permet d’exécuter plusieurs commandes en même temps. Utile pour rouler tsc et nodemon en même temps.  
