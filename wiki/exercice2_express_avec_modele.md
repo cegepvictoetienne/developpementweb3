@@ -15,5 +15,5 @@
 - Faire l’API des animaux avec le modèle généré (express-generator-typescript).
 - Assurez-vous de valider le nom, la race et le propriétaire de l’animal.
 - Ajouter le numéro de téléphone du propriétaire et valider que le numéro est bien sous la forme (999) 999-9999
-- Testez les méthodes en utilisant Postman
+- Testez les méthodes en utilisant Bruno
 
