@@ -40,60 +40,60 @@ npm run dev
 L'exemple suivant code une mini API qui gère des réservations dans un hotel.  
 
 !!! codesandbox "CodeSandbox"  
-    [Démo - API Express](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/hotel24)  
+    [Démo - API Express](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/hotel25)  
 
 ## Étape 1 - Créer l’interface model/Reservation.ts  
 
 
 ``` ts title="model/Reservation.ts"
-{!hotel24/src/models/Reservation.ts!}
+{!hotel25/src/models/Reservation.ts!}
 
 ```
 
 ## Étape 2 - Ajouter le modèle à la base de données bidon 
 
 ``` ts title="repos/MockOrm.ts"
-{!hotel24/src/repos/MockOrm.ts!}
+{!hotel25/src/repos/MockOrm.ts!}
 
 ```
 
 ## Étape 3 - Mettre à jour la base de données  
 
 ``` json title="repos/database.json"  
-{!hotel24/src/repos/database.json!}
+{!hotel25/src/repos/database.json!}
 ```  
 
 ## Étape 4 - Créer le repo  
 
 ``` ts title="repos/ReservationRepo.ts"  
-{!hotel24/src/repos/ReservationRepo.ts!}
+{!hotel25/src/repos/ReservationRepo.ts!}
 
 ```
 
 ## Étape 5 - Créer le service  
 
 ``` ts title="services/ReservationService.ts"
-{!hotel24/src/services/ReservationService.ts!}
+{!hotel25/src/services/ReservationService.ts!}
 
 ```
 
 ## Étape 6 - Créer les routes  
 
-``` ts title="routes/ReservationRoute.ts"
-{!hotel24/src/routes/ReservationRoute.ts!}
+``` ts title="routes/ReservationRoutes.ts"
+{!hotel25/src/routes/ReservationRoutes.ts!}
 
 ```
 
 ## Étape 7 - Ajouter les chemins de l’API dans les commons  
 
-``` ts title="/common/Paths.ts"
-{!hotel24/src/common/Paths.ts!}
+``` ts title="/common/constants/Paths.ts"
+{!hotel25/src/common/constants/Paths.ts!}
 
 ```
 
 ## Étape 8 - Ajouter les chemins de l’API dans index.ts  
 
 ``` ts title="routes/index.ts"
-{!hotel24/src/routes/index.ts!}
+{!hotel25/src/routes/index.ts!}
 
 ```

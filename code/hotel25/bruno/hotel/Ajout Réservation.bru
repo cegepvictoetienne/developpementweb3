@@ -1,0 +1,27 @@
+meta {
+  name: Ajout Réservation
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/reservations/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "reservation": 
+      {
+        "id": "9",
+        "nom": "Kamala Harris",
+        "courriel": "kamala@profinfo.ca",
+        "dateDebut": "2025-01-06",
+        "dateFin": "2025-01-08",
+        "typeChambre": "Deluxe",
+        "prixParNuit": 150,
+        "created": "2025-08-11"
+      }
+  }
+}

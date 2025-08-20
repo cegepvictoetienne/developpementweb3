@@ -6,9 +6,9 @@ Dans ce tutoriel, nous allons voir comment tester automatiquement un API. Pour c
 
 ## Modules 
 
-### Jasmine
+### VITest
 
-Jasmine est un cadriciel de test pour JavaScript. Il est utilisé pour tester le code JavaScript. Il est facile à mettre en place et à utiliser. Il est également très flexible. Il est utilisé pour tester le code JavaScript dans les applications Node.js.
+VITest est un cadriciel de test pour JavaScript. Il est utilisé pour tester le code JavaScript. Il est facile à mettre en place et à utiliser. Il est également très flexible. Il est utilisé pour tester le code JavaScript dans les applications Node.js.
 
 ### Supertest
 
@@ -25,25 +25,6 @@ Exemple d'assertion :
 ```typescript
 expect(1 + 1).toBe(2);
 ```
-
-### Les espions
-
-Les espions sont des fonctions qui enregistrent des informations sur les appels à d'autres fonctions. Ils sont utilisés pour vérifier si une fonction a été appelée, combien de fois elle a été appelée, avec quels arguments, etc.
-
-```typescript
-spyOn(console, 'log');
-console.log('Hello, world!');
-expect(console.log).toHaveBeenCalled();
-```
-
-Les espions peuvent aussi être utilisés comme simulacre de fonction.
-
-```typescript
-const data = genererReservationsBidon();
-spyOn(ReservationRepo, 'getAll').and.resolveTo(data);
-```
-
-Dans cet exemple, `ReservationRepo.getAll` est remplacé par une fonction qui retourne une promesse résolue avec `data`.
 
 ## Anatomie d'un test
 
@@ -71,8 +52,8 @@ Dans cet exemple, le test vérifie si l'API `/api/reservations` retourne un code
 Voici un exemple complet de test d'une API REST en utilisant Jasmine et Supertest :
 
 
-``` ts title="spec/tests/reservations.spec.ts"  
-{!hotel24/spec/tests/reservations.spec.ts!}
+``` ts title="tests/reservations.test.ts"  
+{!hotel25/tests/reservations.test.ts!}
 
 ```
 
