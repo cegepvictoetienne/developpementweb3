@@ -46,7 +46,8 @@ nav:
       - 'Express et MongoDB':
           - 'Intergiciels Express': 'intergiciels_express.md'
           - 'Générateur Express': 'generateur_express.md'
-          - 'Bruno': 'bruno.md'
+          - 'Bruno': 'bruno.md'  
+          - 'Prettier': 'prettier.md'
           - 'Tests unitaires': 'tester_api.md'
           - 'JavaScript asynchrone': 'javascript_async.md'
           - 'MongoDB': 'mongodb.md'
