@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../documentation/">
+        <link rel="prev" href="../bruno/">
       
       
-        <link rel="next" href="../exercice1_lodash/">
+        <link rel="next" href="../tester_api/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Module déprécié - Développement Web 3</title>
+        <title>Prettier - Développement Web 3</title>
       
     
     
@@ -117,7 +117,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#marche-a-suivre-pour-reparer-un-projet-node-avec-inflight-qui-est-deprecie" class="md-skip">
+        <a href="#extension-prettier-pour-vs-code" class="md-skip">
           Aller au contenu
         </a>
       
@@ -153,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Module déprécié
+              Prettier
             
           </span>
         </div>
@@ -290,18 +290,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -317,7 +319,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Leçons
@@ -443,18 +445,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -470,7 +474,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Express et MongoDB
@@ -550,10 +554,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../prettier/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -564,6 +577,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1117,20 +1131,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -1146,7 +1158,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Procédures
@@ -1180,19 +1192,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../module_deprecie/" class="md-nav__link">
         
   
   
@@ -1203,7 +1206,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1772,24 +1774,45 @@
 
 
 
-<h1 id="marche-a-suivre-pour-reparer-un-projet-node-avec-inflight-qui-est-deprecie">Marche à suivre pour réparer un projet node avec inflight qui est déprécié</h1>
-<p>Si vous avez un message d'erreur du genre : </p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>warn<span class="w"> </span>deprecated<span class="w"> </span>inflight@1.0.6:<span class="w"> </span>This<span class="w"> </span>module<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span>supported,<span class="w"> </span>and<span class="w"> </span>leaks<span class="w"> </span>memory.<span class="w"> </span>Do<span class="w"> </span>not<span class="w"> </span>use<span class="w"> </span>it.<span class="w"> </span>Check<span class="w"> </span>out<span class="w"> </span>lru-cache<span class="w"> </span><span class="k">if</span><span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>a<span class="w"> </span>good<span class="w"> </span>and<span class="w"> </span>tested<span class="w"> </span>way<span class="w"> </span>to<span class="w"> </span>coalesce<span class="w"> </span>async<span class="w"> </span>requests<span class="w"> </span>by<span class="w"> </span>a<span class="w"> </span>key<span class="w"> </span>value,<span class="w"> </span>which<span class="w"> </span>is<span class="w"> </span>much<span class="w"> </span>more<span class="w"> </span>comprehensive<span class="w"> </span>and<span class="w"> </span>powerful.
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>npm<span class="w"> </span>warn<span class="w"> </span>deprecated<span class="w"> </span>@humanwhocodes/config-array@0.11.14:<span class="w"> </span>Use<span class="w"> </span>@eslint/config-array<span class="w"> </span>instead
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>npm<span class="w"> </span>warn<span class="w"> </span>deprecated<span class="w"> </span>rimraf@3.0.2:<span class="w"> </span>Rimraf<span class="w"> </span>versions<span class="w"> </span>prior<span class="w"> </span>to<span class="w"> </span>v4<span class="w"> </span>are<span class="w"> </span>no<span class="w"> </span>longer<span class="w"> </span>supported
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>npm<span class="w"> </span>warn<span class="w"> </span>deprecated<span class="w"> </span>@humanwhocodes/object-schema@2.0.3:<span class="w"> </span>Use<span class="w"> </span>@eslint/object-schema<span class="w"> </span>instead
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>npm<span class="w"> </span>warn<span class="w"> </span>deprecated<span class="w"> </span>glob@7.2.3:<span class="w"> </span>Glob<span class="w"> </span>versions<span class="w"> </span>prior<span class="w"> </span>to<span class="w"> </span>v9<span class="w"> </span>are<span class="w"> </span>no<span class="w"> </span>longer<span class="w"> </span>supported
-</span></code></pre></div>
-<p>Il est possible de réparer le projet en ajoutant ceci dans <code>package.json</code>  :</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">  </span><span class="nt">&quot;overrides&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">&quot;eslint&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">      </span><span class="nt">&quot;@humanwhocodes/config-array&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;npm:@eslint/config-array&quot;</span><span class="p">,</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">&quot;file-entry-cache&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^8.0.0&quot;</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="p">}</span>
-</span></code></pre></div>
-<p>Ensuite, il faut effacer le fichier <code>package-lock.json</code>, le dossier <code>node_modules</code> et le réinstaller avec <code>npm install</code>.</p>
-<p>Cela devrait réparer le problème.</p>
+<h1 id="extension-prettier-pour-vs-code">Extension Prettier pour VS Code</h1>
+<p>Une extension pour formatter votre code automatiquement.  </p>
+<h1 id="installation">Installation</h1>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier sur VSCode Marketplace</a>  </p>
+<h1 id="configuration">Configuration</h1>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="vscode://settings/editor.formatOnSave">editor.formatOnSave</a></td>
+<td>Activé</td>
+</tr>
+<tr>
+<td><a href="vscode://settings/editor.formatOnPaste">editor.formatOnPaste</a></td>
+<td>Activé</td>
+</tr>
+<tr>
+<td><a href="vscode://settings/editor.defaultFormatter">editor.defaultFormatter</a></td>
+<td>Prettier - Code formatter</td>
+</tr>
+<tr>
+<td><a href="vscode://settings/prettier.semi">prettier.semi</a></td>
+<td>Activé</td>
+</tr>
+<tr>
+<td><a href="vscode://settings/prettier.singleQuote">prettier.singleQuote</a></td>
+<td>Activé</td>
+</tr>
+<tr>
+<td><a href="vscode://settings/prettier.trailingComma">prettier.trailingComma</a></td>
+<td>Activé</td>
+</tr>
+</tbody>
+</table>
 
 
 
