@@ -20,5 +20,5 @@ Une extension pour formatter votre code automatiquement.
 |[editor.defaultFormatter](vscode://settings/editor.defaultFormatter)|Prettier - Code formatter|  
 |[prettier.semi](vscode://settings/prettier.semi)|Activé|  
 |[prettier.singleQuote](vscode://settings/prettier.singleQuote)|Activé|  
-|[prettier.trailingComma](vscode://settings/prettier.trailingComma)|Activé|  
+|[prettier.trailingComma](vscode://settings/prettier.trailingComma)|All|  
 
