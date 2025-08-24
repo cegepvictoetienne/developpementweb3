@@ -35,6 +35,30 @@ npm run dev
     [Installation d'express](https://expressjs.com/fr/starter/installing.html)  
     [Express Generator avec TypeScript](https://github.com/seanpmaxwell/express-generator-typescript)  
 
+
+# Configurer ESLint dans le projet Express  
+
+## Étape 1 - Installer le bon module ESLint 
+
+```
+npm install @stylistic/eslint-plugin
+```
+
+# Étape 2 - Désinstaller les modules ESLint TS et JS  
+
+```
+npm remove @stylistic/eslint-plugin-ts
+npm remove @stylistic/eslint-plugin-js
+```
+
+# Étape 3 - Corriger configuration ESLint  
+
+Il faut retirer les références aux vieux modules ESLint TS et JS en faveur au module unifié.  
+
+``` ts title="eslint.config.ts"
+{!hotel25/src/eslint.config.ts!}
+```
+
 # Coder un API Express  
 
 L'exemple suivant code une mini API qui gère des réservations dans un hotel.  
