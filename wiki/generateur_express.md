@@ -44,19 +44,19 @@ npm run dev
 npm install @stylistic/eslint-plugin
 ```
 
-# Étape 2 - Désinstaller les modules ESLint TS et JS  
+## Étape 2 - Désinstaller les modules ESLint TS et JS  
 
 ```
 npm remove @stylistic/eslint-plugin-ts
 npm remove @stylistic/eslint-plugin-js
 ```
 
-# Étape 3 - Corriger configuration ESLint  
+## Étape 3 - Corriger configuration ESLint  
 
 Il faut retirer les références aux vieux modules ESLint TS et JS en faveur au module unifié.  
 
 ``` ts title="eslint.config.ts"
-{!hotel25/src/eslint.config.ts!}
+{!hotel25/eslint.config.ts!}  
 ```
 
 # Coder un API Express  
@@ -69,7 +69,7 @@ L'exemple suivant code une mini API qui gère des réservations dans un hotel.
 ## Étape 1 - Créer l’interface model/Reservation.ts  
 
 
-``` ts title="model/Reservation.ts"
+``` ts title="models/Reservation.ts"
 {!hotel25/src/models/Reservation.ts!}
 
 ```
