@@ -36,7 +36,7 @@ npm run dev
     [Express Generator avec TypeScript](https://github.com/seanpmaxwell/express-generator-typescript)  
 
 
-# Configurer ESLint dans le projet Express  
+# Configurer l'analysateur de code __ESLint__ dans le projet Express  
 
 ## Étape 1 - Installer le bon module ESLint 
 
@@ -58,6 +58,35 @@ Il faut retirer les références aux vieux modules ESLint TS et JS en faveur au 
 ``` ts title="eslint.config.ts"
 {!hotel25/eslint.config.ts!}  
 ```
+
+# Pour Windows :  
+
+## Étape 1 - installer cross-env :  
+
+```
+npm install cross-env
+```   
+
+## Étape 2 - modifier package.json comme suit :  
+
+```
+  "dev": "cross-env NODE_ENV=development ts-node ./src",
+  "dev:hot": "cross-env nodemon --exec \"npm run dev\" --watch ./src --ext .ts",
+```  
+
+## Étape 3 - modifier eslint.config.ts :  
+
+```
+{
+    languageOptions: {
+      parserOptions: {
+        project: './tsconfig.json',
+        tsconfigRootDir: process.cwd(), // AJOUTER CETTE LIGNE EN WINDOWS
+        warnOnUnsupportedTypeScriptVersion: false,
+      },
+    },
+  },
+```   
 
 # Coder un API Express  
 
