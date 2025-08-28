@@ -3,13 +3,13 @@ Cours|Date|Sujet|Exercice
 --|--|--|--
 1|2025-08-21 13:15:00|[Introduction à TypeScript](introduction_typescript.md) <br/> [npm](npm.md) <br/>[Prettier](prettier.md)  |[Exercice 1 - lodash](exercice1_lodash.md)
 2|2025-08-25 12:15:00|[TypeScript 2](typescript_2.md)<br/>[Express - Générateur](generateur_express.md)<br/>[Bruno](bruno.md)|[Exercice 2 - Express avec modèle](exercice2_express_avec_modele.md)
-3|2025-08-28 13:15:00|[Intergiciels](intergiciels_express.md)<br/>[Tester API](tester_api.md)|[Exercice 3 - Intergiciels Express et Tests API](exercice3_intergiciels_express.md)
-4|2025-09-04 12:15:00|[JavaScript asynchrone](javascript_async.md) <br/> [MongoDB](mongodb.md)|[Exercice 4 - MongoDB](exercice4_mongodb.md)
-5|2025-09-08 12:15:00|[Mongoose](introduction_mongoose.md)<br/>[Mongoose - la suite](mongoose2.md)<br/>[Simulacre Mongoose](simulacre_mongoose.md)|[Exercice 5 - Mongoose](exercice5_mongoose.md)<br/>[Exercice 6 - Mongoose](exercice6_mongoose.md)
-6|2025-09-11 13:15:00|Continuer les exercices|[Exercice 5 - Mongoose](exercice5_mongoose.md)<br/>[Exercice 6 - Mongoose](exercice6_mongoose.md)
-7|2025-09-15 12:15:00|Évaluation formative|
-8|2025-09-18 13:15:00|Retour sur formatif <br/> Projet API|
-9|2025-09-22 12:15:00|[Express et JWT](express_jwt.md) <br/>Projet API|[Exercice 7 - Express et JWT](exercice7_express_jwt.md)
+3|2025-08-28 13:15:00|Continuer les exercices|
+4|2025-09-04 12:15:00|[Intergiciels](intergiciels_express.md)<br/>[Tester API](tester_api.md)|[Exercice 3 - Intergiciels Express et Tests API](exercice3_intergiciels_express.md)
+5|2025-09-08 12:15:00|[JavaScript asynchrone](javascript_async.md) <br/> [MongoDB](mongodb.md)|[Exercice 4 - MongoDB](exercice4_mongodb.md)
+6|2025-09-11 13:15:00|[Mongoose](introduction_mongoose.md)<br/>[Mongoose - la suite](mongoose2.md)<br/>[Simulacre Mongoose](simulacre_mongoose.md)|[Exercice 5 - Mongoose](exercice5_mongoose.md)<br/>[Exercice 6 - Mongoose](exercice6_mongoose.md)
+7|2025-09-15 12:15:00|Continuer les exercices|[Exercice 5 - Mongoose](exercice5_mongoose.md)<br/>[Exercice 6 - Mongoose](exercice6_mongoose.md)
+8|2025-09-18 13:15:00|Évaluation formative|
+9|2025-09-22 12:15:00|Retour sur formatif <br/> Projet API<br/>[Express et JWT](express_jwt.md) |[Exercice 7 - Express et JWT](exercice7_express_jwt.md)
 10|2025-09-25 13:15:00|Projet API|
 11|2025-09-29 12:15:00|Examen API|
 12|2025-10-02 13:15:00|Projet API|
