@@ -1,24 +1,23 @@
 {
-  "name": "hotel25",
-  "version": "1.0.0",
+  "name": "chenil25",
+  "version": "0.0.0",
   "scripts": {
     "build": "ts-node ./scripts/build.ts",
     "clean-install": "rm -rf ./node_modules && rm -r package-lock.json && npm i",
     "dev": "cross-env NODE_ENV=development ts-node ./src",
-    "dev:hot": "cross-env nodemon --exec \"npm run dev\" --watch ./src --ext .ts",
+    "dev:hot": "nodemon --exec \"npm run dev\" --watch ./src --ext .ts",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "start": "NODE_ENV=production node -r ./config.js ./dist",
-    "test": "NODE_ENV=test vitest",
+    "start": "cross-env NODE_ENV=production node -r ./config.js ./dist",
+    "test": "cross-env NODE_ENV=test vitest",
     "type-check": "tsc --noEmit"
   },
   "engines": {
     "node": ">=16.0.0"
   },
   "dependencies": {
+    "@stylistic/eslint-plugin": "^5.2.3",
     "cookie-parser": "^1.4.7",
-    "cross-env": "^10.0.0",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.17",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "helmet": "^8.1.0",
@@ -32,9 +31,8 @@
     "morgan": "^1.10.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.33.0",
-    "@stylistic/eslint-plugin": "^5.2.3",
-    "@swc/core": "^1.13.3",
+    "@eslint/js": "^9.34.0",
+    "@swc/core": "^1.13.5",
     "@types/cookie-parser": "^1.4.9",
     "@types/find": "^0.2.4",
     "@types/fs-extra": "^11.0.4",
@@ -43,7 +41,8 @@
     "@types/morgan": "^1.9.10",
     "@types/node": "^24.3.0",
     "@types/supertest": "^6.0.3",
-    "eslint": "^9.33.0",
+    "cross-env": "^10.0.0",
+    "eslint": "^9.34.0",
     "eslint-plugin-n": "^17.21.3",
     "find": "^0.3.0",
     "fs-extra": "^11.3.1",
@@ -53,7 +52,7 @@
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.40.0",
+    "typescript-eslint": "^8.41.0",
     "vitest": "^3.2.4"
   }
 }
