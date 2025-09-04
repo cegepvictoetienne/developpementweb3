@@ -20,6 +20,26 @@ graph TD
 
 ```
 
+S'il y a un besoin de contrôler et même refuser l'exécution de routes, l'intergiciel peut courtcircuiter la chaîne comme suit :  
+
+``` ts title="mini-securite.ts"  
+const bloquerSiPasEtienne = (
+  req: express.Request,
+  res: express.Response,
+  next: express.NextFunction,
+) => {
+  const nom = req.query.nom;
+  console.log(nom);
+  if (nom === 'Etienne') {
+    next();
+  } else {
+    res.status(403).send('Erreur');
+  }
+};
+
+app.use(bloquerSiPasEtienne);
+```
+
 # Intergiciel - morgan  
 
 Morgan est un intergiciel pour garder l’historique des requêtes traitées par votre serveur Express.
