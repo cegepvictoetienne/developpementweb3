@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Dans ce tutoriel, nous allons voir comment tester automatiquement un API. Pour cela, nous allons utiliser les modules `jasmine` et `supertest`. Ce sont les deux technologies utilisées dans le modèle utilisé dans le cours.
+Dans ce tutoriel, nous allons voir comment tester automatiquement un API. Pour cela, nous allons utiliser les modules `VITest` et `supertest`. Ce sont les deux technologies utilisées dans le modèle utilisé dans le cours.
 
 ## Modules 
 
@@ -40,7 +40,7 @@ Exemple de test :
 
 ```typescript
 it('doit retourner 200 OK', async () => {
-  const response = await request(app).get('/api/reservations');
+  const response = await agent.get('/api/reservations');
   expect(response.status).toBe(200);
 });
 ```
@@ -49,7 +49,7 @@ Dans cet exemple, le test vérifie si l'API `/api/reservations` retourne un code
 
 ## Exemple complet de test
 
-Voici un exemple complet de test d'une API REST en utilisant Jasmine et Supertest :
+Voici un exemple complet de test d'une API REST en utilisant VITest et Supertest :
 
 
 ``` ts title="tests/reservations.test.ts"  

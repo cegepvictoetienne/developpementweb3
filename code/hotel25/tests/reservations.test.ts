@@ -61,7 +61,7 @@ const compareUserArrays = customDeepCompare({
 describe('reservationRouter', () => {
   let dbReservations: IReservation[] = [];
 
-  // Run before all tests
+  // S'exécute avant chaque test
   beforeEach(async () => {
     await ReservationRepo.deleteAllReservations();
     dbReservations = await ReservationRepo.insertMult(DB_RESERVATIONS);
@@ -174,7 +174,7 @@ describe('reservationRouter', () => {
       },
     );
 
-    // User not found
+    // Réservation non trouvée
     it(
       'doit retourner un JSON avec erreur ' +
         `'${RESERVATION_NOT_FOUND_ERR}' et un code de  ` +

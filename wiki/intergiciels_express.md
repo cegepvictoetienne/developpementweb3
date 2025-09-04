@@ -15,17 +15,8 @@ graph TD
  
 ```
 
-``` ts title="intergiciel.ts"  
-function historique(
-    req: express.Request,
-    res: express.Response,
-    next: express.NextFunction
-) {
-    console.log(`${req.method} ${req.url}`);
-    next();
-}
-
-app.use(historique);
+``` ts title="index.ts"  
+{!express_intergiciel/index.ts!}
 
 ```
 
@@ -57,7 +48,7 @@ Intergiciel pour transformer le json reçu du client en objet, remplace req.body
 
 Utilisation :  
 
-``` ts title="tableau_de_fruits.ts"
+``` ts title="utilisateurs.ts"
 app.use(express.json());
 
 app.post('/', (req: express.Request<Utilisateur>, res: express.Response) => {

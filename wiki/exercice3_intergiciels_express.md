@@ -5,4 +5,4 @@
 
 # Exercice - Tests API
 
-- Tester l'API créé au cours précédent avec Jasmine et Supertest.
+- Tester l'API créé au cours précédent avec VITest et Supertest.
