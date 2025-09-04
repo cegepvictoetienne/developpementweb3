@@ -1,4 +1,4 @@
-import express from 'express';
+import express from "express";
 
 const app = express();
 const port = 3000;
@@ -6,7 +6,7 @@ const port = 3000;
 function historique(
   req: express.Request,
   res: express.Response,
-  next: express.NextFunction,
+  next: express.NextFunction
 ) {
   console.log(`${req.method} ${req.url}`);
   next();
@@ -14,8 +14,8 @@ function historique(
 
 app.use(historique);
 
-app.get('/', (req, res) => {
-  res.send('Hello World');
+app.get("/", (req: express.Request, res: express.Response) => {
+  res.send("Hello World");
 });
 
-app.listen(port, () => console.log('serveur démaré'));
+app.listen(port, () => console.log("serveur démaré"));
