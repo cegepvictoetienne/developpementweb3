@@ -1832,27 +1832,27 @@
 
 
 
-<h1 id="react">React</h1>
+<div><h1 id="react">React</h1>
 <h2 id="generer-un-projet-en-react">Générer un projet en React</h2>
 <p>Il y a plusieurs Générateur d’applications React qui permettent de générer la structure de base recommandée en JavaScript ou TypeScript. </p>
 <p>Voici comment générer l’application :  </p>
 <ol>
 <li>Situez vous dans le dossier où vous désirez créer l’application (le dossier de l’application sera automatiquement créé à la prochaine étape)  </li>
-<li>Exécutez la commande de création d’application :<br />
+<li>Exécutez la commande de création d’application :<br>
     <div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">create</span><span class="w"> </span><span class="nx">vite</span><span class="err">@</span><span class="nx">latest</span><span class="w"> </span><span class="nx">my_app</span>
 </span></code></pre></div></li>
 <li>Suivez les instructions et choisir <strong>React</strong> et <strong>TypeScript</strong>  </li>
-<li>Une fois l’application générée, déplacez-vous dans le dossier créé :<br />
+<li>Une fois l’application générée, déplacez-vous dans le dossier créé :<br>
     <div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">cd</span><span class="w"> </span><span class="nx">my_app</span>
 </span></code></pre></div></li>
-<li>Exécutez l’application en utilisant les commandes suivantes :<br />
+<li>Exécutez l’application en utilisant les commandes suivantes :<br>
     <div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">run</span><span class="w"> </span><span class="nx">dev</span>
 </span></code></pre></div></li>
 </ol>
 <p>Si vous avez des erreurs de modules dépréciés, vous pouvez les corriger en suivant les instructions de la section <a href="../module_deprecie/">Module déprécié</a>.</p>
 <figure>
-<p><img alt="react-vite" src="../images/react-vite.png" width="600" />
+<p><img alt="react-vite" src="../images/react-vite.png" width="600">
   </p>
 <figcaption>Page par défaut d'une application Vite en React</figcaption>
 </figure>
@@ -1864,27 +1864,27 @@
 <p>React Developer Tools est un plugiciel dans Chrome pour aider au débogage de vos applications React.  </p>
 <p>Pour l'installer :  <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi">React Developer Tools pour Chrome</a>  </p>
 <figure>
-<p><img alt="react-dev-tools" src="../images/react-dev-tools.png" width="600" />
+<p><img alt="react-dev-tools" src="../images/react-dev-tools.png" width="600">
   </p>
 <figcaption>React Development Tools s'installe dans les outils de développement de Chrome</figcaption>
 </figure>
 <h1 id="programmer-react-avec-des-fonctions">Programmer React avec des fonctions</h1>
 <p>Utiliser des fonctions au lieu des classes en React est la manière officielle de programmer dans cet environnement.  </p>
-<div class="language-ts highlight"><span class="filename">personnage.component.tsx</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="s1">&#39;./personnage.styles.css&#39;</span><span class="p">;</span>
+<div class="language-ts highlight"><span class="filename">personnage.component.tsx</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="s1">'./personnage.styles.css'</span><span class="p">;</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">nomDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Fluffy McChat&#39;</span><span class="p">;</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">photoDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://placekitten.com/300/300&#39;</span><span class="p">;</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">adresseDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;123 Ave Des Félins&#39;</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">nomDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Fluffy McChat'</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">photoDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'https://placekitten.com/300/300'</span><span class="p">;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">adresseDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'123 Ave Des Félins'</span><span class="p">;</span>
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
 </span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">&quot;container&quot;</span><span class="o">&gt;</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">&quot;photo&quot;</span><span class="o">&gt;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"container"</span><span class="o">&gt;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"photo"</span><span class="o">&gt;</span>
 </span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">img</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">photoDuPersonnage</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
 </span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">&quot;info&quot;</span><span class="o">&gt;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"info"</span><span class="o">&gt;</span>
 </span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">nomDuPersonnage</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">p</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">&quot;address&quot;</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">adresseDuPersonnage</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">p</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"address"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">adresseDuPersonnage</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">      </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
 </span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
 </span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">  </span><span class="p">);</span>
@@ -1892,9 +1892,9 @@
 </span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
 </span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Personnage</span><span class="p">;</span>
 </span></code></pre></div>
-<div class="language-ts highlight"><span class="filename">app.tsx</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./components/personnage.component&#39;</span><span class="p">;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">import</span><span class="w"> </span><span class="s1">&#39;./App.css&#39;</span><span class="p">;</span>
+<div class="language-ts highlight"><span class="filename">app.tsx</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./components/personnage.component'</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">import</span><span class="w"> </span><span class="s1">'./App.css'</span><span class="p">;</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
 </span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
@@ -1905,7 +1905,7 @@
 </span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span><span class="p">;</span>
 </span></code></pre></div>
 <figure>
-<p><img alt="react-personnage-base" src="../images/react-personnage-base.png" width="600" />
+<p><img alt="react-personnage-base" src="../images/react-personnage-base.png" width="600">
   </p>
 <figcaption>Affichage du projet personnage - base</figcaption>
 </figure>
@@ -1923,7 +1923,7 @@
 <li>L’ajouter comme props à la fonction de la composante  </li>
 <li>Utiliser les paramètres lors de l’instanciation de la composante  </li>
 </ol>
-<div class="language-ts highlight"><span class="filename">personnage.component.tsx</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="s1">&#39;./personnage.styles.css&#39;</span><span class="p">;</span>
+<div class="language-ts highlight"><span class="filename">personnage.component.tsx</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="s1">'./personnage.styles.css'</span><span class="p">;</span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
 </span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kd">interface</span><span class="w"> </span><span class="nx">IPersonnageProps</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
@@ -1933,13 +1933,13 @@
 </span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
 </span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="kt">IPersonnageProps</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">&quot;container&quot;</span><span class="o">&gt;</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">&quot;photo&quot;</span><span class="o">&gt;</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"container"</span><span class="o">&gt;</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"photo"</span><span class="o">&gt;</span>
 </span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">img</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">photo</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
 </span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">      </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
-</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">&quot;info&quot;</span><span class="o">&gt;</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"info"</span><span class="o">&gt;</span>
 </span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">nom</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">p</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">&quot;address&quot;</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">adresse</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">p</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"address"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">adresse</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">      </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
 </span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
 </span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">  </span><span class="p">);</span>
@@ -1947,13 +1947,13 @@
 </span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
 </span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Personnage</span><span class="p">;</span>
 </span></code></pre></div>
-<div class="language-ts highlight"><span class="filename">app.tsx</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./components/personnage.component&#39;</span><span class="p">;</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">import</span><span class="w"> </span><span class="s1">&#39;./App.css&#39;</span><span class="p">;</span>
+<div class="language-ts highlight"><span class="filename">app.tsx</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./components/personnage.component'</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">import</span><span class="w"> </span><span class="s1">'./App.css'</span><span class="p">;</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">nomDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Fluffy McChat&#39;</span><span class="p">;</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">photoDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://placekitten.com/300/300&#39;</span><span class="p">;</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">adresseDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;123 Ave Des Félins&#39;</span><span class="p">;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">nomDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Fluffy McChat'</span><span class="p">;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">photoDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'https://placekitten.com/300/300'</span><span class="p">;</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">adresseDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'123 Ave Des Félins'</span><span class="p">;</span>
 </span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
 </span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
 </span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="o">&lt;&gt;</span>
@@ -1963,9 +1963,9 @@
 </span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">        </span><span class="nx">adresse</span><span class="o">=</span><span class="p">{</span><span class="nx">adresseDuPersonnage</span><span class="p">}</span>
 </span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">      </span><span class="o">/&gt;</span>
 </span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">Personnage</span>
-</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">        </span><span class="nx">nom</span><span class="o">=</span><span class="s2">&quot;Charmin Ledoux&quot;</span>
-</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">        </span><span class="nx">photo</span><span class="o">=</span><span class="s2">&quot;https://placekitten.com/300/300&quot;</span>
-</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">        </span><span class="nx">adresse</span><span class="o">=</span><span class="s2">&quot;444 de le Bête&quot;</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">        </span><span class="nx">nom</span><span class="o">=</span><span class="s2">"Charmin Ledoux"</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">        </span><span class="nx">photo</span><span class="o">=</span><span class="s2">"https://placekitten.com/300/300"</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">        </span><span class="nx">adresse</span><span class="o">=</span><span class="s2">"444 de le Bête"</span>
 </span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">      </span><span class="o">/&gt;</span>
 </span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/&gt;</span>
 </span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">  </span><span class="p">);</span>
@@ -1974,7 +1974,7 @@
 </span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span><span class="p">;</span>
 </span></code></pre></div>
 <figure>
-<p><img alt="react-personnage-base-props" src="../images/react-personnage-base-props.png" width="600" />
+<p><img alt="react-personnage-base-props" src="../images/react-personnage-base-props.png" width="600">
   </p>
 <figcaption>Affichage du projet personnage - base avec props</figcaption>
 </figure>
@@ -1991,16 +1991,16 @@
 <li>Conserve l’état d’une variable  </li>
 <li>Réagit lorsque la valeur change  </li>
 </ul>
-<div class="language-ts highlight"><span class="filename">app.tsx</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./components/personnage.component&#39;</span><span class="p">;</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">import</span><span class="w"> </span><span class="s1">&#39;./App.css&#39;</span><span class="p">;</span>
+<div class="language-ts highlight"><span class="filename">app.tsx</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./components/personnage.component'</span><span class="p">;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">import</span><span class="w"> </span><span class="s1">'./App.css'</span><span class="p">;</span>
 </span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
 </span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">nom</span><span class="p">,</span><span class="w"> </span><span class="nx">setNom</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">nom</span><span class="p">,</span><span class="w"> </span><span class="nx">setNom</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
 </span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">nomDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Fluffy McChat&#39;</span><span class="p">;</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">photoDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://placekitten.com/300/300&#39;</span><span class="p">;</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">adresseDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;123 Ave Des Félins&#39;</span><span class="p">;</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">nomDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Fluffy McChat'</span><span class="p">;</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">photoDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'https://placekitten.com/300/300'</span><span class="p">;</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">adresseDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'123 Ave Des Félins'</span><span class="p">;</span>
 </span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
 </span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
 </span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">    </span><span class="o">&lt;&gt;</span>
@@ -2012,8 +2012,8 @@
 </span><span id="__span-7-19"><a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">      </span><span class="o">/&gt;</span>
 </span><span id="__span-7-20"><a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">Personnage</span>
 </span><span id="__span-7-21"><a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">        </span><span class="nx">nom</span><span class="o">=</span><span class="p">{</span><span class="nx">nom</span><span class="p">}</span>
-</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">        </span><span class="nx">photo</span><span class="o">=</span><span class="s2">&quot;https://placekitten.com/300/300&quot;</span>
-</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">        </span><span class="nx">adresse</span><span class="o">=</span><span class="s2">&quot;444 de le Bête&quot;</span>
+</span><span id="__span-7-22"><a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">        </span><span class="nx">photo</span><span class="o">=</span><span class="s2">"https://placekitten.com/300/300"</span>
+</span><span id="__span-7-23"><a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">        </span><span class="nx">adresse</span><span class="o">=</span><span class="s2">"444 de le Bête"</span>
 </span><span id="__span-7-24"><a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="w">      </span><span class="o">/&gt;</span>
 </span><span id="__span-7-25"><a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/&gt;</span>
 </span><span id="__span-7-26"><a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="w">  </span><span class="p">);</span>
@@ -2022,7 +2022,7 @@
 </span><span id="__span-7-29"><a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span><span class="p">;</span>
 </span></code></pre></div>
 <figure>
-<p><img alt="react-personnage-base-usestate" src="../images/react-personnage-base-usestate.png" width="600" />
+<p><img alt="react-personnage-base-usestate" src="../images/react-personnage-base-usestate.png" width="600">
   </p>
 <figcaption>Affichage du projet personnage - base avec useState</figcaption>
 </figure>
@@ -2036,21 +2036,21 @@
 </div>
 <h1 id="hooks-useeffect">Hooks : useEffect</h1>
 <p>Faire des traitements de données seulement lors d’événements précis, comme le premier render ou lors de changement d’une autre variable.  </p>
-<div class="language-ts highlight"><span class="filename">app.tsx</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./components/personnage.component&#39;</span><span class="p">;</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">import</span><span class="w"> </span><span class="s1">&#39;./App.css&#39;</span><span class="p">;</span>
+<div class="language-ts highlight"><span class="filename">app.tsx</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./components/personnage.component'</span><span class="p">;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'react'</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">import</span><span class="w"> </span><span class="s1">'./App.css'</span><span class="p">;</span>
 </span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
 </span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">nom</span><span class="p">,</span><span class="w"> </span><span class="nx">setNom</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">nom</span><span class="p">,</span><span class="w"> </span><span class="nx">setNom</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
 </span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">longueurNom</span><span class="p">,</span><span class="w"> </span><span class="nx">setLongueurNom</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
 </span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
 </span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">    </span><span class="nx">setLongueurNom</span><span class="p">(</span><span class="nx">nom</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
 </span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">nom</span><span class="p">]);</span>
 </span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
-</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">nomDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Fluffy McChat&#39;</span><span class="p">;</span>
-</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">photoDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://placekitten.com/300/300&#39;</span><span class="p">;</span>
-</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">adresseDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;123 Ave Des Félins&#39;</span><span class="p">;</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">nomDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Fluffy McChat'</span><span class="p">;</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">photoDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'https://placekitten.com/300/300'</span><span class="p">;</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">adresseDuPersonnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'123 Ave Des Félins'</span><span class="p">;</span>
 </span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
 </span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
 </span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">    </span><span class="o">&lt;&gt;</span>
@@ -2063,8 +2063,8 @@
 </span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="w">      </span><span class="o">/&gt;</span>
 </span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">Personnage</span>
 </span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="w">        </span><span class="nx">nom</span><span class="o">=</span><span class="p">{</span><span class="nx">nom</span><span class="p">}</span>
-</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="w">        </span><span class="nx">photo</span><span class="o">=</span><span class="s2">&quot;https://placekitten.com/300/300&quot;</span>
-</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="w">        </span><span class="nx">adresse</span><span class="o">=</span><span class="s2">&quot;444 de le Bête&quot;</span>
+</span><span id="__span-8-28"><a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="w">        </span><span class="nx">photo</span><span class="o">=</span><span class="s2">"https://placekitten.com/300/300"</span>
+</span><span id="__span-8-29"><a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="w">        </span><span class="nx">adresse</span><span class="o">=</span><span class="s2">"444 de le Bête"</span>
 </span><span id="__span-8-30"><a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="w">      </span><span class="o">/&gt;</span>
 </span><span id="__span-8-31"><a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/&gt;</span>
 </span><span id="__span-8-32"><a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a><span class="w">  </span><span class="p">);</span>
@@ -2073,7 +2073,7 @@
 </span><span id="__span-8-35"><a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span><span class="p">;</span>
 </span></code></pre></div>
 <figure>
-<p><img alt="react-personnage-base-useeffect" src="../images/react-personnage-base-useeffect.png" width="600" />
+<p><img alt="react-personnage-base-useeffect" src="../images/react-personnage-base-useeffect.png" width="600">
   </p>
 <figcaption>Affichage du projet personnage - base avec useEffect</figcaption>
 </figure>
@@ -2084,7 +2084,7 @@
 <div class="admonition manuel">
 <p class="admonition-title">Manuel</p>
 <p><a href="https://react.dev/reference/react/useEffect">useEffect</a>  </p>
-</div>
+</div></div>
 
 
 

@@ -1832,7 +1832,7 @@
 
 
 
-<h1 id="introduction-a-typescript">Introduction à TypeScript</h1>
+<div><h1 id="introduction-a-typescript">Introduction à TypeScript</h1>
 <p>TypeScript c’est du JavaScript avec des types!</p>
 <h2 id="pourquoi-utiliser-typescript">Pourquoi utiliser TypeScript?</h2>
 <p>TypeScript est un langage de programmation qui a gagné en popularité grâce à son utilité dans le développement logiciel moderne. Voici quelques raisons pour lesquelles vous pourriez envisager d'utiliser TypeScript dans vos programmes :  </p>
@@ -1884,13 +1884,13 @@
 </div>
 <h1 id="indiquer-les-types-aux-variables">Indiquer les types aux variables</h1>
 <figure>
-<p><img alt="ts-types-prenom" src="../images/ts-types-prenom.png" width="600" />
+<p><img alt="ts-types-prenom" src="../images/ts-types-prenom.png" width="600">
   </p>
 <figcaption>TypeScript indique que la variable est mal utilisée</figcaption>
 </figure>
 <p>Dans votre éditeur de code, TypeScript dit que la variable prénom est un string et vous informe que vous l’utilisez avec un autre type. C’est la base de TypeScript, vous éviter des erreurs de la sorte.</p>
 <figure>
-<p><img alt="ts-types-erreur" src="../images/ts-types-erreur.png" width="600" />
+<p><img alt="ts-types-erreur" src="../images/ts-types-erreur.png" width="600">
   </p>
 <figcaption>Erreur dans VSCode venant de TypeScript</figcaption>
 </figure>
@@ -1909,47 +1909,47 @@
 <h2 id="inference">Inférence</h2>
 <p>TypeScript peut deviner le type selon le contexte :  </p>
 <figure>
-<p><img alt="ts-types-inference" src="../images/ts-types-inference.png" width="600" />
+<p><img alt="ts-types-inference" src="../images/ts-types-inference.png" width="600">
   </p>
 <figcaption>TypeScript devine le type par le contexte d'utilisation</figcaption>
 </figure>
 <h2 id="linference-ne-marche-pas-toujours">L'inférence ne marche pas toujours</h2>
 <p>Des fois, l’inférence ne fonctionne pas :  </p>
 <figure>
-<p><img alt="ts-erreur-inference" src="../images/ts-erreur-inference.png" width="600" />
+<p><img alt="ts-erreur-inference" src="../images/ts-erreur-inference.png" width="600">
   </p>
 <figcaption>Inférence pas toujours parfait</figcaption>
 </figure>
 <p>Dans ce cas, il faut être explicite :  </p>
 <figure>
-<p><img alt="ts_etre_explicit" src="../images/ts_etre_explicit.png" width="600" />
+<p><img alt="ts_etre_explicit" src="../images/ts_etre_explicit.png" width="600">
   </p>
 <figcaption>Aider l'inférence</figcaption>
 </figure>
 <h2 id="any">Any</h2>
 <p>Le type Any est pour indiquer que vous prévoyez mettre plus d’un type dans la même variable.  </p>
 <p><mark class="critic">C’est à proscrire</mark>  </p>
-<div class="language-ts highlight"><span class="filename">any.ts</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">quelqueChose</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Une patate&#39;</span><span class="p">;</span>
+<div class="language-ts highlight"><span class="filename">any.ts</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">let</span><span class="w"> </span><span class="nx">quelqueChose</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'Une patate'</span><span class="p">;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">quelqueChose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">12</span><span class="p">;</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nx">quelqueChose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nx">quelqueChose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Taleb&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">prenom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Frédérick&#39;</span><span class="w"> </span><span class="p">};</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nx">quelqueChose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Taleb'</span><span class="p">,</span><span class="w"> </span><span class="nx">prenom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Frédérick'</span><span class="w"> </span><span class="p">};</span>
 </span></code></pre></div>
 <p>Ça empêche TypeScript de vous aider!  </p>
 <h2 id="never">Never</h2>
 <p>Utilisé comme paramètre de retour d’une fonction qui ne se terminera jamais.  </p>
 <div class="language-ts highlight"><span class="filename">boucle_sans_fin.ts</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">bloucleSansFin</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">never</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;À l&#39;aide, je suis pris ici!&quot;</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"À l'aide, je suis pris ici!"</span><span class="p">);</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="void">Void</h2>
 <p>Utiliser void lorsque votre fonction ne retourne pas de valeur :</p>
 <div class="language-ts highlight"><span class="filename">bonjour.ts</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">direBonjour</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Bonjour!&quot;</span><span class="p">);</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Bonjour!"</span><span class="p">);</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="unknown">Unknown</h2>
@@ -1958,20 +1958,20 @@
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nx">quosseCa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
 </span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nx">quosseCa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Deux&quot;</span><span class="p">;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nx">quosseCa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Deux"</span><span class="p">;</span>
 </span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
 </span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nx">quosseCa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
 </span></code></pre></div>
 <p>Mais unknown ne peut etre assigné à aucun autre type de variable que unknown et any:  </p>
 <figure>
-<p><img alt="ts-unknown" src="../images/ts-unknown.png" width="600" />
+<p><img alt="ts-unknown" src="../images/ts-unknown.png" width="600">
   </p>
 <figcaption>TypeScript indique que la variable est mal utilisée</figcaption>
 </figure>
 <h2 id="objets">Objets</h2>
 <p>Les objets peuvent être typés comme les variables :  </p>
 <figure>
-<p><img alt="ts-objets" src="../images/ts-objets.png" width="600" />
+<p><img alt="ts-objets" src="../images/ts-objets.png" width="600">
   </p>
 <figcaption>Contrairement à JavaScript, TypeScript interdit d’ajouter des attributs à un objet après sa création.
 </figcaption>
@@ -1993,7 +1993,7 @@
 </span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="p">};</span>
 </span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
 </span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="cm">/**</span>
-</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="cm"> * Affiche le détail d&#39;un chat</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="cm"> * Affiche le détail d'un chat</span>
 </span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="cm"> *</span>
 </span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="cm"> * @param {Chat} unchat - Un chat à afficher</span>
 </span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="cm"> **/</span>
@@ -2004,22 +2004,22 @@
 </span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="p">}</span>
 </span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>
 </span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fanta</span><span class="o">:</span><span class="w"> </span><span class="kt">Chat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Fanta&#39;</span><span class="p">,</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Fanta'</span><span class="p">,</span>
 </span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">  </span><span class="nx">nombreDeVies</span><span class="o">:</span><span class="w"> </span><span class="kt">9</span><span class="p">,</span>
-</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Chaton&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Tannant&#39;</span><span class="p">],</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">'Chaton'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Tannant'</span><span class="p">],</span>
 </span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="p">};</span>
 </span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>
 </span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="kd">const</span><span class="w"> </span><span class="nx">guizmo</span><span class="o">:</span><span class="w"> </span><span class="kt">Chat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Guizmo&#39;</span><span class="p">,</span>
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Guizmo'</span><span class="p">,</span>
 </span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">  </span><span class="nx">nombreDeVies</span><span class="o">:</span><span class="w"> </span><span class="kt">3</span><span class="p">,</span>
-</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Mou&#39;</span><span class="p">],</span>
-</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="w">  </span><span class="nx">race</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Siamois&#39;</span><span class="p">,</span>
+</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">'Mou'</span><span class="p">],</span>
+</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="w">  </span><span class="nx">race</span><span class="o">:</span><span class="w"> </span><span class="s1">'Siamois'</span><span class="p">,</span>
 </span><span id="__span-5-37"><a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="p">};</span>
 </span><span id="__span-5-38"><a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a>
 </span><span id="__span-5-39"><a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a><span class="nx">afficherChat</span><span class="p">(</span><span class="nx">fanta</span><span class="p">);</span>
 </span><span id="__span-5-40"><a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a><span class="nx">afficherChat</span><span class="p">(</span><span class="nx">guizmo</span><span class="p">);</span>
 </span></code></pre></div>
-<p>On s’assure que tous les objets ont les mêmes attributs.<br />
+<p>On s’assure que tous les objets ont les mêmes attributs.<br>
 On valide que seulement les objets d’un type peuvent être utilisés dans une fonction.  </p>
 <h2 id="parametres-de-fonctions">Paramètres de fonctions</h2>
 <p>Très utile pour documenter une fonction :  </p>
@@ -2035,7 +2035,7 @@ On valide que seulement les objets d’un type peuvent être utilisés dans une 
 </span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
 </span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="kd">const</span><span class="w"> </span><span class="nx">produit1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">multiplierDeuxNombres</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">);</span>
 </span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="kd">const</span><span class="w"> </span><span class="nx">produit2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">multiplierDeuxNombres</span><span class="p">(</span><span class="s1">&#39;DIX&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;DEUX&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Donne une erreur</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="kd">const</span><span class="w"> </span><span class="nx">produit2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">multiplierDeuxNombres</span><span class="p">(</span><span class="s1">'DIX'</span><span class="p">,</span><span class="w"> </span><span class="s1">'DEUX'</span><span class="p">);</span><span class="w"> </span><span class="c1">// Donne une erreur</span>
 </span></code></pre></div>
 <h1 id="compiler-typescript-en-javascript">Compiler TypeScript en JavaScript</h1>
 <p>TypeScript ne peut pas être exécuté directement par Node ou par le navigateur. Il faut le compiler (parfois appelé « transpiler ») en JavaScript avant son exécution.  </p>
@@ -2062,7 +2062,7 @@ On valide que seulement les objets d’un type peuvent être utilisés dans une 
 </span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="p">};</span>
 </span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
 </span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="cm">/**</span>
-</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="cm"> * Affiche le détail d&#39;un chat</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="cm"> * Affiche le détail d'un chat</span>
 </span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="cm"> *</span>
 </span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="cm"> * @param {Chat} unchat - Un chat à afficher</span>
 </span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="cm"> **/</span>
@@ -2073,16 +2073,16 @@ On valide que seulement les objets d’un type peuvent être utilisés dans une 
 </span><span id="__span-9-24"><a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a><span class="p">}</span>
 </span><span id="__span-9-25"><a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>
 </span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fanta</span><span class="o">:</span><span class="w"> </span><span class="kt">Chat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Fanta&#39;</span><span class="p">,</span>
+</span><span id="__span-9-27"><a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Fanta'</span><span class="p">,</span>
 </span><span id="__span-9-28"><a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="w">  </span><span class="nx">nombreDeVies</span><span class="o">:</span><span class="w"> </span><span class="kt">9</span><span class="p">,</span>
-</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Chaton&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Tannant&#39;</span><span class="p">],</span>
+</span><span id="__span-9-29"><a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">'Chaton'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Tannant'</span><span class="p">],</span>
 </span><span id="__span-9-30"><a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a><span class="p">};</span>
 </span><span id="__span-9-31"><a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a>
 </span><span id="__span-9-32"><a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a><span class="kd">const</span><span class="w"> </span><span class="nx">guizmo</span><span class="o">:</span><span class="w"> </span><span class="kt">Chat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-33"><a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Guizmo&#39;</span><span class="p">,</span>
+</span><span id="__span-9-33"><a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Guizmo'</span><span class="p">,</span>
 </span><span id="__span-9-34"><a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a><span class="w">  </span><span class="nx">nombreDeVies</span><span class="o">:</span><span class="w"> </span><span class="kt">3</span><span class="p">,</span>
-</span><span id="__span-9-35"><a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Mou&#39;</span><span class="p">],</span>
-</span><span id="__span-9-36"><a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a><span class="w">  </span><span class="nx">race</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Siamois&#39;</span><span class="p">,</span>
+</span><span id="__span-9-35"><a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">'Mou'</span><span class="p">],</span>
+</span><span id="__span-9-36"><a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a><span class="w">  </span><span class="nx">race</span><span class="o">:</span><span class="w"> </span><span class="s1">'Siamois'</span><span class="p">,</span>
 </span><span id="__span-9-37"><a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a><span class="p">};</span>
 </span><span id="__span-9-38"><a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a>
 </span><span id="__span-9-39"><a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a><span class="nx">afficherChat</span><span class="p">(</span><span class="nx">fanta</span><span class="p">);</span>
@@ -2090,31 +2090,31 @@ On valide que seulement les objets d’un type peuvent être utilisés dans une 
 </span></code></pre></div>
 <h2 id="javascript-es6">JavaScript ES6</h2>
 <div class="language-ts highlight"><span class="filename">chat.js</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cm">/**</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="cm"> * Affiche le détail d&#39;un chat</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="cm"> * Affiche le détail d'un chat</span>
 </span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="cm"> *</span>
 </span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="cm"> * @param {Chat} unchat - Un chat à afficher</span>
 </span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="cm"> **/</span>
 </span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="kd">function</span><span class="w"> </span><span class="nx">afficherChat</span><span class="p">(</span><span class="nx">unchat</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Le chat se nomme &quot;</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">unchat</span><span class="p">.</span><span class="nx">nom</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot; et a &quot;</span><span class="p">).</span><span class="nx">concat</span><span class="p">(</span><span class="nx">unchat</span><span class="p">.</span><span class="nx">nombreDeVies</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot; vies.&quot;</span><span class="p">));</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Le chat se nomme "</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">unchat</span><span class="p">.</span><span class="nx">nom</span><span class="p">,</span><span class="w"> </span><span class="s2">" et a "</span><span class="p">).</span><span class="nx">concat</span><span class="p">(</span><span class="nx">unchat</span><span class="p">.</span><span class="nx">nombreDeVies</span><span class="p">,</span><span class="w"> </span><span class="s2">" vies."</span><span class="p">));</span>
 </span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="p">}</span>
 </span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="kd">var</span><span class="w"> </span><span class="nx">fanta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">    </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Fanta&#39;</span><span class="p">,</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">    </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Fanta'</span><span class="p">,</span>
 </span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="w">    </span><span class="nx">nombreDeVies</span><span class="o">:</span><span class="w"> </span><span class="kt">9</span><span class="p">,</span>
-</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">    </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Chaton&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Tannant&#39;</span><span class="p">],</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="w">    </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">'Chaton'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Tannant'</span><span class="p">],</span>
 </span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="p">};</span>
 </span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="kd">var</span><span class="w"> </span><span class="nx">guizmo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">    </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Guizmo&#39;</span><span class="p">,</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">    </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Guizmo'</span><span class="p">,</span>
 </span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">    </span><span class="nx">nombreDeVies</span><span class="o">:</span><span class="w"> </span><span class="kt">3</span><span class="p">,</span>
-</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="w">    </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Mou&#39;</span><span class="p">],</span>
-</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="w">    </span><span class="nx">race</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Siamois&#39;</span><span class="p">,</span>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="w">    </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">'Mou'</span><span class="p">],</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="w">    </span><span class="nx">race</span><span class="o">:</span><span class="w"> </span><span class="s1">'Siamois'</span><span class="p">,</span>
 </span><span id="__span-10-19"><a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a><span class="p">};</span>
 </span><span id="__span-10-20"><a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a><span class="nx">afficherChat</span><span class="p">(</span><span class="nx">fanta</span><span class="p">);</span>
 </span><span id="__span-10-21"><a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a><span class="nx">afficherChat</span><span class="p">(</span><span class="nx">guizmo</span><span class="p">);</span>
 </span></code></pre></div>
 <h2 id="javascript-es2022">JavaScript ES2022</h2>
-<div class="language-ts highlight"><span class="filename">chat.js</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+<div class="language-ts highlight"><span class="filename">chat.js</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="s1">'use strict'</span><span class="p">;</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="cm">/**</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="cm"> * Affiche le détail d&#39;un chat</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="cm"> * Affiche le détail d'un chat</span>
 </span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="cm"> *</span>
 </span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="cm"> * @param {Chat} unchat - Un chat à afficher</span>
 </span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="cm"> **/</span>
@@ -2124,15 +2124,15 @@ On valide que seulement les objets d’un type peuvent être utilisés dans une 
 </span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">  </span><span class="p">);</span>
 </span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="p">}</span>
 </span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="kd">const</span><span class="w"> </span><span class="nx">fanta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Fanta&#39;</span><span class="p">,</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Fanta'</span><span class="p">,</span>
 </span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">  </span><span class="nx">nombreDeVies</span><span class="o">:</span><span class="w"> </span><span class="kt">9</span><span class="p">,</span>
-</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Chaton&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Tannant&#39;</span><span class="p">],</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">'Chaton'</span><span class="p">,</span><span class="w"> </span><span class="s1">'Tannant'</span><span class="p">],</span>
 </span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="p">};</span>
 </span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="kd">const</span><span class="w"> </span><span class="nx">guizmo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Guizmo&#39;</span><span class="p">,</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="s1">'Guizmo'</span><span class="p">,</span>
 </span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">  </span><span class="nx">nombreDeVies</span><span class="o">:</span><span class="w"> </span><span class="kt">3</span><span class="p">,</span>
-</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Mou&#39;</span><span class="p">],</span>
-</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">  </span><span class="nx">race</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Siamois&#39;</span><span class="p">,</span>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">  </span><span class="nx">surnoms</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">'Mou'</span><span class="p">],</span>
+</span><span id="__span-11-21"><a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">  </span><span class="nx">race</span><span class="o">:</span><span class="w"> </span><span class="s1">'Siamois'</span><span class="p">,</span>
 </span><span id="__span-11-22"><a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a><span class="p">};</span>
 </span><span id="__span-11-23"><a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="nx">afficherChat</span><span class="p">(</span><span class="nx">fanta</span><span class="p">);</span>
 </span><span id="__span-11-24"><a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a><span class="nx">afficherChat</span><span class="p">(</span><span class="nx">guizmo</span><span class="p">);</span>
@@ -2141,20 +2141,20 @@ On valide que seulement les objets d’un type peuvent être utilisés dans une 
 <p>tsconfig.json permet de configurer comment tsc compile les fichiers TypeScript.  </p>
 <p>Quelques paramètres utiles :  </p>
 <div class="language-json highlight"><span class="filename">tsconfig.json</span><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">{</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="nt">&quot;compilerOptions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="nt">&quot;target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ES2022&quot;</span><span class="w"> </span><span class="cm">/* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */</span><span class="p">,</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;commonjs&quot;</span><span class="w"> </span><span class="cm">/* Specify what module code is generated. */</span><span class="p">,</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">  </span><span class="nt">&quot;outDir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./dist&quot;</span><span class="p">,</span><span class="w">  </span><span class="cm">/* Specify an output folder for all emitted files. */</span>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="nt">&quot;strict&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="cm">/* Enable all strict type-checking options. */</span><span class="p">,</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">  </span><span class="nt">&quot;skipLibCheck&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="cm">/* Skip type checking all .d.ts files. */</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="nt">"compilerOptions"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="nt">"target"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ES2022"</span><span class="w"> </span><span class="cm">/* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */</span><span class="p">,</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="nt">"module"</span><span class="p">:</span><span class="w"> </span><span class="s2">"commonjs"</span><span class="w"> </span><span class="cm">/* Specify what module code is generated. */</span><span class="p">,</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">  </span><span class="nt">"outDir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"./dist"</span><span class="p">,</span><span class="w">  </span><span class="cm">/* Specify an output folder for all emitted files. */</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="nt">"strict"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="cm">/* Enable all strict type-checking options. */</span><span class="p">,</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">  </span><span class="nt">"skipLibCheck"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="cm">/* Skip type checking all .d.ts files. */</span>
 </span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="p">}</span>
 </span></code></pre></div>
 <div class="admonition manuel">
 <p class="admonition-title">Manuel</p>
-<p><a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html">What is a tsconfig.json</a><br />
+<p><a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html">What is a tsconfig.json</a><br>
 <a href="https://www.typescriptlang.org/tsconfig">tsconfig reference</a>  </p>
-</div>
+</div></div>
 
 
 

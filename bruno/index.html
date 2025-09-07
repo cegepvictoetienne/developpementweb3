@@ -1774,8 +1774,8 @@
 
 
 
-<h1 id="bruno-remplacement-open-source-de-postman">Bruno - Remplacement <strong>open source</strong> de Postman</h1>
-<p><img alt="ecran principal de Bruno" src="../images/bruno.png" />  </p>
+<div><h1 id="bruno-remplacement-open-source-de-postman">Bruno - Remplacement <strong>open source</strong> de Postman</h1>
+<p><img alt="ecran principal de Bruno" src="../images/bruno.png">  </p>
 <p>Bruno :  </p>
 <ul>
 <li>est libre de droit  </li>
@@ -1786,7 +1786,7 @@
 <h1 id="installation-de-bruno">Installation de Bruno</h1>
 <p>Téléchargez Bruno ici :  <a href="https://www.usebruno.com/downloads">Page de téléchargement</a>  </p>
 <h1 id="utilisation-de-bruno">Utilisation de Bruno</h1>
-<p>1- Créer un dossier <code>bruno</code> à la racine de votre projet.<br />
+<p>1- Créer un dossier <code>bruno</code> à la racine de votre projet.<br>
 2- Ajouter tous les appels à votre API dans le dossier <code>bruno</code>. (Soit par l'IDE, soit en créant des fichiers <code>.bru</code>)  </p>
 <h1 id="exemple-de-fichier-bru-pour-un-get">Exemple de fichier <code>.bru</code> pour un GET</h1>
 <div class="language-ts highlight"><span class="filename">bruno/hotel/Get All.bru</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">meta</span><span class="w"> </span><span class="p">{</span>
@@ -1816,20 +1816,20 @@
 </span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
 </span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="nx">body</span><span class="o">:</span><span class="kt">json</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="p">{</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="s2">&quot;reservation&quot;</span><span class="o">:</span><span class="w"> </span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="s2">"reservation"</span><span class="o">:</span><span class="w"> </span>
 </span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span><span class="p">{</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;9&quot;</span><span class="p">,</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">        </span><span class="s2">&quot;nom&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Kamala Harris&quot;</span><span class="p">,</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="s2">&quot;courriel&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;kamala@profinfo.ca&quot;</span><span class="p">,</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="s2">&quot;dateDebut&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2025-01-06&quot;</span><span class="p">,</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="s2">&quot;dateFin&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2025-01-08&quot;</span><span class="p">,</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="s2">&quot;typeChambre&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Deluxe&quot;</span><span class="p">,</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="s2">&quot;prixParNuit&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">150</span><span class="p">,</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">        </span><span class="s2">&quot;created&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2025-08-11&quot;</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="s2">"id"</span><span class="o">:</span><span class="w"> </span><span class="s2">"9"</span><span class="p">,</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">        </span><span class="s2">"nom"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Kamala Harris"</span><span class="p">,</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="s2">"courriel"</span><span class="o">:</span><span class="w"> </span><span class="s2">"kamala@profinfo.ca"</span><span class="p">,</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="s2">"dateDebut"</span><span class="o">:</span><span class="w"> </span><span class="s2">"2025-01-06"</span><span class="p">,</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="s2">"dateFin"</span><span class="o">:</span><span class="w"> </span><span class="s2">"2025-01-08"</span><span class="p">,</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="s2">"typeChambre"</span><span class="o">:</span><span class="w"> </span><span class="s2">"Deluxe"</span><span class="p">,</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="s2">"prixParNuit"</span><span class="o">:</span><span class="w"> </span><span class="mf">150</span><span class="p">,</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">        </span><span class="s2">"created"</span><span class="o">:</span><span class="w"> </span><span class="s2">"2025-08-11"</span>
 </span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">      </span><span class="p">}</span>
 </span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">  </span><span class="p">}</span>
 </span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="p">}</span>
-</span></code></pre></div>
+</span></code></pre></div></div>
 
 
 

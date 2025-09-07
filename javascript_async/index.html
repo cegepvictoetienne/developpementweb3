@@ -1940,13 +1940,13 @@
 
 
 
-<h1 id="javascript-asynchrone">JavaScript asynchrone</h1>
+<div><h1 id="javascript-asynchrone">JavaScript asynchrone</h1>
 <p>Asynchrone : fait référence à un environnement de communication où chaque partie reçoit et traite les messages lorsque c'est possible ou plus pratique, au lieu de le faire au même moment.  </p>
 <h2 id="javascript-asynchrone_1">JavaScript asynchrone</h2>
 <p>De nombreuses fonctionnalités des API Web utilisent désormais du code asynchrone pour s'exécuter, en particulier celles qui accèdent à un type de ressource ou le récupèrent à partir d'un périphérique externe, par exemple en récupérant un fichier sur le réseau, en accédant à une base de données et en renvoyant des données, en accédant à un flux vidéo à partir d'une webcam ou en diffusant l'affichage vers un casque VR.  </p>
 <div class="admonition manuel">
 <p class="admonition-title">Manuel</p>
-<p><a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Concepts">Concepts de l'asynchrone en JavaScript</a><br />
+<p><a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Concepts">Concepts de l'asynchrone en JavaScript</a><br>
 <a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous">Documentation MDN pour le JavaScript asynchrone</a>   </p>
 </div>
 <h2 id="fonctions-de-rappel-asynchrones">Fonctions de rappel asynchrones</h2>
@@ -2019,7 +2019,7 @@
 <p class="admonition-title">Manuel</p>
 <p><a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/Asynchronous/Async_await">Async Await sur MDN</a>   </p>
 </div>
-<div class="language-ts highlight"><span class="filename">async.ts</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">allo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s2">&quot;Bonjour&quot;</span><span class="w"> </span><span class="p">};</span>
+<div class="language-ts highlight"><span class="filename">async.ts</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">allo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="s2">"Bonjour"</span><span class="w"> </span><span class="p">};</span>
 </span></code></pre></div>
 <p>Pour consommer réellement la valeur renvoyée lorsque la promesse se réalise, puisqu'elle renvoie une promesse, nous pourrions utiliser un bloc .then() :  </p>
 <div class="language-ts highlight"><span class="filename">async.ts</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">allo</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">valeur</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">valeur</span><span class="p">));</span>
@@ -2034,7 +2034,7 @@
 </div>
 <p>Await peut être placé devant toute fonction asynchrone basée sur une promesse pour mettre en pause votre code sur cette ligne jusqu'à ce que la promesse se réalise, puis retourner la valeur résultante. Vous pouvez utiliser await lors de l'appel de toute fonction qui renvoie une promesse, y compris les fonctions de l'API web.  </p>
 <div class="language-ts highlight"><span class="filename">await.ts</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">myFetch</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;coffee.jpg&#39;</span><span class="p">);</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'coffee.jpg'</span><span class="p">);</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="w"> </span><span class="p">(</span><span class="sb">`Erreur HTTP ! statut : </span><span class="si">${</span><span class="nx">response</span><span class="p">.</span><span class="nx">status</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 </span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="p">}</span>
@@ -2042,21 +2042,28 @@
 </span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">blob</span><span class="w"> </span><span class="p">();</span>
 </span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">}</span>
 </span></code></pre></div>
+<h1 id="sous-le-capot-de-nodejs">Sous le capot de Node.JS</h1>
+<h2 id="execution-de-code-synchrone">Exécution de code synchrone</h2>
+<p><div class="video-container"><iframe src="../videos/no-async.mp4" style="height:400px;min-width:800px" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<h2 id="execution-de-code-avec-promesse">Exécution de code avec promesse</h2>
+<p><div class="video-container"><iframe src="../videos/async-callback.mp4" style="height:400px;min-width:800px" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <h1 id="ordre-traitement-des-appels-asynchrones">Ordre traitement des appels asynchrones</h1>
-<div class="language-ts highlight"><span class="filename">order.ts</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Début du script&quot;</span><span class="p">);</span>
+<div class="language-ts highlight"><span class="filename">order.ts</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'1 - Début du script'</span><span class="p">);</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
 </span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;setTimeout callback&quot;</span><span class="p">);</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'2 - setTimeout callback'</span><span class="p">);</span>
 </span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">},</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
 </span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">().</span><span class="nx">then</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Promise callback 1&quot;</span><span class="p">);</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="p">}).</span><span class="nx">then</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Promise callback 2&quot;</span><span class="p">);</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">});</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Fin du script&quot;</span><span class="p">);</span>
-</span></code></pre></div>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">()</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'3 - Promise callback 1'</span><span class="p">);</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">  </span><span class="p">})</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">  </span><span class="p">.</span><span class="nx">then</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'4 - Promise callback 2'</span><span class="p">);</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">  </span><span class="p">});</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'5 - Fin du script'</span><span class="p">);</span>
+</span></code></pre></div></div>
 
 
 
