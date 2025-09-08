@@ -141,21 +141,41 @@ async function myFetch() {
     return await response.blob ();
 }
 ```   
+# Sous le capot de Node.JS 
+
+## Exécution de code synchrone  
+
+![type:video](./videos/no-async.mp4)  
+
+## Exécution de code avec promesse    
+
+![type:video](./videos/async-callback.mp4)  
+
+
+## Exécution de code avec setTimeout    
+
+![type:video](./videos/async-setTimeout.mp4)  
 
 # Ordre traitement des appels asynchrones  
 
 ``` ts title="order.ts"
-console.log("Début du script");
+console.log('1 - Début du script');
 
 setTimeout(() => {
-    console.log("setTimeout callback");
+  console.log('2 - setTimeout callback');
 }, 0);
 
-Promise.resolve().then(() => {
-    console.log("Promise callback 1");
-}).then(() => {
-    console.log("Promise callback 2");
-});
+Promise.resolve()
+  .then(() => {
+    console.log('3 - Promise callback 1');
+  })
+  .then(() => {
+    console.log('4 - Promise callback 2');
+  });
 
-console.log("Fin du script");
+console.log('5 - Fin du script');
 ```
+
+## Solution    
+
+![type:video](./videos/async-complex.mp4)  

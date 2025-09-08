@@ -22,6 +22,11 @@ theme:
 
 plugins:
   - search
+  - mkdocs-video:
+      video_autoplay: false
+      css_style:
+        height: 400px
+        min-width: 800px
 
 extra_css:
   - css/extra.css
@@ -36,64 +41,64 @@ extra:
     property: G-E4EGLJXEM1
 
 nav:
-  - 'Page principale': 'index.md'
-  - 'Horaire': 'horaire.md'
-  - 'Leçons':
-      - 'Node.js et TypeScript':
-          - 'Introduction à TypeScript': 'introduction_typescript.md'
-          - 'NPM': 'npm.md'
-          - 'TypeScript 2': 'typescript_2.md'
-      - 'Express et MongoDB':
-          - 'Intergiciels Express': 'intergiciels_express.md'
-          - 'Générateur Express': 'generateur_express.md'
-          - 'Bruno': 'bruno.md'  
-          - 'Prettier': 'prettier.md'
-          - 'Tests unitaires': 'tester_api.md'
-          - 'JavaScript asynchrone': 'javascript_async.md'
-          - 'MongoDB': 'mongodb.md'
-          - 'Introduction à Mongoose': 'introduction_mongoose.md'
-          - 'Mongoose - La suite': 'mongoose2.md'
-          - 'Simulacre Mongoose': 'simulacre_mongoose.md'
-          - 'Projet complet en Mongoose': 'projet_complet_mongoose.md'
-          - 'Express et JWT': 'express_jwt.md'
-      - 'React':
-          - 'Introduction à React': 'introduction_react.md'
-          - 'Penser en React': 'penser_en_react.md'
-          - 'React et les styles': 'react_styles.md'
-          - 'React - TailwindCSS': 'react_tw.md'
-          - 'Router - useParams - useContext et API': 'react3.md'
-          - 'Règles de Réact': 'regles_react.md'
-          - 'Internationalisation': 'internationalisation.md'
-          - 'PWA': 'pwa.md'
-          - 'Authentification': 'authentification.md'
-          - 'Accessibilité': 'accessibilite.md'
-      - 'Déploiement':
-          - 'Déploiement avec Netlify': 'netlify.md'
-  - 'Procédures':
-      - "Rendre la documentation disponible pour l'api": 'documentation.md'
-      - 'Module déprécié': 'module_deprecie.md'
-  - 'Exercices':
-      - 'Exercice 1 - lodash': 'exercice1_lodash.md'
-      - 'Exercice 2 - Express avec modèle': 'exercice2_express_avec_modele.md'
-      - 'Exercice 3 - Intergiciels Express et tests API': 'exercice3_intergiciels_express.md'
-      - 'Exercice 4 - Mongo DB': 'exercice4_mongodb.md'
-      - 'Exercice 5 - Mongoose': 'exercice5_mongoose.md'
-      - 'Exercice 6 - Mongoose': 'exercice6_mongoose.md'
-      - 'Exercice 7 - Express et JWT': 'exercice7_express_jwt.md'
-      - 'Exercice 8 - React': 'exercice8_react.md'
-      - 'Exercice 9 - React et styles': 'exercice9_react_styles.md'
-      - 'Exercice 10 - Contexte et API': 'exercice10_context.md'
-      - 'Exercice 11 - Internationalisation': 'exercice11_internationalisation.md'
-      - 'Exercice 12 - Authentification': 'exercice12_authentification.md'
-      - 'Exercice 13 - PWA': 'exercice13_pwa.md'
-      - 'Exercice Préparation Examen': 'exercice_prep_exam.md'
-      - 'Exercice 14 - Netlify': 'exercice14_netlify.md'
-  - 'Projet intégrateur': 'projet_integrateur.md'
-  - 'Manuels': 'manuels.md'
-  - 'CodeSandbox': 'codesandbox.md'
-  - 'Rétroaction': 'retroaction.md'
-  - 'À propos': 'apropos.md'
-  - "Techniques de l'informatique": 'https://techinfo.profinfo.ca'
+  - "Page principale": "index.md"
+  - "Horaire": "horaire.md"
+  - "Leçons":
+      - "Node.js et TypeScript":
+          - "Introduction à TypeScript": "introduction_typescript.md"
+          - "NPM": "npm.md"
+          - "TypeScript 2": "typescript_2.md"
+      - "Express et MongoDB":
+          - "Intergiciels Express": "intergiciels_express.md"
+          - "Générateur Express": "generateur_express.md"
+          - "Bruno": "bruno.md"
+          - "Prettier": "prettier.md"
+          - "Tests unitaires": "tester_api.md"
+          - "JavaScript asynchrone": "javascript_async.md"
+          - "MongoDB": "mongodb.md"
+          - "Introduction à Mongoose": "introduction_mongoose.md"
+          - "Mongoose - La suite": "mongoose2.md"
+          - "Simulacre Mongoose": "simulacre_mongoose.md"
+          - "Projet complet en Mongoose": "projet_complet_mongoose.md"
+          - "Express et JWT": "express_jwt.md"
+      - "React":
+          - "Introduction à React": "introduction_react.md"
+          - "Penser en React": "penser_en_react.md"
+          - "React et les styles": "react_styles.md"
+          - "React - TailwindCSS": "react_tw.md"
+          - "Router - useParams - useContext et API": "react3.md"
+          - "Règles de Réact": "regles_react.md"
+          - "Internationalisation": "internationalisation.md"
+          - "PWA": "pwa.md"
+          - "Authentification": "authentification.md"
+          - "Accessibilité": "accessibilite.md"
+      - "Déploiement":
+          - "Déploiement avec Netlify": "netlify.md"
+  - "Procédures":
+      - "Rendre la documentation disponible pour l'api": "documentation.md"
+      - "Module déprécié": "module_deprecie.md"
+  - "Exercices":
+      - "Exercice 1 - lodash": "exercice1_lodash.md"
+      - "Exercice 2 - Express avec modèle": "exercice2_express_avec_modele.md"
+      - "Exercice 3 - Intergiciels Express et tests API": "exercice3_intergiciels_express.md"
+      - "Exercice 4 - Mongo DB": "exercice4_mongodb.md"
+      - "Exercice 5 - Mongoose": "exercice5_mongoose.md"
+      - "Exercice 6 - Mongoose": "exercice6_mongoose.md"
+      - "Exercice 7 - Express et JWT": "exercice7_express_jwt.md"
+      - "Exercice 8 - React": "exercice8_react.md"
+      - "Exercice 9 - React et styles": "exercice9_react_styles.md"
+      - "Exercice 10 - Contexte et API": "exercice10_context.md"
+      - "Exercice 11 - Internationalisation": "exercice11_internationalisation.md"
+      - "Exercice 12 - Authentification": "exercice12_authentification.md"
+      - "Exercice 13 - PWA": "exercice13_pwa.md"
+      - "Exercice Préparation Examen": "exercice_prep_exam.md"
+      - "Exercice 14 - Netlify": "exercice14_netlify.md"
+  - "Projet intégrateur": "projet_integrateur.md"
+  - "Manuels": "manuels.md"
+  - "CodeSandbox": "codesandbox.md"
+  - "Rétroaction": "retroaction.md"
+  - "À propos": "apropos.md"
+  - "Techniques de l'informatique": "https://techinfo.profinfo.ca"
 
 markdown_extensions:
   - admonition
@@ -123,6 +128,6 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-docs_dir: 'wiki'
-site_dir: 'www'
+docs_dir: "wiki"
+site_dir: "www"
 use_directory_urls: True
