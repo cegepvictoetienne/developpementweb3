@@ -33,7 +33,6 @@
 [Vidéo Youtube](https://www.youtube.com/watch?v=R4AEyKehpss)  
 [MongoDB et Promises](https://www.mongodb.com/docs/drivers/node/current/fundamentals/promises/)  
 [Driver Quickstart](https://www.mongodb.com/docs/drivers/node/current/quick-start/)  
-[Node CRUD Tutorial](https://www.mongodb.com/developer/quickstart/node-crud-tutorial/)  
 ## Introduction à Mongoose
 [Site officiel de Mongoose](https://mongoosejs.com/)  
 [Documentation de Mongoose](https://mongoosejs.com/docs/index.html)  

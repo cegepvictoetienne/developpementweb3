@@ -1,0 +1,26 @@
+meta {
+  name: Ajoute un auteur
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/auteurs/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "auteur": {
+      "id": "2",
+      "prenom": "Scott",
+      "nom": "Adams",
+      "date_naissance": "1964-01-01"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

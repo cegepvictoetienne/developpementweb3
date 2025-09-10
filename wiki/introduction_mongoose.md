@@ -25,6 +25,14 @@ Vous devez ensuite définir le schéma des données à stocker dans une base de 
 Une pratique recommandée consiste à créer un dossier models dans lequel tous les schémas de votre application seront stockés
 Voici la définition d’un objet auteur : [MDN Author Model](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/mongoose#author_model)  
 
+## Connexion à Mongoose  
+
+``` ts title="index.ts"  
+connect(ENV.Mongodb).then(() =>
+  server.listen(ENV.Port, () => logger.info(SERVER_START_MSG)),
+);
+
+```
 ## Schéma Mongoose - Auteur  
 
 ``` ts title="auteur.ts"
@@ -72,9 +80,7 @@ const uri =
 * @returns {IAuteur[]} Un tableau de tous les auteurs
 */
 async function getAll(): Promise<IAuteur[]> {
-    await mongoose.connect(uri);
     const auteurs = await Auteur.find();
-    mongoose.connection.close();
     return auteurs;
 }
 
@@ -92,11 +98,9 @@ async function getAll(): Promise<IAuteur[]> {
 */
 
 async function getOne(id: string,): Promise<IAuteur | null> {
-	await mongoose.connect(process.env.MONGODB_URI!);
 	const auteur = await Auteur.findOne({
 		id: id,
 	});
-	mongoose.connection.close();
 	return auteur;
 }
 
@@ -112,10 +116,8 @@ async function getOne(id: string,): Promise<IAuteur | null> {
 */
 
 async function add(auteur: IAuteur): Promise<void> {
-    await mongoose.connect(process.env.MONGODB_URI!);
     const nouvelAuteur = new Auteur(auteur);
     await nouvelAuteur.save();
-    mongoose.connection.close();
 }
 
 
