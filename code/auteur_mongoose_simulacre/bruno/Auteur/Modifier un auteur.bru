@@ -1,0 +1,26 @@
+meta {
+  name: Modifier un auteur
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/api/auteurs/update
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "auteur": {
+      "_id": "68c1798405ed7173d5f68735",
+      "id": "1",
+      "prenom": "Douglas",
+      "nom": "Adams 2"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

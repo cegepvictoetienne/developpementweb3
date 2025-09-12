@@ -7,7 +7,7 @@ Cours|Date|Sujet|Exercice
 4|2025-09-04 12:15:00|[Intergiciels](intergiciels_express.md)<br/>[Tester API](tester_api.md)|[Exercice 3 - Intergiciels Express et Tests API](exercice3_intergiciels_express.md)
 5|2025-09-08 12:15:00|[JavaScript asynchrone](javascript_async.md) <br/> [MongoDB](mongodb.md)|[Exercice 4 - MongoDB](exercice4_mongodb.md)
 6|2025-09-11 13:15:00|[Mongoose](introduction_mongoose.md)|[Exercice 5 - Mongoose](exercice5_mongoose.md)
-7|2025-09-15 12:15:00|[Mongoose - la suite](mongoose2.md)<br/>[Simulacre Mongoose](simulacre_mongoose.md)|[Exercice 6 - Mongoose](exercice6_mongoose.md)
+7|2025-09-15 12:15:00|[Mongoose - la suite](mongoose2.md)<br/>[Simulacre Mongoose dans un projet complet](projet_complet_mongoose.md)|[Exercice 6 - Mongoose](exercice6_mongoose.md)
 8|2025-09-18 13:15:00|Évaluation formative|
 9|2025-09-22 12:15:00|Retour sur formatif <br/> Projet API<br/>[Express et JWT](express_jwt.md) |[Exercice 7 - Express et JWT](exercice7_express_jwt.md)
 10|2025-09-25 13:15:00|Projet API|
