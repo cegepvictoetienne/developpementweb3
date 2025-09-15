@@ -746,6 +746,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Validations avancées">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemples-de-validation-personnalisees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples de validation personnalisées
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1872,6 +1887,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Validations avancées">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemples-de-validation-personnalisees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples de validation personnalisées
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1998,6 +2028,38 @@
 - Énumération des valeurs possibles<br>
 - Validations de chaînes de caractères (<a href="https://mongoosejs.com/docs/schematypes.html#string-validators">String-validators</a>) <br>
 - Validations personnalisées  </p>
+<h3 id="exemples-de-validation-personnalisees">Exemples de validation personnalisées</h3>
+<div class="language-ts highlight"><span class="filename">model.ts</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ArtisteSchema</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Schema</span><span class="o">&lt;</span><span class="nx">IArtiste</span><span class="o">&gt;</span><span class="p">({</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">required</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nx">maxLength</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="mf">250</span><span class="p">,</span><span class="w"> </span><span class="s1">'La longueur du nom ne doit pas dépasser 250'</span><span class="p">],</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="nx">telephone</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="nx">validate</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">      </span><span class="nx">validator</span><span class="o">:</span><span class="w"> </span><span class="kt">function</span><span class="w"> </span><span class="p">(</span><span class="nx">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="sr">/\d\d\d-\d\d\d-\d\d\d\d/</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">v</span><span class="p">);</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">      </span><span class="p">},</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">      </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s1">'Le numéro de téléphone doit être valide (999-999-9999)'</span><span class="p">,</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p">});</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="kd">const</span><span class="w"> </span><span class="nx">ChansonSchema</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Schema</span><span class="o">&lt;</span><span class="nx">IChanson</span><span class="o">&gt;</span><span class="p">({</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="nx">artistes</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">ArtisteSchema</span><span class="p">],</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="nx">validate</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">      </span><span class="nx">validator</span><span class="o">:</span><span class="w"> </span><span class="kt">function</span><span class="w"> </span><span class="p">(</span><span class="nx">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">      </span><span class="p">},</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">      </span><span class="nx">message</span><span class="o">:</span><span class="w"> </span><span class="s1">'Il doit y avoir au moins un artiste dans la chanson'</span><span class="p">,</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">  </span><span class="p">},</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">  </span><span class="nx">titre</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="nb">String</span><span class="p">,</span><span class="w"> </span><span class="nx">required</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="s1">'Le titre est obligatoire'</span><span class="p">]</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">  </span><span class="nx">duree</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="nb">String</span><span class="w"> </span><span class="p">},</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="p">});</span>
+</span></code></pre></div>
 <div class="admonition manuel">
 <p class="admonition-title">Manuel</p>
 <p><a href="https://mongoosejs.com/docs/validation.html">Mongoose - Validations</a>  </p>
@@ -2014,18 +2076,18 @@
 <p>Les getters sont souvent utilisés pour combiner plusieurs propriétés.<br>
 Les setters sont souvent utilisés pour décomposer une valeur en plus petites.   </p>
 <p>Exemples :  </p>
-<div class="language-ts highlight"><span class="filename">get_seulement.ts</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">personSchema</span><span class="p">.</span><span class="nx">virtual</span><span class="p">(</span><span class="s1">'fullName'</span><span class="p">).</span><span class="nx">get</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">first</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">' '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">last</span><span class="p">;</span><span class="w"> </span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">});</span><span class="w"> </span>
+<div class="language-ts highlight"><span class="filename">get_seulement.ts</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">personSchema</span><span class="p">.</span><span class="nx">virtual</span><span class="p">(</span><span class="s1">'fullName'</span><span class="p">).</span><span class="nx">get</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">first</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">' '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">last</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">});</span><span class="w"> </span>
 </span></code></pre></div>
-<div class="language-ts highlight"><span class="filename">get_et_set.ts</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">personSchema</span><span class="p">.</span><span class="nx">virtual</span><span class="p">(</span><span class="s1">'fullName'</span><span class="p">).</span><span class="w"> </span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nx">get</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">first</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">' '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">last</span><span class="p">;</span><span class="w"> </span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="p">}).</span><span class="w"> </span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nx">set</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">' '</span><span class="p">));</span><span class="w"> </span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="p">});</span><span class="w"> </span>
+<div class="language-ts highlight"><span class="filename">get_et_set.ts</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nx">personSchema</span><span class="p">.</span><span class="nx">virtual</span><span class="p">(</span><span class="s1">'fullName'</span><span class="p">).</span><span class="w"> </span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nx">get</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">first</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">' '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">last</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="p">}).</span><span class="w"> </span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nx">set</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">' '</span><span class="p">));</span><span class="w"> </span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">v</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="nx">v</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="p">});</span><span class="w"> </span>
 </span></code></pre></div>
 <div class="admonition manuel">
 <p class="admonition-title">Manuel</p>
@@ -2034,18 +2096,18 @@ Les setters sont souvent utilisés pour décomposer une valeur en plus petites. 
 </div>
 <h2 id="aggregation">Aggrégation</h2>
 <p>La bibliothèque Mongoose permet également de transformer des documents à l’aide de la méthode aggregate : </p>
-<div class="language-ts highlight"><span class="filename">aggregations.ts</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">    </span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">personnes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">Personne</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="p">{</span><span class="s2">"$match"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"isActive"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">}},</span><span class="w"> </span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="p">{</span><span class="s2">"$group"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="s2">"_id"</span><span class="o">:</span><span class="s2">"$eyeColor"</span><span class="p">,</span><span class="w"> </span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="s2">"moyenneAge"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"$avg"</span><span class="o">:</span><span class="w"> </span><span class="s2">"$age"</span><span class="p">}</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="p">{</span><span class="s2">"$sort"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"moyenneAge"</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="p">]);</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">personnes</span><span class="p">);</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">}</span><span class="w"> </span>
+<div class="language-ts highlight"><span class="filename">aggregations.ts</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">try</span><span class="w"> </span><span class="p">{</span><span class="w">    </span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">personnes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">Personne</span><span class="p">.</span><span class="nx">aggregate</span><span class="p">([</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p">{</span><span class="s2">"$match"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"isActive"</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">}},</span><span class="w"> </span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="p">{</span><span class="s2">"$group"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">        </span><span class="s2">"_id"</span><span class="o">:</span><span class="s2">"$eyeColor"</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">        </span><span class="s2">"moyenneAge"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"$avg"</span><span class="o">:</span><span class="w"> </span><span class="s2">"$age"</span><span class="p">}</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">      </span><span class="p">}</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="p">},</span><span class="w"> </span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="p">{</span><span class="s2">"$sort"</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="s2">"moyenneAge"</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">}}</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="p">]);</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span><span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">personnes</span><span class="p">);</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="p">}</span><span class="w"> </span>
 </span></code></pre></div>
 <div class="admonition manuel">
 <p class="admonition-title">Manuel</p>
