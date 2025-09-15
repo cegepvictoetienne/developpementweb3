@@ -7,7 +7,17 @@ Créer une API complète avec une base de données MongoDB, un serveur Express e
 !!! warning "Attention"
     Le projet suivant a été généré avec la version du 12 septembre 2025 du générateur express typescript. Il se peut que certaines parties du code ne fonctionnent pas avec les versions plus récentes du générateur.
 
+## Simulacre  
 
+Pour tester un projet complet en mongoose, il faut utiliser un simulacre.  
+
+Voici la séquence d'appel normal :  
+
+![type:video](./videos/GET-normal.mp4)  
+
+Voici la séquence d'appel avec le simulacre (notez que le simulacre intercepte les appels à mongoose pour éviter de toucher à la BD :   
+
+![type:video](./videos/GET-simulacre.mp4)  
 
 ## Étape 1 - Initialisation du projet
 
