@@ -69,6 +69,41 @@ Il est cependant possible d’ajouter une multitude de validations supplémentai
 - Validations de chaînes de caractères ([String-validators](https://mongoosejs.com/docs/schematypes.html#string-validators))   
 - Validations personnalisées  
 
+### Exemples de validation personnalisées  
+
+``` ts title="model.ts"
+const ArtisteSchema = new Schema<IArtiste>({
+  nom: {
+    type: String,
+    required: true,
+    maxLength: [250, 'La longueur du nom ne doit pas dépasser 250'],
+  },
+  telephone: {
+    type: String,
+    validate: {
+      validator: function (v) {
+        return /\d\d\d-\d\d\d-\d\d\d\d/.test(v);
+      },
+      message: 'Le numéro de téléphone doit être valide (999-999-9999)',
+    },
+  },
+});
+
+const ChansonSchema = new Schema<IChanson>({
+  artistes: {
+    type: [ArtisteSchema],
+    validate: {
+      validator: function (v) {
+        return v.length > 0;
+      },
+      message: 'Il doit y avoir au moins un artiste dans la chanson',
+    },
+  },
+  titre: { type: String, required: [true, 'Le titre est obligatoire'] },
+  duree: { type: String },
+});
+```  
+
 !!! manuel 
     [Mongoose - Validations](https://mongoosejs.com/docs/validation.html)  
 
