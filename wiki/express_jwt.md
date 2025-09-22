@@ -29,8 +29,14 @@ npm install jsonwebtoken @types/jsonwebtoken
 
 ## Passer à ES2022
 
-``` ts title="src/common/constants/ENV.ts"
+``` ts title="src/tsconfig.json"
 {!api_avec_jwt_25/tsconfig.json!}
+```
+
+## Le modèle User (Ajouter UserLogin) 
+
+``` ts title="src/models/User.ts"
+{!api_avec_jwt_25/src/models/User.ts!}
 ```
 
 ## Le service de génération de jetons  
