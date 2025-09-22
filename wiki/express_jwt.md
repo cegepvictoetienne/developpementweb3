@@ -17,55 +17,75 @@ JWT (JSON Web Token) permet d’authentifier un utilisateur lors de chaque appel
 npm install jsonwebtoken @types/jsonwebtoken
 ```
 
+## La variable d'environnement dans dev  
+``` ts title="config/.env.development"
+{!api_avec_jwt_25/config/.env.development!}
+```
+
+## Exposer la variable dans ENV
+``` ts title="src/common/constants/ENV.ts"
+{!api_avec_jwt_25/src/common/constants/ENV.ts!}
+```
+
+## Passer à ES2022
+
+``` ts title="src/common/constants/ENV.ts"
+{!api_avec_jwt_25/tsconfig.json!}
+```
+
 ## Le service de génération de jetons  
 
 ``` ts title="src/services/JetonService.ts"
-{!api_avec_jwt/src/services/JetonService.ts!}
+{!api_avec_jwt_25/src/services/JetonService.ts!}
 ```
 
 ## Le chemin pour les jetons  
 
-``` ts title="src/common/Paths.ts"
-{!api_avec_jwt/src/common/Paths.ts!}
+``` ts title="src/common/constants/Paths.ts"
+{!api_avec_jwt_25/src/common/constants/Paths.ts!}
 ```
 
 ## La route  
 
 ``` ts title="src/routes/JetonRoutes.ts"
-{!api_avec_jwt/src/routes/JetonRoutes.ts!}
+{!api_avec_jwt_25/src/routes/JetonRoutes.ts!}
 ```
 
 ## Le Router
   
 ``` ts title="src/routes/index.ts"
-{!api_avec_jwt/src/routes/index.ts!}
+{!api_avec_jwt_25/src/routes/index.ts!}
 ```
 
 ## L'intergiciel pour valider les jetons  
 
-``` ts title="src/util/authenticateToken.ts"
-{!api_avec_jwt/src/util/authenticateToken.ts!}
+``` ts title="src/services/authenticateToken.ts"
+{!api_avec_jwt_25/src/services/authenticateToken.ts!}
 ```
 
 ## Ajouter l'intergiciel au serveur 
 
 ``` ts title="src/server.ts"
-{!api_avec_jwt/src/server.ts!}
+{!api_avec_jwt_25/src/server.ts!}
 ```
 
-# Configurer Postman pour utiliser les jetons
+# Configurer Bruno pour utiliser les jetons
 
-1. Créer une requête POST pour obtenir un jeton.
-  ![Postman - Créer une requête POST pour obtenir un jeton](images/postman_generatetoken1.png)
+1. Créer variable de collection.  
+  ![Bruno - Créer une variable de collection](images/bruno_coll_var.png)  
+  
+2. Créer une requête GET pour obtenir un jeton.
+  ![Bruno - Créer une requête GET pour obtenir un jeton](images/bruno_setvar_script.png)
 
-2. Dans Script, ajouter le code suivant pour conserver le jeton dans une variable d'environnement.
+3. Dans Script, ajouter le code suivant pour conserver le jeton dans une variable d'environnement.
   ``` js
-  pm.environment.set("jwt-token", pm.response.json().token);
+  bru.setEnvVar("jwttoken", res.body.token)
   ```
-  ![Postman - Ajouter le code pour conserver le jeton dans une variable d'environnement](images/postman_generatetoken2.png)
+4. Dans la collection, ajouter la variable dans l'auth Bearer Token  
+  ![Bruno - Créer une requête GET pour obtenir un jeton](images/bruno_auth.png)  
 
-3. Créer une requête GET pour obtenir les données. Dans la section Auth, sélectionner Bearer Token et ajouter la variable d'environnement `jwt-token`.
-  ![Postman - Ajouter le jeton à la requête GET](images/postman_auth.png)
+5. Créer une requête GET pour obtenir les données. 
+  ![Postman - Ajouter le jeton à la requête GET](images/bruno_get_users.png)
 
-4. Exécuter la requête de génération avant celle du GET pour obtenir les données.
+6. Exécuter la requête de génération avant celle du GET pour obtenir les données.
 
