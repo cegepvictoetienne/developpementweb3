@@ -85,7 +85,7 @@ npm install jsonwebtoken @types/jsonwebtoken
   ![Bruno - Créer une requête GET pour obtenir un jeton](images/bruno_auth.png)  
 
 5. Créer une requête GET pour obtenir les données. 
-  ![Postman - Ajouter le jeton à la requête GET](images/bruno_get_users.png)
+  ![Bruno - Ajouter le jeton à la requête GET](images/bruno_get_users.png)
 
 6. Exécuter la requête de génération avant celle du GET pour obtenir les données.
 
