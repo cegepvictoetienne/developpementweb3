@@ -5,6 +5,8 @@ theme:
   language: fr
   features:
     - content.code.copy
+  logo: images/logo.png
+  favicon: images/favicon.png
   icon:
     admonition:
       note: fontawesome/solid/note-sticky
