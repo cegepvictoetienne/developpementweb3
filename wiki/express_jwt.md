@@ -29,7 +29,7 @@ npm install jsonwebtoken @types/jsonwebtoken
 
 ## Passer à ES2022
 
-``` ts title="src/tsconfig.json"
+``` ts title="/tsconfig.json"
 {!api_avec_jwt_25/tsconfig.json!}
 ```
 
