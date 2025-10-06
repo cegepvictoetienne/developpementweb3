@@ -9,17 +9,59 @@ Voici comment générer l’application :
 1. Situez vous dans le dossier où vous désirez créer l’application (le dossier de l’application sera automatiquement créé à la prochaine étape)  
 1. Exécutez la commande de création d’application :  
     ``` nodejsrepl title="console"
-    npm create vite@latest my_app
+    npm create vite@latest 
     ```
-1. Suivez les instructions et choisir __React__ et __TypeScript__  
-1. Une fois l’application générée, déplacez-vous dans le dossier créé :  
-    ``` nodejsrepl title="console"
-    cd my_app
+1. Entrez le nom de votre projet :  
+    ``` nodejsrepl title="console"  
+    > npx
+    > "create-vite"
+    │
+    ◆  Project name:
+    │  votre-nom-de-projet
     ```
-1. Exécutez l’application en utilisant les commandes suivantes :  
-    ``` nodejsrepl title="console"
-    npm install
-    npm run dev
+1. Choisir **React** :  
+    ``` nodejsrepl title="console"  
+    ◆  Select a framework:
+    │  ○ Vanilla
+    │  ○ Vue
+    │  ● React
+    │  ○ Preact
+    │  ○ Lit
+    │  ○ Svelte
+    │  ○ Solid
+    │  ○ Qwik
+    │  ○ Angular
+    │  ○ Marko
+    │  ○ Others
+    └
+    ```
+1. Choisir **Typescript** :  
+    ``` nodejsrepl title="console"  
+    ◆  Select a variant:
+    │  ● TypeScript
+    │  ○ TypeScript + React Compiler
+    │  ○ TypeScript + SWC
+    │  ○ JavaScript
+    │  ○ JavaScript + React Compiler
+    │  ○ JavaScript + SWC
+    │  ○ React Router v7 ↗
+    │  ○ TanStack Router ↗
+    │  ○ RedwoodSDK ↗
+    │  ○ RSC ↗
+    └
+    ```
+1. Choisir **No** :  
+    ``` nodejsrepl title="console"  
+    ◆  Use rolldown-vite (Experimental)?:
+    │  ○ Yes
+    │  ● No
+    └
+    ```
+1. Choisir **Yes** :  
+    ``` nodejsrepl title="console"  
+    ◆  Install with npm and start now?
+    │  ● Yes / ○ No
+    └
     ```
 
 Si vous avez des erreurs de modules dépréciés, vous pouvez les corriger en suivant les instructions de la section [Module déprécié](module_deprecie.md).
@@ -49,12 +91,17 @@ Pour l'installer :  [React Developer Tools pour Chrome](https://chrome.google.co
 
 Utiliser des fonctions au lieu des classes en React est la manière officielle de programmer dans cet environnement.  
 
-``` ts title="personnage.component.tsx"
-{!personnage_base/src/components/personnage.component.tsx!}
+``` ts title="Personnage.tsx"
+{!personnage_base/src/components/Personnage/Personnage.tsx!}
 ```
 
+``` ts title="Personnage.css"
+{!personnage_base/src/components/Personnage/Personnage.css!}
+```
+
+
 ``` ts title="app.tsx"
-{!personnage_base/src/App.tsx!}
+{!personnage_base/src/components/App/App.tsx!}
 ```
 
 <figure markdown>
@@ -75,12 +122,12 @@ Utiliser des fonctions au lieu des classes en React est la manière officielle d
 3. Utiliser les paramètres lors de l’instanciation de la composante  
 
 
-``` ts title="personnage.component.tsx"
-{!personnage_base_props/src/components/personnage.component.tsx!}
+``` ts title="Personnage.tsx"
+{!personnage_base_props/src/components/Personnage/Personnage.tsx!}
 ```
 
 ``` ts title="app.tsx"
-{!personnage_base_props/src/App.tsx!}
+{!personnage_base_props/src/components/App/App.tsx!}
 ```
 
 <figure markdown>
@@ -100,8 +147,8 @@ Utiliser des fonctions au lieu des classes en React est la manière officielle d
 - Conserve l’état d’une variable  
 - Réagit lorsque la valeur change  
 
-``` ts title="app.tsx"
-{!personnage_base_useState/src/App.tsx!}
+``` ts title="App.tsx"
+{!personnage_base_useState/src/components/App/App.tsx!}
 ```
 
 <figure markdown>
@@ -122,7 +169,7 @@ Faire des traitements de données seulement lors d’événements précis, comme
 
 
 ``` ts title="app.tsx"
-{!personnage_base_useEffect/src/App.tsx!}
+{!personnage_base_useEffect/src/components/App/App.tsx!}
 ```
 
 <figure markdown>

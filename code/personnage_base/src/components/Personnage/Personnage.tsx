@@ -1,8 +1,8 @@
-import './personnage.styles.css';
+import './Personnage.css';
 
 const Personnage = () => {
   const nomDuPersonnage = 'Fluffy McChat';
-  const photoDuPersonnage = 'https://placekitten.com/300/300';
+  const photoDuPersonnage = 'https://placecats.com/300/300';
   const adresseDuPersonnage = '123 Ave Des Félins';
 
   return (
@@ -12,7 +12,7 @@ const Personnage = () => {
       </div>
       <div className="info">
         <p>{nomDuPersonnage}</p>
-        <p className="address">{adresseDuPersonnage}</p>
+        <p className="addresse">{adresseDuPersonnage}</p>
       </div>
     </div>
   );

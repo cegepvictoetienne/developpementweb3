@@ -14,7 +14,7 @@ Cours|Date|Sujet|Exercice
 11|2025-09-29 12:15:00|Examen API|
 12|2025-10-02 13:15:00|Projet API|
 13|2025-10-06 12:15:00|Projet API|
-14|2025-10-09 13:15:00|[Introduction à React](introduction_react.md)<br/> [Penser en React](penser_en_react.md)|[Exercice 8 - React](exercice8_react.md)
+14|2025-10-09 13:15:00|[Introduction à React](introduction_react.md)<br/> [Structure typique d'un projet React](structure_projet_react.md)<br/> [Penser en React](penser_en_react.md)|[Exercice 8 - React](exercice8_react.md)
 15|2025-10-20 12:15:00|[React et les styles](react_styles.md)<br/> [TailWindCSS](react_tw.md)|[Exercice 9 - React et styles](exercice9_react_styles.md)
 16|2025-10-23 13:15:00|[Routes, contexte et API](react3.md)<br/> [Régles de React](regles_react.md)|[Exercice 10 - Contexte et API](exercice10_context.md)
 17|2025-10-27 12:15:00|[Internationalisation](internationalisation.md) <br />[Accessibilité](accessibilite.md)|[Exercice 11 - Internatialisation](exercice11_internationalisation.md)

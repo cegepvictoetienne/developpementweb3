@@ -64,6 +64,7 @@ nav:
           - "Express et JWT": "express_jwt.md"
       - "React":
           - "Introduction à React": "introduction_react.md"
+          - "Structure typique d'un projet React": "structure_projet_react.md"
           - "Penser en React": "penser_en_react.md"
           - "React et les styles": "react_styles.md"
           - "React - TailwindCSS": "react_tw.md"

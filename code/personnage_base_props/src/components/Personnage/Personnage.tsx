@@ -1,4 +1,4 @@
-import './personnage.styles.css';
+import "./Personnage.css";
 
 interface IPersonnageProps {
   nom: string;
@@ -14,7 +14,7 @@ const Personnage = (props: IPersonnageProps) => {
       </div>
       <div className="info">
         <p>{props.nom}</p>
-        <p className="address">{props.adresse}</p>
+        <p className="addresse">{props.adresse}</p>
       </div>
     </div>
   );
