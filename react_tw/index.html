@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../react_styles/">
+        <link rel="prev" href="../react_mui/">
       
       
         <link rel="next" href="../react3/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>React - TailwindCSS - Développement Web 3</title>
+        <title>Styles : React - TailwindCSS - Développement Web 3</title>
       
     
     
@@ -117,7 +117,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#react-et-tailwind-css" class="md-skip">
+        <a href="#styles-react-et-tailwind-css" class="md-skip">
           Aller au contenu
         </a>
       
@@ -152,7 +152,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              React - TailwindCSS
+              Styles : React - TailwindCSS
             
           </span>
         </div>
@@ -854,12 +854,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../react_styles/" class="md-nav__link">
+      <a href="../react_mui/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    React et les styles
+    Styles : React et MUI
     
   </span>
   
@@ -891,7 +891,7 @@
   
   
   <span class="md-ellipsis">
-    React - TailwindCSS
+    Styles : React - TailwindCSS
     
   </span>
   
@@ -1772,7 +1772,7 @@
 
 
 
-<div><h1 id="react-et-tailwind-css">React et Tailwind CSS</h1>
+<div><h1 id="styles-react-et-tailwind-css">Styles : React et Tailwind CSS</h1>
 <h1 id="introduction-a-tailwindcss">Introduction à TailwindCSS</h1>
 <p>TailwindCSS est un framework CSS utilitaire qui permet de concevoir des interfaces utilisateur directement dans vos composants avec des classes pré-définies. Contrairement au CSS traditionnel où vous devez définir manuellement vos styles dans des fichiers séparés, TailwindCSS vous permet d'appliquer des styles en utilisant des classes utilitaires dans votre HTML ou JSX.</p>
 <h1 id="comparaison-entre-tailwindcss-et-le-css-traditionnel">Comparaison entre TailwindCSS et le CSS traditionnel</h1>
@@ -1897,31 +1897,23 @@
 <h2 id="installation-de-tailwind-css">Installation de Tailwind CSS</h2>
 <ol>
 <li>Installez Tailwind CSS en utilisant la commande suivante :<br>
-    <div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="o">-</span><span class="nx">D</span><span class="w"> </span><span class="nx">tailwindcss</span><span class="err">@</span><span class="nx">latest</span><span class="w"> </span><span class="nx">postcss</span><span class="err">@</span><span class="nx">latest</span><span class="w"> </span><span class="nx">autoprefixer</span><span class="err">@</span><span class="nx">latest</span>
+    <div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">tailwindcss</span><span class="w"> </span><span class="err">@</span><span class="nx">tailwindcss</span><span class="o">/</span><span class="nx">vite</span>
 </span></code></pre></div></li>
-<li>Créez un fichier de configuration Tailwind CSS en utilisant la commande suivante :<br>
-    <div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nx">npx</span><span class="w"> </span><span class="nx">tailwindcss</span><span class="w"> </span><span class="nx">init</span><span class="w"> </span><span class="o">-</span><span class="nx">p</span>
-</span></code></pre></div></li>
-<li>Configurer les chemins des fichiers CSS dans le fichier <code>tailwind.config.js</code> :<br>
-    <div class="language-js highlight"><span class="filename">tailwind.config.js</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cm">/** @type {import('tailwindcss').Config} */</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="s2">"./index.html"</span><span class="p">,</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="s2">"./src/**/*.{js,ts,jsx,tsx}"</span><span class="p">,</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="p">],</span>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="nx">theme</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="nx">extend</span><span class="o">:</span><span class="w"> </span><span class="p">{},</span>
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="p">},</span>
-</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[],</span>
-</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="p">}</span>
+<li>Configurer le plugin dans la configuration Vite
+    <div class="language-js highlight"><span class="filename">vite.config.ts</span><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">defineConfig</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"vite"</span><span class="p">;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">react</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@vitejs/plugin-react"</span><span class="p">;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">import</span><span class="w"> </span><span class="nx">tailwindcss</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"@tailwindcss/vite"</span><span class="p">;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1">// https://vite.dev/config/</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">defineConfig</span><span class="p">({</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">  </span><span class="nx">plugins</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">react</span><span class="p">(),</span><span class="w"> </span><span class="nx">tailwindcss</span><span class="p">()],</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="p">});</span>
 </span></code></pre></div></li>
 <li>Ajouter les imports de Tailwind CSS dans le fichier <code>index.css</code> :<br>
-    <div class="language-css highlight"><span class="filename">index.css</span><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="s1">'tailwindcss/base'</span><span class="p">;</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="s1">'tailwindcss/components'</span><span class="p">;</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="s1">'tailwindcss/utilities'</span><span class="p">;</span>
+    <div class="language-css highlight"><span class="filename">index.css</span><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="s1">'tailwindcss'</span><span class="p">;</span>
 </span></code></pre></div></li>
 <li>Démarrez l'application en utilisant la commande suivante :<br>
-    <div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">run</span><span class="w"> </span><span class="nx">dev</span>
+    <div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">run</span><span class="w"> </span><span class="nx">dev</span>
 </span></code></pre></div></li>
 <li>Tailwind CSS est maintenant installé et prêt à être utilisé dans votre application React.</li>
 </ol>
@@ -1934,58 +1926,59 @@
 <p><a href="https://nerdcave.com/tailwind-cheat-sheet">Feuille de triche TailwindCSS</a></p>
 </div>
 <h1 id="extensions-vscode-recommandees-pour-tailwindcss">Extensions VSCode recommandées pour TailwindCSS</h1>
-<ol>
-<li>
-<p><strong>Tailwind CSS IntelliSense</strong> :
-   Cette extension offre de l'auto-complétion pour les classes Tailwind, ainsi que la documentation en survolant les classes dans votre code.</p>
-</li>
-<li>
-<p><a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss">Lien vers l'extension</a></p>
-</li>
-<li>
-<p><strong>PostCSS Language Support</strong> :
-   Nécessaire si vous utilisez Tailwind avec PostCSS, cette extension vous aidera à gérer vos fichiers CSS de manière efficace.</p>
-</li>
-<li>
-<p><a href="https://marketplace.visualstudio.com/items?itemName=csstools.postcss">Lien vers l'extension</a></p>
-</li>
-<li>
-<p><strong>Headwind</strong> :
-   Cet outil trie automatiquement vos classes Tailwind dans un ordre logique. Cela rend votre code plus lisible.</p>
-</li>
-<li>
-<p><a href="https://marketplace.visualstudio.com/items?itemName=heybourn.headwind">Lien vers l'extension</a></p>
-</li>
-<li>
-<p><strong>Prettier - Code formatter</strong> :
-   Utilisez cette extension pour vous assurer que votre code React, y compris les classes Tailwind, est bien formaté.</p>
-</li>
-<li>
-<p><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Lien vers l'extension</a></p>
-</li>
-</ol>
+<table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Description</th>
+<th>Lien</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tailwind CSS IntelliSense</strong></td>
+<td>Cette extension offre de l'auto-complétion pour les classes Tailwind, ainsi que la documentation en survolant les classes dans votre code.</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss">Lien vers l'extension</a></td>
+</tr>
+<tr>
+<td><strong>PostCSS Language Support</strong></td>
+<td>Nécessaire si vous utilisez Tailwind avec PostCSS, cette extension vous aidera à gérer vos fichiers CSS de manière efficace.</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=csstools.postcss">Lien vers l'extension</a></td>
+</tr>
+<tr>
+<td><strong>Headwind</strong></td>
+<td>Cet outil trie automatiquement vos classes Tailwind dans un ordre logique. Cela rend votre code plus lisible.</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=heybourn.headwind">Lien vers l'extension</a></td>
+</tr>
+<tr>
+<td><strong>Prettier - Code formatter</strong></td>
+<td>Utilisez cette extension pour vous assurer que votre code React, y compris les classes Tailwind, est bien formaté.</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Lien vers l'extension</a></td>
+</tr>
+</tbody>
+</table>
 <h1 id="personnages-avec-tailwindcss">Personnages avec TailwindCSS</h1>
-<div class="language-ts highlight"><span class="filename">personnage.component.tsx</span><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kd">interface</span><span class="w"> </span><span class="nx">IPersonnageProps</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span><span class="nx">photo</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">  </span><span class="nx">adresse</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="p">}</span>
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="kt">IPersonnageProps</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
-</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"max-w-sm w-72 mx-auto flex flex-col text-center items-center bg-white text-black p-5 border border-gray-300 rounded shadow-md"</span><span class="o">&gt;</span>
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"text-center mb-5"</span><span class="o">&gt;</span>
-</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">img</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"w-36 h-36 rounded-full"</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">photo</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
-</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">      </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
-</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"mb-5"</span><span class="o">&gt;</span>
-</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">span</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"italic"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">nom</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/span&gt;</span>
-</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"italic"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">adresse</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;</span>
-</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="w">      </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
-</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
-</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="w">  </span><span class="p">);</span>
-</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="p">};</span>
-</span><span id="__span-14-20"><a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>
-</span><span id="__span-14-21"><a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Personnage</span><span class="p">;</span>
+<div class="language-ts highlight"><span class="filename">Personnage.tsx</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kd">interface</span><span class="w"> </span><span class="nx">IPersonnageProps</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="nx">nom</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="nx">photo</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">  </span><span class="nx">adresse</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="p">}</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">Personnage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="kt">IPersonnageProps</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"max-w-sm w-72 mx-auto flex flex-col text-center items-center bg-white text-black p-5 border border-gray-300 rounded shadow-md"</span><span class="o">&gt;</span>
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"text-center mb-5"</span><span class="o">&gt;</span>
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">img</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"w-36 h-36 rounded-full"</span><span class="w"> </span><span class="nx">src</span><span class="o">=</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">photo</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">      </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">      </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"mb-5"</span><span class="o">&gt;</span>
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">span</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"italic"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">nom</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/span&gt;</span>
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="nx">className</span><span class="o">=</span><span class="s2">"italic"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">adresse</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">      </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="w">  </span><span class="p">);</span>
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="p">};</span>
+</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>
+</span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">Personnage</span><span class="p">;</span>
 </span></code></pre></div>
 <div class="admonition codesandbox">
 <p class="admonition-title">CodeSandbox</p>
