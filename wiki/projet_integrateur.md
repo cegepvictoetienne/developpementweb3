@@ -46,7 +46,7 @@ Voici les règles à respecter pour chacune des parties :
         - Tailles et intervalles (min, max, longueur du tableau)  
         - Messages personnalisés en français  
         - Au moins 2 validations personnalisées
-    - Tests unitaires (Jasmine et Supertest)  
+    - Tests unitaires (Vitest et Supertest)  
     - Documentation : toutes les routes doivent être documentées sur la page d’accueil de l’api (exemple : [Google Classroom REST API](https://developers.google.com/classroom/reference/rest/) )  
     - Publication de l’API (Netlify ou autre)  
 

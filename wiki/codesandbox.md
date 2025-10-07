@@ -6,10 +6,9 @@
 [Démo - Personnage - Props](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_props)  
 [Démo - Personnage - useState](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_useState)  
 [Démo - Personnage - useEffect](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_base_useEffect)  
-## React et les styles
-[Démo - Styled Components](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_styledComponents)  
+## Styles : React et MUI
 [Démo - Material UI](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_MUI)  
-## React - TailwindCSS
+## Styles : React - TailwindCSS
 [Démo - TailwindCSS](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_tw) ## Router - useParams - useContext et API
 [Démo - monrouteur](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/monrouteur)  
 [Démo - Chapeaux en folie](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/chapeaux)  

@@ -1,3 +1,0 @@
-# Intro
-
-React et StyledComponents

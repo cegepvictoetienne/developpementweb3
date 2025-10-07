@@ -1,41 +1,4 @@
-# React et les styles  
-
-## Styled-components  
-
-- CSS dans le code JavaScript pour laisser React créer les fichiers css.  
-- Fini les erreurs css lorsqu’on utilise le même nom de classe par erreur.  
-
-Pour l’installer dans votre projet :  
-
-``` nodejsrepl title="console"
-npm i styled-components
-npm i @types/styled-components --save-dev
-```
-
-### Remplacer le css par un fichier tsx  
-
-``` ts title="personnage.styles.tsx"
-{!personnage_styledComponents/src/components/personnage.styles.tsx!}
-```
-
-``` ts title="personnage.component.tsx"
-{!personnage_styledComponents/src/components/personnage.component.tsx!}
-```
-
-!!! note "Truc"  
-    Utilisation d’un style pour un autre type d’élément HTML avec la mention __as__ :  
-
-    ``` ts 
-    <PersonnageAddress as="span">{props.nom}</PersonnageAddress>
-    ```
-
-!!! codesandbox "CodeSandbox"  
-    [Démo - Styled Components](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_styledComponents)  
-
-!!! manuel 
-    [Styled Components - Basics](https://styled-components.com/docs/basics)  
-
-# Material UI  
+# Styles : React et Material UI 
 
 Librairie de composantes pré-stylisées.  
 
@@ -52,8 +15,8 @@ npm install @mui/icons-material
 
 ## Utiliser Material UI  
 
-``` ts title="personnage.component.tsx"
-{!personnage_MUI/src/components/personnage.component.tsx!}
+``` ts title="Personnage.tsx"
+{!personnage_MUI/src/components/Personnage/Personnage.tsx!}
 ```  
 
 !!! codesandbox "CodeSandbox"  
@@ -70,7 +33,7 @@ La manière la plus efficace pour changer l'apparence de votre application avec 
 La place idéale pour ajouter un thème à votre application est `App.tsx` :  
 
 ``` ts title="app.tsx"
-{!personnage_MUI/src/App.tsx!}
+{!personnage_MUI/src/components/App/App.tsx!}
 ```
 
 Vous pouvez aussi assigner une apparence spécifiquement à un type de composant comme suit :  

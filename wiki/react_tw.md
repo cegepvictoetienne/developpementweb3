@@ -1,4 +1,4 @@
-# React et Tailwind CSS
+# Styles : React et Tailwind CSS
 
 
 # Introduction à TailwindCSS
@@ -108,31 +108,22 @@ TailwindCSS est un framework CSS utilitaire qui permet de concevoir des interfac
 
 1. Installez Tailwind CSS en utilisant la commande suivante :  
     ``` nodejsrepl title="console"
-    npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+    npm install tailwindcss @tailwindcss/vite
     ```
-1. Créez un fichier de configuration Tailwind CSS en utilisant la commande suivante :  
-    ``` nodejsrepl title="console"
-    npx tailwindcss init -p
-    ```
-1. Configurer les chemins des fichiers CSS dans le fichier `tailwind.config.js` :  
-    ``` js title="tailwind.config.js"
-    /** @type {import('tailwindcss').Config} */
-    export default {
-    content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
-    ],
-    theme: {
-        extend: {},
-    },
-    plugins: [],
-    }
+1. Configurer le plugin dans la configuration Vite
+    ``` js title="vite.config.ts"
+    import { defineConfig } from "vite";
+    import react from "@vitejs/plugin-react";
+    import tailwindcss from "@tailwindcss/vite";
+
+    // https://vite.dev/config/
+    export default defineConfig({
+      plugins: [react(), tailwindcss()],
+    });
     ```
 1. Ajouter les imports de Tailwind CSS dans le fichier `index.css` :  
     ``` css title="index.css"
-    @import 'tailwindcss/base';
-    @import 'tailwindcss/components';
-    @import 'tailwindcss/utilities';
+    @import 'tailwindcss';
     ```
 1. Démarrez l'application en utilisant la commande suivante :  
     ``` nodejsrepl title="console"
@@ -148,32 +139,19 @@ TailwindCSS est un framework CSS utilitaire qui permet de concevoir des interfac
 
 # Extensions VSCode recommandées pour TailwindCSS
 
-1. **Tailwind CSS IntelliSense** :
-   Cette extension offre de l'auto-complétion pour les classes Tailwind, ainsi que la documentation en survolant les classes dans votre code.
-
-   - [Lien vers l'extension](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-
-2. **PostCSS Language Support** :
-   Nécessaire si vous utilisez Tailwind avec PostCSS, cette extension vous aidera à gérer vos fichiers CSS de manière efficace.
-
-   - [Lien vers l'extension](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
-
-3. **Headwind** :
-   Cet outil trie automatiquement vos classes Tailwind dans un ordre logique. Cela rend votre code plus lisible.
-
-   - [Lien vers l'extension](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind)
-
-4. **Prettier - Code formatter** :
-   Utilisez cette extension pour vous assurer que votre code React, y compris les classes Tailwind, est bien formaté.
-
-   - [Lien vers l'extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+|Extension|Description|Lien  
+|--|--|--
+|**Tailwind CSS IntelliSense**|Cette extension offre de l'auto-complétion pour les classes Tailwind, ainsi que la documentation en survolant les classes dans votre code.|[Lien vers l'extension](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)  
+|**PostCSS Language Support**|Nécessaire si vous utilisez Tailwind avec PostCSS, cette extension vous aidera à gérer vos fichiers CSS de manière efficace.|[Lien vers l'extension](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)  
+|**Headwind**|Cet outil trie automatiquement vos classes Tailwind dans un ordre logique. Cela rend votre code plus lisible.|[Lien vers l'extension](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind)  
+|**Prettier - Code formatter**|Utilisez cette extension pour vous assurer que votre code React, y compris les classes Tailwind, est bien formaté.|[Lien vers l'extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)  
 
 
 # Personnages avec TailwindCSS
 
 
-``` ts title="personnage.component.tsx"
-{!personnage_tw/src/components/personnage.component.tsx!}
+``` ts title="Personnage.tsx"
+{!personnage_tw/src/components/Personnage/Personnage.tsx!}
 ```
 
 !!! codesandbox "CodeSandbox"  

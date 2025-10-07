@@ -51,12 +51,11 @@
 [Props](https://react.dev/learn/passing-props-to-a-component)  
 [useState](https://react.dev/reference/react/useState)  
 [useEffect](https://react.dev/reference/react/useEffect)  
-## React et les styles
-[Styled Components - Basics](https://styled-components.com/docs/basics)  
+## Styles : React et MUI
 [Material UI - Installation](https://mui.com/material-ui/getting-started/installation/)  
 [Material UI - Theming](https://mui.com/material-ui/customization/theming/)  
 [Material UI - Button - CSS](https://mui.com/material-ui/api/button/#css)  
-## React - TailwindCSS
+## Styles : React - TailwindCSS
 [Documentation officielle Tailwind CSS](https://tailwindcss.com/docs/guides/vite)
 [Feuille de triche TailwindCSS](https://nerdcave.com/tailwind-cheat-sheet)
 ## Router - useParams - useContext et API

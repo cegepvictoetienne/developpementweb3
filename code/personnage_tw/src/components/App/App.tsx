@@ -1,5 +1,6 @@
-import Personnage from './components/personnage.component';
-import { IPersonnageData, PersonnageData } from './data/PersonnageData';
+import Personnage from "../Personnage";
+import type { IPersonnageData } from "../../data/PersonnageData";
+import { PersonnageData } from "../../data/PersonnageData";
 
 function App() {
   return (
