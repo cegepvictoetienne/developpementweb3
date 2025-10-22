@@ -1,6 +1,6 @@
 # Déploiements  
 
-## Qu'est-ce que Netlify  
+## Qu'est-ce que Netlify (CI/CD)
 
 Netlify est une plateforme de déploiement web et d'hébergement de sites statiques. Elle permet aux développeurs de créer, déployer et gérer des sites web rapidement et facilement. Netlify simplifie le processus de déploiement en intégrant des fonctionnalités telles que le déploiement continu, l'intégration Git, les performances optimisées, la gestion des domaines et des certificats SSL, ainsi que d'autres outils de développement.  
 
