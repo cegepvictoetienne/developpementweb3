@@ -9,8 +9,9 @@
 ## Styles : React et MUI
 [Démo - Material UI](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_MUI)  
 ## Styles : React - TailwindCSS
-[Démo - TailwindCSS](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_tw) ## Router - useParams - useContext et API
+[Démo - TailwindCSS](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/personnage_tw) ## Router - useParams
 [Démo - monrouteur](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/monrouteur)  
+## useContext et API
 [Démo - Chapeaux en folie](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/chapeaux)  
 ## Internationalisation
 [Démo - Intl](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/intl)  

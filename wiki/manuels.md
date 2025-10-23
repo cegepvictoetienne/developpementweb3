@@ -58,10 +58,11 @@
 ## Styles : React - TailwindCSS
 [Documentation officielle Tailwind CSS](https://tailwindcss.com/docs/guides/vite)
 [Feuille de triche TailwindCSS](https://nerdcave.com/tailwind-cheat-sheet)
-## Router - useParams - useContext et API
+## Router - useParams
 [React Router](https://reactrouter.com/en/main)  
 [BrowserRouter](https://reactrouter.com/en/main/router-components/browser-router)
 [Route - Documentation](https://reactrouter.com/en/6.14.2/route/route)  
+## useContext et API
 [useContext - Documentation](https://react.dev/reference/react/useContext)  
 [Axios - Documentation](https://axios-http.com/docs/intro)  
 ## Règles de Réact

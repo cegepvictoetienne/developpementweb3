@@ -16,9 +16,9 @@ Cours|Date|Sujet|Exercice
 13|2025-10-06 12:15:00|Projet API|
 14|2025-10-09 13:15:00|[Introduction à React](introduction_react.md)<br/> [Structure typique d'un projet React](structure_projet_react.md)<br/> [Penser en React](penser_en_react.md)|[Exercice 8 - React](exercice8_react.md)
 15|2025-10-20 12:15:00|[Styles : React et MUI](react_mui.md)<br/> [Styles : TailWindCSS](react_tw.md)|[Exercice 9 - React et styles](exercice9_react_styles.md)
-16|2025-10-23 13:15:00|[Routes, contexte et API](react3.md)<br/> [Régles de React](regles_react.md)|[Exercice 10 - Contexte et API](exercice10_context.md)
-17|2025-10-27 12:15:00|[Internationalisation](internationalisation.md) <br />[Accessibilité](accessibilite.md)|[Exercice 11 - Internatialisation](exercice11_internationalisation.md)
-18|2025-10-30 13:15:00|[Authentification](authentification.md)|[Exercice 12 - Authentification](exercice12_authentification.md)
+16|2025-10-23 13:15:00|[Routes, contexte et API](react3.md)<br/> [Régles de React](regles_react.md)|[Exercice 10 - Routes](exercice10_routes.md)
+17|2025-10-27 12:15:00|[Contexte et API](react4.md)<br/> [Régles de React](regles_react.md)<br/> [Internationalisation](internationalisation.md) <br />[Accessibilité](accessibilite.md)|[Exercice 11 - Contexte et API](exercice11_context.md)<br/>[Exercice 12 - Internatialisation](exercice12_internationalisation.md)
+18|2025-10-30 13:15:00|[Authentification](authentification.md)|[Exercice 13 - Authentification](exercice13_authentification.md)
 19|2025-11-06 13:15:00|[Netlify](netlify.md)|[Exercice 14 - Netlify](exercice14_netlify.md)
 20|2025-11-10 12:15:00|Formatif React|
 21|2025-11-13 13:15:00|Projet Application React|
