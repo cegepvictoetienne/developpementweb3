@@ -15,6 +15,3 @@
 [Démo - Chapeaux en folie](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/chapeaux)  
 ## Internationalisation
 [Démo - Intl](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/intl)  
-## Authentification
-[Démo - Page Login](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/pagelogin)  
-[Démo - API sécurisée](https://codesandbox.io/p/sandbox/github/jaixan/developpementweb3/tree/main/code/serveur_securise_firebase)  
