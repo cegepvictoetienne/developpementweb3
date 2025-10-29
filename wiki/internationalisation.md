@@ -48,25 +48,33 @@ npm install react-intl
 
 # Code minimal  
 
-``` ts title="main.tsx"
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
-import './index.css';
+``` ts title="App.tsx"
+import Exemples from '../Exemples';
+import { createIntl, IntlProvider } from 'react-intl';
+import Francais from '../../lang/fr.json';
+import Anglais from '../../lang/en.json';
+import { useState } from 'react';
 
-import { IntlProvider } from 'react-intl';
-import Francais from './lang/fr.json';
+function App() {
+  const [locale, setLocale] = useState('fr');
+  const [messages, setMessages] = useState(Francais);
 
-const locale = 'fr';
-const messages = Francais;
+  const intl = createIntl({
+    locale: locale,
+    messages: messages,
+  });
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <IntlProvider locale={locale} messages={messages}>
-      <App />
-    </IntlProvider>
-  </React.StrictMode>
-);
+  return (
+    <>
+      <IntlProvider locale={locale} messages={messages}>
+        <Exemples intl={intl} />
+      </IntlProvider>
+    </>
+  );
+}
+
+export default App;
+
 ```
 
 ## Message traduit simple  
@@ -170,6 +178,21 @@ const rabais = 15 / 100;
 
 <FormattedNumber value={rabais} style="percent" />
 
+
+```
+
+## Pour formater un message d'erreur  
+
+``` ts title="app.tsx"
+const intl = createIntl({
+    locale: locale,
+    messages: messages,
+  });
+
+const messageErreur = intl.formatMessage({
+    id: 'app.erreur.message',
+    defaultMessage: 'Une erreur est survenue',
+  });
 
 ```
 
