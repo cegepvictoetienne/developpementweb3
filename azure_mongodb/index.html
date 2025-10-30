@@ -14,7 +14,7 @@
         <link rel="prev" href="../accessibilite/">
       
       
-        <link rel="next" href="../documentation/">
+        <link rel="next" href="../azure_express/">
       
       
       <link rel="icon" href="../images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Déploiement avec Netlify - Développement Web 3</title>
+        <title>MongoDB dans Azure - Développement Web 3</title>
       
     
     
@@ -141,7 +141,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#deploiements" class="md-skip">
+        <a href="#deploiement-de-la-base-de-donnees-mongodb-dans-azure" class="md-skip">
           Aller au contenu
         </a>
       
@@ -176,7 +176,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Déploiement avec Netlify
+              MongoDB dans Azure
             
           </span>
         </div>
@@ -1140,59 +1140,64 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Déploiement avec Netlify
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Déploiement avec Netlify
+    MongoDB dans Azure
     
   </span>
   
 
       </a>
       
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+              
+            
+              
+                
   
   
   
+  
+    <li class="md-nav__item">
+      <a href="../azure_express/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Express dans Azure
     
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quest-ce-que-netlify-cicd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Qu'est-ce que Netlify (CI/CD)
-    </span>
-  </a>
   
-</li>
-      
-    </ul>
   
-</nav>
-      
+    <li class="md-nav__item">
+      <a href="../azure_react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    React dans Azure
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1694,12 +1699,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercice14_netlify/" class="md-nav__link">
+      <a href="../exercice14_azure/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Exercice 14 - Netlify
+    Exercice 14 - Azure
     
   </span>
   
@@ -1869,23 +1874,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quest-ce-que-netlify-cicd" class="md-nav__link">
-    <span class="md-ellipsis">
-      Qu'est-ce que Netlify (CI/CD)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1900,134 +1888,8 @@
 
 
 
-<div><h1 id="deploiements">Déploiements</h1>
-<h2 id="quest-ce-que-netlify-cicd">Qu'est-ce que Netlify (CI/CD)</h2>
-<p>Netlify est une plateforme de déploiement web et d'hébergement de sites statiques. Elle permet aux développeurs de créer, déployer et gérer des sites web rapidement et facilement. Netlify simplifie le processus de déploiement en intégrant des fonctionnalités telles que le déploiement continu, l'intégration Git, les performances optimisées, la gestion des domaines et des certificats SSL, ainsi que d'autres outils de développement.  </p>
-<p>Voici quelques caractéristiques clés de Netlify :  </p>
-<ul>
-<li>Déploiement continu : Netlify offre un déploiement automatique à chaque fois que vous poussez du code vers un référentiel Git. Cela signifie que dès que vous effectuez des modifications dans votre code source, votre site sera automatiquement reconstruit et déployé.  </li>
-<li>Hébergement statique : Netlify est principalement conçu pour les sites web statiques, ce qui signifie que vos fichiers HTML, CSS, JavaScript et autres médias sont préconstruits et livrés aux utilisateurs tels quels, sans nécessiter de traitement côté serveur.  </li>
-<li>Optimisation des performances : Netlify propose des fonctionnalités telles que la mise en cache globale, la compression des images et des fichiers, ainsi que la distribution de contenu via un réseau de diffusion de contenu (CDN), ce qui améliore la vitesse de chargement et l'expérience utilisateur.  </li>
-<li>Gestion des domaines et des certificats SSL : Netlify permet d'associer facilement des noms de domaine personnalisés à vos sites et fournit des certificats SSL gratuits pour assurer des connexions sécurisées.
-Fonctionnalités de formulaire : Netlify propose également des fonctionnalités de formulaire qui vous permettent de gérer les soumissions de formulaires sans nécessiter d'application dorsale personnalisée.  </li>
-<li>Fonctions serverless : Netlify prend également en charge les fonctions serverless, ce qui vous permet d'ajouter des fonctionnalités dynamiques à votre site statique sans avoir à gérer une infrastructure serveur.
-Intégrations tierces : Netlify peut être intégré à divers services tiers tels que GitHub, GitLab, Bitbucket, et d'autres outils de développement.  </li>
-</ul>
-<p>En résumé, Netlify facilite le processus de création, de déploiement et de gestion de sites web statiques en offrant une gamme d'outils et de fonctionnalités pour les développeurs.</p>
-<div class="admonition manuel">
-<p class="admonition-title">Manuel</p>
-<p><a href="https://docs.netlify.com">Documentation Netlify</a>  </p>
-</div>
-<h1 id="etapes-de-deploiement-de-lapplication-dorsale-avec-netlify">Étapes de déploiement de l'application dorsale avec Netlify</h1>
-<p>Netlify peut exécuter votre API node.js à l'aide de la fonctionnalité <em>serverless</em>.  Voici les étapes pour déployer votre <em>application dorsale</em>.  </p>
-<ol>
-<li>
-<p>installer les modules serverless-http et Netlify Functions :  </p>
-<div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="nx">serverless</span><span class="o">-</span><span class="nx">http</span><span class="w"> </span><span class="err">@</span><span class="nx">netlify</span><span class="o">/</span><span class="nx">functions</span><span class="w">  </span>
-</span></code></pre></div>
-</li>
-<li>
-<p>installer le module netlify-cli en dev :  </p>
-<div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="nx">netlify</span><span class="o">-</span><span class="nx">cli</span><span class="w"> </span><span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Décorer l’objet app avec un appel à serverless dans un nouveau fichier. Permet d’exposer vos routes à Netlify.  Mettre le nouveau fichier dans le dossier /functions (à la racine du projet).  </p>
-<div class="language-ts highlight"><span class="filename">functions/api.ts</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">/**</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cm"> * Point d'entrée pour les fonctions de Netlify</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cm"> */</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">app</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"../src/app"</span><span class="p">;</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">import</span><span class="w"> </span><span class="nx">dotenv</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'dotenv'</span><span class="p">;</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">import</span><span class="w"> </span><span class="nx">serverless</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'serverless-http'</span><span class="p">;</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1">// *** Variables d'environnement ***</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="nx">dotenv</span><span class="p">.</span><span class="nx">config</span><span class="p">();</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c1">// *** Le handler requis par Netlify **</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">handler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">serverless</span><span class="p">(</span><span class="nx">app</span><span class="p">);</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Créer un fichier de configuration pour netlify  </p>
-<div class="language-json highlight"><span class="filename">netlify.toml</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">[</span><span class="err">build</span><span class="p">]</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="err">comma</span><span class="kc">n</span><span class="err">d</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"npm install &amp;&amp; npm run build"</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"functions"</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">[</span><span class="kc">fun</span><span class="err">c</span><span class="kc">t</span><span class="err">io</span><span class="kc">ns</span><span class="p">]</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="err">ex</span><span class="kc">ternal</span><span class="err">_</span><span class="kc">n</span><span class="err">ode_modules</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"express"</span><span class="p">]</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="err">i</span><span class="kc">n</span><span class="err">cluded_</span><span class="kc">f</span><span class="err">iles=</span><span class="p">[</span><span class="s2">"./functions/database.json"</span><span class="p">]</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="kc">n</span><span class="err">ode_bu</span><span class="kc">n</span><span class="err">dler</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"esbuild"</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">[[</span><span class="err">redirec</span><span class="kc">ts</span><span class="p">]]</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="kc">f</span><span class="err">orce</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="kc">fr</span><span class="err">om</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"/api/*"</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="err">s</span><span class="kc">tatus</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">200</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"/.netlify/functions/api/:splat"</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">[[</span><span class="err">redirec</span><span class="kc">ts</span><span class="p">]]</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="kc">f</span><span class="err">orce</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="kc">fr</span><span class="err">om</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"/images/*"</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="err">s</span><span class="kc">tatus</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">200</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="kc">t</span><span class="err">o</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="s2">"/public/images/:splat"</span>
-</span></code></pre></div>
-<p>Le redirects sert à recevoir les requêtes du style https://monbackend/api/x et le rediriger vers /.netlify functions/api/x (la façon interne de Netlify pour exposer les fonctions de l'application dorsale).  </p>
-</li>
-<li>
-<p>Git push de votre projet et création du déploiement Netlify  </p>
-<p><figure markdown>
-<img alt="ts-types-prenom" src="../images/netlify-deploy1.png" width="600">
-<figcaption>Dans Netlify, importer de git</figcaption>
-</figure></p>
-<p><figure markdown>
-<img alt="ts-types-prenom" src="../images/netlify-deploy2.png" width="600">
-<figcaption>Dans Netlify, déployer le site</figcaption>
-</figure></p>
-</li>
-<li>
-<p>Ajoutez vos variables d’environnement  </p>
-<p><figure markdown>
-<img alt="ts-types-prenom" src="../images/netlify-envvars.png" width="600">
-<figcaption>Dans Netlify, ajouter vos variables d'environnement</figcaption>
-</figure></p>
-</li>
-<li>
-<p>Si vous utilisez MongoDB Atlas, permettez la connection par n’importe quelle adresse IP  </p>
-<p><figure markdown>
-<img alt="ts-types-prenom" src="../images/mongodb-atlas-access.png" width="600">
-<figcaption>Dans Atlas, permettez à 0.0.0.0 de se connecter</figcaption>
-</figure>  </p>
-</li>
-</ol>
-<h2 id="procedures">Procédures</h2>
-<p>Veuillez consulter la procédure suivante pour plus d'informations sur le déploiement de la documentation API sur Netlify : <a href="../documentation/">Rendre la documentation disponible pour l'api</a></p>
-<h1 id="deploiement-dune-application-react">Déploiement d'une application React</h1>
-<ol>
-<li>
-<p>Pousser votre site sur github.  </p>
-</li>
-<li>
-<p>Dans netlify, choisissez votre dépôt github :  </p>
-<p><figure markdown>
-<img alt="ts-types-prenom" src="../images/netlify-react1.png" width="600">
-<figcaption>choisissez votre dépôt github</figcaption>
-</figure>  </p>
-</li>
-<li>
-<p>Dans netlify, déployez votre site :  </p>
-<p><figure markdown>
-<img alt="ts-types-prenom" src="../images/netlify-react2.png" width="600">
-<figcaption>Déployez votre site</figcaption>
-</figure>  </p>
-</li>
-<li>
-<p>Voir si le déploiement est réussi :  </p>
-<p><figure markdown>
-<img alt="ts-types-prenom" src="../images/netlify-react3.png" width="600">
-<figcaption>Déploiement réussi</figcaption>
-</figure>  </p>
-</li>
-</ol></div>
+<div><h1 id="deploiement-de-la-base-de-donnees-mongodb-dans-azure">Déploiement de la base de données MongoDB dans Azure</h1>
+<p>(à suivre)</p></div>
 
 
 
