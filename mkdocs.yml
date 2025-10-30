@@ -76,7 +76,9 @@ nav:
           - "Authentification": "authentification.md"
           - "Accessibilité": "accessibilite.md"
       - "Déploiement":
-          - "Déploiement avec Netlify": "netlify.md"
+          - "MongoDB dans Azure": "azure_mongodb.md"
+          - "Express dans Azure": "azure_express.md"
+          - "React dans Azure": "azure_react.md"
   - "Procédures":
       - "Rendre la documentation disponible pour l'api": "documentation.md"
       - "Module déprécié": "module_deprecie.md"
@@ -96,7 +98,7 @@ nav:
       - "Exercice 13 - Authentification": "exercice13_authentification.md"
       - "Exercice 14 - PWA": "exercice13_pwa.md"
       - "Exercice Préparation Examen": "exercice_prep_exam.md"
-      - "Exercice 14 - Netlify": "exercice14_netlify.md"
+      - "Exercice 14 - Azure": "exercice14_azure.md"
   - "Projet intégrateur": "projet_integrateur.md"
   - "Manuels": "manuels.md"
   - "CodeSandbox": "codesandbox.md"

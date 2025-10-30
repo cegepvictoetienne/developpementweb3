@@ -81,5 +81,3 @@
 [Guide pour le plugiciel PWA](https://vite-pwa-org.netlify.app/guide/)  
 ## Accessibilité
 [Liste des rôles ARIA](https://www.w3.org/TR/wai-aria-1.0/roles#role_definitions)  
-## Déploiement avec Netlify
-[Documentation Netlify](https://docs.netlify.com)  

@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: http://localhost:3000/api/auteurs/add
+  url: https://auteurs-bpekayhsgfgsc5a5.canadacentral-01.azurewebsites.net/api/auteurs/add
   body: json
   auth: inherit
 }
@@ -14,13 +14,14 @@ body:json {
   {
     "auteur": {
       "id": "2",
-      "prenom": "Scott",
-      "nom": "Adams",
-      "date_naissance": "1964-01-01"
+      "prenom": "Josée",
+      "nom": "Rivard",
+      "date_naissance": "1979-01-01"
     }
   }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

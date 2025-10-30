@@ -18,13 +18,13 @@ Cours|Date|Sujet|Exercice
 15|2025-10-20 12:15:00|[Styles : React et MUI](react_mui.md)<br/> [Styles : TailWindCSS](react_tw.md)|[Exercice 9 - React et styles](exercice9_react_styles.md)
 16|2025-10-23 13:15:00|[Routes](react3.md)|[Exercice 10 - Routes](exercice10_routes.md)
 17|2025-10-27 12:15:00|[Contexte et API](react4.md)<br/> [Régles de React](regles_react.md)|[Exercice 11 - Contexte et API](exercice11_context.md)
-18|2025-10-30 13:15:00|[Internationalisation](internationalisation.md) <br />[Authentification](authentification.md)|[Exercice 12 - Internatialisation](exercice12_internationalisation.md)<br/>[Exercice 13 - Authentification](exercice13_authentification.md)
-19|2025-11-06 13:15:00|[Netlify](netlify.md)|[Exercice 14 - Netlify](exercice14_netlify.md)
+18|2025-10-30 13:15:00|[Internationalisation](internationalisation.md)|[Exercice 12 - Internatialisation](exercice12_internationalisation.md)
+19|2025-11-06 13:15:00|[Authentification](authentification.md)|[Exercice 13 - Authentification](exercice13_authentification.md)
 20|2025-11-10 12:15:00|Formatif React|
 21|2025-11-13 13:15:00|Projet Application React|
 22|2025-11-17 12:15:00|Examen React|
 23|2025-11-20 13:15:00|Projet Application React|
-24|2025-11-24 12:15:00|Projet Application React|
+24|2025-11-24 12:15:00|[MongoDB dans Azure](azure_mongodb.md)<br/>[Express dans Azure](azure_express.md)<br/>[React dans Azure](azure_react.md)|[Exercice 14 - Azure](exercice14_azure.md)
 25|2025-11-27 13:15:00|Projet Application React|
 26|2025-12-01 12:15:00|Projet Application React|
 27|2025-12-04 13:15:00|Projet Application React|
