@@ -1,0 +1,16 @@
+meta {
+  name: Lire un auteur
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://auteursapi-f0h4cgfxg9ceauh3.canadacentral-01.azurewebsites.net/api/auteurs/all
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -5,7 +5,7 @@ meta {
 }
 
 put {
-  url: http://localhost:3000/api/auteurs/update
+  url: https://auteursapi-f0h4cgfxg9ceauh3.canadacentral-01.azurewebsites.net/api/auteurs/update
   body: json
   auth: inherit
 }
@@ -13,8 +13,8 @@ put {
 body:json {
   {
     "auteur": {
-      "_id": "68c1798405ed7173d5f68735",
-      "id": "1",
+      "_id": "69038467e122a730bc589be0",
+      "id": "2",
       "prenom": "Douglas",
       "nom": "Adams 2"
     }
@@ -23,4 +23,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

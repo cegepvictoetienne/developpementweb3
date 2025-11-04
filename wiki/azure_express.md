@@ -167,4 +167,19 @@ Une fois le workflow modifié, le pousser dans GitHub.
 
 ![Azure App Service - Bruno](./images/azure_express_bruno.png)   
 
+# Configurer CORS pour votre application React sur localhost  
+
+![Azure App Service - CORS 1](./images/azure_express_cors1.png)   
+
+1- Menu API  
+2- Option CORS  
+
+
+![Azure App Service - CORS 2](./images/azure_express_cors2.png)   
+
+1- Ajouter `http://localhost:5173`  
+2- Cliquer `save`  
+
+
+
 

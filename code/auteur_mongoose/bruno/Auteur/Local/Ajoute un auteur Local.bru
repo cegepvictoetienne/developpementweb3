@@ -1,0 +1,31 @@
+meta {
+  name: Ajoute un auteur Local
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:3001/api/auteurs/add
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.ZXRpZW5uZUBrZXJ6by5jYQ.TWgxXgDheMBYTTZ8QH-bGO5hD2woUF1wZUbz_x_-2v0
+}
+
+body:json {
+  {
+    "auteur": {
+      "id": "4",
+      "prenom": "Dan",
+      "nom": "Brown",
+      "date_naissance": "1979-01-01"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
