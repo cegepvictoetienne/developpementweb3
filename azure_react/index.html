@@ -1912,7 +1912,24 @@
 
 
 <div><h1 id="deploiement-de-react-dans-azure">Déploiement de React dans Azure</h1>
-<p>(à suivre)</p></div>
+<h1 id="1-creer-un-azure-static-web-site">1 - Créer un Azure Static Web Site</h1>
+<h1 id="2-utiliser-github">2 - Utiliser GitHub</h1>
+<h1 id="3-repertoire-dist">3 - Répertoire dist</h1>
+<h1 id="4-ajuster-le-script-de-deploiement">4 - Ajuster le script de déploiement</h1>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm install, build, and test</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">run</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">          </span><span class="no">npm install</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">          </span><span class="no">npm run build</span>
+</span></code></pre></div>
+<h1 id="5-ajuster-le-cors-de-lapi">5 - Ajuster le CORS de l'API</h1>
+<h1 id="6-permettre-le-routage-dans-azure">6 - Permettre le routage dans Azure</h1>
+<div class="language-json highlight"><span class="filename">staticwebapp.config.json</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">"navigationFallback"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">"rewrite"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/index.html"</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">"exclude"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"/dist/*.{svg,png,jpg,gif}"</span><span class="p">,</span><span class="w"> </span><span class="s2">"/dist/assets/*"</span><span class="p">]</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</span></code></pre></div></div>
 
 
 
