@@ -1913,23 +1913,88 @@
 
 <div><h1 id="deploiement-de-react-dans-azure">Déploiement de React dans Azure</h1>
 <h1 id="1-creer-un-azure-static-web-site">1 - Créer un Azure Static Web Site</h1>
-<h1 id="2-utiliser-github">2 - Utiliser GitHub</h1>
-<h1 id="3-repertoire-dist">3 - Répertoire dist</h1>
-<h1 id="4-ajuster-le-script-de-deploiement">4 - Ajuster le script de déploiement</h1>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">npm install, build, and test</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">        </span><span class="l l-Scalar l-Scalar-Plain">run</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">          </span><span class="no">npm install</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">          </span><span class="no">npm run build</span>
+<div class="language-text highlight"><pre><span></span><code>![Azure App Service - Créer 1](./images/azure_react_creer1.png)
+</code></pre></div>
+<ol>
+<li>
+<p>Cliquer sur <code>Static Web App</code> </p>
+<p><img alt="Azure App Service - Créer 2" src="../images/azure_react_creer2.png">  </p>
+</li>
+<li>
+<p>Cliquer sur <code>Create</code>  </p>
+<p><img alt="Azure App Service - Formulaire" src="../images/azure_react_formulaire.png">  </p>
+</li>
+<li>
+<p>Choisir le groupe de ressource créé précédemment  </p>
+</li>
+<li>Nommer votre site  </li>
+<li>Utiliser la version gratuite  </li>
+<li>Utiliser GitHub  </li>
+<li>Repérer votre dépot de l'application React  </li>
+<li>Confirmer <code>React</code>  </li>
+<li>Utiliser <code>dist</code> comme répertoire (celui créé par vite)  </li>
+<li>
+<p>Cliquer sur <code>Review + create</code>  </p>
+<p><img alt="Azure App Service - Sommaire" src="../images/azure_react_sommaire.png">  </p>
+</li>
+<li>
+<p>Cliquer sur <code>Create</code>  </p>
+<p><img alt="Azure App Service - Status Deploiement" src="../images/azure_react_statut_deploy.png">  </p>
+</li>
+<li>
+<p>Attendre que le status indique que le déploiement est terminé.  </p>
+</li>
+<li>
+<p>Cliquer sur <code>Go to resource</code>  </p>
+<p><img alt="Azure App Service - git pull" src="../images/azure_react_pull.png">  </p>
+</li>
+<li>
+<p>Azure a créé un fichier de flux de traitement. Le télécharger en faisant un <code>git pull</code>  </p>
+<p><img alt="Azure App Service - workflow" src="../images/azure_react_workflow.png">  </p>
+</li>
+<li>
+<p>Dans VSCode, modifier le flux de travail.  </p>
+</li>
+<li>
+<p>Ajouter la section qui génère la version de production de votre site React : <code>npm install</code> et <code>npm run build</code>  </p>
+<p><img alt="Azure App Service - router" src="../images/azure_react_router.png">  </p>
+</li>
+<li>
+<p>Pour le bon fonctionnement de react-router-dom, créer le fichier <code>staticwebapp.config.json</code>    </p>
+</li>
+<li>
+<p>Copier le contenu suivant :  </p>
+<div class="language-json highlight"><span class="filename">staticwebapp.config.json</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">"navigationFallback"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"rewrite"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/index.html"</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">"exclude"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"/dist/*.{svg,png,jpg,gif}"</span><span class="p">,</span><span class="w"> </span><span class="s2">"/dist/assets/*"</span><span class="p">]</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
 </span></code></pre></div>
-<h1 id="5-ajuster-le-cors-de-lapi">5 - Ajuster le CORS de l'API</h1>
-<h1 id="6-permettre-le-routage-dans-azure">6 - Permettre le routage dans Azure</h1>
-<div class="language-json highlight"><span class="filename">staticwebapp.config.json</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">"navigationFallback"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">"rewrite"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/index.html"</span><span class="p">,</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nt">"exclude"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"/dist/*.{svg,png,jpg,gif}"</span><span class="p">,</span><span class="w"> </span><span class="s2">"/dist/assets/*"</span><span class="p">]</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
-</span></code></pre></div></div>
+<p><img alt="Azure App Service - push" src="../images/azure_react_push.png">  </p>
+</li>
+<li>
+<p>Pousser les modifications sur github.  </p>
+<p><img alt="Azure App Service - url" src="../images/azure_react_url.png">  </p>
+</li>
+<li>
+<p>Aller à l'<code>overview</code>  </p>
+</li>
+<li>
+<p>Copier l'URL de votre site.  </p>
+<p><img alt="Azure App Service - url" src="../images/azure_react_cors.png">  </p>
+</li>
+<li>
+<p>Aller dans la ressource de votre API, dans la section CORS.  </p>
+</li>
+<li>Ajouter votre URL.  </li>
+<li>Cliquer sur <code>Save</code>  </li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Ça peut prendre plusieurs minutes pour que les configurations CORS soient complétées.  </p>
+</div>
+<p>Dernière étape : Tester votre site!  </p></div>
 
 
 
