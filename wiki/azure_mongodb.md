@@ -56,6 +56,15 @@
 
 ![Azure Cosmos chaine 2](./images/azure_cosmosdb_chaine2.png)
 
+## 12 - Importer vos données  
+
+Utilisez la commande `mongoimport` pour importer vos données dans la BD Azure.  
+
+``` noderepl  
+mongoimport --uri "mongodb://utilisateur:motdepasse@votreurlmongodb.mongo.cosmos.azure.com:10255/votre_bd?ssl=true" --collection votre_collection --type json --file /chemin/vers/votre/fichier.json
+```   
+
+
 
 
 
