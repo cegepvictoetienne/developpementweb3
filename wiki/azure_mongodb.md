@@ -61,7 +61,7 @@
 Utilisez la commande `mongoimport` pour importer vos données dans la BD Azure.  
 
 ``` noderepl  
-mongoimport --uri "mongodb://utilisateur:motdepasse@votreurlmongodb.mongo.cosmos.azure.com:10255/votre_bd?ssl=true" --collection votre_collection --type json --file /chemin/vers/votre/fichier.json
+mongoimport --uri "mongodb://utilisateur:motdepasse@votreurlmongodb.mongo.cosmos.azure.com:10255/votre_bd?tls=true" --collection votre_collection --type json --file /chemin/vers/votre/fichier.json
 ```   
 
 
