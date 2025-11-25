@@ -77,6 +77,7 @@ nav:
           - "Accessibilité": "accessibilite.md"
       - "Déploiement":
           - "Inscription à Azure": "azure_inscription.md"
+          - "Vérifier les régions disponibles": "azure_verifier_regions.md"
           - "MongoDB dans Azure": "azure_mongodb.md"
           - "Express dans Azure": "azure_express.md"
           - "React dans Azure": "azure_react.md"
