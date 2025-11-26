@@ -2179,23 +2179,7 @@
 </span></code></pre></div>
 <h2 id="etape-2-preparer-la-connexion-a-la-base-de-donnees">Étape 2 - Préparer la connexion à la base de données</h2>
 <p>Créer la variable d'environnement pour l'URI de MongoDB :  </p>
-<div class="language-ts highlight"><span class="filename">config/.env.development</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="err">##</span><span class="w"> </span><span class="nx">Environment</span><span class="w"> </span><span class="err">##</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">NODE_ENV</span><span class="o">=</span><span class="nx">development</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="err">##</span><span class="w"> </span><span class="nx">Server</span><span class="w"> </span><span class="err">##</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nx">PORT</span><span class="o">=</span><span class="mf">3000</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nx">HOST</span><span class="o">=</span><span class="nx">localhost</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="err">##</span><span class="w"> </span><span class="nx">MongoDB</span><span class="w"> </span><span class="err">##</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nx">MONGODB</span><span class="o">=</span><span class="nx">mongodb</span><span class="o">:</span><span class="c1">//localhost:27017/</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="err">##</span><span class="w"> </span><span class="nx">Setup</span><span class="w"> </span><span class="nx">jet</span><span class="o">-</span><span class="nx">logger</span><span class="w"> </span><span class="err">##</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="nx">JET_LOGGER_MODE</span><span class="o">=</span><span class="nx">CONSOLE</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nx">JET_LOGGER_FILEPATH</span><span class="o">=</span><span class="nx">jet</span><span class="o">-</span><span class="nx">logger</span><span class="p">.</span><span class="nx">log</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nx">JET_LOGGER_TIMESTAMP</span><span class="o">=</span><span class="nx">TRUE</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="nx">JET_LOGGER_FORMAT</span><span class="o">=</span><span class="nx">LINE</span>
+<div class="language-ts highlight"><span class="filename">config/.env.development</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>
 </span></code></pre></div>
 <p>Configurer EnvVars pour exposer la variable d'environnement :  </p>
 <div class="language-ts highlight"><span class="filename">src/common/EnvVars.ts</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">jetEnv</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">num</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'jet-env'</span><span class="p">;</span>
