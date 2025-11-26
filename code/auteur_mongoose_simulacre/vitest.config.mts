@@ -5,7 +5,7 @@ const config = defineConfig({
   test: {
     globals: true,
     environment: 'node',
-    setupFiles: ['config.ts', './tests/support/setup.ts'],
+    setupFiles: ['./tests/setup-env.ts', './tests/support/setup.ts'],
     isolate: true,
   },
   resolve: {

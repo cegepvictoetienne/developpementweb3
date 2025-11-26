@@ -8,41 +8,25 @@
 Mettre en commentaires la section qui traite `dotenv` :  
 
 
-``` ts title="config.ts"
+``` ts title="/config.ts"
 {!auteur_mongoose/config.ts!}
 ```
 
 ## Fichier vitest.config.ts
 
-``` ts title="vitest.config.ts"
-// vitest.config.ts
- 
-import { defineConfig } from "vitest/config";
-import path from "path";
- 
- 
-export default defineConfig({
-  test: {
-    setupFiles: ["./tests/setup-env.ts"],
-    globals: true,
-  },
-    resolve: {
-    alias: {
-        "@src": path.resolve(__dirname, "src"),
-    },
-  },
-});
+``` ts title="/vitest.config.mts"
+{!auteur_mongoose_simulacre/vitest.config.mts!}
 ```
 
 ``` ts title="/tests/setup-env.ts"   
-// tests/setup-env.ts
-
-import { config } from 'dotenv';
-import path from 'path';
-
-config({ path: path.resolve(__dirname, '../.env.test') });
-
+{!auteur_mongoose_simulacre/tests/setup-env.ts!}
 ``` 
+
+
+``` ts title="/.env.test"   
+{!auteur_mongoose_simulacre/.env.test!}
+``` 
+
 
 
 ## Fichier build.ts  
