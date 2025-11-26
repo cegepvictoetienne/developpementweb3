@@ -12,6 +12,39 @@ Mettre en commentaires la section qui traite `dotenv` :
 {!auteur_mongoose/config.ts!}
 ```
 
+## Fichier vitest.config.ts
+
+``` ts title="vitest.config.ts"
+// vitest.config.ts
+ 
+import { defineConfig } from "vitest/config";
+import path from "path";
+ 
+ 
+export default defineConfig({
+  test: {
+    setupFiles: ["./tests/setup-env.ts"],
+    globals: true,
+  },
+    resolve: {
+    alias: {
+        "@src": path.resolve(__dirname, "src"),
+    },
+  },
+});
+```
+
+``` ts title="/tests/setup-env.ts"   
+// tests/setup-env.ts
+
+import { config } from 'dotenv';
+import path from 'path';
+
+config({ path: path.resolve(__dirname, '../.env.test') });
+
+``` 
+
+
 ## Fichier build.ts  
 
 Le fichier `build.ts` sert à préparer et compiler l'API Express en production. C'est ce script qui sera exécuté dans Azure.  Il faut s'assurer qu'il s'exécute sans erreur. (Peut varier d'un projet à l'autre...)  
