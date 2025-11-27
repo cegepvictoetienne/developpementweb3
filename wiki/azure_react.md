@@ -2,7 +2,7 @@
 
 # 1 - Créer un Azure Static Web Site
 
-    ![Azure App Service - Créer 1](./images/azure_react_creer1.png)  
+   ![Azure App Service - Créer 1](./images/azure_react_creer1.png)  
 
 1. Cliquer sur `Static Web App` 
 
