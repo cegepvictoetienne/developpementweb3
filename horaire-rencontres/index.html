@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../javascript_async/">
+        <link rel="prev" href="../horaire/">
       
       
-        <link rel="next" href="../introduction_mongoose/">
+        <link rel="next" href="../introduction_typescript/">
       
       
       <link rel="icon" href="../images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>MongoDB - Développement Web 3</title>
+        <title>Horaire des rencontres - Développement Web 3</title>
       
     
     
@@ -141,7 +141,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mongodb-node-driver" class="md-skip">
+        <a href="#horaire-des-rencontres-semaine-dexamen" class="md-skip">
           Aller au contenu
         </a>
       
@@ -176,7 +176,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MongoDB
+              Horaire des rencontres
             
           </span>
         </div>
@@ -312,10 +312,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../horaire-rencontres/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -326,6 +335,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -334,20 +344,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -363,7 +371,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Leçons
@@ -489,20 +497,18 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
@@ -518,7 +524,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             Express et MongoDB
@@ -667,32 +673,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    MongoDB
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mongodb/" class="md-nav__link">
         
   
   
@@ -703,71 +687,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#etape-1-ajout-du-module-mongodb" class="md-nav__link">
-    <span class="md-ellipsis">
-      Étape 1 - Ajout du module mongodb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#etape-2-etablissement-de-la-connexion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Étape 2 – Établissement de la connexion
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#etape-3-executer-vos-requetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Étape 3 – Exécuter vos requêtes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemples-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemples d'utilisation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mongodb-cursor" class="md-nav__link">
-    <span class="md-ellipsis">
-      MongoDB cursor
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2019,59 +1938,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#etape-1-ajout-du-module-mongodb" class="md-nav__link">
-    <span class="md-ellipsis">
-      Étape 1 - Ajout du module mongodb
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#etape-2-etablissement-de-la-connexion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Étape 2 – Établissement de la connexion
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#etape-3-executer-vos-requetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Étape 3 – Exécuter vos requêtes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemples-dutilisation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemples d'utilisation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mongodb-cursor" class="md-nav__link">
-    <span class="md-ellipsis">
-      MongoDB cursor
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2086,112 +1952,117 @@
 
 
 
-<div><h1 id="mongodb-node-driver">MongoDB Node Driver</h1>
-<p>Le pilote officiel MongoDB Node.js permet aux applications Node.js de se connecter à MongoDB et de travailler avec des données. Le pilote dispose d'une API asynchrone qui vous permet d'accéder aux valeurs de retour de méthode via Promises ou de spécifier des rappels pour y accéder lors de la communication avec MongoDB. (Traduction du <a href="https://docs.mongodb.com/drivers/node/current/">site officiel</a>)  </p>
-<div class="admonition manuel">
-<p class="admonition-title">Manuel</p>
-<p><a href="https://mongodb.github.io/node-mongodb-native/4.0/">MongoDB sur GitHub</a><br>
-<a href="https://www.youtube.com/watch?v=R4AEyKehpss">Vidéo Youtube</a><br>
-<a href="https://www.mongodb.com/docs/drivers/node/current/fundamentals/promises/">MongoDB et Promises</a><br>
-<a href="https://www.mongodb.com/docs/drivers/node/current/quick-start/">Driver Quickstart</a>  </p>
-</div>
-<h2 id="etape-1-ajout-du-module-mongodb">Étape 1 - Ajout du module mongodb</h2>
-<ol>
-<li>Créez un nouveau projet Node  </li>
-<li>L’initialiser  </li>
-<li>
-<p>Ajoutez le module mongodb :  </p>
-<div class="language-nodejsrepl highlight"><span class="filename">console</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">npm</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">mongodb</span>
-</span></code></pre></div>
-</li>
-<li>
-<p>Importer le module dans le repo approprié : </p>
-<div class="language-ts highlight"><span class="filename">repo.ts</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">MongoClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'mongodb'</span><span class="p">;</span>
-</span></code></pre></div>
-</li>
-</ol>
-<h2 id="etape-2-etablissement-de-la-connexion">Étape 2 – Établissement de la connexion</h2>
-<figure>
-<p><img alt="mongo-connection" src="../images/mongo-connection.png" width="600">
-  </p>
-<figcaption>Décortiquer une chaîne de connection MongoDB</figcaption>
-</figure>
-<div class="language-ts highlight"><span class="filename">mongodb.ts</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// connexion distante</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"mongodb+srv://sample-hostname:27017/?poolSize=20&amp;writeConcern=majority"</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// connexion locale</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"mongodb://localhost:&lt;port&gt;"</span>
-</span></code></pre></div>
-<h2 id="etape-3-executer-vos-requetes">Étape 3 – Exécuter vos requêtes</h2>
-<p>Exemple : Utilisation dans une application Node.js (sans Express)  </p>
-<div class="language-ts highlight"><span class="filename">connexion.ts</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">MongoClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">"mongodb"</span><span class="p">;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1">// Replace the uri string with your MongoDB deployment's connection string.</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"mongodb+srv://&lt;user&gt;:&lt;password&gt;@&lt;cluster-url&gt;?retryWrites=true&amp;writeConcern=majority"</span><span class="p">;</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MongoClient</span><span class="p">(</span><span class="nx">uri</span><span class="p">);</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">run</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">();</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">database</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">db</span><span class="p">(</span><span class="s1">'sample_mflix'</span><span class="p">);</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">movies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">database</span><span class="p">.</span><span class="nx">collection</span><span class="p">(</span><span class="s1">'movies'</span><span class="p">);</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="c1">// Query for a movie that has the title 'Back to the Future'</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s1">'Back to the Future'</span><span class="w"> </span><span class="p">};</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">movie</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">movies</span><span class="p">.</span><span class="nx">findOne</span><span class="p">(</span><span class="nx">query</span><span class="p">);</span>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">movie</span><span class="p">);</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="c1">// Ensures that the client will close when you finish/error</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">close</span><span class="p">();</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="p">}</span>
-</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="nx">run</span><span class="p">().</span><span class="k">catch</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">dir</span><span class="p">);</span>
-</span></code></pre></div>
-<h2 id="exemples-dutilisation">Exemples d'utilisation</h2>
-<ul>
-<li><a href="https://docs.mongodb.com/drivers/node/current/usage-examples/">Exemples</a>  </li>
-<li><a href="https://docs.mongodb.com/drivers/node/current/usage-examples/findOne/">findOne</a>  </li>
-<li><a href="https://docs.mongodb.com/drivers/node/current/usage-examples/find/">find</a>  </li>
-<li><a href="https://docs.mongodb.com/drivers/node/current/usage-examples/insertOne/">InsertOne</a>  </li>
-<li><a href="https://docs.mongodb.com/drivers/node/current/usage-examples/updateOne/">UpdateOne</a>  </li>
-<li><a href="https://docs.mongodb.com/drivers/node/current/usage-examples/deleteOne/">DeleteOne</a>  </li>
-<li><a href="https://docs.mongodb.com/drivers/node/current/fundamentals/aggregation/">Aggregation</a>  </li>
-</ul>
-<h2 id="mongodb-cursor">MongoDB cursor</h2>
-<p>Lorsque la requête retourne plusieurs résultats, ceux-ci sont retournés dans un <a href="https://docs.mongodb.com/drivers/node/fundamentals/crud/read-operations/cursor/">curseur</a>  </p>
-<p>Les fonctions suivantes retournent un curseur :   </p>
-<ul>
-<li>Collection.find() </li>
-<li>Collection.aggregate()    </li>
-<li>Collection.listIndexes()</li>
-<li>Db.listCollections()   </li>
-<li>Db.aggregate()  </li>
-</ul>
-<p>Voici deux façons de parcourir un curseur :   </p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">En implémentant l’interface AsyncIterator</label><label for="__tabbed_1_2">En utilisant l’itération « manuelle »</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-ts highlight"><span class="filename">asynciterator.ts</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cursor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">collection</span><span class="p">.</span><span class="nx">find</span><span class="p">({});</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"async 1"</span><span class="p">);</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">for</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">doc</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">cursor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">doc</span><span class="p">);</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"async 2"</span><span class="p">);</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-ts highlight"><span class="filename">manuelle.ts</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">cursor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">collection</span><span class="p">.</span><span class="nx">find</span><span class="p">({});</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="k">await</span><span class="w"> </span><span class="nx">cursor</span><span class="p">.</span><span class="nx">hasNext</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">await</span><span class="w"> </span><span class="nx">cursor</span><span class="p">.</span><span class="nx">next</span><span class="p">());</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">}</span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<p>La méthode toArray() permet d’obtenir un tableau à partir des documents d’un curseur. <a href="https://docs.mongodb.com/manual/reference/method/cursor.toArray/">Cursor.toArray()</a>  </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Les bases de données utilisées dans cette leçon proviennent de <a href="https://github.com/neelabalan/mongodb-sample-dataset/tree/main">ce dépôt GitHub</a>  </p>
-</div></div>
+<div><h1 id="horaire-des-rencontres-semaine-dexamen">Horaire des rencontres - semaine d'examen</h1>
+<table>
+<thead>
+<tr>
+<th>Prenom</th>
+<th>Date rencontre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yohan R.</td>
+<td>2025-12-16 08:30:00</td>
+</tr>
+<tr>
+<td>Morgan B.</td>
+<td>2025-12-16 08:45:00</td>
+</tr>
+<tr>
+<td>Anthony R.</td>
+<td>2025-12-16 09:00:00</td>
+</tr>
+<tr>
+<td>James B.</td>
+<td>2025-12-16 09:15:00</td>
+</tr>
+<tr>
+<td>Nathan G.</td>
+<td>2025-12-16 09:30:00</td>
+</tr>
+<tr>
+<td>Philippe-Vu B.</td>
+<td>2025-12-16 09:45:00</td>
+</tr>
+<tr>
+<td>Félix D.</td>
+<td>2025-12-16 10:00:00</td>
+</tr>
+<tr>
+<td>Hugo N.</td>
+<td>2025-12-16 10:30:00</td>
+</tr>
+<tr>
+<td>Achraf E.</td>
+<td>2025-12-16 10:45:00</td>
+</tr>
+<tr>
+<td>William A.</td>
+<td>2025-12-16 11:00:00</td>
+</tr>
+<tr>
+<td>Marwa E.</td>
+<td>2025-12-16 11:15:00</td>
+</tr>
+<tr>
+<td>Rachid T.</td>
+<td>2025-12-16 11:30:00</td>
+</tr>
+<tr>
+<td>Bady Pascal F.</td>
+<td>2025-12-16 11:45:00</td>
+</tr>
+<tr>
+<td>Breno G.</td>
+<td>2025-12-16 13:00:00</td>
+</tr>
+<tr>
+<td>Derek B.</td>
+<td>2025-12-16 13:15:00</td>
+</tr>
+<tr>
+<td>William C.</td>
+<td>2025-12-16 13:30:00</td>
+</tr>
+<tr>
+<td>Étienne B.</td>
+<td>2025-12-16 13:45:00</td>
+</tr>
+<tr>
+<td>Justin C.</td>
+<td>2025-12-16 14:00:00</td>
+</tr>
+<tr>
+<td>Komivi Michel A</td>
+<td>2025-12-16 14:15:00</td>
+</tr>
+<tr>
+<td>Leandre Junior K.</td>
+<td>2025-12-16 14:30:00</td>
+</tr>
+<tr>
+<td>Frédérick B.</td>
+<td>2025-12-16 14:45:00</td>
+</tr>
+<tr>
+<td>Mélodie D.</td>
+<td>2025-12-16 15:00:00</td>
+</tr>
+<tr>
+<td>Nathan R.</td>
+<td>2025-12-16 15:15:00</td>
+</tr>
+<tr>
+<td>Zacharie N.</td>
+<td>2025-12-16 15:30:00</td>
+</tr>
+<tr>
+<td>Ludovic P.</td>
+<td>2025-12-16 15:45:00</td>
+</tr>
+</tbody>
+</table></div>
 
 
 
