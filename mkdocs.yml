@@ -45,6 +45,7 @@ extra:
 nav:
   - "Page principale": "index.md"
   - "Horaire": "horaire.md"
+  - "Horaire des rencontres": "horaire-rencontres.md"
   - "Leçons":
       - "Node.js et TypeScript":
           - "Introduction à TypeScript": "introduction_typescript.md"

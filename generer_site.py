@@ -112,6 +112,15 @@ def generer_horaire():
         f.write("# Horaire du cours de développement web 3\n")
         f.writelines(grille)
 
+def generer_horaire_rencontres():
+
+    grille = generer_grille("template/rencontre-finale.xlsx", "rencontres")
+
+    with open("./wiki/horaire-rencontres.md", "w") as f:
+        # Écrire le titre de la page
+        f.write("# Horaire des rencontres - semaine d'examen\n")
+        f.writelines(grille)
+
 
 def generer_projet_integrateur():
 
@@ -136,6 +145,9 @@ generer_liste('codesandbox', "# Tous les démos CodeSandbox référencés dans l
 
 print("Générer la page de l'horaire")
 generer_horaire()
+
+print("Générer la page de l'horaire des rencontres")
+generer_horaire_rencontres()
 
 print("Générer la page du projet intégrateur")
 generer_projet_integrateur()
