@@ -14,3 +14,4 @@ Site Web développé en MarkDown à l'aide des outils suivants :
 
 Version originale 2023 par Étienne Rivard.  
 Basé en partie sur le contenu développé par Carine Croteau en 2022.  
+Version archivée en 2026. 
