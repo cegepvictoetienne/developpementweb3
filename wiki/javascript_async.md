@@ -70,13 +70,13 @@ Amélioration avec les promesses :
 ``` ts title="promise.ts"
 choisirIngredients()
     .then(function(ingredients) {
-        placerLaCommande(ingredients);
+        return placerLaCommande(ingredients);
     })
     .then(function(commande) {
-        ramasserLaCommande(commande);
+        return ramasserLaCommande(commande);
     })
     .then(function(pizza) {
-        mangerLaPizza(pizza);
+        return mangerLaPizza(pizza);
     })
     .catch(gererErreur);
 ```
