@@ -1,3 +1,4 @@
 [submodule "overrides"]
 	path = overrides
 	url = git@github.com:cegepvictoetienne/theme.git
+ 
