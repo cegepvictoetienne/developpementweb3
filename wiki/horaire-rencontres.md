@@ -1,4 +1,4 @@
-# Horaire des rencontres - semaine d'examen
+# Horaire rencontre
 Prenom|Date rencontre
 --|--
 Yohan R. |2025-12-16 08:30:00

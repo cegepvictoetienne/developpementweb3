@@ -1,0 +1,142 @@
+[project]
+site_name = "Développement Web 3"
+site_url = "https://web3.kerzo.ca/"
+docs_dir = "wiki"
+site_dir = "site"
+use_directory_urls = true
+
+nav = [
+  {"Page principale" = "index.md"},
+  {"Horaire" = "horaire.md"},
+  {"Horaire des rencontres" = "horaire-rencontres.md"},
+  {"Leçons" = [
+    {"Node.js et TypeScript" = [
+      {"Introduction à TypeScript" = "introduction_typescript.md"},
+      {"NPM" = "npm.md"},
+      {"TypeScript 2" = "typescript_2.md"},
+    ]},
+    {"Express et MongoDB" = [
+      {"Intergiciels Express" = "intergiciels_express.md"},
+      {"Générateur Express" = "generateur_express.md"},
+      {"Bruno" = "bruno.md"},
+      {"Prettier" = "prettier.md"},
+      {"Tests unitaires" = "tester_api.md"},
+      {"JavaScript asynchrone" = "javascript_async.md"},
+      {"MongoDB" = "mongodb.md"},
+      {"Introduction à Mongoose" = "introduction_mongoose.md"},
+      {"Mongoose - La suite" = "mongoose2.md"},
+      {"Projet complet en Mongoose avec tests" = "projet_complet_mongoose.md"},
+      {"Express et JWT" = "express_jwt.md"},
+    ]},
+    {"React" = [
+      {"Introduction à React" = "introduction_react.md"},
+      {"Structure typique d'un projet React" = "structure_projet_react.md"},
+      {"Penser en React" = "penser_en_react.md"},
+      {"Styles : React et MUI" = "react_mui.md"},
+      {"Styles : React - TailwindCSS" = "react_tw.md"},
+      {"Router - useParams" = "react3.md"},
+      {"useContext et API" = "react4.md"},
+      {"Règles de Réact" = "regles_react.md"},
+      {"Internationalisation" = "internationalisation.md"},
+      {"PWA" = "pwa.md"},
+      {"Authentification" = "authentification.md"},
+      {"Accessibilité" = "accessibilite.md"},
+    ]},
+    {"Déploiement" = [
+      {"Inscription à Azure" = "azure_inscription.md"},
+      {"Vérifier les régions disponibles" = "azure_verifier_regions.md"},
+      {"MongoDB dans Azure" = "azure_mongodb.md"},
+      {"Express dans Azure" = "azure_express.md"},
+      {"React dans Azure" = "azure_react.md"},
+    ]},
+  ]},
+  {"Procédures" = [
+    {"Rendre la documentation disponible pour l'api" = "documentation.md"},
+    {"Module déprécié" = "module_deprecie.md"},
+  ]},
+  {"Exercices" = [
+    {"Exercice 1 - lodash" = "exercice1_lodash.md"},
+    {"Exercice 2 - Express avec modèle" = "exercice2_express_avec_modele.md"},
+    {"Exercice 3 - Intergiciels Express et tests API" = "exercice3_intergiciels_express.md"},
+    {"Exercice 4 - Mongo DB" = "exercice4_mongodb.md"},
+    {"Exercice 5 - Mongoose" = "exercice5_mongoose.md"},
+    {"Exercice 6 - Mongoose" = "exercice6_mongoose.md"},
+    {"Exercice 7 - Express et JWT" = "exercice7_express_jwt.md"},
+    {"Exercice 8 - React" = "exercice8_react.md"},
+    {"Exercice 9 - React et styles" = "exercice9_react_styles.md"},
+    {"Exercice 10 - Routes" = "exercice10_routes.md"},
+    {"Exercice 11 - Contexte et API" = "exercice11_context.md"},
+    {"Exercice 12 - Internationalisation" = "exercice12_internationalisation.md"},
+    {"Exercice 13 - Authentification" = "exercice13_authentification.md"},
+    {"Exercice 14 - PWA" = "exercice13_pwa.md"},
+    {"Exercice Préparation Examen" = "exercice_prep_exam.md"},
+    {"Exercice 14 - Azure" = "exercice14_azure.md"},
+  ]},
+  {"Projet intégrateur" = "projet_integrateur.md"},
+  {"Manuels" = "manuels.md"},
+  {"CodeSandbox" = "codesandbox.md"},
+  {"Rétroaction" = "retroaction.md"},
+  {"À propos" = "apropos.md"},
+  {"Techniques de l'informatique" = "https://techinfo.profinfo.ca"},
+]
+
+extra_css = ["stylesheets/all.css", "stylesheets/extra.css"]
+
+[project.theme.icon]
+logo = "fontawesome/solid/database"
+
+[project.theme]
+name = "material"
+custom_dir = "overrides"
+favicon = "favicon.ico"
+language = "fr"
+features = [
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.footnote.tooltips",
+  "content.tabs.link",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.path",
+  "navigation.sections",
+  "navigation.tabs",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+scheme = "default"
+primary = "teal"
+accent = "teal"
+toggle.icon = "lucide/sun"
+toggle.name = "Passer en mode sombre"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "teal"
+accent = "teal"
+toggle.icon = "lucide/moon"
+toggle.name = "Passer en mode clair"
+
+
+[project.theme.icon.admonition]
+note = "fontawesome/solid/note-sticky"
+abstract = "fontawesome/solid/book"
+info = "fontawesome/solid/circle-info"
+tip = "fontawesome/solid/bullhorn"
+success = "fontawesome/solid/check"
+question = "fontawesome/solid/circle-question"
+warning = "fontawesome/solid/triangle-exclamation"
+failure = "fontawesome/solid/bomb"
+danger = "fontawesome/solid/skull"
+bug = "fontawesome/solid/robot"
+example = "fontawesome/solid/flask"
+quote = "fontawesome/solid/quote-left"
+
+[project.plugins]
+search = {}

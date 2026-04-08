@@ -1,5 +1,2 @@
-mkdocs-material
-markdown-include
-mkdocs-video
+zensical
 openpyxl
-pyyaml
