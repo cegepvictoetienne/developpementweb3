@@ -1,0 +1,367 @@
+/* ==========================================================================
+   Lumen Syntax – Design System
+   "The Architectural Librarian"
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS Custom Properties (Lumen Syntax palette)
+   -------------------------------------------------------------------------- */
+:root {
+  /* Fonts */
+  --md-text-font: "Space Grotesk";
+  --md-code-font: "JetBrains Mono";
+
+  /* Brand / Primary */
+  --ls-primary:        #0D9488;
+  --ls-primary-dark:   #00685F;
+  --ls-accent:         #89F5E7;
+
+  /* Surfaces */
+  --ls-surface-main:   #FFFFFF;
+  --ls-surface-low:    #F8FAFC;
+  --ls-surface-high:   #F1F5F9;
+
+  /* Text */
+  --ls-text-headline:  #0F172A;
+  --ls-text-body:      #334155;
+  --ls-text-caption:   #64748B;
+
+  /* Alert */
+  --ls-alert:          #991B1B;
+
+  /* Code block */
+  --ls-code-bg:        #1E293B;
+  --ls-code-header-bg: #0F172A;
+}
+
+/* Override Material teal to the exact Lumen Syntax teal */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--ls-primary);
+  --md-primary-fg-color--light: #14B8A6;
+  --md-primary-fg-color--dark:  var(--ls-primary-dark);
+  --md-primary-bg-color:        #FFFFFF;
+  --md-accent-fg-color:         var(--ls-primary);
+  --md-default-bg-color:        var(--ls-surface-main);
+  --md-default-fg-color:        var(--ls-text-body);
+  --md-default-fg-color--light: var(--ls-text-caption);
+  --md-default-fg-color--lighter: #94A3B8;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--ls-accent);
+  --md-primary-fg-color--light: #A7F3D0;
+  --md-primary-fg-color--dark:  var(--ls-primary);
+  --md-accent-fg-color:         var(--ls-accent);
+
+  /* Light text for dark mode */
+  --ls-text-headline:  #F1F5F9;
+  --ls-text-body:      #CBD5E1;
+  --ls-text-caption:   #94A3B8;
+
+  /* Dark surfaces for dark mode */
+  --ls-surface-main:   #1E293B;
+  --ls-surface-low:    #263244;
+  --ls-surface-high:   #2E3D52;
+}
+
+/* --------------------------------------------------------------------------
+   2. Typography – Space Grotesk for headings, Inter for body
+   -------------------------------------------------------------------------- */
+
+/* Space Grotesk is loaded via Google Fonts through the theme font config.
+   We apply it explicitly to all heading levels for robustness. */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  color: var(--ls-text-headline);
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--ls-surface-high);
+  padding-bottom: 0.4rem;
+}
+
+.md-typeset h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Body text */
+.md-typeset {
+  font-family: "Space Grotesk", "Inter", -apple-system, sans-serif;
+  color: var(--ls-text-body);
+  line-height: 1.75;
+}
+
+/* --------------------------------------------------------------------------
+   3. Top Navigation – Glassmorphism
+   -------------------------------------------------------------------------- */
+.md-header {
+  background: rgba(45, 212, 191, 0.88) !important;
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Nav tabs below header */
+.md-tabs {
+  background: rgba(20, 184, 166, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.md-tabs__link {
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  opacity: 0.82;
+  transition: opacity 0.2s ease;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   4. Sidebar – Tonal Layering (Surface-Low #F8FAFC)
+   -------------------------------------------------------------------------- */
+[data-md-color-scheme="default"] .md-sidebar {
+  background-color: var(--ls-surface-low);
+}
+
+[data-md-color-scheme="default"] .md-nav__title {
+  background-color: var(--ls-surface-high);
+}
+
+/* Active nav item – Rounded-full Mint pill */
+.md-nav__item .md-nav__link--active,
+.md-nav__item .md-nav__link:is([href]):focus {
+  color: var(--ls-primary-dark) !important;
+  background-color: var(--ls-accent);
+  border-radius: 9999px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-weight: 600;
+}
+
+.md-nav__link {
+  border-radius: 9999px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.md-nav__link:hover {
+  background-color: rgba(137, 245, 231, 0.3);
+  border-radius: 9999px;
+}
+
+/* Sub-sections indentation */
+.md-nav--secondary .md-nav__link {
+  font-size: 0.8rem;
+}
+
+/* --------------------------------------------------------------------------
+   5. Code Blocks – Dark Island on Light Page
+   -------------------------------------------------------------------------- */
+.md-typeset pre {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  margin: 1.5rem 0;
+}
+
+/* Light background in light mode so syntax highlighting is visible */
+[data-md-color-scheme="default"] .md-typeset pre > code,
+[data-md-color-scheme="default"] .highlight pre {
+  background-color: var(--ls-surface-high) !important;
+  color: var(--ls-text-body);
+}
+
+/* Code block "window chrome" header */
+.md-typeset pre::before {
+  content: "";
+  display: block;
+  height: 2.25rem;
+  background-color: var(--ls-surface-high);
+  /* Three traffic-light dots */
+  background-image:
+    radial-gradient(circle 5px at 16px 50%, #86EFAC 0%, #86EFAC 100%),
+    radial-gradient(circle 5px at 32px 50%, #86EFAC 0%, #58605b 100%),
+    radial-gradient(circle 5px at 48px 50%, #28C840 0%, #28C840 100%);
+  background-repeat: no-repeat;
+}
+
+/* Inline code */
+[data-md-color-scheme="default"] .md-typeset code:not(pre code) {
+  background-color: var(--ls-surface-high);
+  color: var(--ls-primary-dark);
+  border-radius: 0.25rem;
+  padding: 0.1em 0.4em;
+  font-size: 0.875em;
+}
+
+/* --------------------------------------------------------------------------
+   6. Content Area – generous whitespace + max width centring
+   -------------------------------------------------------------------------- */
+.md-grid {
+  max-width: 100%;
+}
+
+.md-content__inner {
+  padding: 2rem 2.5rem;
+  max-width: 860px;
+}
+
+/* --------------------------------------------------------------------------
+   7. Admonitions – keep custom types, align accent to palette
+   -------------------------------------------------------------------------- */
+:root {
+  --md-admonition-icon--manuel: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 25 31.25" enable-background="new 0 0 25 25" xml:space="preserve"><g><g><path d="M20,21.5H7c-0.827,0-1.5-0.673-1.5-1.5s0.673-1.5,1.5-1.5h12c0.276,0,0.5-0.224,0.5-0.5V5c0-1.379-1.122-2.5-2.5-2.5H7 C5.622,2.5,4.5,3.621,4.5,5v15c0,1.379,1.122,2.5,2.5,2.5h13c0.276,0,0.5-0.224,0.5-0.5S20.276,21.5,20,21.5z M5.5,5 c0-0.827,0.673-1.5,1.5-1.5h10c0.827,0,1.5,0.673,1.5,1.5v12.5H7c-0.562,0-1.082,0.187-1.5,0.501V5z"/><path d="M8,7.5h8c0.276,0,0.5-0.224,0.5-0.5S16.276,6.5,16,6.5H8C7.724,6.5,7.5,6.724,7.5,7S7.724,7.5,8,7.5z"/><path d="M15,9.5H9c-0.276,0-0.5,0.224-0.5,0.5s0.224,0.5,0.5,0.5h6c0.276,0,0.5-0.224,0.5-0.5S15.276,9.5,15,9.5z"/></g></g></svg>');
+  --md-admonition-icon--codesandbox: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="code-sandbox"><path d="M11.957 24a.496.496 0 0 1-.25-.067l-9.957-5.75a.5.5 0 0 1-.25-.433V6.25a.5.5 0 0 1 .25-.433l9.957-5.75a.502.502 0 0 1 .5 0l9.957 5.75a.5.5 0 0 1 .25.429l.086 11.452a.5.5 0 0 1-.25.437l-10.043 5.798a.496.496 0 0 1-.25.067zM2.5 17.461l9.457 5.461 9.541-5.508-.082-10.874-9.459-5.463L2.5 6.539v10.922zm10.462 3.578a.502.502 0 0 1-.5-.5v-7.927a.5.5 0 0 1 .252-.434l6.969-3.984a.5.5 0 0 1 .748.434v4.56a.502.502 0 0 1-.256.437l-2.93 1.64v3.075a.5.5 0 0 1-.249.432l-3.783 2.2a.507.507 0 0 1-.251.067zm.5-8.138v6.768l2.783-1.619v-3.08c0-.181.098-.348.256-.437l2.93-1.64V9.489l-5.969 3.412zm6.469.287h.01-.01zm-8.974 7.851a.488.488 0 0 1-.251-.068l-3.783-2.2a.5.5 0 0 1-.249-.432v-3.077l-2.93-1.639a.5.5 0 0 1-.256-.437V8.627a.497.497 0 0 1 .748-.434l6.969 3.984a.5.5 0 0 1 .252.434v7.927a.502.502 0 0 1-.5.501zm-3.283-2.988 2.783 1.619v-6.768L4.488 9.489v3.404l2.93 1.639a.5.5 0 0 1 .256.437v3.082zm4.266-6.754a.498.498 0 0 1-.248-.066L4.736 7.26a.5.5 0 0 1-.003-.866L8.46 4.231a.501.501 0 0 1 .501 0l3.018 1.742 2.997-1.72a.498.498 0 0 1 .497 0l3.687 2.105a.5.5 0 0 1 .001.868l-6.971 4.006a.518.518 0 0 1-.25.065zM5.985 6.822l5.954 3.399 5.966-3.428-2.68-1.531-2.999 1.721a.502.502 0 0 1-.499 0L8.712 5.242l-2.727 1.58z"></path></svg>');
+}
+
+.md-typeset .admonition.manuel,
+.md-typeset details.manuel {
+  border-color: #2B9B46;
+}
+.md-typeset .manuel > .admonition-title,
+.md-typeset .manuel > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+.md-typeset .manuel > .admonition-title::before,
+.md-typeset .manuel > summary::before {
+  background-color: #2B9B46;
+  -webkit-mask-image: var(--md-admonition-icon--manuel);
+  mask-image: var(--md-admonition-icon--manuel);
+}
+
+.md-typeset .admonition.codesandbox,
+.md-typeset details.codesandbox {
+  border-color: #AD03FC;
+}
+.md-typeset .codesandbox > .admonition-title,
+.md-typeset .codesandbox > summary {
+  background-color: rgba(173, 3, 252, 0.1);
+}
+.md-typeset .codesandbox > .admonition-title::before,
+.md-typeset .codesandbox > summary::before {
+  background-color: #AD03FC;
+  -webkit-mask-image: var(--md-admonition-icon--codesandbox);
+  mask-image: var(--md-admonition-icon--codesandbox);
+}
+
+/* --------------------------------------------------------------------------
+   8. External link indicator
+   -------------------------------------------------------------------------- */
+pre a[href^="http"]::after,
+pre a[href^="https://"]::after,
+code a[href^="http"]::after,
+code a[href^="https://"]::after {
+  display: none;
+}
+
+article a[href^="http"]:not(pre a):not(code a)::after,
+article a[href^="https://"]:not(pre a):not(code a)::after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  margin-left: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   9. Tooltips (keep existing)
+   -------------------------------------------------------------------------- */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted var(--ls-text-caption);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: var(--ls-text-headline);
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 0.375rem;
+  padding: 6px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  font-size: 0.8rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------------------
+   10. Subtle interactions
+   -------------------------------------------------------------------------- */
+.md-nav__link,
+.md-tabs__link,
+.md-button {
+  transition: all 0.15s ease;
+}
+
+.md-button:active {
+  transform: scale(0.98);
+}
+
+/* Search input – Surface-Container-High */
+[data-md-color-scheme="default"] .md-search__input {
+  background-color: var(--ls-surface-high);
+  color: var(--ls-text-headline);
+}
+
+/* Footer */
+.md-footer {
+  background-color: var(--ls-code-header-bg);
+}
+
+/* --------------------------------------------------------------------------
+   11. Tables – editorial flat style
+   -------------------------------------------------------------------------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--ls-surface-high);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--ls-surface-low);
+  color: var(--ls-text-headline);
+  font-family: "Space Grotesk", "Inter", sans-serif;
+  font-weight: 600;
+  border-bottom: 2px solid var(--ls-surface-high);
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) td {
+  background-color: var(--ls-surface-low);
+}

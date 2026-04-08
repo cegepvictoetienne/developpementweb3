@@ -53,3 +53,9 @@ clean:
 
 rebuild: clean build
 
+sync-overrides:
+	rsync -a --delete --exclude='.git' overrides/ overrides-copy/
+
+deploy: sync-overrides
+	mike deploy --push 2025
+
