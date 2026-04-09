@@ -87,7 +87,7 @@ logo = "fontawesome/solid/database"
 
 [project.theme]
 name = "material"
-custom_dir = "overrides-copy"
+custom_dir = "overrides"
 favicon = "favicon.ico"
 language = "fr"
 features = [
